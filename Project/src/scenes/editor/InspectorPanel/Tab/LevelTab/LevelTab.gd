@@ -27,6 +27,7 @@ extends MainInspectorTab
 
 onready var atb_hbox_version = $VBox/ScrollContainer/Vbox/AtbHboxVersion
 onready var atb_hbox_level_name = $VBox/ScrollContainer/Vbox/AtbHboxLevelName
+onready var atb_hbox_user_id = $VBox/ScrollContainer/Vbox/AtbHboxUserID
 onready var atb_hbox_username = $VBox/ScrollContainer/Vbox/AtbHboxUsername
 onready var atb_hbox_user_portrait = $VBox/ScrollContainer/Vbox/AtbHboxUserPortrait
 onready var atb_hbox_sliding = $VBox/ScrollContainer/Vbox/AtbHboxSliding
@@ -73,6 +74,7 @@ func load_properties_from_level():
 	if level is Level:
 		atb_hbox_version.set_value(level.level_version)
 		atb_hbox_level_name.set_value(level.level_name)
+		atb_hbox_user_id.set_value(level.user_id)
 		atb_hbox_username.set_value(level.user_name)
 		atb_hbox_user_portrait.set_value(level.user_icon_id)
 		atb_hbox_sliding.set_value(level.sliding)
@@ -102,6 +104,9 @@ func _on_AtbHboxVersion_value_entered() -> void:
 
 func _on_AtbHboxLevelName_value_entered() -> void:
 	_set_level_config("level_name", atb_hbox_level_name.get_value())
+
+func _on_AtbHboxUserID_value_entered() -> void:
+	_set_level_config("user_id", atb_hbox_user_id.get_value())
 
 func _on_AtbHboxUsername_value_entered() -> void:
 	_set_level_config("user_name", atb_hbox_username.get_value())
@@ -173,6 +178,3 @@ func _set_level_config(property : String, value):
 #-------------------------------------------------
 #      Setters & Getters
 #-------------------------------------------------
-
-
-
