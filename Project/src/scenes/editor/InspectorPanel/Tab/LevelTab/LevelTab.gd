@@ -34,6 +34,8 @@ onready var atb_hbox_cshot_on = $VBox/ScrollContainer/Vbox/AtbHboxCShotOn
 onready var atb_hbox_dbl_dmg = $VBox/ScrollContainer/Vbox/AtbHboxDblDmg
 onready var atb_hbox_proto_strike = $VBox/ScrollContainer/Vbox/AtbHboxProtoStrike
 onready var atb_hbox_dbl_jump = $VBox/ScrollContainer/Vbox/AtbHboxDblJump
+onready var atb_hbox_charge_broom =  $VBox/ScrollContainer/Vbox/AtbHboxChargeBroom
+onready var atb_hbox_dodge_roll =  $VBox/ScrollContainer/Vbox/AtbHboxDodgeRoll
 onready var atb_hbox_cshot_type = $VBox/ScrollContainer/Vbox/AtbHboxCShotType
 onready var atb_hbox_bg_color_id = $VBox/ScrollContainer/Vbox/AtbHboxBgColorID
 onready var atb_hbox_boss_portrait = $VBox/ScrollContainer/Vbox/AtbHboxBossPortrait
@@ -78,6 +80,8 @@ func load_properties_from_level():
 		atb_hbox_dbl_dmg.set_value(level.double_damage)
 		atb_hbox_proto_strike.set_value(level.proto_strike)
 		atb_hbox_dbl_jump.set_value(level.double_jump)
+		atb_hbox_charge_broom.set_value(level.charge_broom)
+		atb_hbox_dodge_roll.set_value(level.dodge_roll)
 		atb_hbox_cshot_type.set_value(level.charge_shot_type)
 		atb_hbox_bg_color_id.set_value(level.default_background_color)
 		atb_hbox_boss_portrait.set_value(level.boss_portrait)
@@ -119,6 +123,12 @@ func _on_AtbHboxProtoStrike_value_entered() -> void:
 
 func _on_AtbHboxDblJump_value_entered() -> void:
 	_set_level_config("double_jump", atb_hbox_dbl_jump.get_value())
+
+func _on_AtbHboxChargeBroom_value_entered() -> void:
+	_set_level_config("charge_broom", atb_hbox_charge_broom.get_value())
+
+func _on_AtbHboxDodgeRoll_value_entered() -> void:
+	_set_level_config("dodge_roll", atb_hbox_dodge_roll.get_value())
 
 func _on_AtbHboxCShotType_value_entered() -> void:
 	_set_level_config("charge_shot_type", atb_hbox_cshot_type.get_value())

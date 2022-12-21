@@ -139,8 +139,8 @@ margin_top = 312.0
 margin_right = 792.0
 margin_bottom = 335.4
 theme = ExtResource( 6 )
-custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
 text = "Level Object"
 uppercase = true
 
@@ -160,6 +160,14 @@ margin_bottom = 350.0
 text = "Found the Bone"
 autowrap = true
 
+[node name="AtbBossWarning" type="Label" parent="VBox/ScrollContainer/Vbox" index="17"]
+visible = false
+margin_top = 340.0
+margin_right = 792.0
+margin_bottom = 354.0
+text = "Do not move Bosses in this tool, it will crash your game."
+autowrap = true
+
 [node name="ObjDeselectEscKeyCtrler" type="Button" parent="." index="1"]
 margin_right = 12.0
 margin_bottom = 20.0
@@ -174,6 +182,7 @@ script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
 [connection signal="value_entered" from="VBox/ScrollContainer/Vbox/AtbHboxObjVecX" to="." method="_on_AtbHboxObjVecX_value_entered"]
 [connection signal="value_entered" from="VBox/ScrollContainer/Vbox/AtbHboxObjVecY" to="." method="_on_AtbHboxObjVecY_value_entered"]
 [connection signal="value_entered" from="VBox/ScrollContainer/Vbox/AtbHboxObjType" to="." method="_on_AtbHboxObjType_value_entered"]

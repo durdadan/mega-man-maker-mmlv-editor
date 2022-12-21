@@ -10,7 +10,7 @@ script = ExtResource( 3 )
 
 [node name="TitleLabel" parent="VBox/ScrollContainer/Vbox" index="0"]
 margin_top = -1.0
-margin_bottom = 16.4
+margin_bottom = 20.4
 theme = ExtResource( 4 )
 text = "Level Properties"
 
@@ -21,124 +21,137 @@ margin_right = 0.793701
 margin_bottom = 0.793701
 
 [node name="AtbHboxVersion" parent="VBox/ScrollContainer/Vbox" index="1" instance=ExtResource( 2 )]
-margin_top = 21.0
-margin_bottom = 45.0
+margin_top = 25.0
+margin_bottom = 49.0
 property_name = "Version"
 code = "0a"
 
 [node name="AtbHboxLevelName" parent="VBox/ScrollContainer/Vbox" index="2" instance=ExtResource( 2 )]
-margin_top = 49.0
-margin_bottom = 73.0
+margin_top = 53.0
+margin_bottom = 77.0
 property_name = "Level Name"
 code = "1a"
 
 [node name="AtbHboxUsername" parent="VBox/ScrollContainer/Vbox" index="3" instance=ExtResource( 2 )]
-margin_top = 77.0
-margin_bottom = 101.0
+margin_top = 81.0
+margin_bottom = 105.0
 property_name = "Username"
 code = "4a"
 
 [node name="AtbHboxUserPortrait" parent="VBox/ScrollContainer/Vbox" index="4" instance=ExtResource( 2 )]
-margin_top = 105.0
-margin_bottom = 129.0
+margin_top = 109.0
+margin_bottom = 133.0
 property_name = "User Portrait ID"
 code = "4b"
 
 [node name="AtbHboxSliding" parent="VBox/ScrollContainer/Vbox" index="5" instance=ExtResource( 2 )]
-margin_top = 133.0
-margin_bottom = 157.0
+margin_top = 137.0
+margin_bottom = 161.0
 property_name = "Sliding Enabled"
 code = "1b"
 
 [node name="AtbHboxCShotOn" parent="VBox/ScrollContainer/Vbox" index="6" instance=ExtResource( 2 )]
-margin_top = 161.0
-margin_bottom = 185.0
+margin_top = 165.0
+margin_bottom = 189.0
 property_name = "Charge Shot Enabled"
 code = "1c"
 
 [node name="AtbHboxDblDmg" parent="VBox/ScrollContainer/Vbox" index="7" instance=ExtResource( 2 )]
-margin_top = 189.0
-margin_bottom = 213.0
+margin_top = 193.0
+margin_bottom = 217.0
 property_name = "Double Damage Enabled"
 code = "1ba"
 
 [node name="AtbHboxProtoStrike" parent="VBox/ScrollContainer/Vbox" index="8" instance=ExtResource( 2 )]
-margin_top = 217.0
-margin_bottom = 241.0
+margin_top = 221.0
+margin_bottom = 245.0
 property_name = "Proto Strike Enabled"
 code = "1ca"
 
 [node name="AtbHboxDblJump" parent="VBox/ScrollContainer/Vbox" index="9" instance=ExtResource( 2 )]
-margin_top = 245.0
-margin_bottom = 269.0
+margin_top = 249.0
+margin_bottom = 273.0
 property_name = "Double Jump Enabled"
 code = "1bb"
 
-[node name="AtbHboxCShotType" parent="VBox/ScrollContainer/Vbox" index="10" instance=ExtResource( 2 )]
-margin_top = 273.0
-margin_bottom = 297.0
+[node name="AtbHboxChargeBroom" parent="VBox/ScrollContainer/Vbox" index="10" instance=ExtResource( 2 )]
+margin_top = 277.0
+margin_bottom = 301.0
+property_name = "Charge Broom Enabled"
+code = "1cc"
+
+[node name="AtbHboxDodgeRoll" parent="VBox/ScrollContainer/Vbox" index="11" instance=ExtResource( 2 )]
+margin_top = 305.0
+margin_bottom = 329.0
+property_name = "Dodge Roll Enabled"
+code = "1cb"
+
+[node name="AtbHboxCShotType" parent="VBox/ScrollContainer/Vbox" index="12" instance=ExtResource( 2 )]
+margin_top = 333.0
+margin_bottom = 357.0
 property_name = "Charge Shot Type"
 code = "1d"
 
-[node name="AtbHboxBgColorID" parent="VBox/ScrollContainer/Vbox" index="11" instance=ExtResource( 2 )]
-margin_top = 301.0
-margin_bottom = 325.0
+[node name="AtbHboxBgColorID" parent="VBox/ScrollContainer/Vbox" index="13" instance=ExtResource( 2 )]
+margin_top = 361.0
+margin_bottom = 385.0
 property_name = "Background Color ID"
 code = "1e"
 dropdown_input = 2
 
-[node name="AtbHboxBossPortrait" parent="VBox/ScrollContainer/Vbox" index="12" instance=ExtResource( 2 )]
-margin_top = 329.0
-margin_bottom = 353.0
+[node name="AtbHboxBossPortrait" parent="VBox/ScrollContainer/Vbox" index="14" instance=ExtResource( 2 )]
+margin_top = 389.0
+margin_bottom = 413.0
 property_name = "Boss Portrait ID"
 code = "1f"
 dropdown_input = 1
 
-[node name="AtbHboxBossCount" parent="VBox/ScrollContainer/Vbox" index="13" instance=ExtResource( 2 )]
-margin_top = 357.0
-margin_bottom = 381.0
+[node name="AtbHboxBossCount" parent="VBox/ScrollContainer/Vbox" index="15" instance=ExtResource( 2 )]
+margin_top = 417.0
+margin_bottom = 441.0
 property_name = "Number of Bosses"
 code = "1bc"
 
-[node name="AtbHboxLvlTrackID" parent="VBox/ScrollContainer/Vbox" index="14" instance=ExtResource( 2 )]
-margin_top = 385.0
-margin_bottom = 409.0
+[node name="AtbHboxLvlTrackID" parent="VBox/ScrollContainer/Vbox" index="16" instance=ExtResource( 2 )]
+margin_top = 445.0
+margin_bottom = 469.0
 property_name = "Track ID"
 code = "1l"
 
-[node name="AtbHboxLvlMusicNumber" parent="VBox/ScrollContainer/Vbox" index="15" instance=ExtResource( 2 )]
-margin_top = 413.0
-margin_bottom = 437.0
+[node name="AtbHboxLvlMusicNumber" parent="VBox/ScrollContainer/Vbox" index="17" instance=ExtResource( 2 )]
+margin_top = 473.0
+margin_bottom = 497.0
 property_name = "Music Number"
 code = "1m"
 
-[node name="AtbHboxAreaP" parent="VBox/ScrollContainer/Vbox" index="16" instance=ExtResource( 2 )]
+[node name="AtbHboxAreaP" parent="VBox/ScrollContainer/Vbox" index="18" instance=ExtResource( 2 )]
 visible = false
 margin_top = 438.0
 margin_bottom = 462.0
 property_name = "Left Most Position Geometry"
 code = "1p"
 
-[node name="AtbHboxAreaQ" parent="VBox/ScrollContainer/Vbox" index="17" instance=ExtResource( 2 )]
+[node name="AtbHboxAreaQ" parent="VBox/ScrollContainer/Vbox" index="19" instance=ExtResource( 2 )]
 visible = false
 margin_top = 466.0
 margin_bottom = 490.0
 property_name = "Right Most Position Geometry"
 code = "1q"
 
-[node name="AtbHboxAreaR" parent="VBox/ScrollContainer/Vbox" index="18" instance=ExtResource( 2 )]
+[node name="AtbHboxAreaR" parent="VBox/ScrollContainer/Vbox" index="20" instance=ExtResource( 2 )]
 visible = false
 margin_top = 494.0
 margin_bottom = 518.0
 property_name = "Top Most Position Geometry"
 code = "1r"
 
-[node name="AtbHboxAreaS" parent="VBox/ScrollContainer/Vbox" index="19" instance=ExtResource( 2 )]
+[node name="AtbHboxAreaS" parent="VBox/ScrollContainer/Vbox" index="21" instance=ExtResource( 2 )]
 visible = false
 margin_top = 522.0
 margin_bottom = 546.0
 property_name = "Bottom Most Position Geometry"
 code = "1s"
+
 [connection signal="value_entered" from="VBox/ScrollContainer/Vbox/AtbHboxVersion" to="." method="_on_AtbHboxVersion_value_entered"]
 [connection signal="value_entered" from="VBox/ScrollContainer/Vbox/AtbHboxLevelName" to="." method="_on_AtbHboxLevelName_value_entered"]
 [connection signal="value_entered" from="VBox/ScrollContainer/Vbox/AtbHboxUsername" to="." method="_on_AtbHboxUsername_value_entered"]
@@ -148,6 +161,8 @@ code = "1s"
 [connection signal="value_entered" from="VBox/ScrollContainer/Vbox/AtbHboxDblDmg" to="." method="_on_AtbHboxDblDmg_value_entered"]
 [connection signal="value_entered" from="VBox/ScrollContainer/Vbox/AtbHboxProtoStrike" to="." method="_on_AtbHboxProtoStrike_value_entered"]
 [connection signal="value_entered" from="VBox/ScrollContainer/Vbox/AtbHboxDblJump" to="." method="_on_AtbHboxDblJump_value_entered"]
+[connection signal="value_entered" from="VBox/ScrollContainer/Vbox/AtbHboxChargeBroom" to="." method="_on_AtbHboxChargeBroom_value_entered"]
+[connection signal="value_entered" from="VBox/ScrollContainer/Vbox/AtbHboxDodgeRoll" to="." method="_on_AtbHboxDodgeRoll_value_entered"]
 [connection signal="value_entered" from="VBox/ScrollContainer/Vbox/AtbHboxCShotType" to="." method="_on_AtbHboxCShotType_value_entered"]
 [connection signal="value_entered" from="VBox/ScrollContainer/Vbox/AtbHboxBgColorID" to="." method="_on_AtbHboxBgColorID_value_entered"]
 [connection signal="value_entered" from="VBox/ScrollContainer/Vbox/AtbHboxBossPortrait" to="." method="_on_AtbHboxBossPortrait_value_entered"]

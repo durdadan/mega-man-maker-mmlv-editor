@@ -73,6 +73,8 @@ export (float) var charge_shot_enable = 1.000000
 export (float) var double_damage = 0.000000
 export (float) var proto_strike = 0.000000
 export (float) var double_jump = 0.000000
+export (float) var dodge_roll = 0.000000
+export (float) var charge_broom = 0.000000
 export (float) var charge_shot_type = 4.000000
 export (float) var default_background_color = 29.000000 setget set_default_background_color
 export (float) var boss_portrait = -1.000000
@@ -189,6 +191,8 @@ func get_save() -> String:
 	txt_pool.append(_combine_code_line_text("1ba", double_damage))
 	txt_pool.append(_combine_code_line_text("1ca", proto_strike))
 	txt_pool.append(_combine_code_line_text("1bb", double_jump))
+	txt_pool.append(_combine_code_line_text("1cc", charge_broom))
+	txt_pool.append(_combine_code_line_text("1cb", dodge_roll))
 	txt_pool.append(_combine_code_line_text("1d", charge_shot_type))
 	txt_pool.append(_combine_code_line_text("1e", default_background_color))
 	txt_pool.append(_combine_code_line_text("1f", boss_portrait))
@@ -430,6 +434,8 @@ func _init_level_data():
 	double_damage = _gamelv_data.double_damage
 	proto_strike = _gamelv_data.proto_strike
 	double_jump = _gamelv_data.double_jump
+	charge_broom = _gamelv_data.charge_broom
+	dodge_roll = _gamelv_data.dodge_roll
 	charge_shot_type = _gamelv_data.charge_shot_type
 	default_background_color = _gamelv_data.default_background_color
 	boss_portrait = _gamelv_data.boss_portrait

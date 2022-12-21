@@ -185,16 +185,22 @@ func build(file_data : String):
 				_dataset = _get_dataset_from_line_data(i, "1s")
 				_data_game_level.val_s = float(_dataset[1])
 		match i.left(3):
-			"1ba":
+			"1ba": #double damage
 				_dataset = _get_dataset_from_line_data(i, "1ba")
 				_data_game_level.double_damage = float(_dataset[1])
-			"1ca":
-				_dataset = _get_dataset_from_line_data(i, "1ba")
+			"1ca": #proto strike
+				_dataset = _get_dataset_from_line_data(i, "1ca")
 				_data_game_level.proto_strike = float(_dataset[1])
-			"1bb":
+			"1bb": #double jump
 				_dataset = _get_dataset_from_line_data(i, "1bb")
 				_data_game_level.double_jump = float(_dataset[1])
-			"1bc":
+			"1cc": #charge broom
+				_dataset = _get_dataset_from_line_data(i, "1cc")
+				_data_game_level.charge_broom = float(_dataset[1])
+			"1cb": #dodge roll
+				_dataset = _get_dataset_from_line_data(i, "1cb")
+				_data_game_level.dodge_roll = float(_dataset[1])
+			"1bc": #bosses count
 				_dataset = _get_dataset_from_line_data(i, "1bc")
 				_data_game_level.bosses_count = float(_dataset[1])
 		
