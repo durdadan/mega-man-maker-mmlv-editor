@@ -360,6 +360,10 @@ func build(file_data : String):
 			"o":
 				_dataset = _get_dataset_from_line_data(i, "o")
 				temp_obj_code_data.o = float(_dataset[2])
+			# p - New Speed
+			# q - New Timer/option
+			# r - Who knows
+				
 		if i == "[Level]":
 			if temp_obj_code_data != null:
 				_build_from_code_data(temp_obj_code_data)
