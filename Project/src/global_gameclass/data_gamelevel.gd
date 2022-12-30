@@ -55,6 +55,12 @@ var proto_strike = 0.000000
 #1bb 
 var double_jump = 0.000000 
 
+#1cc
+var charge_broom = 0.000000
+
+#1cb
+var dodge_roll = 0.000000
+
 #1d, valid values: 4, 5, 6
 var charge_shot_type = 4.000000 
 

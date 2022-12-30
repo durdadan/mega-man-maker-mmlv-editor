@@ -40,6 +40,7 @@ onready var atb_hbox_obj_option = $VBox/ScrollContainer/Vbox/AtbHboxObjOption
 onready var atb_label_level_object = $VBox/ScrollContainer/Vbox/AtbLabelLevelObject
 onready var atb_label_locks_boss_doors = $VBox/ScrollContainer/Vbox/AtbLockBossDoors
 onready var atb_label_found_the_bone = $VBox/ScrollContainer/Vbox/AtbFoundTheBone
+onready var atb_label_boss_warning = $VBox/ScrollContainer/Vbox/AtbBossWarning
 
 #-------------------------------------------------
 #      Notifications
@@ -141,6 +142,7 @@ func _get_level_object_name(type: int ,id: int) -> String:
 	var object_name = ""
 	atb_label_locks_boss_doors.hide()
 	atb_label_found_the_bone.hide()
+	atb_label_boss_warning.hide()
 	# Playable Characters
 	if id == int(round(DataGameObject.MISSING_DATA)):
 		id = 0
@@ -162,85 +164,11 @@ func _get_level_object_name(type: int ,id: int) -> String:
 	# Bosses
 	elif type == 8:
 		object_name = GameBossData.BOSS_DATA.get(id)
+		atb_label_boss_warning.show()
 	elif type == -999:
 		object_name = GameWaterAndPlateData.WATER_AND_PLATE_DATA.get(id)
 	return object_name
 	
-
-	var level_object = ""
-	if id == 139:
-		level_object = "Dr.Wily Plate"
-	elif id == 140:
-		level_object = "Dr.Cossack Plate"
-	elif id == 141:
-		level_object = "Mr.X Plate"
-	elif id == 176:
-		level_object = "Dr.Light Plate"
-	elif id == 195:
-		level_object = "Dr.Right Plate"
-	elif id == 196:
-		level_object = "Top Shadow"
-	elif id == 197:
-		level_object = "Bottom Shadow"
-		
-	elif id == 178:
-		level_object = "Ice Water"
-	elif id == 180:
-		level_object = "Bubble Water"
-	elif id == 181:
-		level_object = "Wily Water 1"
-	elif id == 182:
-		level_object = "Gemini Water"
-	elif id == 183:
-		level_object = "Wily Water 2"
-	elif id == 184:
-		level_object = "Dive Water"
-		
-	elif id == 185:
-		level_object = "Toad Water"
-	elif id == 186:
-		level_object = "Wily Water 3"
-	elif id == 187:
-		level_object = "Wave Water"
-	elif id == 188:
-		level_object = "Wily Water 4"
-	elif id == 189:
-		level_object = "Blizzard Water"
-	elif id == 179:
-		level_object = "Centaur Water"
-		
-	elif id == 177:
-		level_object = "Yamato Water"
-	elif id == 194:
-		level_object = "Yamato Water (alt)"
-	elif id == 190:
-		level_object = "Plant Water"
-	elif id == 191:
-		level_object = "Wily Water 5"
-	elif id == 192:
-		level_object = "Splash Water"
-	elif id == 193:
-		level_object = "Wily Water 6"
-		
-	elif id == 621:
-		level_object = "Endless Water"
-	elif id == 622:
-		level_object = "Pump Water"
-	elif id == 623:
-		level_object = "Wily Water 7"
-	elif id == 624:
-		level_object = "Wily Water 8"
-	elif id == 625:
-		level_object = "Wily Water 9"
-	elif id == 626:
-		level_object = "Endless Water 2"
-		
-	elif id == 627:
-		level_object = "Endless Water 3"
-	elif id == 628:
-		level_object = "Challenge Water"
-		
-	return level_object
 #-------------------------------------------------
 #      Setters & Getters
 #-------------------------------------------------
