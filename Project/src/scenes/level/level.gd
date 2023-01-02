@@ -300,8 +300,8 @@ func get_save() -> String:
 			txt_pool.append(_combine_code_line_text("p", i.obj_speed, obj_pos))
 		if i.obj_variant != DataGameObject.MISSING_DATA:
 			txt_pool.append(_combine_code_line_text("q", i.obj_variant, obj_pos))
-
-		# TODO : new variables
+		if i.obj_duration != DataGameObject.MISSING_DATA:
+			txt_pool.append(_combine_code_line_text("r", i.obj_duration, obj_pos))
 		
 	
 	#Save Tiles
@@ -497,9 +497,9 @@ func _generate_objects():
 		prev_obj.obj_destination_x = i.obj_destination_x
 		prev_obj.obj_destination_y = i.obj_destination_y
 		prev_obj.obj_option = i.obj_option
-		#todo: new variables
 		prev_obj.obj_speed = i.obj_speed
 		prev_obj.obj_variant = i.obj_variant
+		prev_obj.obj_duration = i.obj_duration
 		prev_obj.set_owner(get_tree().edited_scene_root)
 		prev_obj.shift_pos()
 

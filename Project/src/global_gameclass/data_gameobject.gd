@@ -72,6 +72,8 @@ export (float) var obj_variant = MISSING_DATA
 #p new speed/interval
 export (float) var obj_speed = MISSING_DATA
 
+export (float) var obj_duration = MISSING_DATA
+
 #-------------------------------------------------
 #      Notifications
 #-------------------------------------------------

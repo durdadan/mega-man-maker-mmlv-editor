@@ -28,23 +28,23 @@ const OUTPUT_BG_TILESET_RES_NAME = "MMM Bg Tileset"
 const GEN_TITLE = "Tileset Generator"
 const GEN_TILESET_SUCCESS_MSG = str(
 	"Generated successfully!\n\n",
-	"For the next step, you might want to save the output as a resource file to the assets folder.\n",
-	"Please save the tileset as a resource file to res://assets/tilesets/ and assign it to a tilemap object GameTilemapDrawer.\n\n",
-	"NOTE: Tileset Output might not be updated (visual bug?). You might need to click on it."
+	"Save the output as a resource file to the assets folder.\n",
+	"Please save the tileset as a resource file to res://assets/tilesets/ and assign it to a tilemap object GameTilemapDrawer.\n\n"
 )
 const GEN_SPIKE_TILESET_SUCCESS_MSG = str(
-	"Generated successfully!\n\n",
-	"Todo: Add instructions what to do next."
+		"Generated successfully!\n\n",
+		"Save the output as a resource file to the assets folder.\n",
+		"Please save the Spikes as a resource file to res://assets/spikes/ and assign it to a tilemap object GameSpikeDrawer.\n\n"
 )
 const GEN_LADDER_TILESET_SUCCESS_MSG = str(
 	"Generated successfully!\n\n",
-	"Todo: Add instructions what to do next."
+	"Save the output as a resource file to the assets folder.\n",
+	"Please save the ladders as a resource file to res://assets/ladders/ and assign it to a tilemap object GameLadderDrawer.\n\n"
 )
 const GEN_BG_TILESET_SUCCESS_MSG = str(
 	"Generated successfully!\n\n",
 	"For the next step, you might want to save the output as a resource file to the assets folder.\n",
-	"Please save the tileset as a resource file to res://assets/bg/ and assign it to a tilemap object GameBgTilemapDrawer.\n\n",
-	"NOTE: Tileset Output might not be updated (visual bug?). You might need to click on it."
+	"Please save the tileset as a resource file to res://assets/bg/ and assign it to a tilemap object GameBgTilemapDrawer.\n\n"
 )
 
 #-------------------------------------------------

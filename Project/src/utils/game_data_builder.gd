@@ -40,9 +40,9 @@ class TempObjectCodeData:
 	var m : float = DataGameObject.MISSING_DATA
 	var n : float = DataGameObject.MISSING_DATA
 	var o : float = DataGameObject.MISSING_DATA
-	#TODO : new variables
 	var p : float = DataGameObject.MISSING_DATA
 	var q : float = DataGameObject.MISSING_DATA
+	var r : float = DataGameObject.MISSING_DATA
 	var pos : Vector2
 
 class TempBossCodeData:
@@ -363,15 +363,15 @@ func build(file_data : String):
 			"o":
 				_dataset = _get_dataset_from_line_data(i, "o")
 				temp_obj_code_data.o = float(_dataset[2])
-				#TODO: new variables
 			"p":
 				_dataset = _get_dataset_from_line_data(i, "p")
 				temp_obj_code_data.p = float(_dataset[2])
 			"q":
 				_dataset = _get_dataset_from_line_data(i, "q")
 				temp_obj_code_data.q = float(_dataset[2])
-			# q - New Timer/option
-			# r - Who knows
+			"r":
+				_dataset = _get_dataset_from_line_data(i, "r")
+				temp_obj_code_data.r = float(_dataset[2])
 				
 		if i == "[Level]":
 			if temp_obj_code_data != null:
@@ -419,9 +419,10 @@ func _build_from_code_data(code_data):
 				data_game_obj.obj_option = code_data.o
 			if code_data.p != DataGameObject.MISSING_DATA:
 				data_game_obj.obj_speed = code_data.p
-				#todo: new variables
 			if code_data.q != DataGameObject.MISSING_DATA:
 				data_game_obj.obj_variant = code_data.q
+			if code_data.r != DataGameObject.MISSING_DATA:
+				data_game_obj.obj_duration = code_data.r
 			_data_game_objects.append(data_game_obj)
 		elif code_data.i == BlockType.TILE:
 			var data_tile = DataGameTile.new()

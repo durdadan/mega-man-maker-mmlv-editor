@@ -67,6 +67,7 @@ export (float) var obj_variant := DataGameObject.MISSING_DATA
 #p used for new speed and interval
 export (float) var obj_speed := DataGameObject.MISSING_DATA
 
+export (float) var obj_duration := DataGameObject.MISSING_DATA
 #-------------------------------------------------
 #      Notifications
 #-------------------------------------------------

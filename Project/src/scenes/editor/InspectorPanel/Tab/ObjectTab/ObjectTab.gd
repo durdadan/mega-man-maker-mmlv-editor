@@ -39,7 +39,7 @@ onready var atb_hbox_obj_dest_y = $VBox/ScrollContainer/Vbox/AtbHboxObjDestY
 onready var atb_hbox_obj_option = $VBox/ScrollContainer/Vbox/AtbHboxObjOption
 onready var atb_hbox_obj_variant = $VBox/ScrollContainer/Vbox/AtbHboxObjVariant
 onready var atb_hbox_obj_speed = $VBox/ScrollContainer/Vbox/AtbHboxObjSpeed
-
+onready var atb_hbox_obj_duration = $VBox/ScrollContainer/Vbox/AtbHboxObjDuration
 
 onready var atb_label_level_object = $VBox/ScrollContainer/Vbox/AtbLabelLevelObject
 onready var atb_label_locks_boss_doors = $VBox/ScrollContainer/Vbox/AtbLockBossDoors
@@ -117,6 +117,8 @@ func _on_AtbHboxObjVariant_value_entered() -> void:
 func _on_AtbHboxObjSpeed_value_entered() -> void:
 	_set_selected_objects("obj_speed", atb_hbox_obj_speed.get_value())
 
+func _on_AtbHboxObjDuration_value_entered() -> void:
+	_set_selected_objects("obj_duration", atb_hbox_obj_duration.get_value())
 
 
 #-------------------------------------------------
@@ -142,6 +144,7 @@ func _update_properties_from_selected_objects():
 			atb_hbox_obj_option.set_value(i.obj_option)
 			atb_hbox_obj_speed.set_value(i.obj_speed)
 			atb_hbox_obj_variant.set_value(i.obj_variant)
+			atb_hbox_obj_duration.set_value(i.obj_duration)
 			atb_label_level_object.text = _get_level_object_name(i.obj_type, i.obj_id)
 
 func _set_selected_objects(property : String, value):
@@ -186,3 +189,5 @@ func _get_level_object_name(type: int ,id: int) -> String:
 #-------------------------------------------------
 #      Setters & Getters
 #-------------------------------------------------
+
+
