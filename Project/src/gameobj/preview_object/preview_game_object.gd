@@ -64,6 +64,9 @@ export (float) var obj_option := DataGameObject.MISSING_DATA
 #q used for new checkpoints
 export (float) var obj_variant := DataGameObject.MISSING_DATA
 
+#p used for new speed and interval
+export (float) var obj_speed := DataGameObject.MISSING_DATA
+
 #-------------------------------------------------
 #      Notifications
 #-------------------------------------------------

@@ -41,6 +41,7 @@ class TempObjectCodeData:
 	var n : float = DataGameObject.MISSING_DATA
 	var o : float = DataGameObject.MISSING_DATA
 	#TODO : new variables
+	var p : float = DataGameObject.MISSING_DATA
 	var q : float = DataGameObject.MISSING_DATA
 	var pos : Vector2
 
@@ -363,7 +364,9 @@ func build(file_data : String):
 				_dataset = _get_dataset_from_line_data(i, "o")
 				temp_obj_code_data.o = float(_dataset[2])
 				#TODO: new variables
-			# p - New Speed
+			"p":
+				_dataset = _get_dataset_from_line_data(i, "p")
+				temp_obj_code_data.p = float(_dataset[2])
 			"q":
 				_dataset = _get_dataset_from_line_data(i, "q")
 				temp_obj_code_data.q = float(_dataset[2])
@@ -414,6 +417,9 @@ func _build_from_code_data(code_data):
 				data_game_obj.obj_destination_y = code_data.n
 			if code_data.o != DataGameObject.MISSING_DATA:
 				data_game_obj.obj_option = code_data.o
+			if code_data.p != DataGameObject.MISSING_DATA:
+				data_game_obj.obj_speed = code_data.p
+				#todo: new variables
 			if code_data.q != DataGameObject.MISSING_DATA:
 				data_game_obj.obj_variant = code_data.q
 			_data_game_objects.append(data_game_obj)

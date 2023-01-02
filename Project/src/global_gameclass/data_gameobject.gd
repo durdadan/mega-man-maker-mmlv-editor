@@ -66,8 +66,11 @@ export (float) var obj_destination_y = MISSING_DATA
 #o
 export (float) var obj_option = MISSING_DATA
 
-#q
+#q new checkpoints
 export (float) var obj_variant = MISSING_DATA
+
+#p new speed/interval
+export (float) var obj_speed = MISSING_DATA
 
 #-------------------------------------------------
 #      Notifications
