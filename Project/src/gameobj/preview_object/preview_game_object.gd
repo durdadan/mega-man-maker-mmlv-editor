@@ -61,6 +61,9 @@ export (float) var obj_destination_y := DataGameObject.MISSING_DATA
 #o
 export (float) var obj_option := DataGameObject.MISSING_DATA
 
+#q used for new checkpoints
+export (float) var obj_variant := DataGameObject.MISSING_DATA
+
 #-------------------------------------------------
 #      Notifications
 #-------------------------------------------------

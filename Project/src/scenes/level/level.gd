@@ -296,6 +296,10 @@ func get_save() -> String:
 			txt_pool.append(_combine_code_line_text("n", i.obj_destination_y, obj_pos))
 		if i.obj_option != DataGameObject.MISSING_DATA:
 			txt_pool.append(_combine_code_line_text("o", i.obj_option, obj_pos))
+		if i.obj_variant != DataGameObject.MISSING_DATA:
+			txt_pool.append(_combine_code_line_text("q", i.obj_variant, obj_pos))
+		# TODO : new variables
+		
 	
 	#Save Tiles
 	for i in $GameTileMapDrawer.get_used_cells():
@@ -490,6 +494,7 @@ func _generate_objects():
 		prev_obj.obj_destination_x = i.obj_destination_x
 		prev_obj.obj_destination_y = i.obj_destination_y
 		prev_obj.obj_option = i.obj_option
+		prev_obj.obj_variant = i.obj_variant
 		prev_obj.set_owner(get_tree().edited_scene_root)
 		prev_obj.shift_pos()
 

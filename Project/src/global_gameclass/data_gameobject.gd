@@ -66,6 +66,9 @@ export (float) var obj_destination_y = MISSING_DATA
 #o
 export (float) var obj_option = MISSING_DATA
 
+#q
+export (float) var obj_variant = MISSING_DATA
+
 #-------------------------------------------------
 #      Notifications
 #-------------------------------------------------
