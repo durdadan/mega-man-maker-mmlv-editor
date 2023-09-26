@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=211 format=2]
+[gd_resource type="TileSet" load_steps=213 format=2]
 
 [ext_resource path="res://assets/images/ladders/LadMMPUOil.png" type="Texture" id=1]
 [ext_resource path="res://assets/images/ladders/LadMMPUIntro.png" type="Texture" id=2]
@@ -210,6 +210,8 @@
 [ext_resource path="res://assets/images/ladders/LadMMPUBuilder1.png" type="Texture" id=208]
 [ext_resource path="res://assets/images/ladders/LadMM10Endless4.png" type="Texture" id=209]
 [ext_resource path="res://assets/images/ladders/LadMMPUBuilder3.png" type="Texture" id=210]
+[ext_resource path="res://assets/images/ladders/ladderSearch3.png" type="Texture" id=211]
+[ext_resource path="res://assets/images/ladders/ladderGBIIIDiveAlt.png" type="Texture" id=212]
 
 [resource]
 resource_name = "MMM Ladder Tileset"
@@ -3167,3 +3169,31 @@ resource_name = "MMM Ladder Tileset"
 1109/shape_one_way_margin = 0.0
 1109/shapes = [  ]
 1109/z_index = 0
+1229/name = "ladderGBIIIDiveAlt_1229"
+1229/texture = ExtResource( 212 )
+1229/tex_offset = Vector2( 0, 0 )
+1229/modulate = Color( 1, 1, 1, 1 )
+1229/region = Rect2( 0, 0, 0, 0 )
+1229/tile_mode = 0
+1229/occluder_offset = Vector2( 0, 0 )
+1229/navigation_offset = Vector2( 0, 0 )
+1229/shape_offset = Vector2( 0, 0 )
+1229/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1229/shape_one_way = false
+1229/shape_one_way_margin = 0.0
+1229/shapes = [  ]
+1229/z_index = 0
+1230/name = "ladderSearch3_1230"
+1230/texture = ExtResource( 211 )
+1230/tex_offset = Vector2( 0, 0 )
+1230/modulate = Color( 1, 1, 1, 1 )
+1230/region = Rect2( 0, 0, 0, 0 )
+1230/tile_mode = 0
+1230/occluder_offset = Vector2( 0, 0 )
+1230/navigation_offset = Vector2( 0, 0 )
+1230/shape_offset = Vector2( 0, 0 )
+1230/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1230/shape_one_way = false
+1230/shape_one_way_margin = 0.0
+1230/shapes = [  ]
+1230/z_index = 0

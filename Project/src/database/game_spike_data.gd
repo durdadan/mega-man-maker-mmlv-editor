@@ -256,7 +256,20 @@ const SPIKE_DATA = {
 	1151: "spikeKing2Alt2",
 	1164: "spikeDynamo",
 	1166: "spikeMBAstro",
-	1167: "spikeMBAstroAlt"
+	1167: "spikeMBAstroAlt",
+	1217: "spikeAcidAlt",
+	1218: "spikeAcidAlt2",
+	1219: "spikeAcidAlt3",
+	1220: "spikeAcid2Alt",
+	1221: "spikeAcid2Alt2",
+	1222: "spikeAcid2Alt3",
+	1223: "spikeGBIVCrystalAlt2",
+	1224: "spikeGBIVCrystalAlt3",
+	1225: "spikeDiveAlt2",
+	1226: "spikeGrenade2",
+	1227: "spikeImpact2",
+	1228: "spikeTundra2",
+	
 }
 
 const SUBTILE_ID_POSITIONS = {
@@ -501,7 +514,19 @@ const SPIKE_GAME_IDS = {
 	1151: 99,
 	1164: 99,
 	1166: 99,
-	1167: 99
+	1167: 99,
+	1217: 11,
+	1218: 11,
+	1219: 11,
+	1220: 11,
+	1221: 11,
+	1222: 11,
+	1223: 104,
+	1224: 104,
+	1225: 103,
+	1226: 8,
+	1227: 11,
+	1228: 11,
 	}
 
 #-------------------------------------------------
