@@ -233,7 +233,9 @@ const LADDER_DATA = {
 	1106: "ladderGBVSaturn" ,
 	1107: "ladderGBVUranus",
 	1108: "ladderGBVVenus",
-	1109: "ladderGBVWily"
+	1109: "ladderGBVWily",
+	1229: "ladderGBIIIDiveAlt",
+	1230: "ladderSearch3"
 	
 }
 
@@ -449,7 +451,9 @@ const LADDER_GAME_IDS = {
 	1106: 105 ,
 	1107: 105,
 	1108: 105,
-	1109: 105
+	1109: 105,
+	1229: 103,
+	1230: 8
 }
 
 #-------------------------------------------------

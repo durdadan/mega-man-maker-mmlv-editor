@@ -101,7 +101,8 @@ func apply_auto_check_cooldown():
 #-------------------------------------------------
 
 func _on_HTTPRequest_request_completed(result: int, response_code: int, headers: PoolStringArray, body: PoolByteArray) -> void:
-	release_content.request_response = parse_json(body.get_string_from_utf8())
+	pass
+	#release_content.request_response = parse_json(body.get_string_from_utf8())
 
 #-------------------------------------------------
 #      Private Methods
