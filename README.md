@@ -28,7 +28,7 @@ MMLV Editor is an external level editor tool for Mega Man Maker. Its main featur
 Simply download or clone this repository and open the project with [Godot Engine](https://godotengine.org/)
 
 ```git
-git clone https://github.com/Firstject/mega-man-maker-mmlv-editor.git
+git clone https://github.com/durdadan/mega-man-maker-mmlv-editor.git
 ```
 
 # Contribution Guidelines
