@@ -242,7 +242,7 @@ config/auto_accept_quit=false
 config/version="0.10.5.1"
 config/year="2020-2023"
 config/project_creator="Firstject Snowflakes - JDE"
-config/test_version=false
+config/test_version=true
 
 [autoload]
 
@@ -261,6 +261,10 @@ CopyPaste="*res://src/singletons/CopyPaste.tscn"
 
 window/size/width=800
 window/energy_saving/keep_screen_on=false
+
+[editor]
+
+reimport_missing_imported_files=false
 
 [editor_plugins]
 
