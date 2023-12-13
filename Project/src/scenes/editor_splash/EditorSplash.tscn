@@ -171,6 +171,7 @@ __meta__ = {
 }
 
 [node name="LoadingLabel" type="Label" parent="Panel/IconSplash/LoadingVbox"]
+modulate = Color( 1, 1, 1, 0.930971 )
 margin_top = 16.0
 margin_right = 128.0
 margin_bottom = 37.4
