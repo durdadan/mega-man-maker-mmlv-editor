@@ -296,7 +296,13 @@ func get_save() -> String:
 			txt_pool.append(_combine_code_line_text("n", i.obj_destination_y, obj_pos))
 		if i.obj_option != DataGameObject.MISSING_DATA:
 			txt_pool.append(_combine_code_line_text("o", i.obj_option, obj_pos))
-	
+		if i.obj_new_speed != DataGameObject.MISSING_DATA:
+			txt_pool.append(_combine_code_line_text("p", i.obj_new_speed, obj_pos))
+		if i.obj_new_rails != DataGameObject.MISSING_DATA:
+			txt_pool.append(_combine_code_line_text("q", i.obj_new_rails, obj_pos))
+		if i.obj_new_appearance != DataGameObject.MISSING_DATA:
+			txt_pool.append(_combine_code_line_text("r", i.obj_new_appearance, obj_pos))
+			
 	#Save Tiles
 	for i in $GameTileMapDrawer.get_used_cells():
 		var map_to_world_pos = $GameTileMapDrawer.map_to_world(i)
@@ -490,6 +496,9 @@ func _generate_objects():
 		prev_obj.obj_destination_x = i.obj_destination_x
 		prev_obj.obj_destination_y = i.obj_destination_y
 		prev_obj.obj_option = i.obj_option
+		prev_obj.obj_new_speed = i.obj_new_speed
+		prev_obj.obj_new_rails =  i.obj_new_rails
+		prev_obj.obj_new_appearance = i.obj_new_appearance
 		prev_obj.set_owner(get_tree().edited_scene_root)
 		prev_obj.shift_pos()
 

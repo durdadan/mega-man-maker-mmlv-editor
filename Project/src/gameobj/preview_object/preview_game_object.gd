@@ -61,6 +61,16 @@ export (float) var obj_destination_y := DataGameObject.MISSING_DATA
 #o
 export (float) var obj_option := DataGameObject.MISSING_DATA
 
+#p
+export (float) var obj_new_speed := DataGameObject.MISSING_DATA
+
+#q
+export (float) var obj_new_rails := DataGameObject.MISSING_DATA
+
+#r
+export (float) var obj_new_appearance := DataGameObject.MISSING_DATA
+
+
 #-------------------------------------------------
 #      Notifications
 #-------------------------------------------------

@@ -37,6 +37,9 @@ onready var atb_hbox_obj_tex_v = $VBox/ScrollContainer/Vbox/AtbHboxObjTexV
 onready var atb_hbox_obj_dest_x = $VBox/ScrollContainer/Vbox/AtbHboxObjDestX
 onready var atb_hbox_obj_dest_y = $VBox/ScrollContainer/Vbox/AtbHboxObjDestY
 onready var atb_hbox_obj_option = $VBox/ScrollContainer/Vbox/AtbHboxObjOption
+onready var atb_hbox_obj_new_speed = $VBox/ScrollContainer/Vbox/AtbHboxObjNewSpeed
+onready var atb_hbox_obj_new_rails = $VBox/ScrollContainer/Vbox/AtbHboxObjNewRails
+onready var atb_hbox_obj_new_appearance = $VBox/ScrollContainer/Vbox/AtbHboxObjNewAppearance
 onready var atb_label_level_object = $VBox/ScrollContainer/Vbox/AtbLabelLevelObject
 onready var atb_label_locks_boss_doors = $VBox/ScrollContainer/Vbox/AtbLockBossDoors
 onready var atb_label_found_the_bone = $VBox/ScrollContainer/Vbox/AtbFoundTheBone
@@ -106,6 +109,15 @@ func _on_AtbHboxObjDestY_value_entered() -> void:
 
 func _on_AtbHboxObjOption_value_entered() -> void:
 	_set_selected_objects("obj_option", atb_hbox_obj_option.get_value())
+	
+func _on_AtbHboxObjNewSpeed_value_entered() -> void:
+	_set_selected_objects("obj_new_speed", atb_hbox_obj_new_speed.get_value())
+
+func _on_AtbHboxObjNewRails_value_entered() -> void:
+	_set_selected_objects("obj_new_rails", atb_hbox_obj_new_rails.get_value())
+	
+func _on_AtbHboxObjNewAppearance_value_entered() -> void:
+	_set_selected_objects("obj_new_appearance", atb_hbox_obj_new_appearance.get_value())
 
 #-------------------------------------------------
 #      Private Methods
@@ -128,6 +140,9 @@ func _update_properties_from_selected_objects():
 			atb_hbox_obj_dest_x.set_value(i.obj_destination_x)
 			atb_hbox_obj_dest_y.set_value(i.obj_destination_y)
 			atb_hbox_obj_option.set_value(i.obj_option)
+			atb_hbox_obj_new_speed.set_value(i.obj_new_speed)
+			atb_hbox_obj_new_rails.set_value(i.obj_new_rails)
+			atb_hbox_obj_new_appearance.set_value(i.obj_new_appearance)
 			atb_label_level_object.text = _get_level_object_name(i.obj_type, i.obj_id)
 
 func _set_selected_objects(property : String, value):
