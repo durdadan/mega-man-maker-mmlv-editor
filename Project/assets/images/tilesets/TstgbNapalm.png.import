@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstgbNapalm.png-7cd3d73c2ae4a831cf82e700a21923fa.stex"
+path="res://.import/tstGBNapalm.png-615a281c78fbda1e76f17cd1e4120561.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstgbNapalm.png"
-dest_files=[ "res://.import/TstgbNapalm.png-7cd3d73c2ae4a831cf82e700a21923fa.stex" ]
+source_file="res://assets/images/tilesets/tstGBNapalm.png"
+dest_files=[ "res://.import/tstGBNapalm.png-615a281c78fbda1e76f17cd1e4120561.stex" ]
 
 [params]
 

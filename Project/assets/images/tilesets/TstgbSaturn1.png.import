@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstgbSaturn1.png-c7d294fad8f702cc0ca60f6f2e47cac2.stex"
+path="res://.import/tstGBSaturn1.png-0827baac7e15d86829b39d4f73409829.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstgbSaturn1.png"
-dest_files=[ "res://.import/TstgbSaturn1.png-c7d294fad8f702cc0ca60f6f2e47cac2.stex" ]
+source_file="res://assets/images/tilesets/tstGBSaturn1.png"
+dest_files=[ "res://.import/tstGBSaturn1.png-0827baac7e15d86829b39d4f73409829.stex" ]
 
 [params]
 

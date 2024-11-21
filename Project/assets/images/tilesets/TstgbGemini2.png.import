@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstgbGemini2.png-c9dccce693bb1368d232fa41c3509dea.stex"
+path="res://.import/tstGBGemini2.png-4f9e3c33a1f0af9d2bd4be3bfffbce85.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstgbGemini2.png"
-dest_files=[ "res://.import/TstgbGemini2.png-c9dccce693bb1368d232fa41c3509dea.stex" ]
+source_file="res://assets/images/tilesets/tstGBGemini2.png"
+dest_files=[ "res://.import/tstGBGemini2.png-4f9e3c33a1f0af9d2bd4be3bfffbce85.stex" ]
 
 [params]
 

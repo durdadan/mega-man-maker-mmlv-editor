@@ -51,12 +51,12 @@ const GEN_BG_TILESET_SUCCESS_MSG = str(
 #      Properties
 #-------------------------------------------------
 
-export (TileSet) var tileset_output
-
 export (bool) var create_tileset setget set_create_tileset
 export (bool) var create_bg_tileset setget set_create_bg_tileset
 export (bool) var create_spike_tileset setget set_create_spike_tileset
 export (bool) var create_ladder_tileset setget set_create_ladder_tileset
+
+var tileset_output: TileSet
 
 #-------------------------------------------------
 #      Notifications
@@ -77,11 +77,9 @@ export (bool) var create_ladder_tileset setget set_create_ladder_tileset
 func generate_tileset():
 	tileset_output = TileSet.new()
 	
-	var idx_i : int = 0
 	for i in GameTileSetData.TILESET_DATA.keys():
 		#generate each subtiles
 		var idx_j : int = 0
-		print(i)
 		for j in GameTileSetData.SUBTILE_POSITION_IDS.keys():
 			
 			tileset_output.create_tile(i * GameTileSetData.SUBTILE_COUNT + idx_j)
@@ -91,15 +89,13 @@ func generate_tileset():
 			
 			idx_j +=1
 		
-		idx_i += 1
 	
 	tileset_output.resource_name = OUTPUT_TILESET_RES_NAME
 	
-	OS.alert(GEN_TILESET_SUCCESS_MSG, GEN_TITLE)
+	_finalize_generation(GEN_TILESET_SUCCESS_MSG)
 
 func generate_spike_tileset():
 	tileset_output = TileSet.new()
-	var idx_i : int = 0
 	for i in GameSpikeData.SPIKE_DATA.keys():
 		#generate each subtiles
 		var idx_j : int = 0
@@ -111,11 +107,10 @@ func generate_spike_tileset():
 			
 			idx_j +=1
 		
-		idx_i += 1
 	
 	tileset_output.resource_name = OUTPUT_SPIKE_TILESET_RES_NAME
 	
-	OS.alert(GEN_SPIKE_TILESET_SUCCESS_MSG, GEN_TITLE)
+	_finalize_generation(GEN_SPIKE_TILESET_SUCCESS_MSG)
 
 func generate_ladder_tileset():
 	tileset_output = TileSet.new()
@@ -127,7 +122,7 @@ func generate_ladder_tileset():
 	
 	tileset_output.resource_name = OUTPUT_LADDER_TILESET_RES_NAME
 	
-	OS.alert(GEN_LADDER_TILESET_SUCCESS_MSG, GEN_TITLE)
+	_finalize_generation(GEN_LADDER_TILESET_SUCCESS_MSG)
 
 func generate_bg_tileset():
 	tileset_output = TileSet.new()
@@ -139,7 +134,7 @@ func generate_bg_tileset():
 	
 	tileset_output.resource_name = OUTPUT_BG_TILESET_RES_NAME
 	
-	OS.alert(GEN_BG_TILESET_SUCCESS_MSG, GEN_TITLE)
+	_finalize_generation(GEN_BG_TILESET_SUCCESS_MSG)
 
 #-------------------------------------------------
 #      Connections
@@ -176,3 +171,16 @@ func set_create_ladder_tileset(val : bool):
 		return
 	
 	generate_ladder_tileset()
+
+func _finalize_generation(msg: String) -> void:
+	OS.alert(msg, GEN_TITLE)
+	property_list_changed_notify()
+
+func _get_property_list() -> Array:
+	return [ {
+		type = TYPE_OBJECT,
+		name = "tileset_output",
+		hint_string = "TileSet",
+		hint = PROPERTY_HINT_RESOURCE_TYPE,
+		usage = PROPERTY_USAGE_EDITOR
+	} ]

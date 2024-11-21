@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstAirAlt.png-d425a4a62b532f83c9088dcb1b03541f.stex"
+path="res://.import/tstAirAlt.png-efea739d265587f48d076472ad939a92.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstAirAlt.png"
-dest_files=[ "res://.import/TstAirAlt.png-d425a4a62b532f83c9088dcb1b03541f.stex" ]
+source_file="res://assets/images/tilesets/tstAirAlt.png"
+dest_files=[ "res://.import/tstAirAlt.png-efea739d265587f48d076472ad939a92.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstCrash3.png-a0d8d0efeeb64680e6e3c6c3e3fa212a.stex"
+path="res://.import/tstCrash3.png-af96a63853fcfbefcf2af5debc022208.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstCrash3.png"
-dest_files=[ "res://.import/TstCrash3.png-a0d8d0efeeb64680e6e3c6c3e3fa212a.stex" ]
+source_file="res://assets/images/tilesets/tstCrash3.png"
+dest_files=[ "res://.import/tstCrash3.png-af96a63853fcfbefcf2af5debc022208.stex" ]
 
 [params]
 

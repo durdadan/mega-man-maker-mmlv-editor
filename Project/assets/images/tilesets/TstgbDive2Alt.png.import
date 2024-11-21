@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstgbDive2Alt.png-0bd1156a70b469706501fe0bf7f485c8.stex"
+path="res://.import/tstGBDive2Alt.png-dccab4f9db12b63b958f24b08dbb64f4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstgbDive2Alt.png"
-dest_files=[ "res://.import/TstgbDive2Alt.png-0bd1156a70b469706501fe0bf7f485c8.stex" ]
+source_file="res://assets/images/tilesets/tstGBDive2Alt.png"
+dest_files=[ "res://.import/tstGBDive2Alt.png-dccab4f9db12b63b958f24b08dbb64f4.stex" ]
 
 [params]
 

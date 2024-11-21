@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstTornadoAlt.png-e82ccff4846625b2d1b95eeca19e13c8.stex"
+path="res://.import/tstTornadoAlt.png-433b9aabf56db5aa60d2b86c98fb6685.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstTornadoAlt.png"
-dest_files=[ "res://.import/TstTornadoAlt.png-e82ccff4846625b2d1b95eeca19e13c8.stex" ]
+source_file="res://assets/images/tilesets/tstTornadoAlt.png"
+dest_files=[ "res://.import/tstTornadoAlt.png-433b9aabf56db5aa60d2b86c98fb6685.stex" ]
 
 [params]
 

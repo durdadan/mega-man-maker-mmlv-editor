@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstWindAlt.png-d5a031619531f3e6aacecff6d8c08441.stex"
+path="res://.import/tstWindAlt.png-3183c6e369ea028439728a8a7d7865d5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstWindAlt.png"
-dest_files=[ "res://.import/TstWindAlt.png-d5a031619531f3e6aacecff6d8c08441.stex" ]
+source_file="res://assets/images/tilesets/tstWindAlt.png"
+dest_files=[ "res://.import/tstWindAlt.png-3183c6e369ea028439728a8a7d7865d5.stex" ]
 
 [params]
 

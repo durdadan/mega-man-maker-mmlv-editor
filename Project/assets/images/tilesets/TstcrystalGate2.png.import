@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstcrystalGate2.png-d639274fd6a9fe576dcc7c83fb466cb2.stex"
+path="res://.import/tstCrystalGate2.png-5383d88711c00f906c75b0b17ed3ef3e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstcrystalGate2.png"
-dest_files=[ "res://.import/TstcrystalGate2.png-d639274fd6a9fe576dcc7c83fb466cb2.stex" ]
+source_file="res://assets/images/tilesets/tstCrystalGate2.png"
+dest_files=[ "res://.import/tstCrystalGate2.png-5383d88711c00f906c75b0b17ed3ef3e.stex" ]
 
 [params]
 

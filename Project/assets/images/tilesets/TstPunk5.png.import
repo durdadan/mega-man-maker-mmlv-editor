@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstPunk5.png-cc7c3580ff91f49273e9c413f7945f63.stex"
+path="res://.import/tstPunk5.png-230c56db386282fd9c7f81cd1d261ab5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstPunk5.png"
-dest_files=[ "res://.import/TstPunk5.png-cc7c3580ff91f49273e9c413f7945f63.stex" ]
+source_file="res://assets/images/tilesets/tstPunk5.png"
+dest_files=[ "res://.import/tstPunk5.png-230c56db386282fd9c7f81cd1d261ab5.stex" ]
 
 [params]
 

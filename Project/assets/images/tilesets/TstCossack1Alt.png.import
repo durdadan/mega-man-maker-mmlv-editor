@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstCossack1Alt.png-b0e6c976949ef6e43cd3b2860ac0a765.stex"
+path="res://.import/tstCossack1Alt.png-7c3afb93f2f57267e12190992534ed76.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstCossack1Alt.png"
-dest_files=[ "res://.import/TstCossack1Alt.png-b0e6c976949ef6e43cd3b2860ac0a765.stex" ]
+source_file="res://assets/images/tilesets/tstCossack1Alt.png"
+dest_files=[ "res://.import/tstCossack1Alt.png-7c3afb93f2f57267e12190992534ed76.stex" ]
 
 [params]
 

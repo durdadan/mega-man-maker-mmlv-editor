@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstgbMetal1Alt.png-a28e9074355d8ca33f4712bffd0bdd1f.stex"
+path="res://.import/tstGBMetal1Alt.png-3e6b128d3b4bbe78027512433250f513.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstgbMetal1Alt.png"
-dest_files=[ "res://.import/TstgbMetal1Alt.png-a28e9074355d8ca33f4712bffd0bdd1f.stex" ]
+source_file="res://assets/images/tilesets/tstGBMetal1Alt.png"
+dest_files=[ "res://.import/tstGBMetal1Alt.png-3e6b128d3b4bbe78027512433250f513.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstMM10Endless17Alt.png-24bd4c2d414e9172e38b583dca497284.stex"
+path="res://.import/tstMM10Endless17Alt.png-38af1b6a86b74f18a087591f106d5559.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstMM10Endless17Alt.png"
-dest_files=[ "res://.import/TstMM10Endless17Alt.png-24bd4c2d414e9172e38b583dca497284.stex" ]
+source_file="res://assets/images/tilesets/tstMM10Endless17Alt.png"
+dest_files=[ "res://.import/tstMM10Endless17Alt.png-38af1b6a86b74f18a087591f106d5559.stex" ]
 
 [params]
 

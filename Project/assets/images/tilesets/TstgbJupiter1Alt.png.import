@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstgbJupiter1Alt.png-a6ceff77dbe120241acc3b12e4e23ad0.stex"
+path="res://.import/tstGBJupiter1Alt.png-92130d79338ce6b6204daf000b144684.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstgbJupiter1Alt.png"
-dest_files=[ "res://.import/TstgbJupiter1Alt.png-a6ceff77dbe120241acc3b12e4e23ad0.stex" ]
+source_file="res://assets/images/tilesets/tstGBJupiter1Alt.png"
+dest_files=[ "res://.import/tstGBJupiter1Alt.png-92130d79338ce6b6204daf000b144684.stex" ]
 
 [params]
 

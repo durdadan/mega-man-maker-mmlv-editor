@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstgbMars2.png-57507ec99c4af075da5d9afa8bd454ff.stex"
+path="res://.import/tstGBMars2.png-26a0d9d3b7ee7e8dfe1679cf4d2f0d3c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstgbMars2.png"
-dest_files=[ "res://.import/TstgbMars2.png-57507ec99c4af075da5d9afa8bd454ff.stex" ]
+source_file="res://assets/images/tilesets/tstGBMars2.png"
+dest_files=[ "res://.import/tstGBMars2.png-26a0d9d3b7ee7e8dfe1679cf4d2f0d3c.stex" ]
 
 [params]
 

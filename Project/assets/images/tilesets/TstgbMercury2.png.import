@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstgbMercury2.png-1c0f038339ae90400e7cb94592d44840.stex"
+path="res://.import/tstGBMercury2.png-a51b689f3391bb94eff7bbd7717c14e3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstgbMercury2.png"
-dest_files=[ "res://.import/TstgbMercury2.png-1c0f038339ae90400e7cb94592d44840.stex" ]
+source_file="res://assets/images/tilesets/tstGBMercury2.png"
+dest_files=[ "res://.import/tstGBMercury2.png-a51b689f3391bb94eff7bbd7717c14e3.stex" ]
 
 [params]
 

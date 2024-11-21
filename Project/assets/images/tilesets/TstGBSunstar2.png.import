@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstGBSunstar2.png-37f15ae920a58c5774b9e6b376298b28.stex"
+path="res://.import/tstGBSunstar2.png-4c6fdcc5ea745a9459a5132340adf470.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstGBSunstar2.png"
-dest_files=[ "res://.import/TstGBSunstar2.png-37f15ae920a58c5774b9e6b376298b28.stex" ]
+source_file="res://assets/images/tilesets/tstGBSunstar2.png"
+dest_files=[ "res://.import/tstGBSunstar2.png-4c6fdcc5ea745a9459a5132340adf470.stex" ]
 
 [params]
 

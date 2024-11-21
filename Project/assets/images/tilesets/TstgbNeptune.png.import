@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstgbNeptune.png-65d5c2e91ee4622d83ea44aa1b6fe908.stex"
+path="res://.import/tstGBNeptune.png-5def8e85261b4f2be518638c7105121d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstgbNeptune.png"
-dest_files=[ "res://.import/TstgbNeptune.png-65d5c2e91ee4622d83ea44aa1b6fe908.stex" ]
+source_file="res://assets/images/tilesets/tstGBNeptune.png"
+dest_files=[ "res://.import/tstGBNeptune.png-5def8e85261b4f2be518638c7105121d.stex" ]
 
 [params]
 

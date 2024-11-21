@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstgbFire1.png-e81d84ffc3cedb54b5e848cce9bc3f04.stex"
+path="res://.import/tstGBFire1.png-e0f47d6baa661d12a6b596d51edad0bc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstgbFire1.png"
-dest_files=[ "res://.import/TstgbFire1.png-e81d84ffc3cedb54b5e848cce9bc3f04.stex" ]
+source_file="res://assets/images/tilesets/tstGBFire1.png"
+dest_files=[ "res://.import/tstGBFire1.png-e0f47d6baa661d12a6b596d51edad0bc.stex" ]
 
 [params]
 

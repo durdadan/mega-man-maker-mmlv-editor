@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Tstdynamo5.png-00efaedbc34908dfd75182bc664fdabe.stex"
+path="res://.import/tstDynamo5.png-516fca91d303f424fe9f834e27caddc3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/Tstdynamo5.png"
-dest_files=[ "res://.import/Tstdynamo5.png-00efaedbc34908dfd75182bc664fdabe.stex" ]
+source_file="res://assets/images/tilesets/tstDynamo5.png"
+dest_files=[ "res://.import/tstDynamo5.png-516fca91d303f424fe9f834e27caddc3.stex" ]
 
 [params]
 

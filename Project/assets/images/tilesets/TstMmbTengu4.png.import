@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstMmbTengu4.png-1b1d1987d4bf88e96ee6826dcfe445aa.stex"
+path="res://.import/tstMmbTengu4.png-b8ee6655a1e52b16be7a6802644c5d0f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstMmbTengu4.png"
-dest_files=[ "res://.import/TstMmbTengu4.png-1b1d1987d4bf88e96ee6826dcfe445aa.stex" ]
+source_file="res://assets/images/tilesets/tstMmbTengu4.png"
+dest_files=[ "res://.import/tstMmbTengu4.png-b8ee6655a1e52b16be7a6802644c5d0f.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstKing2_3Alt.png-4d375eb7ae8eab3820de6f59139873fa.stex"
+path="res://.import/tstKing2_3Alt.png-450d5c3ee0469443799e6cc6c0800b87.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstKing2_3Alt.png"
-dest_files=[ "res://.import/TstKing2_3Alt.png-4d375eb7ae8eab3820de6f59139873fa.stex" ]
+source_file="res://assets/images/tilesets/tstKing2_3Alt.png"
+dest_files=[ "res://.import/tstKing2_3Alt.png-450d5c3ee0469443799e6cc6c0800b87.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstBlizzard4.png-324c7e6c403ddbb0e63ec3e64efd3267.stex"
+path="res://.import/tstBlizzard4.png-fd57d62bd9a1fa24e3818722ed3f86bc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstBlizzard4.png"
-dest_files=[ "res://.import/TstBlizzard4.png-324c7e6c403ddbb0e63ec3e64efd3267.stex" ]
+source_file="res://assets/images/tilesets/tstBlizzard4.png"
+dest_files=[ "res://.import/tstBlizzard4.png-fd57d62bd9a1fa24e3818722ed3f86bc.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstCentaur4Alt.png-21ddf90a2b678f3114a4a2f15f6ca7ec.stex"
+path="res://.import/tstCentaur4Alt.png-abd13502b992c90129dd3ea32937fc1a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstCentaur4Alt.png"
-dest_files=[ "res://.import/TstCentaur4Alt.png-21ddf90a2b678f3114a4a2f15f6ca7ec.stex" ]
+source_file="res://assets/images/tilesets/tstCentaur4Alt.png"
+dest_files=[ "res://.import/tstCentaur4Alt.png-abd13502b992c90129dd3ea32937fc1a.stex" ]
 
 [params]
 

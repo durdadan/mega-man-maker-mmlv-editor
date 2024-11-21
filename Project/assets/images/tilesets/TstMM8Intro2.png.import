@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstMM8Intro2.png-0e53d21cfbae26466e5029a80aca4791.stex"
+path="res://.import/tstMM8Intro2.png-830489ca4e1b16252c81c478157761bd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstMM8Intro2.png"
-dest_files=[ "res://.import/TstMM8Intro2.png-0e53d21cfbae26466e5029a80aca4791.stex" ]
+source_file="res://assets/images/tilesets/tstMM8Intro2.png"
+dest_files=[ "res://.import/tstMM8Intro2.png-830489ca4e1b16252c81c478157761bd.stex" ]
 
 [params]
 

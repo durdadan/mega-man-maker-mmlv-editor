@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstgbPluto4.png-908ba0a152fd7739017be05d80e1589e.stex"
+path="res://.import/tstGBPluto4.png-ead8eba81cb0458d8211c7877da5d8ad.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstgbPluto4.png"
-dest_files=[ "res://.import/TstgbPluto4.png-908ba0a152fd7739017be05d80e1589e.stex" ]
+source_file="res://assets/images/tilesets/tstGBPluto4.png"
+dest_files=[ "res://.import/tstGBPluto4.png-ead8eba81cb0458d8211c7877da5d8ad.stex" ]
 
 [params]
 

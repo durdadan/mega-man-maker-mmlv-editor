@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstgbDarkMoon.png-995c1183a44f0acad53bb7c857b94a3d.stex"
+path="res://.import/tstGBDarkMoon.png-df869f4479c85ffd10c65eb67233f184.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstgbDarkMoon.png"
-dest_files=[ "res://.import/TstgbDarkMoon.png-995c1183a44f0acad53bb7c857b94a3d.stex" ]
+source_file="res://assets/images/tilesets/tstGBDarkMoon.png"
+dest_files=[ "res://.import/tstGBDarkMoon.png-df869f4479c85ffd10c65eb67233f184.stex" ]
 
 [params]
 

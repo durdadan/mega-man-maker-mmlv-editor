@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstgbRing2.png-c07890af8b345545295a20bf937ebb5e.stex"
+path="res://.import/tstGBRing2.png-be7084d70ebdfb09c2dd84d888644de0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstgbRing2.png"
-dest_files=[ "res://.import/TstgbRing2.png-c07890af8b345545295a20bf937ebb5e.stex" ]
+source_file="res://assets/images/tilesets/tstGBRing2.png"
+dest_files=[ "res://.import/tstGBRing2.png-be7084d70ebdfb09c2dd84d888644de0.stex" ]
 
 [params]
 

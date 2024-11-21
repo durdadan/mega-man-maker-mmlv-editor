@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstGBToadAlt.png-4c6f2c39ea413cd06ccc1f049dfbbded.stex"
+path="res://.import/tstGBToadAlt.png-913e43577e8fbb5c455842febd7b63e3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstGBToadAlt.png"
-dest_files=[ "res://.import/TstGBToadAlt.png-4c6f2c39ea413cd06ccc1f049dfbbded.stex" ]
+source_file="res://assets/images/tilesets/tstGBToadAlt.png"
+dest_files=[ "res://.import/tstGBToadAlt.png-913e43577e8fbb5c455842febd7b63e3.stex" ]
 
 [params]
 

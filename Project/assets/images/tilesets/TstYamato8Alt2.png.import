@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstYamato8Alt2.png-de5b0cb11459fb825d3a9d4a24a6e06d.stex"
+path="res://.import/tstYamato8Alt2.png-261f3c1daacb2d1e795caf80513a90ff.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstYamato8Alt2.png"
-dest_files=[ "res://.import/TstYamato8Alt2.png-de5b0cb11459fb825d3a9d4a24a6e06d.stex" ]
+source_file="res://assets/images/tilesets/tstYamato8Alt2.png"
+dest_files=[ "res://.import/tstYamato8Alt2.png-261f3c1daacb2d1e795caf80513a90ff.stex" ]
 
 [params]
 

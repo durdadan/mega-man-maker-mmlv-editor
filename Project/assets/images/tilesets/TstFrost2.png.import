@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstFrost2.png-17dad9b8e40678cd98e17edeac19cd59.stex"
+path="res://.import/tstFrost2.png-fd30c27e52805a1e89da86f4ca36bb4e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstFrost2.png"
-dest_files=[ "res://.import/TstFrost2.png-17dad9b8e40678cd98e17edeac19cd59.stex" ]
+source_file="res://assets/images/tilesets/tstFrost2.png"
+dest_files=[ "res://.import/tstFrost2.png-fd30c27e52805a1e89da86f4ca36bb4e.stex" ]
 
 [params]
 

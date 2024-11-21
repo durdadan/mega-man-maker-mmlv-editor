@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstBlizzardAlt.png-0b42a72cf62b5f3b81a775dcd1bee70f.stex"
+path="res://.import/tstBlizzardAlt.png-6ec8843224ae8d3acc20ac9db0979863.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstBlizzardAlt.png"
-dest_files=[ "res://.import/TstBlizzardAlt.png-0b42a72cf62b5f3b81a775dcd1bee70f.stex" ]
+source_file="res://assets/images/tilesets/tstBlizzardAlt.png"
+dest_files=[ "res://.import/tstBlizzardAlt.png-6ec8843224ae8d3acc20ac9db0979863.stex" ]
 
 [params]
 

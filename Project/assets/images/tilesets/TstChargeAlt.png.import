@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstChargeAlt.png-c90d7786efdd6285ec23fefa96a1c892.stex"
+path="res://.import/tstChargeAlt.png-d24e7bc2855465252b592c4252d17171.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstChargeAlt.png"
-dest_files=[ "res://.import/TstChargeAlt.png-c90d7786efdd6285ec23fefa96a1c892.stex" ]
+source_file="res://assets/images/tilesets/tstChargeAlt.png"
+dest_files=[ "res://.import/tstChargeAlt.png-d24e7bc2855465252b592c4252d17171.stex" ]
 
 [params]
 

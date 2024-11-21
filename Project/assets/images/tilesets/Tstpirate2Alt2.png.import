@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Tstpirate2Alt2.png-4019e03c02d2724db587f43f0626dc22.stex"
+path="res://.import/tstPirate2Alt2.png-369adec4857d8f01e19e8584ad417b8b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/Tstpirate2Alt2.png"
-dest_files=[ "res://.import/Tstpirate2Alt2.png-4019e03c02d2724db587f43f0626dc22.stex" ]
+source_file="res://assets/images/tilesets/tstPirate2Alt2.png"
+dest_files=[ "res://.import/tstPirate2Alt2.png-369adec4857d8f01e19e8584ad417b8b.stex" ]
 
 [params]
 

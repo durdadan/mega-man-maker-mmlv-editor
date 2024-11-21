@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstMM1Wily1Alt.png-29626640933db599103c022da43b164d.stex"
+path="res://.import/tstMM1Wily1Alt.png-8159fa1045670dd254bfa8e2a83aa3aa.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstMM1Wily1Alt.png"
-dest_files=[ "res://.import/TstMM1Wily1Alt.png-29626640933db599103c022da43b164d.stex" ]
+source_file="res://assets/images/tilesets/tstMM1Wily1Alt.png"
+dest_files=[ "res://.import/tstMM1Wily1Alt.png-8159fa1045670dd254bfa8e2a83aa3aa.stex" ]
 
 [params]
 

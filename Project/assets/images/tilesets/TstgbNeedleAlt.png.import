@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstgbNeedleAlt.png-c8a13899c59c9e4897b4a1ebb91917ea.stex"
+path="res://.import/tstGBNeedleAlt.png-1c0fa367175f45e028445bfb9c3e118d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstgbNeedleAlt.png"
-dest_files=[ "res://.import/TstgbNeedleAlt.png-c8a13899c59c9e4897b4a1ebb91917ea.stex" ]
+source_file="res://assets/images/tilesets/tstGBNeedleAlt.png"
+dest_files=[ "res://.import/tstGBNeedleAlt.png-1c0fa367175f45e028445bfb9c3e118d.stex" ]
 
 [params]
 

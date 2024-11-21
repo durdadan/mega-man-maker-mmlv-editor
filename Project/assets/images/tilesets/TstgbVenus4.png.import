@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstgbVenus4.png-152297372cd1984494cc2a143074f582.stex"
+path="res://.import/tstGBVenus4.png-4f443e8e5bacadf39bd1f803a75f2ade.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstgbVenus4.png"
-dest_files=[ "res://.import/TstgbVenus4.png-152297372cd1984494cc2a143074f582.stex" ]
+source_file="res://assets/images/tilesets/tstGBVenus4.png"
+dest_files=[ "res://.import/tstGBVenus4.png-4f443e8e5bacadf39bd1f803a75f2ade.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TstgbSkull.png-51306fa776aa61e6648aa988dccbce2e.stex"
+path="res://.import/tstGBSkull.png-7d5fea30625c54b6356f0b32fd8b2a54.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/TstgbSkull.png"
-dest_files=[ "res://.import/TstgbSkull.png-51306fa776aa61e6648aa988dccbce2e.stex" ]
+source_file="res://assets/images/tilesets/tstGBSkull.png"
+dest_files=[ "res://.import/tstGBSkull.png-7d5fea30625c54b6356f0b32fd8b2a54.stex" ]
 
 [params]
 

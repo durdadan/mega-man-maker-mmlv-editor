@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Tstmagic2.png-a932235baee68cccd97c26b1e057c8a9.stex"
+path="res://.import/tstMagic2.png-e6576efe8dcdced11892bbf02705ba5b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tilesets/Tstmagic2.png"
-dest_files=[ "res://.import/Tstmagic2.png-a932235baee68cccd97c26b1e057c8a9.stex" ]
+source_file="res://assets/images/tilesets/tstMagic2.png"
+dest_files=[ "res://.import/tstMagic2.png-e6576efe8dcdced11892bbf02705ba5b.stex" ]
 
 [params]
 
