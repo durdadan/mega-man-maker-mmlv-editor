@@ -257,6 +257,10 @@ UnsaveChanges="*res://src/singletons/UnsaveChanges.gd"
 ExitHandler="*res://src/singletons/ExitHandler.gd"
 CopyPaste="*res://src/singletons/CopyPaste.tscn"
 
+[debug]
+
+gdscript/warnings/return_value_discarded=false
+
 [display]
 
 window/size/width=800

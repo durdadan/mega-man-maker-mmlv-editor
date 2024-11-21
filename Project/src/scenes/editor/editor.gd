@@ -21,12 +21,6 @@ extends Node
 #      Constants
 #-------------------------------------------------
 
-const TILESET_TILE = preload("res://assets/tilesets/hidden_tiles_1_8_2.tres")
-const TILESET_BG = preload("res://assets/tilesets/all_bg_1_8_0.tres")
-const TILESET_LADDER = preload("res://assets/tilesets/all_ladders_1_8_0.tres")
-const TILESET_SPIKE = preload("res://assets/tilesets/all_spikes_1_8_0.tres")
-const TILESET_ACTIVE_SCREEN = preload("res://assets/tilesets/active_screen_tileset.tres")
-
 #-------------------------------------------------
 #      Properties
 #-------------------------------------------------
