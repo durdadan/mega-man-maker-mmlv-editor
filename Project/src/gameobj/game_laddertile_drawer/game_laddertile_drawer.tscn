@@ -1,7 +1,8 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://assets/tilesets/all_ladders_1_8_0.tres" type="TileSet" id=1]
+[ext_resource path="res://assets/tilesets/ladders_1_9_3_1.tres" type="TileSet" id=1]
 [ext_resource path="res://src/gameobj/game_laddertile_drawer/game_laddertile_drawer.gd" type="Script" id=2]
+
 
 [node name="GameLadderTileDrawer" type="TileMap"]
 tile_set = ExtResource( 1 )
