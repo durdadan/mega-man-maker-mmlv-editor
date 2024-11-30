@@ -21,8 +21,8 @@ class_name GameSpikeData
 #      Constants
 #-------------------------------------------------
 
-const SPIKE_TILE_COUNT = 5
-const SPIKE_DATA = {
+const SPIKE_TILE_COUNT: int = 5
+const SPIKE_DATA: Dictionary = {
 	2 : "sprSpikeCut",
 	7 : "sprSpikeGuts",
 	8 : "sprSpikeMM1Wily1",
@@ -317,10 +317,9 @@ const SPIKE_DATA = {
 	1636: "sprSpikeMM1Wily3PU_Overwrite",
 	1637: "sprSpikeBurst_Overwrite",
 	1638: "sprSpikeBurstAlt_Overwrite",
-	
 }
 
-const SUBTILE_ID_POSITIONS = {
+const SUBTILE_ID_POSITIONS: Dictionary = {
 	0 : Vector2(16, 0),
 	1 : Vector2(16, 32),
 	2 : Vector2(0, 16),
@@ -328,7 +327,7 @@ const SUBTILE_ID_POSITIONS = {
 	4 : Vector2(0, 0)
 }
 
-const SPIKE_GAME_IDS = {
+const SPIKE_GAME_IDS: Dictionary = {
 	2 : 1,
 	7 :1,
 	8 :1,
@@ -623,7 +622,7 @@ const SPIKE_GAME_IDS = {
 	1636: 1,
 	1637: 7,
 	1638: 7,
-	}
+}
 
 #-------------------------------------------------
 #      Properties

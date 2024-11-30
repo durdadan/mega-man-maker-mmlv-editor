@@ -24,6 +24,7 @@ const OUTPUT_TILESET_RES_NAME = "MMM Tileset"
 const OUTPUT_SPIKE_TILESET_RES_NAME = "MMM Spike Tileset"
 const OUTPUT_LADDER_TILESET_RES_NAME = "MMM Ladder Tileset"
 const OUTPUT_BG_TILESET_RES_NAME = "MMM Bg Tileset"
+const TILE_SIZE: Vector2 = 16.0 * Vector2.ONE
 
 const GEN_TITLE = "Tileset Generator"
 const GEN_TILESET_SUCCESS_MSG = str(
@@ -74,24 +75,21 @@ var tileset_output: TileSet
 #      Public Methods
 #-------------------------------------------------
 
-func generate_tileset():
+func generate_tileset() -> void:
 	tileset_output = TileSet.new()
-	
 	for i in GameTileSetData.TILESET_DATA.keys():
 		#generate each subtiles
 		var idx_j : int = 0
 		for j in GameTileSetData.SUBTILE_POSITION_IDS.keys():
-			
-			tileset_output.create_tile(i * GameTileSetData.SUBTILE_COUNT + idx_j)
-			tileset_output.tile_set_texture(i * GameTileSetData.SUBTILE_COUNT + idx_j, load("res://assets/images/tilesets/" + GameTileSetData.TILESET_DATA.get(i) + ".png"))
-			tileset_output.tile_set_region(i * GameTileSetData.SUBTILE_COUNT + idx_j, Rect2(j + Vector2(-1, -1) + GameTileSetData.SUBTILE_TEXTURE_OFFSETS.get(i), Vector2(16, 16)))
-			tileset_output.tile_set_name(i * GameTileSetData.SUBTILE_COUNT + idx_j, GameTileSetData.TILESET_DATA.get(i) + "_" + str(idx_j))
-			
-			idx_j +=1
-		
-	
+			var subtile_name: String = GameTileSetData.TILESET_DATA.get(i)
+			var tile_id: int = i * GameTileSetData.SUBTILE_COUNT + idx_j
+			tileset_output.create_tile(tile_id)
+			tileset_output.tile_set_texture(tile_id, load("res://assets/images/tilesets/" + subtile_name + ".png"))
+			tileset_output.tile_set_region(tile_id, Rect2(j - Vector2.ONE + \
+				GameTileSetData.SUBTILE_TEXTURE_OFFSETS.get(i, Vector2.ZERO), TILE_SIZE))
+			tileset_output.tile_set_name(tile_id, subtile_name + "_" + str(idx_j))
+			idx_j += 1
 	tileset_output.resource_name = OUTPUT_TILESET_RES_NAME
-	
 	_finalize_generation(GEN_TILESET_SUCCESS_MSG)
 
 func generate_spike_tileset():

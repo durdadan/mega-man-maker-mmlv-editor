@@ -21,7 +21,7 @@ class_name GameLadderData
 #      Constants
 #-------------------------------------------------
 
-const LADDER_DATA = {
+const LADDER_DATA: Dictionary = {
 	6 : "sprLadderCut",
 	10 : "sprLadderElec",
 	11 : "sprLadderBomb",
@@ -65,7 +65,6 @@ const LADDER_DATA = {
 	126 : "sprLadderMrX1",
 	127 : "sprLadderMrX4",
 	128 : "sprLadderMM6Wily1",
-	#365 : "LadMM2WoodAlt"
 	365 : "sprLadderHeat",
 	366 : "sprLadderNeedle2",
 	367 : "sprLadderShadow",
@@ -88,7 +87,6 @@ const LADDER_DATA = {
 	384 : "sprLadderKnight2",
 	385 : "sprLadderYamato",
 	386 : "sprLadderMrX3",
-#	387 : "sprLadderMM6Wily1_2",
 	388 : "sprLadderMM6Wily3",
 	389 : "sprLadderSpring",
 	390 : "sprLadderFreeze",
@@ -266,7 +264,7 @@ const LADDER_DATA = {
 	1433: "sprLadderMM1PUWily2PUAlt2",
 }
 
-const LADDER_GAME_IDS = {
+const LADDER_GAME_IDS: Dictionary = {
 	6 : 1,
 	10 : 1,
 	11 : 1,
@@ -310,7 +308,6 @@ const LADDER_GAME_IDS = {
 	126 : 6,
 	127 : 6,
 	128 : 6,
-	#365 : 2,
 	365 : 2,
 	366 : 3,
 	367 : 3,
@@ -333,7 +330,6 @@ const LADDER_GAME_IDS = {
 	384 : 6,
 	385 : 6,
 	386 : 6,
-#	387 : 6,
 	388 : 6,
 	389 : 7,
 	390 : 7,
