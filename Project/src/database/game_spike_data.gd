@@ -148,7 +148,7 @@ const SPIKE_DATA: Dictionary = {
 	362 : "sprSpikeGrenade",
 	363 : "sprSpikeMM9Wily3",
 	426 : "sprSpikeBlizzard2",
-	427 : "sprSpikeMM6Wily1",
+	427 : "sprSpikeMM6Wily1Alt",
 	474 : "sprSpikeMM7Wily4",
 	595 : "sprSpikeMM3Wily3_2",
 	596 : "sprSpikeTomahawkAlt2",
