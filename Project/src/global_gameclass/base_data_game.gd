@@ -1,9 +1,9 @@
-# ViewportEventKeyScroller
+# DataGameBg
 # Written by: First
 
-extends Control
+extends Reference
 
-#class_name optional
+class_name BaseDataGame
 
 """
 	Enter desc here.
@@ -17,27 +17,24 @@ extends Control
 #      Signals
 #-------------------------------------------------
 
-signal moving(velocity)
-
 #-------------------------------------------------
 #      Constants
 #-------------------------------------------------
+
+const MISSING_DATA: float = -999.0
+const MISSING_Z_DATA: int = 0
 
 #-------------------------------------------------
 #      Properties
 #-------------------------------------------------
 
-export (float) var default_scroll_speed = 1800.0
-
-var speed_modifier : float
-var speed_process : float
+var o: float = MISSING_DATA
+var z: int = MISSING_Z_DATA
+var should_retain_o: bool setget ,get_should_retain_o
 
 #-------------------------------------------------
 #      Notifications
 #-------------------------------------------------
-
-func _process(_delta: float) -> void:
-	_input_process()
 
 #-------------------------------------------------
 #      Virtual Methods
@@ -51,6 +48,10 @@ func _process(_delta: float) -> void:
 #      Public Methods
 #-------------------------------------------------
 
+func onLayer(_z: int = MISSING_Z_DATA):
+	z = _z
+	return self
+
 #-------------------------------------------------
 #      Connections
 #-------------------------------------------------
@@ -59,25 +60,9 @@ func _process(_delta: float) -> void:
 #      Private Methods
 #-------------------------------------------------
 
-func _input_process():
-	if Input.is_key_pressed(KEY_CONTROL):
-		return
-	
-	speed_modifier = (1 + (int(Input.is_key_pressed(KEY_SHIFT))) * 2)
-	speed_process = default_scroll_speed * get_process_delta_time()
-	#if EditorConfig.reduced_motion:
-		
-	if !EditorConfig.locked_keyboard :
-		if Input.is_action_pressed("ui_left") or Input.is_key_pressed(KEY_A):
-			emit_signal("moving", Vector2.LEFT * speed_process * speed_modifier)
-		if Input.is_action_pressed("ui_right") or Input.is_key_pressed(KEY_D):
-			emit_signal("moving", Vector2.RIGHT * speed_process * speed_modifier)
-		if Input.is_action_pressed("ui_up") or Input.is_key_pressed(KEY_W):
-			emit_signal("moving", Vector2.UP * speed_process * speed_modifier)
-		if Input.is_action_pressed("ui_down") or Input.is_key_pressed(KEY_S):
-			emit_signal("moving", Vector2.DOWN * speed_process * speed_modifier)
-
 #-------------------------------------------------
 #      Setters & Getters
 #-------------------------------------------------
 
+func get_should_retain_o() -> bool:
+	return o != MISSING_DATA

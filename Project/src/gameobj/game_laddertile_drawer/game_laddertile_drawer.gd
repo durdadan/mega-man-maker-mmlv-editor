@@ -22,6 +22,10 @@ extends TileMap
 #      Constants
 #-------------------------------------------------
 
+const TILEMAP_LAYER_BY_VERSION: Dictionary = {
+	"1.9": 30
+}
+
 #-------------------------------------------------
 #      Properties
 #-------------------------------------------------
@@ -42,7 +46,9 @@ extends TileMap
 #      Public Methods
 #-------------------------------------------------
 
-func draw_from_game_data_ladders(_ladder_tiles_data : Array = []):
+func draw_from_game_data_ladders(_ladder_tiles_data : Array = [],
+		level_version: String = DataGameLevel.DEFAULT_LEVEL_VERSION):
+	z_index = VersionComparator.get_z_index_for_version(TILEMAP_LAYER_BY_VERSION, level_version)
 	for i in _ladder_tiles_data:
 		i = i as DataGameLadder
 		

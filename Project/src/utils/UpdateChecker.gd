@@ -100,7 +100,8 @@ func apply_auto_check_cooldown():
 #      Connections
 #-------------------------------------------------
 
-func _on_HTTPRequest_request_completed(result: int, response_code: int, headers: PoolStringArray, body: PoolByteArray) -> void:
+func _on_HTTPRequest_request_completed(_result: int, _response_code: int,
+		_headers: PoolStringArray, _body: PoolByteArray) -> void:
 	pass
 	#release_content.request_response = parse_json(body.get_string_from_utf8())
 

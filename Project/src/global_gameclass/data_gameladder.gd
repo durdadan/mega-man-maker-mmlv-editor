@@ -1,7 +1,7 @@
 # Script_Name_Here
 # Written by: 
 
-extends Reference
+extends BaseDataGame
 
 class_name DataGameLadder
 

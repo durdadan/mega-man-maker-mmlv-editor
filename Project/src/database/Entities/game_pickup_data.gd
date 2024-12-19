@@ -21,26 +21,23 @@ class_name GamePickupData
 #      Constants
 #-------------------------------------------------
 
-const PLAYABLE_PICKUP_COUNT = 14
-
-const PICKUP_DATA = {
-	-999: "Large Health",
+const PICKUP_DATA: Dictionary = {
 	0: "Large Health",
 	1: "Small Health",
-	2: "Large Weapon Ammo",
-	3: "Small Weapon Ammo",
-	4: "1-up",
+	2: "Large Weapon Energy",
+	3: "Small Weapon Energy",
+	4: "Life",
 	5: "E-Tank",
 	6: "M-Tank",
 	7: "Weapon Capsule",
-	8: "Player Capsule",
+	8: "Character Capsule",
 	9: "Health Spawner",
-	10: "Ammo Spawner",
+	10: "Weapon Energy Spawner",
 	11: "Weapon Remover",
 	12: "Yashichi",
 	13: "?-Tank",
-	14: "Anti-Yashichi",
-	15: "Drop Suppressor"
+	15: "Drop Suppressor",
+	14: "Anti Yashichi",
 }
 
 #-------------------------------------------------

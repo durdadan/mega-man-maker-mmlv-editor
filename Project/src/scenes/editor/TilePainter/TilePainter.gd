@@ -86,7 +86,7 @@ var tilemaps_current_tile_id : TilemapsCurrentTileID = TilemapsCurrentTileID.new
 #      Notifications
 #-------------------------------------------------
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if follow_mouse_pointer:
 		global_position = get_global_mouse_position()
 		

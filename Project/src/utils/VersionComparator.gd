@@ -61,3 +61,13 @@ static func compare(v1 : String, v2 : String) -> int:
 			return OLDER
 	
 	return UP_TO_DATE
+
+static func get_z_index_for_version(z_indexes_data: Dictionary, level_version: String) -> int:
+	var versions: Array = z_indexes_data.keys()
+	var size: int = versions.size()
+	versions.sort()
+	for i in size:
+		if compare(level_version, versions[i]) != OLDER and \
+				(i >= size - 1 or compare(level_version, versions[i + 1]) == OLDER):
+			return z_indexes_data[ versions[i] ]
+	return 0

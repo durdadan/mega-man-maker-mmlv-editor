@@ -62,7 +62,7 @@ func set_spike_id(tileset_id : int):
 #      Connections
 #-------------------------------------------------
 
-func _on_btn_pressed_id(id : int, texture : Texture):
+func _on_btn_pressed_id(id : int, _texture : Texture):
 	emit_signal("subtile_spike_selected", id)
 	print_debug("subtile: " + str(id))
 	hide()

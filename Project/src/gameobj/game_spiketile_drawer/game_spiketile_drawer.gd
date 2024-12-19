@@ -42,12 +42,12 @@ class_name GameSpikeTileDrawer
 #      Public Methods
 #-------------------------------------------------
 
-func draw_from_game_data_spikes(tiles_data : Array = []):
+func draw_from_game_data_spikes(tiles_data : Array = [],
+		_level_version: String = DataGameLevel.DEFAULT_LEVEL_VERSION):
 	for i in tiles_data:
 		i = i as DataGameSpike
-		
-		set_cellv(world_to_map(i.pos), (i.spike_id * GameSpikeData.SPIKE_TILE_COUNT) + i.direction)
-
+		set_cellv(world_to_map(i.pos), (i.spike_id * GameSpikeData.SPIKE_TILE_COUNT) + i.direction,
+			false, false, false, float(!i.should_retain_o) * Vector2.ONE)
 
 #-------------------------------------------------
 #      Connections

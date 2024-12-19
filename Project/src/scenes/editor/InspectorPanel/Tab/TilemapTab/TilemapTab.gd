@@ -149,7 +149,7 @@ func get_texture(tile_id : int) -> StreamTexture:
 #      Connections
 #-------------------------------------------------
 
-func _on_tile_btn_pressed_id(tile_id : int, tile_texture : Texture):
+func _on_tile_btn_pressed_id(tile_id : int, _tile_texture : Texture):
 	select_tile(tile_id) 
 
 func _on_tile_btn_mouse_entered_btn(texture : Texture, tileset_name : String, tile_id : int):
@@ -160,7 +160,7 @@ func _on_tile_btn_mouse_entered_btn(texture : Texture, tileset_name : String, ti
 	if texture is AtlasTexture:
 		preview_texture_rect.texture = texture.atlas
 
-func _on_tile_btn_mouse_exited_btn(texture):
+func _on_tile_btn_mouse_exited_btn(_texture):
 	preview_tex_anim.play("Hide")
 	preview_tex_name_panel.hide() # this needs to be here or there is a phantom area you cannot click. 
 
@@ -224,7 +224,7 @@ func _create_tile_button(file_name : String, game_id : int, tile_id : int):
 	tileset_btn_map.map_button(tex_btn, game_id)
 
 func _create_grid_containters():
-	var game_ids : Dictionary
+	var game_ids : Dictionary = {}
 	var sorted_game_ids : Array
 	
 	#Get all game ids and sort them

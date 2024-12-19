@@ -118,7 +118,7 @@ func _ready() -> void:
 #      Connections
 #-------------------------------------------------
 
-func _on_spike_btn_pressed_id(tile_id : int, tile_texture : Texture):
+func _on_spike_btn_pressed_id(tile_id : int, _tile_texture : Texture):
 	select_spike(tile_id) 
 
 func _on_SearchLineEdit_text_changed(new_text: String) -> void:
@@ -166,7 +166,7 @@ func _create_spike_button(file_name : String, game_id : int, spike_id : int):
 	spike_btn_map.map_button(tex_btn, game_id)
 
 func _create_grid_containters():
-	var game_ids : Dictionary
+	var game_ids : Dictionary = {}
 	var sorted_game_ids : Array
 	
 	#Get all game ids and sort them

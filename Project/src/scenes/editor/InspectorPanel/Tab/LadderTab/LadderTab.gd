@@ -114,7 +114,7 @@ func _ready() -> void:
 #      Connections
 #-------------------------------------------------
 
-func _on_ladder_btn_pressed_id(ladder_id : int, ladder_texture : Texture):
+func _on_ladder_btn_pressed_id(ladder_id : int, _ladder_texture : Texture):
 	emit_signal("ladder_selected", ladder_id)
 
 func _on_SearchLineEdit_text_changed(new_text: String) -> void:
@@ -161,7 +161,7 @@ func _create_ladder_button(file_name : String, game_id : int, ladder_id : int):
 	ladder_btn_map.map_button(tex_btn, game_id)
 
 func _create_grid_containters():
-	var game_ids : Dictionary
+	var game_ids : Dictionary = {}
 	var sorted_game_ids : Array
 	
 	#Get all game ids and sort them

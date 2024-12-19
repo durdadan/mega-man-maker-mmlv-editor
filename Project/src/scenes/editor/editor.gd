@@ -200,7 +200,7 @@ func _on_FileAccessCtrl_saved_file(dir, path) -> void:
 func _on_Level_cleared_level() -> void:
 	new_level()
 
-func _on_FileDropNotifier_files_dropped(files : PoolStringArray, screen : int) -> void:
+func _on_FileDropNotifier_files_dropped(files : PoolStringArray, _screen : int) -> void:
 	#Check if there are unsaved changes
 	if UnsaveChanges.is_activated():
 		exit_unsaved_dialog.pending_request = exit_unsaved_dialog.PendingRequest.OPEN_FROM_PATH

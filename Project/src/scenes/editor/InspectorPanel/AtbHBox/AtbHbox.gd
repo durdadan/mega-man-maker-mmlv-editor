@@ -80,7 +80,7 @@ func show_property():
 	code_label.visible = false
 
 func set_value(val):
-	if float(val) == DataGameObject.MISSING_DATA:
+	if float(val) == BaseDataGame.MISSING_DATA:
 		return
 	
 	string_value = val
@@ -115,7 +115,7 @@ func _on_LineEdit_text_changed(new_text: String) -> void:
 	UnsaveChanges.set_activated()
 	
 	if missing_value_enabled and new_text == "":
-		lineedit.text = str(DataGameObject.MISSING_DATA)
+		lineedit.text = str(BaseDataGame.MISSING_DATA)
 		emit_signal("value_entered")
 		lineedit.text = new_text
 		return
@@ -125,7 +125,7 @@ func _on_LineEdit_text_changed(new_text: String) -> void:
 	
 	_update_dropdown_input()
 
-func _on_LineEdit_text_entered(new_text: String) -> void:
+func _on_LineEdit_text_entered(_new_text: String) -> void:
 	lineedit_release_focus()
 
 func _on_LineEdit_focus_entered() -> void:

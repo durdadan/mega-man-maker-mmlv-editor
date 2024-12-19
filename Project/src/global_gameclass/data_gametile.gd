@@ -1,7 +1,7 @@
 # DataGameBg
 # Written by: First
 
-extends Reference
+extends BaseDataGame
 
 class_name DataGameTile
 

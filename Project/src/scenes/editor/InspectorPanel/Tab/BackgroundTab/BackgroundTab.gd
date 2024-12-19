@@ -114,7 +114,7 @@ func _ready() -> void:
 #      Connections
 #-------------------------------------------------
 
-func _on_bg_btn_pressed_id(bg_id : int, bg_texture : Texture):
+func _on_bg_btn_pressed_id(bg_id : int, _bg_texture : Texture):
 	emit_signal("bg_selected", bg_id)
 
 func _on_SearchLineEdit_text_changed(new_text: String) -> void:
@@ -161,7 +161,7 @@ func _create_bg_button(file_name : String, game_id : int, bg_id : int):
 	bg_btn_map.map_button(tex_btn, game_id)
 
 func _create_grid_containters():
-	var game_ids : Dictionary
+	var game_ids : Dictionary = {}
 	var sorted_game_ids : Array
 	
 	#Get all game ids and sort them

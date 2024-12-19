@@ -165,7 +165,7 @@ func _ready() -> void:
 #      Public Methods
 #-------------------------------------------------
 
-func update_recent_files(file_paths : PoolStringArray, max_item : int = 7):
+func update_recent_files(file_paths : PoolStringArray, _max_item : int = 7):
 	file_recent_popup_menu.clear()
 	
 	for f_path in file_paths:
