@@ -78,6 +78,8 @@ class TempBossCodeData:
 #      Constants
 #-------------------------------------------------
 
+const GAME_ID_LABEL_PREFIX = "Mega Man %d"
+
 enum BlockType {
 	OBJECT = 0,
 	TILE = 1,
@@ -485,6 +487,36 @@ func _build_from_code_data(code_data):
 		
 		_data_bosses.append(data_boss)
 
+static func getGameName(id: int) -> String:
+	match id:
+		99:
+			return "Mega Man & Bass"
+		100:
+			return "Mega Man Soccer"
+		101:
+			return "Mega Man GB I"
+		102:
+			return "Mega Man GB II"
+		103:
+			return "Mega Man GB III"
+		104:
+			return "Mega Man GB IV"
+		105:
+			return "Mega Man GB V"
+		106:
+			return "Power Fighters"
+		107:
+			return "Power Fighters 2"
+		108:
+			return "Battle & Chase"
+		109:
+			return "Wily Wars"
+		120:
+			return "Misc"
+		199:
+			return "Old Tiles"
+		_:
+			return GAME_ID_LABEL_PREFIX % id
 
 #-------------------------------------------------
 #      Connections
