@@ -53,7 +53,7 @@ signal update_available
 #      Constants
 #-------------------------------------------------
 
-const GITHUB_API = "https://api.github.com/repos/godot-mega-man/mega-man-maker-mmlv-editor/"
+const GITHUB_API = "https://api.github.com/repos/durdadan/mega-man-maker-mmlv-editor/"
 const LATEST_RELEASE = "releases/latest"
 
 const AUTO_CHECK_COOLDOWN_FILE = "user://AutoCheckUpdateCooldown.dat"
@@ -75,8 +75,6 @@ var notify_on_complete : bool
 func request(notify : bool = true):
 	notify_on_complete = notify
 	http_request.request(GITHUB_API + LATEST_RELEASE)
-	yield(http_request, "request_completed")
-	_check()
 
 func is_auto_check_on_cooldown() -> bool:
 	var f = File.new()
@@ -100,10 +98,11 @@ func apply_auto_check_cooldown():
 #      Connections
 #-------------------------------------------------
 
-func _on_HTTPRequest_request_completed(_result: int, _response_code: int,
-		_headers: PoolStringArray, _body: PoolByteArray) -> void:
-	pass
-	#release_content.request_response = parse_json(body.get_string_from_utf8())
+func _on_HTTPRequest_request_completed(result: int, _response_code: int,
+		_headers: PoolStringArray, body: PoolByteArray) -> void:
+	if result == OK:
+		release_content.request_response = parse_json(body.get_string_from_utf8())
+		_check()
 
 #-------------------------------------------------
 #      Private Methods

@@ -436,6 +436,8 @@ func _check_for_update(notify : bool = true):
 		return
 	if update_checker.is_auto_check_on_cooldown():
 		return
+	if OS.is_debug_build():
+		return
 	
 	update_checker.request(notify)
 

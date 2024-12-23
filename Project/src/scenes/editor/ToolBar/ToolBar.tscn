@@ -209,8 +209,8 @@ margin_right = 164.0
 margin_bottom = 32.0
 rect_min_size = Vector2( 32, 32 )
 hint_tooltip = "Active Screen Edit Tool:
-* Left Button: Place tile.
-* Right Button: Remove tile."
+* Left Button: Disable screen.
+* Right Button: Enable screen."
 focus_mode = 0
 toggle_mode = true
 action_mode = 0
@@ -323,6 +323,7 @@ __meta__ = {
 "_edit_use_anchors_": false,
 "_editor_description_": ""
 }
+
 [connection signal="pressed" from="HBoxContainer/ObjVBox/AddBtn" to="." method="_on_AddBtn_pressed"]
 [connection signal="pressed" from="HBoxContainer/EditModeVBox/HBoxContainer/ButtonsToggler" to="." method="_on_ButtonsToggler_pressed"]
 [connection signal="pressed" from="HBoxContainer/EditModeVBox/HBoxContainer/ObjectBtn" to="." method="_on_ObjectBtn_pressed"]
