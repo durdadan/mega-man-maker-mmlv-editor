@@ -80,7 +80,7 @@ func _on_SpikeBtn_pressed() -> void:
 	emit_signal("pressed")
 	
 func _on_LockBtn_pressed() -> void:
-	EditorConfig.locked_keyboard = !EditorConfig.locked_keyboard
+	EditorConfig.locked_keyboard = lock_btn.pressed
 
 func _on_ButtonsToggler_pressed() -> void:
 	SelectedObjects.remove_all()

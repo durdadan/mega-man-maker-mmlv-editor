@@ -46,12 +46,14 @@ onready var editor_config_dialog = $CanvasLayer/Control/Popups/EditorConfigPopup
 onready var hint_list_popup_dialog = $CanvasLayer/Control/Popups/HelpListPopupDialog
 onready var up_to_date_popup_dialog = $CanvasLayer/Control/Popups/UpToDatePopupDialog
 onready var update_available_popup_dialog = $CanvasLayer/Control/Popups/UpdateAvailablePopupDialog
+onready var toolbar_lock_btn: BaseButton = $CanvasLayer/Control/ToolBar.lock_btn
 
 #-------------------------------------------------
 #      Notifications
 #-------------------------------------------------
 
 func _ready() -> void:
+	_observe_popup_events()
 	_connect_ExitHandler()
 	_update_window_title_by_level_path("")
 	inspector_panel.load_level_config()
@@ -440,6 +442,17 @@ func _check_for_update(notify : bool = true):
 		return
 	
 	update_checker.request(notify)
+
+func _observe_popup_events() -> void:
+	var _popups: Array = popups.get_children() + \
+		[ file_access_ctrl.open_file_dialog, file_access_ctrl.save_file_dialog ]
+	for popup in _popups:
+		popup = popup as Popup
+		popup.connect("about_to_show", self, "_set_lock_view_scroll", [ true ])
+		popup.connect("popup_hide", self, "_set_lock_view_scroll", [ false ])
+
+func _set_lock_view_scroll(result: bool) -> void:
+	EditorConfig.locked_keyboard = result or toolbar_lock_btn.pressed
 
 #-------------------------------------------------
 #      Setters & Getters
