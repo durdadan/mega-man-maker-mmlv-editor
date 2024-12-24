@@ -32,6 +32,7 @@ onready var object_deleter = $ObjectDeleter
 onready var object_adder = $ObjectAdder
 onready var tile_painter = $TilePainter
 
+onready var control: Control = $CanvasLayer/Control
 onready var menu_bar = $CanvasLayer/Control/MenuPanel
 onready var file_access_ctrl = $CanvasLayer/Control/FileAccessCtrl
 onready var inspector_panel = $CanvasLayer/Control/InspectorPanel
@@ -70,6 +71,10 @@ func _ready() -> void:
 #-------------------------------------------------
 #      Public Methods
 #-------------------------------------------------
+
+func can_handle_scroll() -> bool:
+	return !EditorConfig.locked_keyboard and not (
+		control.get_focus_owner() is LineEdit or control.get_focus_owner() is PopupMenu)
 
 func scroll_to_player_pos():
 	var pos = level.get_player_position()

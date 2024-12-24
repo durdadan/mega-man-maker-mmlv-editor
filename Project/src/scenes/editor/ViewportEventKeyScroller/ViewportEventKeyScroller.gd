@@ -67,7 +67,7 @@ func _input_process():
 	speed_process = default_scroll_speed * get_process_delta_time()
 	#if EditorConfig.reduced_motion:
 		
-	if !EditorConfig.locked_keyboard :
+	if owner.can_handle_scroll() :
 		if Input.is_action_pressed("ui_left") or Input.is_key_pressed(KEY_A):
 			emit_signal("moving", Vector2.LEFT * speed_process * speed_modifier)
 		if Input.is_action_pressed("ui_right") or Input.is_key_pressed(KEY_D):
