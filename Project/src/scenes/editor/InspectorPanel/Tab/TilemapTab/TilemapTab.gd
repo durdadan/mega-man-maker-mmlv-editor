@@ -235,7 +235,6 @@ func _create_grid_containters():
 	
 	sorted_game_ids = game_ids.keys()
 	sorted_game_ids.sort()
-	prints(game_ids, sorted_game_ids)
 	
 	for id in sorted_game_ids:
 		var grid_c = GridContainer.new()
