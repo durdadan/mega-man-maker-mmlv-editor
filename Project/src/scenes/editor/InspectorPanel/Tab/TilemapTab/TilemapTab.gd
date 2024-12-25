@@ -197,6 +197,8 @@ func _generate_ui():
 	_add_margin_bottom_box()
 
 func _create_tile_button(file_name : String, game_id : int, tile_id : int):
+	if game_id == GameDataBuilder.UNUSED_ASSETS:
+		return
 	var grid_c = scrl_vbox.get_node(GRID_C_NAME_PREFIX + str(game_id))
 	var tex_btn := TileTextureButton.new()
 	var atlas_tex = get_atlas_from_tileset_texture(
@@ -229,9 +231,11 @@ func _create_grid_containters():
 	#Get all game ids and sort them
 	for i in GameTileSetData.TILE_GAME_IDS.values():
 		game_ids[i] = ""
+	game_ids.erase(GameDataBuilder.UNUSED_ASSETS)
 	
 	sorted_game_ids = game_ids.keys()
 	sorted_game_ids.sort()
+	prints(game_ids, sorted_game_ids)
 	
 	for id in sorted_game_ids:
 		var grid_c = GridContainer.new()
