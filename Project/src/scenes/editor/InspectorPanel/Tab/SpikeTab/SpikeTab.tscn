@@ -107,6 +107,10 @@ margin_right = 0.793701
 
 [node name="SubtileSpikeSelectPopup" parent="." index="1" instance=ExtResource( 6 )]
 visible = false
+margin_left = 308.0
+margin_top = 83.5
+margin_right = 520.0
+margin_bottom = 311.5
 
 [node name="SubtileSpikeButton" type="Button" parent="." index="2"]
 anchor_left = 1.0
