@@ -247,7 +247,7 @@ config/description="Edit MMLV files for mega man maker https://megamanmaker.com/
 Always make a backup of your level files. "
 run/main_scene="res://src/scenes/editor_splash/EditorSplash.tscn"
 boot_splash/image="res://assets/images/splash/SplashScreen.png"
-boot_splash/bg_color=Color( 0.921569, 0.921569, 0.921569, 1 )
+boot_splash/bg_color=Color( 0.145098, 0.145098, 0.164706, 1 )
 config/icon="res://icon.png"
 config/windows_native_icon="res://icon.ico"
 config/auto_accept_quit=false
