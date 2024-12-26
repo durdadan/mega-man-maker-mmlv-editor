@@ -240,7 +240,6 @@ const LADDER_DATA: Dictionary = {
 	1411: "sprLadderMM9Wily2Alt2",
 	1412: "sprLadderMM9Wily2Alt3",
 	1413: "sprLadderElec1PUAlt",
-	1414: "sprLadderElec1PUAlt2",
 	1415: "sprLadderBlastAlt",
 	1416: "sprLadderAcidAlt",
 	1418: "sprLadderBlockAlt",
@@ -254,11 +253,7 @@ const LADDER_DATA: Dictionary = {
 	1426: "sprLadderSolarAlt2",
 	1427: "sprLadderOilPUAlt",
 	1428: "sprLadderMM1PUWily1PUAlt",
-	1429: "sprLadderMM1PUWily1PUAlt2",
-	1430: "sprLadderMM1PUWily1PUAlt3",
-	1431: "sprLadderMM1PUWily1PUAlt4",
 	1432: "sprLadderMM1PUWily2PUAlt",
-	1433: "sprLadderMM1PUWily2PUAlt2",
 }
 
 const LADDER_GAME_IDS: Dictionary = {
@@ -480,7 +475,6 @@ const LADDER_GAME_IDS: Dictionary = {
 	1411: 9,
 	1412: 9,
 	1413: 1,
-	1414: 1,
 	1415: 11,
 	1416: 11,
 	1418: 11,
@@ -494,11 +488,7 @@ const LADDER_GAME_IDS: Dictionary = {
 	1426: 10,
 	1427: 1,
 	1428: 1,
-	1429: 1,
-	1430: 1,
-	1431: 1,
 	1432: 1,
-	1433: 1,
 }
 
 #-------------------------------------------------
