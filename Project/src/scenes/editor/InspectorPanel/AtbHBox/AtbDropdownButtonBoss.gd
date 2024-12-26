@@ -87,7 +87,7 @@ func _create_portrait_buttons():
 		if id == GameBossPortraitData.UNKNOWN_ID:
 			continue
 		
-		var boss_name = GameBossPortraitData.DATA.get(id)["name"]
+		var _boss_name = GameBossPortraitData.DATA.get(id)["name"]
 		var boss_texture = GameBossPortraitData.DATA.get(id)["texture"]
 		var button = TextureButtonCallback.new()
 		

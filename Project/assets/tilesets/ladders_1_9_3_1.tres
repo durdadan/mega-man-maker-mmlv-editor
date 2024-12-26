@@ -1,249 +1,246 @@
-[gd_resource type="TileSet" load_steps=240 format=2]
+[gd_resource type="TileSet" load_steps=237 format=2]
 
-[ext_resource path="res://assets/images/ladders/sprLadderCrash.png" type="Texture" id=1]
-[ext_resource path="res://assets/images/ladders/sprLadderMM3Wily2.png" type="Texture" id=2]
-[ext_resource path="res://assets/images/ladders/sprLadderCut.png" type="Texture" id=3]
-[ext_resource path="res://assets/images/ladders/sprLadderTomahawk.png" type="Texture" id=4]
-[ext_resource path="res://assets/images/ladders/sprLadderMM4Wily3.png" type="Texture" id=5]
-[ext_resource path="res://assets/images/ladders/sprLadderCentaur.png" type="Texture" id=6]
-[ext_resource path="res://assets/images/ladders/sprLadderBomb.png" type="Texture" id=7]
-[ext_resource path="res://assets/images/ladders/sprLadderFire.png" type="Texture" id=8]
-[ext_resource path="res://assets/images/ladders/sprLadderMM3Wily1.png" type="Texture" id=9]
-[ext_resource path="res://assets/images/ladders/sprLadderCentaur2.png" type="Texture" id=10]
-[ext_resource path="res://assets/images/ladders/sprLadderMM4Wily2.png" type="Texture" id=11]
-[ext_resource path="res://assets/images/ladders/sprLadderMM3Wily4.png" type="Texture" id=12]
-[ext_resource path="res://assets/images/ladders/sprLadderMM2Wily1.png" type="Texture" id=13]
-[ext_resource path="res://assets/images/ladders/sprLadderElec.png" type="Texture" id=14]
-[ext_resource path="res://assets/images/ladders/sprLadderMrX4.png" type="Texture" id=15]
-[ext_resource path="res://assets/images/ladders/sprLadderMM9Wily2Alt3.png" type="Texture" id=16]
-[ext_resource path="res://assets/images/ladders/sprLadderMM1Wily1.png" type="Texture" id=17]
-[ext_resource path="res://assets/images/ladders/sprLadderMM2Wily2.png" type="Texture" id=18]
-[ext_resource path="res://assets/images/ladders/sprLadderMM9Wily2Alt2.png" type="Texture" id=19]
-[ext_resource path="res://assets/images/ladders/sprLadderMM1Wily2.png" type="Texture" id=20]
-[ext_resource path="res://assets/images/ladders/sprLadderMM2Wily4.png" type="Texture" id=21]
-[ext_resource path="res://assets/images/ladders/sprLadderMrX1.png" type="Texture" id=22]
-[ext_resource path="res://assets/images/ladders/sprLadderCentaur3.png" type="Texture" id=23]
-[ext_resource path="res://assets/images/ladders/sprLadderMM7Wily2.png" type="Texture" id=24]
-[ext_resource path="res://assets/images/ladders/sprLadderWood.png" type="Texture" id=25]
-[ext_resource path="res://assets/images/ladders/sprLadderMM7Wily1.png" type="Texture" id=26]
-[ext_resource path="res://assets/images/ladders/sprLadderTomahawk2.png" type="Texture" id=27]
-[ext_resource path="res://assets/images/ladders/sprLadderSpark.png" type="Texture" id=28]
-[ext_resource path="res://assets/images/ladders/sprLadderMM9Wily2.png" type="Texture" id=29]
-[ext_resource path="res://assets/images/ladders/sprLadderMM9Wily3.png" type="Texture" id=30]
-[ext_resource path="res://assets/images/ladders/sprLadderMM9Wily2Alt.png" type="Texture" id=31]
-[ext_resource path="res://assets/images/ladders/sprLadderMM7Wily3.png" type="Texture" id=32]
-[ext_resource path="res://assets/images/ladders/sprLadderNeedle.png" type="Texture" id=33]
-[ext_resource path="res://assets/images/ladders/sprLadderMM9Wily3Alt.png" type="Texture" id=34]
-[ext_resource path="res://assets/images/ladders/sprLadderMrX3.png" type="Texture" id=35]
-[ext_resource path="res://assets/images/ladders/sprLadderHard.png" type="Texture" id=36]
-[ext_resource path="res://assets/images/ladders/sprLadderSkull.png" type="Texture" id=37]
-[ext_resource path="res://assets/images/ladders/sprLadderCossack4.png" type="Texture" id=38]
-[ext_resource path="res://assets/images/ladders/sprLadderStone.png" type="Texture" id=39]
-[ext_resource path="res://assets/images/ladders/sprLadderCrystal.png" type="Texture" id=40]
-[ext_resource path="res://assets/images/ladders/sprLadderCossack1.png" type="Texture" id=41]
-[ext_resource path="res://assets/images/ladders/sprLadderNapalm.png" type="Texture" id=42]
-[ext_resource path="res://assets/images/ladders/sprLadderGyro.png" type="Texture" id=43]
-[ext_resource path="res://assets/images/ladders/sprLadderStar.png" type="Texture" id=44]
-[ext_resource path="res://assets/images/ladders/sprLadderTop.png" type="Texture" id=45]
-[ext_resource path="res://assets/images/ladders/sprLadderMagnet.png" type="Texture" id=46]
-[ext_resource path="res://assets/images/ladders/sprLadderGemini.png" type="Texture" id=47]
-[ext_resource path="res://assets/images/ladders/sprLadderBright.png" type="Texture" id=48]
-[ext_resource path="res://assets/images/ladders/sprLadderDust.png" type="Texture" id=49]
-[ext_resource path="res://assets/images/ladders/sprLadderProto2.png" type="Texture" id=50]
-[ext_resource path="res://assets/images/ladders/sprLadderWind.png" type="Texture" id=51]
-[ext_resource path="res://assets/images/ladders/sprLadderBlizzard.png" type="Texture" id=52]
-[ext_resource path="res://assets/images/ladders/sprLadderProto3.png" type="Texture" id=53]
-[ext_resource path="res://assets/images/ladders/sprLadderProto1.png" type="Texture" id=54]
-[ext_resource path="res://assets/images/ladders/sprLadderCharge.png" type="Texture" id=55]
-[ext_resource path="res://assets/images/ladders/sprLadderFlame.png" type="Texture" id=56]
-[ext_resource path="res://assets/images/ladders/sprLadderSlash.png" type="Texture" id=57]
-[ext_resource path="res://assets/images/ladders/sprLadderSearch2.png" type="Texture" id=58]
-[ext_resource path="res://assets/images/ladders/sprLadderMM8Wily2.png" type="Texture" id=59]
-[ext_resource path="res://assets/images/ladders/sprLadderClown.png" type="Texture" id=60]
-[ext_resource path="res://assets/images/ladders/sprLadderCossack3.png" type="Texture" id=61]
-[ext_resource path="res://assets/images/ladders/sprLadderShadow.png" type="Texture" id=62]
-[ext_resource path="res://assets/images/ladders/sprLadderPlant.png" type="Texture" id=63]
-[ext_resource path="res://assets/images/ladders/sprLadderRing.png" type="Texture" id=64]
-[ext_resource path="res://assets/images/ladders/sprLadderGravity.png" type="Texture" id=65]
-[ext_resource path="res://assets/images/ladders/sprLadderMM5Wily1.png" type="Texture" id=66]
-[ext_resource path="res://assets/images/ladders/sprLadderJunk.png" type="Texture" id=67]
-[ext_resource path="res://assets/images/ladders/sprLadderHeat.png" type="Texture" id=68]
-[ext_resource path="res://assets/images/ladders/sprLadderMM5Wily2.png" type="Texture" id=69]
-[ext_resource path="res://assets/images/ladders/sprLadderDrill.png" type="Texture" id=70]
-[ext_resource path="res://assets/images/ladders/sprLadderSword2.png" type="Texture" id=71]
-[ext_resource path="res://assets/images/ladders/sprLadderMM6Wily1.png" type="Texture" id=72]
-[ext_resource path="res://assets/images/ladders/sprLadderNeedle2.png" type="Texture" id=73]
-[ext_resource path="res://assets/images/ladders/sprLadderWind2.png" type="Texture" id=74]
-[ext_resource path="res://assets/images/ladders/sprLadderShade.png" type="Texture" id=75]
-[ext_resource path="res://assets/images/ladders/sprLadderBurst.png" type="Texture" id=76]
-[ext_resource path="res://assets/images/ladders/sprLadderKnight2.png" type="Texture" id=77]
-[ext_resource path="res://assets/images/ladders/sprLadderDive2.png" type="Texture" id=78]
-[ext_resource path="res://assets/images/ladders/sprLadderYamato.png" type="Texture" id=79]
-[ext_resource path="res://assets/images/ladders/sprLadderFreeze.png" type="Texture" id=80]
-[ext_resource path="res://assets/images/ladders/sprLadderFrost.png" type="Texture" id=81]
-[ext_resource path="res://assets/images/ladders/sprLadderGrenade.png" type="Texture" id=82]
-[ext_resource path="res://assets/images/ladders/sprLadderDive.png" type="Texture" id=83]
-[ext_resource path="res://assets/images/ladders/sprLadderCloud.png" type="Texture" id=84]
-[ext_resource path="res://assets/images/ladders/sprLadderMM6Wily3.png" type="Texture" id=85]
-[ext_resource path="res://assets/images/ladders/sprLadderAstro.png" type="Texture" id=86]
-[ext_resource path="res://assets/images/ladders/sprLadderCossack1_2.png" type="Texture" id=87]
-[ext_resource path="res://assets/images/ladders/sprLadderSword.png" type="Texture" id=88]
-[ext_resource path="res://assets/images/ladders/sprLadderKnight.png" type="Texture" id=89]
-[ext_resource path="res://assets/images/ladders/sprLadderSpring.png" type="Texture" id=90]
-[ext_resource path="res://assets/images/ladders/sprLadderTurbo.png" type="Texture" id=91]
-[ext_resource path="res://assets/images/ladders/sprLadderAqua.png" type="Texture" id=92]
-[ext_resource path="res://assets/images/ladders/sprLadderSearch.png" type="Texture" id=93]
-[ext_resource path="res://assets/images/ladders/sprLadderDuo.png" type="Texture" id=94]
-[ext_resource path="res://assets/images/ladders/sprLadderMM8Wily3.png" type="Texture" id=95]
-[ext_resource path="res://assets/images/ladders/sprLadderHornet.png" type="Texture" id=96]
-[ext_resource path="res://assets/images/ladders/sprLadderPlug.png" type="Texture" id=97]
-[ext_resource path="res://assets/images/ladders/sprLadderGalaxy.png" type="Texture" id=98]
-[ext_resource path="res://assets/images/ladders/sprLadderConcrete.png" type="Texture" id=99]
-[ext_resource path="res://assets/images/ladders/sprLadderMM9Wily1.png" type="Texture" id=100]
-[ext_resource path="res://assets/images/ladders/sprLadderSplash.png" type="Texture" id=101]
-[ext_resource path="res://assets/images/ladders/sprLadderFake.png" type="Texture" id=102]
-[ext_resource path="res://assets/images/ladders/sprLadderMM9Endless2.png" type="Texture" id=103]
-[ext_resource path="res://assets/images/ladders/sprLadderMM9Endless3.png" type="Texture" id=104]
-[ext_resource path="res://assets/images/ladders/sprLadderMagma.png" type="Texture" id=105]
-[ext_resource path="res://assets/images/ladders/sprLadderJunk2.png" type="Texture" id=106]
-[ext_resource path="res://assets/images/ladders/sprLadderMM9Wily1_2.png" type="Texture" id=107]
-[ext_resource path="res://assets/images/ladders/sprLadderCloud2.png" type="Texture" id=108]
-[ext_resource path="res://assets/images/ladders/sprLadderSnake.png" type="Texture" id=109]
-[ext_resource path="res://assets/images/ladders/sprLadderBlade.png" type="Texture" id=110]
-[ext_resource path="res://assets/images/ladders/sprLadderSolar.png" type="Texture" id=111]
-[ext_resource path="res://assets/images/ladders/sprLadderSolarAlt.png" type="Texture" id=112]
-[ext_resource path="res://assets/images/ladders/sprLadderMM9Endless.png" type="Texture" id=113]
-[ext_resource path="res://assets/images/ladders/sprLadderSheep.png" type="Texture" id=114]
-[ext_resource path="res://assets/images/ladders/sprLadderTornado.png" type="Texture" id=115]
-[ext_resource path="res://assets/images/ladders/sprLadderPump.png" type="Texture" id=116]
-[ext_resource path="res://assets/images/ladders/sprLadderPumpAlt.png" type="Texture" id=117]
-[ext_resource path="res://assets/images/ladders/sprLadderStrike.png" type="Texture" id=118]
-[ext_resource path="res://assets/images/ladders/sprLadderNitro.png" type="Texture" id=119]
-[ext_resource path="res://assets/images/ladders/sprLadderChill.png" type="Texture" id=120]
-[ext_resource path="res://assets/images/ladders/sprLadderMM10Wily3.png" type="Texture" id=121]
-[ext_resource path="res://assets/images/ladders/sprLadderChillAlt.png" type="Texture" id=122]
-[ext_resource path="res://assets/images/ladders/sprLadderMM10Wily1.png" type="Texture" id=123]
-[ext_resource path="res://assets/images/ladders/sprLadderChillAlt2.png" type="Texture" id=124]
-[ext_resource path="res://assets/images/ladders/sprLadderMM10Wily2.png" type="Texture" id=125]
-[ext_resource path="res://assets/images/ladders/sprLadderChillAlt3.png" type="Texture" id=126]
-[ext_resource path="res://assets/images/ladders/sprLadderIntroPU.png" type="Texture" id=127]
-[ext_resource path="res://assets/images/ladders/sprLadderBlast.png" type="Texture" id=128]
-[ext_resource path="res://assets/images/ladders/sprLadderBlock.png" type="Texture" id=129]
-[ext_resource path="res://assets/images/ladders/sprLadderBuilder4PU.png" type="Texture" id=130]
-[ext_resource path="res://assets/images/ladders/sprLadderBomb1PU.png" type="Texture" id=131]
-[ext_resource path="res://assets/images/ladders/sprLadderElec1PU.png" type="Texture" id=132]
-[ext_resource path="res://assets/images/ladders/sprLadderFuse.png" type="Texture" id=133]
-[ext_resource path="res://assets/images/ladders/sprLadderFire1PU.png" type="Texture" id=134]
-[ext_resource path="res://assets/images/ladders/sprLadderGuts1PU.png" type="Texture" id=135]
-[ext_resource path="res://assets/images/ladders/sprLadderBuilder1PU.png" type="Texture" id=136]
-[ext_resource path="res://assets/images/ladders/sprLadderIce1PU.png" type="Texture" id=137]
-[ext_resource path="res://assets/images/ladders/sprLadderMM10Wily5_2.png" type="Texture" id=138]
-[ext_resource path="res://assets/images/ladders/sprLadderKing2_1.png" type="Texture" id=139]
-[ext_resource path="res://assets/images/ladders/sprLadderKing2_3.png" type="Texture" id=140]
-[ext_resource path="res://assets/images/ladders/sprLadderMM1PUWily3PU.png" type="Texture" id=141]
-[ext_resource path="res://assets/images/ladders/sprLadderMM10Wily3Alt.png" type="Texture" id=142]
-[ext_resource path="res://assets/images/ladders/sprLadderImpact.png" type="Texture" id=143]
-[ext_resource path="res://assets/images/ladders/sprLadderChallenge.png" type="Texture" id=144]
-[ext_resource path="res://assets/images/ladders/sprLadderAcid.png" type="Texture" id=145]
-[ext_resource path="res://assets/images/ladders/sprLadderBallade.png" type="Texture" id=146]
-[ext_resource path="res://assets/images/ladders/sprLadderMM11Wily1.png" type="Texture" id=147]
-[ext_resource path="res://assets/images/ladders/sprLadderLight.png" type="Texture" id=148]
-[ext_resource path="res://assets/images/ladders/sprLadderBuilder3PU.png" type="Texture" id=149]
-[ext_resource path="res://assets/images/ladders/sprLadderPunk.png" type="Texture" id=150]
-[ext_resource path="res://assets/images/ladders/sprLadderEndless.png" type="Texture" id=151]
-[ext_resource path="res://assets/images/ladders/sprLadderBounce.png" type="Texture" id=152]
-[ext_resource path="res://assets/images/ladders/sprLadderTundra.png" type="Texture" id=153]
-[ext_resource path="res://assets/images/ladders/sprLadderTorch.png" type="Texture" id=154]
-[ext_resource path="res://assets/images/ladders/sprLadderMM11Wily2.png" type="Texture" id=155]
-[ext_resource path="res://assets/images/ladders/sprLadderMM10Wily5.png" type="Texture" id=156]
-[ext_resource path="res://assets/images/ladders/sprLadderChallengePU.png" type="Texture" id=157]
-[ext_resource path="res://assets/images/ladders/sprLadderCut1PU.png" type="Texture" id=158]
-[ext_resource path="res://assets/images/ladders/sprLadderOilPU.png" type="Texture" id=159]
-[ext_resource path="res://assets/images/ladders/sprLadderTimePU.png" type="Texture" id=160]
-[ext_resource path="res://assets/images/ladders/sprLadderMM1PUWily1PU.png" type="Texture" id=161]
-[ext_resource path="res://assets/images/ladders/sprLadderBuilder2PU.png" type="Texture" id=162]
-[ext_resource path="res://assets/images/ladders/sprLadderMM1PUWily2PU.png" type="Texture" id=163]
-[ext_resource path="res://assets/images/ladders/sprLadderMM1PUWily4PU.png" type="Texture" id=164]
-[ext_resource path="res://assets/images/ladders/sprLadderMmbIntro.png" type="Texture" id=165]
-[ext_resource path="res://assets/images/ladders/sprLadderBurner.png" type="Texture" id=166]
-[ext_resource path="res://assets/images/ladders/sprLadderPirate.png" type="Texture" id=167]
-[ext_resource path="res://assets/images/ladders/sprLadderGround.png" type="Texture" id=168]
-[ext_resource path="res://assets/images/ladders/sprLadderTengu.png" type="Texture" id=169]
-[ext_resource path="res://assets/images/ladders/sprLadderMagic.png" type="Texture" id=170]
-[ext_resource path="res://assets/images/ladders/sprLadderCold.png" type="Texture" id=171]
-[ext_resource path="res://assets/images/ladders/sprLadderMmbAstro.png" type="Texture" id=172]
-[ext_resource path="res://assets/images/ladders/sprLadderDynamo.png" type="Texture" id=173]
-[ext_resource path="res://assets/images/ladders/sprLadderKing1.png" type="Texture" id=174]
-[ext_resource path="res://assets/images/ladders/sprLadderKing2_2.png" type="Texture" id=175]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIFire.png" type="Texture" id=176]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIIce.png" type="Texture" id=177]
-[ext_resource path="res://assets/images/ladders/sprLadderGBICut.png" type="Texture" id=178]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIWily.png" type="Texture" id=179]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIIClash.png" type="Texture" id=180]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIIIDive.png" type="Texture" id=181]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIIMetal.png" type="Texture" id=182]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIIMetalAlt.png" type="Texture" id=183]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIIWood.png" type="Texture" id=184]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIIWily.png" type="Texture" id=185]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIIClashAlt.png" type="Texture" id=186]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIIWoodAlt.png" type="Texture" id=187]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIElec.png" type="Texture" id=188]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIIWilyAlt.png" type="Texture" id=189]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIIIDust.png" type="Texture" id=190]
-[ext_resource path="res://assets/images/ladders/sprLadderGBVNeptuneAlt.png" type="Texture" id=191]
-[ext_resource path="res://assets/images/ladders/sprLadderGBVNeptune.png" type="Texture" id=192]
-[ext_resource path="res://assets/images/ladders/sprLadderTorchAlt.png" type="Texture" id=193]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIIISkull.png" type="Texture" id=194]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIIIWily.png" type="Texture" id=195]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIIISpark.png" type="Texture" id=196]
-[ext_resource path="res://assets/images/ladders/sprLadderAcidAlt.png" type="Texture" id=197]
-[ext_resource path="res://assets/images/ladders/sprLadderBlockAlt.png" type="Texture" id=198]
-[ext_resource path="res://assets/images/ladders/sprLadderGBVSaturn.png" type="Texture" id=199]
-[ext_resource path="res://assets/images/ladders/sprLadderGBVVenus.png" type="Texture" id=200]
-[ext_resource path="res://assets/images/ladders/sprLadderGBVUranus.png" type="Texture" id=201]
-[ext_resource path="res://assets/images/ladders/sprLadderGBVWily.png" type="Texture" id=202]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIVCrystal.png" type="Texture" id=203]
-[ext_resource path="res://assets/images/ladders/sprLadderWood2.png" type="Texture" id=204]
-[ext_resource path="res://assets/images/ladders/sprLadderGrenade_Overwrite.png" type="Texture" id=205]
-[ext_resource path="res://assets/images/ladders/sprLadderBlastAlt.png" type="Texture" id=206]
-[ext_resource path="res://assets/images/ladders/sprLadderGBVMars.png" type="Texture" id=207]
-[ext_resource path="res://assets/images/ladders/sprLadderAcidAlt2.png" type="Texture" id=208]
-[ext_resource path="res://assets/images/ladders/sprLadderElec1PUAlt.png" type="Texture" id=209]
-[ext_resource path="res://assets/images/ladders/sprLadderGBVMercury.png" type="Texture" id=210]
-[ext_resource path="res://assets/images/ladders/sprLadderBlockAlt2.png" type="Texture" id=211]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIVToad.png" type="Texture" id=212]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIVRing.png" type="Texture" id=213]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIVStone.png" type="Texture" id=214]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIIISnake.png" type="Texture" id=215]
-[ext_resource path="res://assets/images/ladders/sprLadderGBVJupiter.png" type="Texture" id=216]
-[ext_resource path="res://assets/images/ladders/sprLadderGBVPluto.png" type="Texture" id=217]
-[ext_resource path="res://assets/images/ladders/sprLadderSearch3.png" type="Texture" id=218]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIVCharge.png" type="Texture" id=219]
-[ext_resource path="res://assets/images/ladders/sprLadderMM6Wily1_2.png" type="Texture" id=220]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIVBright.png" type="Texture" id=221]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIVWily.png" type="Texture" id=222]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIIIDiveAlt.png" type="Texture" id=223]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIVNapalm.png" type="Texture" id=224]
-[ext_resource path="res://assets/images/ladders/sprLadderElec1PUAlt2.png" type="Texture" id=225]
-[ext_resource path="res://assets/images/ladders/sprLadderGBIIIGemini.png" type="Texture" id=226]
-[ext_resource path="res://assets/images/ladders/sprLadderBounceAlt.png" type="Texture" id=227]
-[ext_resource path="res://assets/images/ladders/sprLadderFuseAlt.png" type="Texture" id=228]
-[ext_resource path="res://assets/images/ladders/sprLadderSolarAlt2.png" type="Texture" id=229]
-[ext_resource path="res://assets/images/ladders/sprLadderMM1PUWily1PUAlt.png" type="Texture" id=230]
-[ext_resource path="res://assets/images/ladders/sprLadderMM11Wily1Alt.png" type="Texture" id=231]
-[ext_resource path="res://assets/images/ladders/sprLadderChillAlt4.png" type="Texture" id=232]
-[ext_resource path="res://assets/images/ladders/sprLadderMM1PUWily2PUAlt.png" type="Texture" id=233]
-[ext_resource path="res://assets/images/ladders/sprLadderMM1PUWily2PUAlt2.png" type="Texture" id=234]
-[ext_resource path="res://assets/images/ladders/sprLadderMM1PUWily1PUAlt3.png" type="Texture" id=235]
-[ext_resource path="res://assets/images/ladders/sprLadderMM11Wily2Alt.png" type="Texture" id=236]
-[ext_resource path="res://assets/images/ladders/sprLadderMM1PUWily1PUAlt4.png" type="Texture" id=237]
-[ext_resource path="res://assets/images/ladders/sprLadderMM1PUWily1PUAlt2.png" type="Texture" id=238]
-[ext_resource path="res://assets/images/ladders/sprLadderOilPUAlt.png" type="Texture" id=239]
+[ext_resource path="res://assets/images/ladders/sprLadderMM1PUWily3PU.png" type="Texture" id=1]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIIce.png" type="Texture" id=2]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIIMetal.png" type="Texture" id=3]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIIISnake.png" type="Texture" id=4]
+[ext_resource path="res://assets/images/ladders/sprLadderMM1PUWily2PU.png" type="Texture" id=5]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIIIDive.png" type="Texture" id=6]
+[ext_resource path="res://assets/images/ladders/sprLadderOilPU.png" type="Texture" id=7]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIIWood.png" type="Texture" id=8]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIIIDust.png" type="Texture" id=9]
+[ext_resource path="res://assets/images/ladders/sprLadderKing1.png" type="Texture" id=10]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIIIGemini.png" type="Texture" id=11]
+[ext_resource path="res://assets/images/ladders/sprLadderKing2_2.png" type="Texture" id=12]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIIWily.png" type="Texture" id=13]
+[ext_resource path="res://assets/images/ladders/sprLadderDynamo.png" type="Texture" id=14]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIElec.png" type="Texture" id=15]
+[ext_resource path="res://assets/images/ladders/sprLadderGBVMercury.png" type="Texture" id=16]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIIMetalAlt.png" type="Texture" id=17]
+[ext_resource path="res://assets/images/ladders/sprLadderMmbAstro.png" type="Texture" id=18]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIIWoodAlt.png" type="Texture" id=19]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIIISkull.png" type="Texture" id=20]
+[ext_resource path="res://assets/images/ladders/sprLadderMM1PUWily1PU.png" type="Texture" id=21]
+[ext_resource path="res://assets/images/ladders/sprLadderGround.png" type="Texture" id=22]
+[ext_resource path="res://assets/images/ladders/sprLadderTimePU.png" type="Texture" id=23]
+[ext_resource path="res://assets/images/ladders/sprLadderMmbIntro.png" type="Texture" id=24]
+[ext_resource path="res://assets/images/ladders/sprLadderKing2_1.png" type="Texture" id=25]
+[ext_resource path="res://assets/images/ladders/sprLadderIntroPU.png" type="Texture" id=26]
+[ext_resource path="res://assets/images/ladders/sprLadderCold.png" type="Texture" id=27]
+[ext_resource path="res://assets/images/ladders/sprLadderKing2_3.png" type="Texture" id=28]
+[ext_resource path="res://assets/images/ladders/sprLadderPirate.png" type="Texture" id=29]
+[ext_resource path="res://assets/images/ladders/sprLadderTengu.png" type="Texture" id=30]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIWily.png" type="Texture" id=31]
+[ext_resource path="res://assets/images/ladders/sprLadderMM1PUWily4PU.png" type="Texture" id=32]
+[ext_resource path="res://assets/images/ladders/sprLadderBurner.png" type="Texture" id=33]
+[ext_resource path="res://assets/images/ladders/sprLadderGBICut.png" type="Texture" id=34]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIFire.png" type="Texture" id=35]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIIClash.png" type="Texture" id=36]
+[ext_resource path="res://assets/images/ladders/sprLadderMagic.png" type="Texture" id=37]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIIClashAlt.png" type="Texture" id=38]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIIWilyAlt.png" type="Texture" id=39]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIIISpark.png" type="Texture" id=40]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIVBright.png" type="Texture" id=41]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIVCharge.png" type="Texture" id=42]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIVCrystal.png" type="Texture" id=43]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIVNapalm.png" type="Texture" id=44]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIVRing.png" type="Texture" id=45]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIVStone.png" type="Texture" id=46]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIVToad.png" type="Texture" id=47]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIIIWily.png" type="Texture" id=48]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIVWily.png" type="Texture" id=49]
+[ext_resource path="res://assets/images/ladders/sprLadderGBVJupiter.png" type="Texture" id=50]
+[ext_resource path="res://assets/images/ladders/sprLadderGBVMars.png" type="Texture" id=51]
+[ext_resource path="res://assets/images/ladders/sprLadderGBVNeptune.png" type="Texture" id=52]
+[ext_resource path="res://assets/images/ladders/sprLadderGBVNeptuneAlt.png" type="Texture" id=53]
+[ext_resource path="res://assets/images/ladders/sprLadderGBVPluto.png" type="Texture" id=54]
+[ext_resource path="res://assets/images/ladders/sprLadderGBVSaturn.png" type="Texture" id=55]
+[ext_resource path="res://assets/images/ladders/sprLadderGBVVenus.png" type="Texture" id=56]
+[ext_resource path="res://assets/images/ladders/sprLadderGBVWily.png" type="Texture" id=57]
+[ext_resource path="res://assets/images/ladders/sprLadderGBIIIDiveAlt.png" type="Texture" id=58]
+[ext_resource path="res://assets/images/ladders/sprLadderSearch3.png" type="Texture" id=59]
+[ext_resource path="res://assets/images/ladders/sprLadderGBVUranus.png" type="Texture" id=60]
+[ext_resource path="res://assets/images/ladders/sprLadderGrenade_Overwrite.png" type="Texture" id=63]
+[ext_resource path="res://assets/images/ladders/sprLadderMM9Wily3Alt.png" type="Texture" id=64]
+[ext_resource path="res://assets/images/ladders/sprLadderMM9Wily2Alt3.png" type="Texture" id=65]
+[ext_resource path="res://assets/images/ladders/sprLadderMM9Wily2Alt2.png" type="Texture" id=66]
+[ext_resource path="res://assets/images/ladders/sprLadderAcidAlt.png" type="Texture" id=67]
+[ext_resource path="res://assets/images/ladders/sprLadderMM1PUWily1PUAlt4.png" type="Texture" id=68]
+[ext_resource path="res://assets/images/ladders/sprLadderBlastAlt.png" type="Texture" id=69]
+[ext_resource path="res://assets/images/ladders/sprLadderTorchAlt.png" type="Texture" id=70]
+[ext_resource path="res://assets/images/ladders/sprLadderBounceAlt.png" type="Texture" id=71]
+[ext_resource path="res://assets/images/ladders/sprLadderMM1PUWily2PUAlt2.png" type="Texture" id=72]
+[ext_resource path="res://assets/images/ladders/sprLadderBlockAlt.png" type="Texture" id=73]
+[ext_resource path="res://assets/images/ladders/sprLadderChillAlt4.png" type="Texture" id=74]
+[ext_resource path="res://assets/images/ladders/sprLadderBlockAlt2.png" type="Texture" id=75]
+[ext_resource path="res://assets/images/ladders/sprLadderOilPUAlt.png" type="Texture" id=76]
+[ext_resource path="res://assets/images/ladders/sprLadderMM11Wily2Alt.png" type="Texture" id=77]
+[ext_resource path="res://assets/images/ladders/sprLadderMM11Wily1Alt.png" type="Texture" id=78]
+[ext_resource path="res://assets/images/ladders/sprLadderSolarAlt2.png" type="Texture" id=79]
+[ext_resource path="res://assets/images/ladders/sprLadderMM1PUWily1PUAlt2.png" type="Texture" id=80]
+[ext_resource path="res://assets/images/ladders/sprLadderElec1PUAlt.png" type="Texture" id=81]
+[ext_resource path="res://assets/images/ladders/sprLadderElec1PUAlt2.png" type="Texture" id=82]
+[ext_resource path="res://assets/images/ladders/sprLadderFuseAlt.png" type="Texture" id=83]
+[ext_resource path="res://assets/images/ladders/sprLadderMM1PUWily1PUAlt3.png" type="Texture" id=85]
+[ext_resource path="res://assets/images/ladders/sprLadderMM1PUWily1PUAlt.png" type="Texture" id=86]
+[ext_resource path="res://assets/images/ladders/sprLadderMM1PUWily2PUAlt.png" type="Texture" id=87]
+[ext_resource path="res://assets/images/ladders/sprLadderSpark.png" type="Texture" id=88]
+[ext_resource path="res://assets/images/ladders/sprLadderCharge.png" type="Texture" id=89]
+[ext_resource path="res://assets/images/ladders/sprLadderProto2.png" type="Texture" id=90]
+[ext_resource path="res://assets/images/ladders/sprLadderBlizzard.png" type="Texture" id=91]
+[ext_resource path="res://assets/images/ladders/sprLadderTomahawk.png" type="Texture" id=92]
+[ext_resource path="res://assets/images/ladders/sprLadderCentaur.png" type="Texture" id=93]
+[ext_resource path="res://assets/images/ladders/sprLadderFlame.png" type="Texture" id=94]
+[ext_resource path="res://assets/images/ladders/sprLadderMM2Wily2.png" type="Texture" id=95]
+[ext_resource path="res://assets/images/ladders/sprLadderCut.png" type="Texture" id=96]
+[ext_resource path="res://assets/images/ladders/sprLadderNeedle2.png" type="Texture" id=97]
+[ext_resource path="res://assets/images/ladders/sprLadderMM2Wily1.png" type="Texture" id=98]
+[ext_resource path="res://assets/images/ladders/sprLadderMM4Wily2.png" type="Texture" id=99]
+[ext_resource path="res://assets/images/ladders/sprLadderHeat.png" type="Texture" id=100]
+[ext_resource path="res://assets/images/ladders/sprLadderBright.png" type="Texture" id=101]
+[ext_resource path="res://assets/images/ladders/sprLadderTop.png" type="Texture" id=102]
+[ext_resource path="res://assets/images/ladders/sprLadderGemini.png" type="Texture" id=103]
+[ext_resource path="res://assets/images/ladders/sprLadderElec.png" type="Texture" id=104]
+[ext_resource path="res://assets/images/ladders/sprLadderNeedle.png" type="Texture" id=105]
+[ext_resource path="res://assets/images/ladders/sprLadderWood.png" type="Texture" id=106]
+[ext_resource path="res://assets/images/ladders/sprLadderCrash.png" type="Texture" id=107]
+[ext_resource path="res://assets/images/ladders/sprLadderMM1Wily1.png" type="Texture" id=108]
+[ext_resource path="res://assets/images/ladders/sprLadderCossack4.png" type="Texture" id=109]
+[ext_resource path="res://assets/images/ladders/sprLadderStone.png" type="Texture" id=110]
+[ext_resource path="res://assets/images/ladders/sprLadderGyro.png" type="Texture" id=111]
+[ext_resource path="res://assets/images/ladders/sprLadderMagnet.png" type="Texture" id=112]
+[ext_resource path="res://assets/images/ladders/sprLadderCossack1.png" type="Texture" id=113]
+[ext_resource path="res://assets/images/ladders/sprLadderBomb.png" type="Texture" id=114]
+[ext_resource path="res://assets/images/ladders/sprLadderMM3Wily4.png" type="Texture" id=115]
+[ext_resource path="res://assets/images/ladders/sprLadderDust.png" type="Texture" id=116]
+[ext_resource path="res://assets/images/ladders/sprLadderCrystal.png" type="Texture" id=117]
+[ext_resource path="res://assets/images/ladders/sprLadderMM2Wily4.png" type="Texture" id=118]
+[ext_resource path="res://assets/images/ladders/sprLadderSkull.png" type="Texture" id=119]
+[ext_resource path="res://assets/images/ladders/sprLadderFire.png" type="Texture" id=120]
+[ext_resource path="res://assets/images/ladders/sprLadderHard.png" type="Texture" id=121]
+[ext_resource path="res://assets/images/ladders/sprLadderMM1Wily2.png" type="Texture" id=122]
+[ext_resource path="res://assets/images/ladders/sprLadderNapalm.png" type="Texture" id=123]
+[ext_resource path="res://assets/images/ladders/sprLadderStar.png" type="Texture" id=124]
+[ext_resource path="res://assets/images/ladders/sprLadderProto1.png" type="Texture" id=125]
+[ext_resource path="res://assets/images/ladders/sprLadderProto3.png" type="Texture" id=126]
+[ext_resource path="res://assets/images/ladders/sprLadderWind.png" type="Texture" id=127]
+[ext_resource path="res://assets/images/ladders/sprLadderMrX1.png" type="Texture" id=128]
+[ext_resource path="res://assets/images/ladders/sprLadderMrX4.png" type="Texture" id=129]
+[ext_resource path="res://assets/images/ladders/sprLadderMM6Wily1.png" type="Texture" id=130]
+[ext_resource path="res://assets/images/ladders/sprLadderKnight.png" type="Texture" id=131]
+[ext_resource path="res://assets/images/ladders/sprLadderPlant.png" type="Texture" id=132]
+[ext_resource path="res://assets/images/ladders/sprLadderShadow.png" type="Texture" id=133]
+[ext_resource path="res://assets/images/ladders/sprLadderRing.png" type="Texture" id=134]
+[ext_resource path="res://assets/images/ladders/sprLadderDive2.png" type="Texture" id=135]
+[ext_resource path="res://assets/images/ladders/sprLadderCossack1_2.png" type="Texture" id=136]
+[ext_resource path="res://assets/images/ladders/sprLadderMM4Wily3.png" type="Texture" id=137]
+[ext_resource path="res://assets/images/ladders/sprLadderMM3Wily2.png" type="Texture" id=138]
+[ext_resource path="res://assets/images/ladders/sprLadderGravity.png" type="Texture" id=139]
+[ext_resource path="res://assets/images/ladders/sprLadderDrill.png" type="Texture" id=140]
+[ext_resource path="res://assets/images/ladders/sprLadderMM3Wily1.png" type="Texture" id=141]
+[ext_resource path="res://assets/images/ladders/sprLadderDive.png" type="Texture" id=142]
+[ext_resource path="res://assets/images/ladders/sprLadderMM5Wily2.png" type="Texture" id=143]
+[ext_resource path="res://assets/images/ladders/sprLadderTomahawk2.png" type="Texture" id=144]
+[ext_resource path="res://assets/images/ladders/sprLadderCossack3.png" type="Texture" id=145]
+[ext_resource path="res://assets/images/ladders/sprLadderCentaur3.png" type="Texture" id=146]
+[ext_resource path="res://assets/images/ladders/sprLadderWind2.png" type="Texture" id=147]
+[ext_resource path="res://assets/images/ladders/sprLadderCentaur2.png" type="Texture" id=148]
+[ext_resource path="res://assets/images/ladders/sprLadderMM5Wily1.png" type="Texture" id=149]
+[ext_resource path="res://assets/images/ladders/sprLadderKnight2.png" type="Texture" id=150]
+[ext_resource path="res://assets/images/ladders/sprLadderYamato.png" type="Texture" id=151]
+[ext_resource path="res://assets/images/ladders/sprLadderSword.png" type="Texture" id=152]
+[ext_resource path="res://assets/images/ladders/sprLadderHornet.png" type="Texture" id=153]
+[ext_resource path="res://assets/images/ladders/sprLadderMagma.png" type="Texture" id=154]
+[ext_resource path="res://assets/images/ladders/sprLadderMM9Wily1.png" type="Texture" id=155]
+[ext_resource path="res://assets/images/ladders/sprLadderFreeze.png" type="Texture" id=156]
+[ext_resource path="res://assets/images/ladders/sprLadderAstro.png" type="Texture" id=157]
+[ext_resource path="res://assets/images/ladders/sprLadderShade.png" type="Texture" id=158]
+[ext_resource path="res://assets/images/ladders/sprLadderMM7Wily3.png" type="Texture" id=159]
+[ext_resource path="res://assets/images/ladders/sprLadderJunk2.png" type="Texture" id=160]
+[ext_resource path="res://assets/images/ladders/sprLadderSnake.png" type="Texture" id=161]
+[ext_resource path="res://assets/images/ladders/sprLadderMM9Endless3.png" type="Texture" id=162]
+[ext_resource path="res://assets/images/ladders/sprLadderMM9Endless2.png" type="Texture" id=163]
+[ext_resource path="res://assets/images/ladders/sprLadderCloud2.png" type="Texture" id=164]
+[ext_resource path="res://assets/images/ladders/sprLadderPump.png" type="Texture" id=165]
+[ext_resource path="res://assets/images/ladders/sprLadderMrX3.png" type="Texture" id=166]
+[ext_resource path="res://assets/images/ladders/sprLadderSlash.png" type="Texture" id=167]
+[ext_resource path="res://assets/images/ladders/sprLadderCloud.png" type="Texture" id=168]
+[ext_resource path="res://assets/images/ladders/sprLadderPlug.png" type="Texture" id=169]
+[ext_resource path="res://assets/images/ladders/sprLadderMM6Wily3.png" type="Texture" id=170]
+[ext_resource path="res://assets/images/ladders/sprLadderDuo.png" type="Texture" id=171]
+[ext_resource path="res://assets/images/ladders/sprLadderMM8Wily2.png" type="Texture" id=172]
+[ext_resource path="res://assets/images/ladders/sprLadderGalaxy.png" type="Texture" id=173]
+[ext_resource path="res://assets/images/ladders/sprLadderMM7Wily2.png" type="Texture" id=174]
+[ext_resource path="res://assets/images/ladders/sprLadderBurst.png" type="Texture" id=175]
+[ext_resource path="res://assets/images/ladders/sprLadderMM7Wily1.png" type="Texture" id=176]
+[ext_resource path="res://assets/images/ladders/sprLadderTurbo.png" type="Texture" id=177]
+[ext_resource path="res://assets/images/ladders/sprLadderJunk.png" type="Texture" id=178]
+[ext_resource path="res://assets/images/ladders/sprLadderGrenade.png" type="Texture" id=179]
+[ext_resource path="res://assets/images/ladders/sprLadderSearch.png" type="Texture" id=180]
+[ext_resource path="res://assets/images/ladders/sprLadderClown.png" type="Texture" id=181]
+[ext_resource path="res://assets/images/ladders/sprLadderSpring.png" type="Texture" id=182]
+[ext_resource path="res://assets/images/ladders/sprLadderSearch2.png" type="Texture" id=183]
+[ext_resource path="res://assets/images/ladders/sprLadderMM8Wily3.png" type="Texture" id=184]
+[ext_resource path="res://assets/images/ladders/sprLadderFrost.png" type="Texture" id=185]
+[ext_resource path="res://assets/images/ladders/sprLadderAqua.png" type="Texture" id=186]
+[ext_resource path="res://assets/images/ladders/sprLadderConcrete.png" type="Texture" id=187]
+[ext_resource path="res://assets/images/ladders/sprLadderSword2.png" type="Texture" id=188]
+[ext_resource path="res://assets/images/ladders/sprLadderSplash.png" type="Texture" id=189]
+[ext_resource path="res://assets/images/ladders/sprLadderTornado.png" type="Texture" id=190]
+[ext_resource path="res://assets/images/ladders/sprLadderMM9Wily2.png" type="Texture" id=191]
+[ext_resource path="res://assets/images/ladders/sprLadderMM9Wily3.png" type="Texture" id=192]
+[ext_resource path="res://assets/images/ladders/sprLadderFake.png" type="Texture" id=193]
+[ext_resource path="res://assets/images/ladders/sprLadderMM9Endless.png" type="Texture" id=194]
+[ext_resource path="res://assets/images/ladders/sprLadderMM9Wily2Alt.png" type="Texture" id=195]
+[ext_resource path="res://assets/images/ladders/sprLadderMM9Wily1_2.png" type="Texture" id=196]
+[ext_resource path="res://assets/images/ladders/sprLadderBlade.png" type="Texture" id=197]
+[ext_resource path="res://assets/images/ladders/sprLadderSolarAlt.png" type="Texture" id=198]
+[ext_resource path="res://assets/images/ladders/sprLadderSheep.png" type="Texture" id=199]
+[ext_resource path="res://assets/images/ladders/sprLadderSolar.png" type="Texture" id=200]
+[ext_resource path="res://assets/images/ladders/sprLadderStrike.png" type="Texture" id=201]
+[ext_resource path="res://assets/images/ladders/sprLadderChillAlt.png" type="Texture" id=202]
+[ext_resource path="res://assets/images/ladders/sprLadderChillAlt2.png" type="Texture" id=203]
+[ext_resource path="res://assets/images/ladders/sprLadderNitro.png" type="Texture" id=204]
+[ext_resource path="res://assets/images/ladders/sprLadderChillAlt3.png" type="Texture" id=205]
+[ext_resource path="res://assets/images/ladders/sprLadderMM10Wily1.png" type="Texture" id=206]
+[ext_resource path="res://assets/images/ladders/sprLadderMM10Wily2.png" type="Texture" id=207]
+[ext_resource path="res://assets/images/ladders/sprLadderMM10Wily3Alt.png" type="Texture" id=208]
+[ext_resource path="res://assets/images/ladders/sprLadderMM10Wily5.png" type="Texture" id=209]
+[ext_resource path="res://assets/images/ladders/sprLadderMM10Wily5_2.png" type="Texture" id=210]
+[ext_resource path="res://assets/images/ladders/sprLadderChill.png" type="Texture" id=211]
+[ext_resource path="res://assets/images/ladders/sprLadderPumpAlt.png" type="Texture" id=212]
+[ext_resource path="res://assets/images/ladders/sprLadderMM10Wily3.png" type="Texture" id=213]
+[ext_resource path="res://assets/images/ladders/sprLadderPunk.png" type="Texture" id=214]
+[ext_resource path="res://assets/images/ladders/sprLadderBallade.png" type="Texture" id=215]
+[ext_resource path="res://assets/images/ladders/sprLadderBlock.png" type="Texture" id=216]
+[ext_resource path="res://assets/images/ladders/sprLadderAcid.png" type="Texture" id=217]
+[ext_resource path="res://assets/images/ladders/sprLadderBounce.png" type="Texture" id=218]
+[ext_resource path="res://assets/images/ladders/sprLadderImpact.png" type="Texture" id=219]
+[ext_resource path="res://assets/images/ladders/sprLadderMM11Wily1.png" type="Texture" id=220]
+[ext_resource path="res://assets/images/ladders/sprLadderMM11Wily2.png" type="Texture" id=221]
+[ext_resource path="res://assets/images/ladders/sprLadderEndless.png" type="Texture" id=222]
+[ext_resource path="res://assets/images/ladders/sprLadderTundra.png" type="Texture" id=223]
+[ext_resource path="res://assets/images/ladders/sprLadderTorch.png" type="Texture" id=224]
+[ext_resource path="res://assets/images/ladders/sprLadderChallenge.png" type="Texture" id=225]
+[ext_resource path="res://assets/images/ladders/sprLadderBlast.png" type="Texture" id=226]
+[ext_resource path="res://assets/images/ladders/sprLadderFuse.png" type="Texture" id=227]
+[ext_resource path="res://assets/images/ladders/sprLadderLight.png" type="Texture" id=228]
+[ext_resource path="res://assets/images/ladders/sprLadderBomb1PU.png" type="Texture" id=229]
+[ext_resource path="res://assets/images/ladders/sprLadderBuilder1PU.png" type="Texture" id=230]
+[ext_resource path="res://assets/images/ladders/sprLadderBuilder2PU.png" type="Texture" id=231]
+[ext_resource path="res://assets/images/ladders/sprLadderBuilder4PU.png" type="Texture" id=232]
+[ext_resource path="res://assets/images/ladders/sprLadderChallengePU.png" type="Texture" id=233]
+[ext_resource path="res://assets/images/ladders/sprLadderCut1PU.png" type="Texture" id=234]
+[ext_resource path="res://assets/images/ladders/sprLadderBuilder3PU.png" type="Texture" id=235]
+[ext_resource path="res://assets/images/ladders/sprLadderElec1PU.png" type="Texture" id=236]
+[ext_resource path="res://assets/images/ladders/sprLadderFire1PU.png" type="Texture" id=237]
+[ext_resource path="res://assets/images/ladders/sprLadderGuts1PU.png" type="Texture" id=238]
+[ext_resource path="res://assets/images/ladders/sprLadderIce1PU.png" type="Texture" id=239]
 
 [resource]
 resource_name = "MMM Ladder Tileset"
 6/name = "sprLadderCut_6"
-6/texture = ExtResource( 3 )
+6/texture = ExtResource( 96 )
 6/tex_offset = Vector2( 0, 0 )
 6/modulate = Color( 1, 1, 1, 1 )
 6/region = Rect2( 0, 0, 0, 0 )
@@ -257,7 +254,7 @@ resource_name = "MMM Ladder Tileset"
 6/shapes = [  ]
 6/z_index = 0
 10/name = "sprLadderElec_10"
-10/texture = ExtResource( 14 )
+10/texture = ExtResource( 104 )
 10/tex_offset = Vector2( 0, 0 )
 10/modulate = Color( 1, 1, 1, 1 )
 10/region = Rect2( 0, 0, 0, 0 )
@@ -271,7 +268,7 @@ resource_name = "MMM Ladder Tileset"
 10/shapes = [  ]
 10/z_index = 0
 11/name = "sprLadderBomb_11"
-11/texture = ExtResource( 7 )
+11/texture = ExtResource( 114 )
 11/tex_offset = Vector2( 0, 0 )
 11/modulate = Color( 1, 1, 1, 1 )
 11/region = Rect2( 0, 0, 0, 0 )
@@ -285,7 +282,7 @@ resource_name = "MMM Ladder Tileset"
 11/shapes = [  ]
 11/z_index = 0
 12/name = "sprLadderFire_12"
-12/texture = ExtResource( 8 )
+12/texture = ExtResource( 120 )
 12/tex_offset = Vector2( 0, 0 )
 12/modulate = Color( 1, 1, 1, 1 )
 12/region = Rect2( 0, 0, 0, 0 )
@@ -299,7 +296,7 @@ resource_name = "MMM Ladder Tileset"
 12/shapes = [  ]
 12/z_index = 0
 13/name = "sprLadderMM1Wily1_13"
-13/texture = ExtResource( 17 )
+13/texture = ExtResource( 108 )
 13/tex_offset = Vector2( 0, 0 )
 13/modulate = Color( 1, 1, 1, 1 )
 13/region = Rect2( 0, 0, 0, 0 )
@@ -313,7 +310,7 @@ resource_name = "MMM Ladder Tileset"
 13/shapes = [  ]
 13/z_index = 0
 14/name = "sprLadderMM1Wily2_14"
-14/texture = ExtResource( 20 )
+14/texture = ExtResource( 122 )
 14/tex_offset = Vector2( 0, 0 )
 14/modulate = Color( 1, 1, 1, 1 )
 14/region = Rect2( 0, 0, 0, 0 )
@@ -327,7 +324,7 @@ resource_name = "MMM Ladder Tileset"
 14/shapes = [  ]
 14/z_index = 0
 16/name = "sprLadderWood_16"
-16/texture = ExtResource( 25 )
+16/texture = ExtResource( 106 )
 16/tex_offset = Vector2( 0, 0 )
 16/modulate = Color( 1, 1, 1, 1 )
 16/region = Rect2( 0, 0, 0, 0 )
@@ -341,7 +338,7 @@ resource_name = "MMM Ladder Tileset"
 16/shapes = [  ]
 16/z_index = 0
 17/name = "sprLadderCrash_17"
-17/texture = ExtResource( 1 )
+17/texture = ExtResource( 107 )
 17/tex_offset = Vector2( 0, 0 )
 17/modulate = Color( 1, 1, 1, 1 )
 17/region = Rect2( 0, 0, 0, 0 )
@@ -355,7 +352,7 @@ resource_name = "MMM Ladder Tileset"
 17/shapes = [  ]
 17/z_index = 0
 18/name = "sprLadderMM2Wily1_18"
-18/texture = ExtResource( 13 )
+18/texture = ExtResource( 98 )
 18/tex_offset = Vector2( 0, 0 )
 18/modulate = Color( 1, 1, 1, 1 )
 18/region = Rect2( 0, 0, 0, 0 )
@@ -369,7 +366,7 @@ resource_name = "MMM Ladder Tileset"
 18/shapes = [  ]
 18/z_index = 0
 19/name = "sprLadderMM2Wily2_19"
-19/texture = ExtResource( 18 )
+19/texture = ExtResource( 95 )
 19/tex_offset = Vector2( 0, 0 )
 19/modulate = Color( 1, 1, 1, 1 )
 19/region = Rect2( 0, 0, 0, 0 )
@@ -383,7 +380,7 @@ resource_name = "MMM Ladder Tileset"
 19/shapes = [  ]
 19/z_index = 0
 20/name = "sprLadderMM2Wily4_20"
-20/texture = ExtResource( 21 )
+20/texture = ExtResource( 118 )
 20/tex_offset = Vector2( 0, 0 )
 20/modulate = Color( 1, 1, 1, 1 )
 20/region = Rect2( 0, 0, 0, 0 )
@@ -397,7 +394,7 @@ resource_name = "MMM Ladder Tileset"
 20/shapes = [  ]
 20/z_index = 0
 97/name = "sprLadderSpark_97"
-97/texture = ExtResource( 28 )
+97/texture = ExtResource( 88 )
 97/tex_offset = Vector2( 0, 0 )
 97/modulate = Color( 1, 1, 1, 1 )
 97/region = Rect2( 0, 0, 0, 0 )
@@ -411,7 +408,7 @@ resource_name = "MMM Ladder Tileset"
 97/shapes = [  ]
 97/z_index = 0
 98/name = "sprLadderNeedle_98"
-98/texture = ExtResource( 33 )
+98/texture = ExtResource( 105 )
 98/tex_offset = Vector2( 0, 0 )
 98/modulate = Color( 1, 1, 1, 1 )
 98/region = Rect2( 0, 0, 0, 0 )
@@ -425,7 +422,7 @@ resource_name = "MMM Ladder Tileset"
 98/shapes = [  ]
 98/z_index = 0
 99/name = "sprLadderTop_99"
-99/texture = ExtResource( 45 )
+99/texture = ExtResource( 102 )
 99/tex_offset = Vector2( 0, 0 )
 99/modulate = Color( 1, 1, 1, 1 )
 99/region = Rect2( 0, 0, 0, 0 )
@@ -439,7 +436,7 @@ resource_name = "MMM Ladder Tileset"
 99/shapes = [  ]
 99/z_index = 0
 100/name = "sprLadderMagnet_100"
-100/texture = ExtResource( 46 )
+100/texture = ExtResource( 112 )
 100/tex_offset = Vector2( 0, 0 )
 100/modulate = Color( 1, 1, 1, 1 )
 100/region = Rect2( 0, 0, 0, 0 )
@@ -453,7 +450,7 @@ resource_name = "MMM Ladder Tileset"
 100/shapes = [  ]
 100/z_index = 0
 101/name = "sprLadderHard_101"
-101/texture = ExtResource( 36 )
+101/texture = ExtResource( 121 )
 101/tex_offset = Vector2( 0, 0 )
 101/modulate = Color( 1, 1, 1, 1 )
 101/region = Rect2( 0, 0, 0, 0 )
@@ -467,7 +464,7 @@ resource_name = "MMM Ladder Tileset"
 101/shapes = [  ]
 101/z_index = 0
 102/name = "sprLadderGemini_102"
-102/texture = ExtResource( 47 )
+102/texture = ExtResource( 103 )
 102/tex_offset = Vector2( 0, 0 )
 102/modulate = Color( 1, 1, 1, 1 )
 102/region = Rect2( 0, 0, 0, 0 )
@@ -481,7 +478,7 @@ resource_name = "MMM Ladder Tileset"
 102/shapes = [  ]
 102/z_index = 0
 103/name = "sprLadderMM3Wily4_103"
-103/texture = ExtResource( 12 )
+103/texture = ExtResource( 115 )
 103/tex_offset = Vector2( 0, 0 )
 103/modulate = Color( 1, 1, 1, 1 )
 103/region = Rect2( 0, 0, 0, 0 )
@@ -495,7 +492,7 @@ resource_name = "MMM Ladder Tileset"
 103/shapes = [  ]
 103/z_index = 0
 104/name = "sprLadderSkull_104"
-104/texture = ExtResource( 37 )
+104/texture = ExtResource( 119 )
 104/tex_offset = Vector2( 0, 0 )
 104/modulate = Color( 1, 1, 1, 1 )
 104/region = Rect2( 0, 0, 0, 0 )
@@ -509,7 +506,7 @@ resource_name = "MMM Ladder Tileset"
 104/shapes = [  ]
 104/z_index = 0
 105/name = "sprLadderBright_105"
-105/texture = ExtResource( 48 )
+105/texture = ExtResource( 101 )
 105/tex_offset = Vector2( 0, 0 )
 105/modulate = Color( 1, 1, 1, 1 )
 105/region = Rect2( 0, 0, 0, 0 )
@@ -523,7 +520,7 @@ resource_name = "MMM Ladder Tileset"
 105/shapes = [  ]
 105/z_index = 0
 106/name = "sprLadderDust_106"
-106/texture = ExtResource( 49 )
+106/texture = ExtResource( 116 )
 106/tex_offset = Vector2( 0, 0 )
 106/modulate = Color( 1, 1, 1, 1 )
 106/region = Rect2( 0, 0, 0, 0 )
@@ -537,7 +534,7 @@ resource_name = "MMM Ladder Tileset"
 106/shapes = [  ]
 106/z_index = 0
 107/name = "sprLadderCossack1_107"
-107/texture = ExtResource( 41 )
+107/texture = ExtResource( 113 )
 107/tex_offset = Vector2( 0, 0 )
 107/modulate = Color( 1, 1, 1, 1 )
 107/region = Rect2( 0, 0, 0, 0 )
@@ -551,7 +548,7 @@ resource_name = "MMM Ladder Tileset"
 107/shapes = [  ]
 107/z_index = 0
 108/name = "sprLadderCossack4_108"
-108/texture = ExtResource( 38 )
+108/texture = ExtResource( 109 )
 108/tex_offset = Vector2( 0, 0 )
 108/modulate = Color( 1, 1, 1, 1 )
 108/region = Rect2( 0, 0, 0, 0 )
@@ -565,7 +562,7 @@ resource_name = "MMM Ladder Tileset"
 108/shapes = [  ]
 108/z_index = 0
 109/name = "sprLadderMM4Wily2_109"
-109/texture = ExtResource( 11 )
+109/texture = ExtResource( 99 )
 109/tex_offset = Vector2( 0, 0 )
 109/modulate = Color( 1, 1, 1, 1 )
 109/region = Rect2( 0, 0, 0, 0 )
@@ -579,7 +576,7 @@ resource_name = "MMM Ladder Tileset"
 109/shapes = [  ]
 109/z_index = 0
 110/name = "sprLadderStone_110"
-110/texture = ExtResource( 39 )
+110/texture = ExtResource( 110 )
 110/tex_offset = Vector2( 0, 0 )
 110/modulate = Color( 1, 1, 1, 1 )
 110/region = Rect2( 0, 0, 0, 0 )
@@ -593,7 +590,7 @@ resource_name = "MMM Ladder Tileset"
 110/shapes = [  ]
 110/z_index = 0
 111/name = "sprLadderCrystal_111"
-111/texture = ExtResource( 40 )
+111/texture = ExtResource( 117 )
 111/tex_offset = Vector2( 0, 0 )
 111/modulate = Color( 1, 1, 1, 1 )
 111/region = Rect2( 0, 0, 0, 0 )
@@ -607,7 +604,7 @@ resource_name = "MMM Ladder Tileset"
 111/shapes = [  ]
 111/z_index = 0
 112/name = "sprLadderNapalm_112"
-112/texture = ExtResource( 42 )
+112/texture = ExtResource( 123 )
 112/tex_offset = Vector2( 0, 0 )
 112/modulate = Color( 1, 1, 1, 1 )
 112/region = Rect2( 0, 0, 0, 0 )
@@ -621,7 +618,7 @@ resource_name = "MMM Ladder Tileset"
 112/shapes = [  ]
 112/z_index = 0
 113/name = "sprLadderGyro_113"
-113/texture = ExtResource( 43 )
+113/texture = ExtResource( 111 )
 113/tex_offset = Vector2( 0, 0 )
 113/modulate = Color( 1, 1, 1, 1 )
 113/region = Rect2( 0, 0, 0, 0 )
@@ -635,7 +632,7 @@ resource_name = "MMM Ladder Tileset"
 113/shapes = [  ]
 113/z_index = 0
 114/name = "sprLadderStar_114"
-114/texture = ExtResource( 44 )
+114/texture = ExtResource( 124 )
 114/tex_offset = Vector2( 0, 0 )
 114/modulate = Color( 1, 1, 1, 1 )
 114/region = Rect2( 0, 0, 0, 0 )
@@ -649,7 +646,7 @@ resource_name = "MMM Ladder Tileset"
 114/shapes = [  ]
 114/z_index = 0
 115/name = "sprLadderCharge_115"
-115/texture = ExtResource( 55 )
+115/texture = ExtResource( 89 )
 115/tex_offset = Vector2( 0, 0 )
 115/modulate = Color( 1, 1, 1, 1 )
 115/region = Rect2( 0, 0, 0, 0 )
@@ -663,7 +660,7 @@ resource_name = "MMM Ladder Tileset"
 115/shapes = [  ]
 115/z_index = 0
 116/name = "sprLadderProto1_116"
-116/texture = ExtResource( 54 )
+116/texture = ExtResource( 125 )
 116/tex_offset = Vector2( 0, 0 )
 116/modulate = Color( 1, 1, 1, 1 )
 116/region = Rect2( 0, 0, 0, 0 )
@@ -677,7 +674,7 @@ resource_name = "MMM Ladder Tileset"
 116/shapes = [  ]
 116/z_index = 0
 117/name = "sprLadderProto2_117"
-117/texture = ExtResource( 50 )
+117/texture = ExtResource( 90 )
 117/tex_offset = Vector2( 0, 0 )
 117/modulate = Color( 1, 1, 1, 1 )
 117/region = Rect2( 0, 0, 0, 0 )
@@ -691,7 +688,7 @@ resource_name = "MMM Ladder Tileset"
 117/shapes = [  ]
 117/z_index = 0
 118/name = "sprLadderProto3_118"
-118/texture = ExtResource( 53 )
+118/texture = ExtResource( 126 )
 118/tex_offset = Vector2( 0, 0 )
 118/modulate = Color( 1, 1, 1, 1 )
 118/region = Rect2( 0, 0, 0, 0 )
@@ -705,7 +702,7 @@ resource_name = "MMM Ladder Tileset"
 118/shapes = [  ]
 118/z_index = 0
 119/name = "sprLadderBlizzard_119"
-119/texture = ExtResource( 52 )
+119/texture = ExtResource( 91 )
 119/tex_offset = Vector2( 0, 0 )
 119/modulate = Color( 1, 1, 1, 1 )
 119/region = Rect2( 0, 0, 0, 0 )
@@ -719,7 +716,7 @@ resource_name = "MMM Ladder Tileset"
 119/shapes = [  ]
 119/z_index = 0
 120/name = "sprLadderWind_120"
-120/texture = ExtResource( 51 )
+120/texture = ExtResource( 127 )
 120/tex_offset = Vector2( 0, 0 )
 120/modulate = Color( 1, 1, 1, 1 )
 120/region = Rect2( 0, 0, 0, 0 )
@@ -733,7 +730,7 @@ resource_name = "MMM Ladder Tileset"
 120/shapes = [  ]
 120/z_index = 0
 121/name = "sprLadderFlame_121"
-121/texture = ExtResource( 56 )
+121/texture = ExtResource( 94 )
 121/tex_offset = Vector2( 0, 0 )
 121/modulate = Color( 1, 1, 1, 1 )
 121/region = Rect2( 0, 0, 0, 0 )
@@ -747,7 +744,7 @@ resource_name = "MMM Ladder Tileset"
 121/shapes = [  ]
 121/z_index = 0
 122/name = "sprLadderTomahawk_122"
-122/texture = ExtResource( 4 )
+122/texture = ExtResource( 92 )
 122/tex_offset = Vector2( 0, 0 )
 122/modulate = Color( 1, 1, 1, 1 )
 122/region = Rect2( 0, 0, 0, 0 )
@@ -761,7 +758,7 @@ resource_name = "MMM Ladder Tileset"
 122/shapes = [  ]
 122/z_index = 0
 123/name = "sprLadderCentaur_123"
-123/texture = ExtResource( 6 )
+123/texture = ExtResource( 93 )
 123/tex_offset = Vector2( 0, 0 )
 123/modulate = Color( 1, 1, 1, 1 )
 123/region = Rect2( 0, 0, 0, 0 )
@@ -775,7 +772,7 @@ resource_name = "MMM Ladder Tileset"
 123/shapes = [  ]
 123/z_index = 0
 124/name = "sprLadderKnight_124"
-124/texture = ExtResource( 89 )
+124/texture = ExtResource( 131 )
 124/tex_offset = Vector2( 0, 0 )
 124/modulate = Color( 1, 1, 1, 1 )
 124/region = Rect2( 0, 0, 0, 0 )
@@ -789,7 +786,7 @@ resource_name = "MMM Ladder Tileset"
 124/shapes = [  ]
 124/z_index = 0
 125/name = "sprLadderPlant_125"
-125/texture = ExtResource( 63 )
+125/texture = ExtResource( 132 )
 125/tex_offset = Vector2( 0, 0 )
 125/modulate = Color( 1, 1, 1, 1 )
 125/region = Rect2( 0, 0, 0, 0 )
@@ -803,7 +800,7 @@ resource_name = "MMM Ladder Tileset"
 125/shapes = [  ]
 125/z_index = 0
 126/name = "sprLadderMrX1_126"
-126/texture = ExtResource( 22 )
+126/texture = ExtResource( 128 )
 126/tex_offset = Vector2( 0, 0 )
 126/modulate = Color( 1, 1, 1, 1 )
 126/region = Rect2( 0, 0, 0, 0 )
@@ -817,7 +814,7 @@ resource_name = "MMM Ladder Tileset"
 126/shapes = [  ]
 126/z_index = 0
 127/name = "sprLadderMrX4_127"
-127/texture = ExtResource( 15 )
+127/texture = ExtResource( 129 )
 127/tex_offset = Vector2( 0, 0 )
 127/modulate = Color( 1, 1, 1, 1 )
 127/region = Rect2( 0, 0, 0, 0 )
@@ -831,7 +828,7 @@ resource_name = "MMM Ladder Tileset"
 127/shapes = [  ]
 127/z_index = 0
 128/name = "sprLadderMM6Wily1_128"
-128/texture = ExtResource( 72 )
+128/texture = ExtResource( 130 )
 128/tex_offset = Vector2( 0, 0 )
 128/modulate = Color( 1, 1, 1, 1 )
 128/region = Rect2( 0, 0, 0, 0 )
@@ -844,22 +841,8 @@ resource_name = "MMM Ladder Tileset"
 128/shape_one_way_margin = 0.0
 128/shapes = [  ]
 128/z_index = 0
-364/name = "sprLadderWood2_364"
-364/texture = ExtResource( 204 )
-364/tex_offset = Vector2( 0, 0 )
-364/modulate = Color( 1, 1, 1, 1 )
-364/region = Rect2( 0, 0, 0, 0 )
-364/tile_mode = 0
-364/occluder_offset = Vector2( 0, 0 )
-364/navigation_offset = Vector2( 0, 0 )
-364/shape_offset = Vector2( 0, 0 )
-364/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-364/shape_one_way = false
-364/shape_one_way_margin = 0.0
-364/shapes = [  ]
-364/z_index = 0
 365/name = "sprLadderHeat_365"
-365/texture = ExtResource( 68 )
+365/texture = ExtResource( 100 )
 365/tex_offset = Vector2( 0, 0 )
 365/modulate = Color( 1, 1, 1, 1 )
 365/region = Rect2( 0, 0, 0, 0 )
@@ -873,7 +856,7 @@ resource_name = "MMM Ladder Tileset"
 365/shapes = [  ]
 365/z_index = 0
 366/name = "sprLadderNeedle2_366"
-366/texture = ExtResource( 73 )
+366/texture = ExtResource( 97 )
 366/tex_offset = Vector2( 0, 0 )
 366/modulate = Color( 1, 1, 1, 1 )
 366/region = Rect2( 0, 0, 0, 0 )
@@ -887,7 +870,7 @@ resource_name = "MMM Ladder Tileset"
 366/shapes = [  ]
 366/z_index = 0
 367/name = "sprLadderShadow_367"
-367/texture = ExtResource( 62 )
+367/texture = ExtResource( 133 )
 367/tex_offset = Vector2( 0, 0 )
 367/modulate = Color( 1, 1, 1, 1 )
 367/region = Rect2( 0, 0, 0, 0 )
@@ -901,7 +884,7 @@ resource_name = "MMM Ladder Tileset"
 367/shapes = [  ]
 367/z_index = 0
 368/name = "sprLadderMM3Wily1_368"
-368/texture = ExtResource( 9 )
+368/texture = ExtResource( 141 )
 368/tex_offset = Vector2( 0, 0 )
 368/modulate = Color( 1, 1, 1, 1 )
 368/region = Rect2( 0, 0, 0, 0 )
@@ -915,7 +898,7 @@ resource_name = "MMM Ladder Tileset"
 368/shapes = [  ]
 368/z_index = 0
 369/name = "sprLadderMM3Wily2_369"
-369/texture = ExtResource( 2 )
+369/texture = ExtResource( 138 )
 369/tex_offset = Vector2( 0, 0 )
 369/modulate = Color( 1, 1, 1, 1 )
 369/region = Rect2( 0, 0, 0, 0 )
@@ -929,7 +912,7 @@ resource_name = "MMM Ladder Tileset"
 369/shapes = [  ]
 369/z_index = 0
 370/name = "sprLadderRing_370"
-370/texture = ExtResource( 64 )
+370/texture = ExtResource( 134 )
 370/tex_offset = Vector2( 0, 0 )
 370/modulate = Color( 1, 1, 1, 1 )
 370/region = Rect2( 0, 0, 0, 0 )
@@ -943,7 +926,7 @@ resource_name = "MMM Ladder Tileset"
 370/shapes = [  ]
 370/z_index = 0
 371/name = "sprLadderDive_371"
-371/texture = ExtResource( 83 )
+371/texture = ExtResource( 142 )
 371/tex_offset = Vector2( 0, 0 )
 371/modulate = Color( 1, 1, 1, 1 )
 371/region = Rect2( 0, 0, 0, 0 )
@@ -957,7 +940,7 @@ resource_name = "MMM Ladder Tileset"
 371/shapes = [  ]
 371/z_index = 0
 372/name = "sprLadderDive2_372"
-372/texture = ExtResource( 78 )
+372/texture = ExtResource( 135 )
 372/tex_offset = Vector2( 0, 0 )
 372/modulate = Color( 1, 1, 1, 1 )
 372/region = Rect2( 0, 0, 0, 0 )
@@ -971,7 +954,7 @@ resource_name = "MMM Ladder Tileset"
 372/shapes = [  ]
 372/z_index = 0
 373/name = "sprLadderDrill_373"
-373/texture = ExtResource( 70 )
+373/texture = ExtResource( 140 )
 373/tex_offset = Vector2( 0, 0 )
 373/modulate = Color( 1, 1, 1, 1 )
 373/region = Rect2( 0, 0, 0, 0 )
@@ -985,7 +968,7 @@ resource_name = "MMM Ladder Tileset"
 373/shapes = [  ]
 373/z_index = 0
 374/name = "sprLadderCossack1_2_374"
-374/texture = ExtResource( 87 )
+374/texture = ExtResource( 136 )
 374/tex_offset = Vector2( 0, 0 )
 374/modulate = Color( 1, 1, 1, 1 )
 374/region = Rect2( 0, 0, 0, 0 )
@@ -999,7 +982,7 @@ resource_name = "MMM Ladder Tileset"
 374/shapes = [  ]
 374/z_index = 0
 375/name = "sprLadderCossack3_375"
-375/texture = ExtResource( 61 )
+375/texture = ExtResource( 145 )
 375/tex_offset = Vector2( 0, 0 )
 375/modulate = Color( 1, 1, 1, 1 )
 375/region = Rect2( 0, 0, 0, 0 )
@@ -1013,7 +996,7 @@ resource_name = "MMM Ladder Tileset"
 375/shapes = [  ]
 375/z_index = 0
 376/name = "sprLadderMM4Wily3_376"
-376/texture = ExtResource( 5 )
+376/texture = ExtResource( 137 )
 376/tex_offset = Vector2( 0, 0 )
 376/modulate = Color( 1, 1, 1, 1 )
 376/region = Rect2( 0, 0, 0, 0 )
@@ -1027,7 +1010,7 @@ resource_name = "MMM Ladder Tileset"
 376/shapes = [  ]
 376/z_index = 0
 377/name = "sprLadderGravity_377"
-377/texture = ExtResource( 65 )
+377/texture = ExtResource( 139 )
 377/tex_offset = Vector2( 0, 0 )
 377/modulate = Color( 1, 1, 1, 1 )
 377/region = Rect2( 0, 0, 0, 0 )
@@ -1041,7 +1024,7 @@ resource_name = "MMM Ladder Tileset"
 377/shapes = [  ]
 377/z_index = 0
 378/name = "sprLadderMM5Wily1_378"
-378/texture = ExtResource( 66 )
+378/texture = ExtResource( 149 )
 378/tex_offset = Vector2( 0, 0 )
 378/modulate = Color( 1, 1, 1, 1 )
 378/region = Rect2( 0, 0, 0, 0 )
@@ -1055,7 +1038,7 @@ resource_name = "MMM Ladder Tileset"
 378/shapes = [  ]
 378/z_index = 0
 379/name = "sprLadderMM5Wily2_379"
-379/texture = ExtResource( 69 )
+379/texture = ExtResource( 143 )
 379/tex_offset = Vector2( 0, 0 )
 379/modulate = Color( 1, 1, 1, 1 )
 379/region = Rect2( 0, 0, 0, 0 )
@@ -1069,7 +1052,7 @@ resource_name = "MMM Ladder Tileset"
 379/shapes = [  ]
 379/z_index = 0
 380/name = "sprLadderWind2_380"
-380/texture = ExtResource( 74 )
+380/texture = ExtResource( 147 )
 380/tex_offset = Vector2( 0, 0 )
 380/modulate = Color( 1, 1, 1, 1 )
 380/region = Rect2( 0, 0, 0, 0 )
@@ -1083,7 +1066,7 @@ resource_name = "MMM Ladder Tileset"
 380/shapes = [  ]
 380/z_index = 0
 381/name = "sprLadderTomahawk2_381"
-381/texture = ExtResource( 27 )
+381/texture = ExtResource( 144 )
 381/tex_offset = Vector2( 0, 0 )
 381/modulate = Color( 1, 1, 1, 1 )
 381/region = Rect2( 0, 0, 0, 0 )
@@ -1097,7 +1080,7 @@ resource_name = "MMM Ladder Tileset"
 381/shapes = [  ]
 381/z_index = 0
 382/name = "sprLadderCentaur2_382"
-382/texture = ExtResource( 10 )
+382/texture = ExtResource( 148 )
 382/tex_offset = Vector2( 0, 0 )
 382/modulate = Color( 1, 1, 1, 1 )
 382/region = Rect2( 0, 0, 0, 0 )
@@ -1111,7 +1094,7 @@ resource_name = "MMM Ladder Tileset"
 382/shapes = [  ]
 382/z_index = 0
 383/name = "sprLadderCentaur3_383"
-383/texture = ExtResource( 23 )
+383/texture = ExtResource( 146 )
 383/tex_offset = Vector2( 0, 0 )
 383/modulate = Color( 1, 1, 1, 1 )
 383/region = Rect2( 0, 0, 0, 0 )
@@ -1125,7 +1108,7 @@ resource_name = "MMM Ladder Tileset"
 383/shapes = [  ]
 383/z_index = 0
 384/name = "sprLadderKnight2_384"
-384/texture = ExtResource( 77 )
+384/texture = ExtResource( 150 )
 384/tex_offset = Vector2( 0, 0 )
 384/modulate = Color( 1, 1, 1, 1 )
 384/region = Rect2( 0, 0, 0, 0 )
@@ -1139,7 +1122,7 @@ resource_name = "MMM Ladder Tileset"
 384/shapes = [  ]
 384/z_index = 0
 385/name = "sprLadderYamato_385"
-385/texture = ExtResource( 79 )
+385/texture = ExtResource( 151 )
 385/tex_offset = Vector2( 0, 0 )
 385/modulate = Color( 1, 1, 1, 1 )
 385/region = Rect2( 0, 0, 0, 0 )
@@ -1153,7 +1136,7 @@ resource_name = "MMM Ladder Tileset"
 385/shapes = [  ]
 385/z_index = 0
 386/name = "sprLadderMrX3_386"
-386/texture = ExtResource( 35 )
+386/texture = ExtResource( 166 )
 386/tex_offset = Vector2( 0, 0 )
 386/modulate = Color( 1, 1, 1, 1 )
 386/region = Rect2( 0, 0, 0, 0 )
@@ -1166,22 +1149,8 @@ resource_name = "MMM Ladder Tileset"
 386/shape_one_way_margin = 0.0
 386/shapes = [  ]
 386/z_index = 0
-387/name = "sprLadderMM6Wily1_2_387"
-387/texture = ExtResource( 220 )
-387/tex_offset = Vector2( 0, 0 )
-387/modulate = Color( 1, 1, 1, 1 )
-387/region = Rect2( 0, 0, 0, 0 )
-387/tile_mode = 0
-387/occluder_offset = Vector2( 0, 0 )
-387/navigation_offset = Vector2( 0, 0 )
-387/shape_offset = Vector2( 0, 0 )
-387/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-387/shape_one_way = false
-387/shape_one_way_margin = 0.0
-387/shapes = [  ]
-387/z_index = 0
 388/name = "sprLadderMM6Wily3_388"
-388/texture = ExtResource( 85 )
+388/texture = ExtResource( 170 )
 388/tex_offset = Vector2( 0, 0 )
 388/modulate = Color( 1, 1, 1, 1 )
 388/region = Rect2( 0, 0, 0, 0 )
@@ -1195,7 +1164,7 @@ resource_name = "MMM Ladder Tileset"
 388/shapes = [  ]
 388/z_index = 0
 389/name = "sprLadderSpring_389"
-389/texture = ExtResource( 90 )
+389/texture = ExtResource( 182 )
 389/tex_offset = Vector2( 0, 0 )
 389/modulate = Color( 1, 1, 1, 1 )
 389/region = Rect2( 0, 0, 0, 0 )
@@ -1209,7 +1178,7 @@ resource_name = "MMM Ladder Tileset"
 389/shapes = [  ]
 389/z_index = 0
 390/name = "sprLadderFreeze_390"
-390/texture = ExtResource( 80 )
+390/texture = ExtResource( 156 )
 390/tex_offset = Vector2( 0, 0 )
 390/modulate = Color( 1, 1, 1, 1 )
 390/region = Rect2( 0, 0, 0, 0 )
@@ -1223,7 +1192,7 @@ resource_name = "MMM Ladder Tileset"
 390/shapes = [  ]
 390/z_index = 0
 391/name = "sprLadderSlash_391"
-391/texture = ExtResource( 57 )
+391/texture = ExtResource( 167 )
 391/tex_offset = Vector2( 0, 0 )
 391/modulate = Color( 1, 1, 1, 1 )
 391/region = Rect2( 0, 0, 0, 0 )
@@ -1237,7 +1206,7 @@ resource_name = "MMM Ladder Tileset"
 391/shapes = [  ]
 391/z_index = 0
 392/name = "sprLadderJunk_392"
-392/texture = ExtResource( 67 )
+392/texture = ExtResource( 178 )
 392/tex_offset = Vector2( 0, 0 )
 392/modulate = Color( 1, 1, 1, 1 )
 392/region = Rect2( 0, 0, 0, 0 )
@@ -1251,7 +1220,7 @@ resource_name = "MMM Ladder Tileset"
 392/shapes = [  ]
 392/z_index = 0
 393/name = "sprLadderShade_393"
-393/texture = ExtResource( 75 )
+393/texture = ExtResource( 158 )
 393/tex_offset = Vector2( 0, 0 )
 393/modulate = Color( 1, 1, 1, 1 )
 393/region = Rect2( 0, 0, 0, 0 )
@@ -1265,7 +1234,7 @@ resource_name = "MMM Ladder Tileset"
 393/shapes = [  ]
 393/z_index = 0
 394/name = "sprLadderBurst_394"
-394/texture = ExtResource( 76 )
+394/texture = ExtResource( 175 )
 394/tex_offset = Vector2( 0, 0 )
 394/modulate = Color( 1, 1, 1, 1 )
 394/region = Rect2( 0, 0, 0, 0 )
@@ -1279,7 +1248,7 @@ resource_name = "MMM Ladder Tileset"
 394/shapes = [  ]
 394/z_index = 0
 395/name = "sprLadderTurbo_395"
-395/texture = ExtResource( 91 )
+395/texture = ExtResource( 177 )
 395/tex_offset = Vector2( 0, 0 )
 395/modulate = Color( 1, 1, 1, 1 )
 395/region = Rect2( 0, 0, 0, 0 )
@@ -1293,7 +1262,7 @@ resource_name = "MMM Ladder Tileset"
 395/shapes = [  ]
 395/z_index = 0
 396/name = "sprLadderCloud_396"
-396/texture = ExtResource( 84 )
+396/texture = ExtResource( 168 )
 396/tex_offset = Vector2( 0, 0 )
 396/modulate = Color( 1, 1, 1, 1 )
 396/region = Rect2( 0, 0, 0, 0 )
@@ -1307,7 +1276,7 @@ resource_name = "MMM Ladder Tileset"
 396/shapes = [  ]
 396/z_index = 0
 397/name = "sprLadderMM7Wily1_397"
-397/texture = ExtResource( 26 )
+397/texture = ExtResource( 176 )
 397/tex_offset = Vector2( 0, 0 )
 397/modulate = Color( 1, 1, 1, 1 )
 397/region = Rect2( 0, 0, 0, 0 )
@@ -1321,7 +1290,7 @@ resource_name = "MMM Ladder Tileset"
 397/shapes = [  ]
 397/z_index = 0
 398/name = "sprLadderMM7Wily2_398"
-398/texture = ExtResource( 24 )
+398/texture = ExtResource( 174 )
 398/tex_offset = Vector2( 0, 0 )
 398/modulate = Color( 1, 1, 1, 1 )
 398/region = Rect2( 0, 0, 0, 0 )
@@ -1335,7 +1304,7 @@ resource_name = "MMM Ladder Tileset"
 398/shapes = [  ]
 398/z_index = 0
 399/name = "sprLadderMM7Wily3_399"
-399/texture = ExtResource( 32 )
+399/texture = ExtResource( 159 )
 399/tex_offset = Vector2( 0, 0 )
 399/modulate = Color( 1, 1, 1, 1 )
 399/region = Rect2( 0, 0, 0, 0 )
@@ -1349,7 +1318,7 @@ resource_name = "MMM Ladder Tileset"
 399/shapes = [  ]
 399/z_index = 0
 400/name = "sprLadderAstro_400"
-400/texture = ExtResource( 86 )
+400/texture = ExtResource( 157 )
 400/tex_offset = Vector2( 0, 0 )
 400/modulate = Color( 1, 1, 1, 1 )
 400/region = Rect2( 0, 0, 0, 0 )
@@ -1363,7 +1332,7 @@ resource_name = "MMM Ladder Tileset"
 400/shapes = [  ]
 400/z_index = 0
 401/name = "sprLadderFrost_401"
-401/texture = ExtResource( 81 )
+401/texture = ExtResource( 185 )
 401/tex_offset = Vector2( 0, 0 )
 401/modulate = Color( 1, 1, 1, 1 )
 401/region = Rect2( 0, 0, 0, 0 )
@@ -1377,7 +1346,7 @@ resource_name = "MMM Ladder Tileset"
 401/shapes = [  ]
 401/z_index = 0
 402/name = "sprLadderSword_402"
-402/texture = ExtResource( 88 )
+402/texture = ExtResource( 152 )
 402/tex_offset = Vector2( 0, 0 )
 402/modulate = Color( 1, 1, 1, 1 )
 402/region = Rect2( 0, 0, 0, 0 )
@@ -1391,7 +1360,7 @@ resource_name = "MMM Ladder Tileset"
 402/shapes = [  ]
 402/z_index = 0
 403/name = "sprLadderSword2_403"
-403/texture = ExtResource( 71 )
+403/texture = ExtResource( 188 )
 403/tex_offset = Vector2( 0, 0 )
 403/modulate = Color( 1, 1, 1, 1 )
 403/region = Rect2( 0, 0, 0, 0 )
@@ -1405,12 +1374,12 @@ resource_name = "MMM Ladder Tileset"
 403/shapes = [  ]
 403/z_index = 0
 404/name = "sprLadderGrenade_404"
-404/texture = ExtResource( 82 )
+404/texture = ExtResource( 179 )
 404/tex_offset = Vector2( 0, 0 )
 404/modulate = Color( 1, 1, 1, 1 )
 404/region = Rect2( 0, 0, 0, 0 )
 404/tile_mode = 0
-404/occluder_offset = Vector2( 0, 0 )
+404/occluder_offset = Vector2( 1, 1 )
 404/navigation_offset = Vector2( 0, 0 )
 404/shape_offset = Vector2( 0, 0 )
 404/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
@@ -1419,7 +1388,7 @@ resource_name = "MMM Ladder Tileset"
 404/shapes = [  ]
 404/z_index = 0
 405/name = "sprLadderAqua_405"
-405/texture = ExtResource( 92 )
+405/texture = ExtResource( 186 )
 405/tex_offset = Vector2( 0, 0 )
 405/modulate = Color( 1, 1, 1, 1 )
 405/region = Rect2( 0, 0, 0, 0 )
@@ -1433,7 +1402,7 @@ resource_name = "MMM Ladder Tileset"
 405/shapes = [  ]
 405/z_index = 0
 406/name = "sprLadderSearch_406"
-406/texture = ExtResource( 93 )
+406/texture = ExtResource( 180 )
 406/tex_offset = Vector2( 0, 0 )
 406/modulate = Color( 1, 1, 1, 1 )
 406/region = Rect2( 0, 0, 0, 0 )
@@ -1447,7 +1416,7 @@ resource_name = "MMM Ladder Tileset"
 406/shapes = [  ]
 406/z_index = 0
 407/name = "sprLadderSearch2_407"
-407/texture = ExtResource( 58 )
+407/texture = ExtResource( 183 )
 407/tex_offset = Vector2( 0, 0 )
 407/modulate = Color( 1, 1, 1, 1 )
 407/region = Rect2( 0, 0, 0, 0 )
@@ -1461,7 +1430,7 @@ resource_name = "MMM Ladder Tileset"
 407/shapes = [  ]
 407/z_index = 0
 408/name = "sprLadderClown_408"
-408/texture = ExtResource( 60 )
+408/texture = ExtResource( 181 )
 408/tex_offset = Vector2( 0, 0 )
 408/modulate = Color( 1, 1, 1, 1 )
 408/region = Rect2( 0, 0, 0, 0 )
@@ -1475,7 +1444,7 @@ resource_name = "MMM Ladder Tileset"
 408/shapes = [  ]
 408/z_index = 0
 409/name = "sprLadderDuo_409"
-409/texture = ExtResource( 94 )
+409/texture = ExtResource( 171 )
 409/tex_offset = Vector2( 0, 0 )
 409/modulate = Color( 1, 1, 1, 1 )
 409/region = Rect2( 0, 0, 0, 0 )
@@ -1489,7 +1458,7 @@ resource_name = "MMM Ladder Tileset"
 409/shapes = [  ]
 409/z_index = 0
 410/name = "sprLadderMM8Wily2_410"
-410/texture = ExtResource( 59 )
+410/texture = ExtResource( 172 )
 410/tex_offset = Vector2( 0, 0 )
 410/modulate = Color( 1, 1, 1, 1 )
 410/region = Rect2( 0, 0, 0, 0 )
@@ -1503,7 +1472,7 @@ resource_name = "MMM Ladder Tileset"
 410/shapes = [  ]
 410/z_index = 0
 411/name = "sprLadderMM8Wily3_411"
-411/texture = ExtResource( 95 )
+411/texture = ExtResource( 184 )
 411/tex_offset = Vector2( 0, 0 )
 411/modulate = Color( 1, 1, 1, 1 )
 411/region = Rect2( 0, 0, 0, 0 )
@@ -1517,7 +1486,7 @@ resource_name = "MMM Ladder Tileset"
 411/shapes = [  ]
 411/z_index = 0
 412/name = "sprLadderConcrete_412"
-412/texture = ExtResource( 99 )
+412/texture = ExtResource( 187 )
 412/tex_offset = Vector2( 0, 0 )
 412/modulate = Color( 1, 1, 1, 1 )
 412/region = Rect2( 0, 0, 0, 0 )
@@ -1531,7 +1500,7 @@ resource_name = "MMM Ladder Tileset"
 412/shapes = [  ]
 412/z_index = 0
 413/name = "sprLadderHornet_413"
-413/texture = ExtResource( 96 )
+413/texture = ExtResource( 153 )
 413/tex_offset = Vector2( 0, 0 )
 413/modulate = Color( 1, 1, 1, 1 )
 413/region = Rect2( 0, 0, 0, 0 )
@@ -1545,7 +1514,7 @@ resource_name = "MMM Ladder Tileset"
 413/shapes = [  ]
 413/z_index = 0
 414/name = "sprLadderPlug_414"
-414/texture = ExtResource( 97 )
+414/texture = ExtResource( 169 )
 414/tex_offset = Vector2( 0, 0 )
 414/modulate = Color( 1, 1, 1, 1 )
 414/region = Rect2( 0, 0, 0, 0 )
@@ -1559,7 +1528,7 @@ resource_name = "MMM Ladder Tileset"
 414/shapes = [  ]
 414/z_index = 0
 415/name = "sprLadderSplash_415"
-415/texture = ExtResource( 101 )
+415/texture = ExtResource( 189 )
 415/tex_offset = Vector2( 0, 0 )
 415/modulate = Color( 1, 1, 1, 1 )
 415/region = Rect2( 0, 0, 0, 0 )
@@ -1573,7 +1542,7 @@ resource_name = "MMM Ladder Tileset"
 415/shapes = [  ]
 415/z_index = 0
 416/name = "sprLadderMagma_416"
-416/texture = ExtResource( 105 )
+416/texture = ExtResource( 154 )
 416/tex_offset = Vector2( 0, 0 )
 416/modulate = Color( 1, 1, 1, 1 )
 416/region = Rect2( 0, 0, 0, 0 )
@@ -1587,7 +1556,7 @@ resource_name = "MMM Ladder Tileset"
 416/shapes = [  ]
 416/z_index = 0
 417/name = "sprLadderGalaxy_417"
-417/texture = ExtResource( 98 )
+417/texture = ExtResource( 173 )
 417/tex_offset = Vector2( 0, 0 )
 417/modulate = Color( 1, 1, 1, 1 )
 417/region = Rect2( 0, 0, 0, 0 )
@@ -1601,7 +1570,7 @@ resource_name = "MMM Ladder Tileset"
 417/shapes = [  ]
 417/z_index = 0
 418/name = "sprLadderTornado_418"
-418/texture = ExtResource( 115 )
+418/texture = ExtResource( 190 )
 418/tex_offset = Vector2( 0, 0 )
 418/modulate = Color( 1, 1, 1, 1 )
 418/region = Rect2( 0, 0, 0, 0 )
@@ -1615,7 +1584,7 @@ resource_name = "MMM Ladder Tileset"
 418/shapes = [  ]
 418/z_index = 0
 419/name = "sprLadderMM9Wily1_419"
-419/texture = ExtResource( 100 )
+419/texture = ExtResource( 155 )
 419/tex_offset = Vector2( 0, 0 )
 419/modulate = Color( 1, 1, 1, 1 )
 419/region = Rect2( 0, 0, 0, 0 )
@@ -1629,7 +1598,7 @@ resource_name = "MMM Ladder Tileset"
 419/shapes = [  ]
 419/z_index = 0
 420/name = "sprLadderMM9Wily2_420"
-420/texture = ExtResource( 29 )
+420/texture = ExtResource( 191 )
 420/tex_offset = Vector2( 0, 0 )
 420/modulate = Color( 1, 1, 1, 1 )
 420/region = Rect2( 0, 0, 0, 0 )
@@ -1643,7 +1612,7 @@ resource_name = "MMM Ladder Tileset"
 420/shapes = [  ]
 420/z_index = 0
 421/name = "sprLadderMM9Wily3_421"
-421/texture = ExtResource( 30 )
+421/texture = ExtResource( 192 )
 421/tex_offset = Vector2( 0, 0 )
 421/modulate = Color( 1, 1, 1, 1 )
 421/region = Rect2( 0, 0, 0, 0 )
@@ -1657,7 +1626,7 @@ resource_name = "MMM Ladder Tileset"
 421/shapes = [  ]
 421/z_index = 0
 422/name = "sprLadderFake_422"
-422/texture = ExtResource( 102 )
+422/texture = ExtResource( 193 )
 422/tex_offset = Vector2( 0, 0 )
 422/modulate = Color( 1, 1, 1, 1 )
 422/region = Rect2( 0, 0, 0, 0 )
@@ -1671,7 +1640,7 @@ resource_name = "MMM Ladder Tileset"
 422/shapes = [  ]
 422/z_index = 0
 423/name = "sprLadderMM9Endless_423"
-423/texture = ExtResource( 113 )
+423/texture = ExtResource( 194 )
 423/tex_offset = Vector2( 0, 0 )
 423/modulate = Color( 1, 1, 1, 1 )
 423/region = Rect2( 0, 0, 0, 0 )
@@ -1685,7 +1654,7 @@ resource_name = "MMM Ladder Tileset"
 423/shapes = [  ]
 423/z_index = 0
 424/name = "sprLadderMM9Endless2_424"
-424/texture = ExtResource( 103 )
+424/texture = ExtResource( 163 )
 424/tex_offset = Vector2( 0, 0 )
 424/modulate = Color( 1, 1, 1, 1 )
 424/region = Rect2( 0, 0, 0, 0 )
@@ -1699,7 +1668,7 @@ resource_name = "MMM Ladder Tileset"
 424/shapes = [  ]
 424/z_index = 0
 425/name = "sprLadderMM9Endless3_425"
-425/texture = ExtResource( 104 )
+425/texture = ExtResource( 162 )
 425/tex_offset = Vector2( 0, 0 )
 425/modulate = Color( 1, 1, 1, 1 )
 425/region = Rect2( 0, 0, 0, 0 )
@@ -1713,7 +1682,7 @@ resource_name = "MMM Ladder Tileset"
 425/shapes = [  ]
 425/z_index = 0
 428/name = "sprLadderMM9Wily2Alt_428"
-428/texture = ExtResource( 31 )
+428/texture = ExtResource( 195 )
 428/tex_offset = Vector2( 0, 0 )
 428/modulate = Color( 1, 1, 1, 1 )
 428/region = Rect2( 0, 0, 0, 0 )
@@ -1727,7 +1696,7 @@ resource_name = "MMM Ladder Tileset"
 428/shapes = [  ]
 428/z_index = 0
 429/name = "sprLadderJunk2_429"
-429/texture = ExtResource( 106 )
+429/texture = ExtResource( 160 )
 429/tex_offset = Vector2( 0, 0 )
 429/modulate = Color( 1, 1, 1, 1 )
 429/region = Rect2( 0, 0, 0, 0 )
@@ -1741,7 +1710,7 @@ resource_name = "MMM Ladder Tileset"
 429/shapes = [  ]
 429/z_index = 0
 430/name = "sprLadderCloud2_430"
-430/texture = ExtResource( 108 )
+430/texture = ExtResource( 164 )
 430/tex_offset = Vector2( 0, 0 )
 430/modulate = Color( 1, 1, 1, 1 )
 430/region = Rect2( 0, 0, 0, 0 )
@@ -1755,7 +1724,7 @@ resource_name = "MMM Ladder Tileset"
 430/shapes = [  ]
 430/z_index = 0
 431/name = "sprLadderMM9Wily1_2_431"
-431/texture = ExtResource( 107 )
+431/texture = ExtResource( 196 )
 431/tex_offset = Vector2( 0, 0 )
 431/modulate = Color( 1, 1, 1, 1 )
 431/region = Rect2( 0, 0, 0, 0 )
@@ -1769,7 +1738,7 @@ resource_name = "MMM Ladder Tileset"
 431/shapes = [  ]
 431/z_index = 0
 434/name = "sprLadderSnake_434"
-434/texture = ExtResource( 109 )
+434/texture = ExtResource( 161 )
 434/tex_offset = Vector2( 0, 0 )
 434/modulate = Color( 1, 1, 1, 1 )
 434/region = Rect2( 0, 0, 0, 0 )
@@ -1783,7 +1752,7 @@ resource_name = "MMM Ladder Tileset"
 434/shapes = [  ]
 434/z_index = 0
 573/name = "sprLadderBlade_573"
-573/texture = ExtResource( 110 )
+573/texture = ExtResource( 197 )
 573/tex_offset = Vector2( 0, 0 )
 573/modulate = Color( 1, 1, 1, 1 )
 573/region = Rect2( 0, 0, 0, 0 )
@@ -1797,7 +1766,7 @@ resource_name = "MMM Ladder Tileset"
 573/shapes = [  ]
 573/z_index = 0
 574/name = "sprLadderSolar_574"
-574/texture = ExtResource( 111 )
+574/texture = ExtResource( 200 )
 574/tex_offset = Vector2( 0, 0 )
 574/modulate = Color( 1, 1, 1, 1 )
 574/region = Rect2( 0, 0, 0, 0 )
@@ -1811,7 +1780,7 @@ resource_name = "MMM Ladder Tileset"
 574/shapes = [  ]
 574/z_index = 0
 575/name = "sprLadderSolarAlt_575"
-575/texture = ExtResource( 112 )
+575/texture = ExtResource( 198 )
 575/tex_offset = Vector2( 0, 0 )
 575/modulate = Color( 1, 1, 1, 1 )
 575/region = Rect2( 0, 0, 0, 0 )
@@ -1825,7 +1794,7 @@ resource_name = "MMM Ladder Tileset"
 575/shapes = [  ]
 575/z_index = 0
 576/name = "sprLadderSheep_576"
-576/texture = ExtResource( 114 )
+576/texture = ExtResource( 199 )
 576/tex_offset = Vector2( 0, 0 )
 576/modulate = Color( 1, 1, 1, 1 )
 576/region = Rect2( 0, 0, 0, 0 )
@@ -1839,7 +1808,7 @@ resource_name = "MMM Ladder Tileset"
 576/shapes = [  ]
 576/z_index = 0
 577/name = "sprLadderPump_577"
-577/texture = ExtResource( 116 )
+577/texture = ExtResource( 165 )
 577/tex_offset = Vector2( 0, 0 )
 577/modulate = Color( 1, 1, 1, 1 )
 577/region = Rect2( 0, 0, 0, 0 )
@@ -1853,7 +1822,7 @@ resource_name = "MMM Ladder Tileset"
 577/shapes = [  ]
 577/z_index = 0
 578/name = "sprLadderPumpAlt_578"
-578/texture = ExtResource( 117 )
+578/texture = ExtResource( 212 )
 578/tex_offset = Vector2( 0, 0 )
 578/modulate = Color( 1, 1, 1, 1 )
 578/region = Rect2( 0, 0, 0, 0 )
@@ -1867,7 +1836,7 @@ resource_name = "MMM Ladder Tileset"
 578/shapes = [  ]
 578/z_index = 0
 579/name = "sprLadderStrike_579"
-579/texture = ExtResource( 118 )
+579/texture = ExtResource( 201 )
 579/tex_offset = Vector2( 0, 0 )
 579/modulate = Color( 1, 1, 1, 1 )
 579/region = Rect2( 0, 0, 0, 0 )
@@ -1881,7 +1850,7 @@ resource_name = "MMM Ladder Tileset"
 579/shapes = [  ]
 579/z_index = 0
 580/name = "sprLadderNitro_580"
-580/texture = ExtResource( 119 )
+580/texture = ExtResource( 204 )
 580/tex_offset = Vector2( 0, 0 )
 580/modulate = Color( 1, 1, 1, 1 )
 580/region = Rect2( 0, 0, 0, 0 )
@@ -1895,7 +1864,7 @@ resource_name = "MMM Ladder Tileset"
 580/shapes = [  ]
 580/z_index = 0
 581/name = "sprLadderChill_581"
-581/texture = ExtResource( 120 )
+581/texture = ExtResource( 211 )
 581/tex_offset = Vector2( 0, 0 )
 581/modulate = Color( 1, 1, 1, 1 )
 581/region = Rect2( 0, 0, 0, 0 )
@@ -1909,7 +1878,7 @@ resource_name = "MMM Ladder Tileset"
 581/shapes = [  ]
 581/z_index = 0
 582/name = "sprLadderChillAlt_582"
-582/texture = ExtResource( 122 )
+582/texture = ExtResource( 202 )
 582/tex_offset = Vector2( 0, 0 )
 582/modulate = Color( 1, 1, 1, 1 )
 582/region = Rect2( 0, 0, 0, 0 )
@@ -1923,7 +1892,7 @@ resource_name = "MMM Ladder Tileset"
 582/shapes = [  ]
 582/z_index = 0
 583/name = "sprLadderChillAlt2_583"
-583/texture = ExtResource( 124 )
+583/texture = ExtResource( 203 )
 583/tex_offset = Vector2( 0, 0 )
 583/modulate = Color( 1, 1, 1, 1 )
 583/region = Rect2( 0, 0, 0, 0 )
@@ -1937,7 +1906,7 @@ resource_name = "MMM Ladder Tileset"
 583/shapes = [  ]
 583/z_index = 0
 584/name = "sprLadderChillAlt3_584"
-584/texture = ExtResource( 126 )
+584/texture = ExtResource( 205 )
 584/tex_offset = Vector2( 0, 0 )
 584/modulate = Color( 1, 1, 1, 1 )
 584/region = Rect2( 0, 0, 0, 0 )
@@ -1951,7 +1920,7 @@ resource_name = "MMM Ladder Tileset"
 584/shapes = [  ]
 584/z_index = 0
 585/name = "sprLadderMM10Wily1_585"
-585/texture = ExtResource( 123 )
+585/texture = ExtResource( 206 )
 585/tex_offset = Vector2( 0, 0 )
 585/modulate = Color( 1, 1, 1, 1 )
 585/region = Rect2( 0, 0, 0, 0 )
@@ -1965,7 +1934,7 @@ resource_name = "MMM Ladder Tileset"
 585/shapes = [  ]
 585/z_index = 0
 586/name = "sprLadderMM10Wily2_586"
-586/texture = ExtResource( 125 )
+586/texture = ExtResource( 207 )
 586/tex_offset = Vector2( 0, 0 )
 586/modulate = Color( 1, 1, 1, 1 )
 586/region = Rect2( 0, 0, 0, 0 )
@@ -1979,7 +1948,7 @@ resource_name = "MMM Ladder Tileset"
 586/shapes = [  ]
 586/z_index = 0
 587/name = "sprLadderMM10Wily3_587"
-587/texture = ExtResource( 121 )
+587/texture = ExtResource( 213 )
 587/tex_offset = Vector2( 0, 0 )
 587/modulate = Color( 1, 1, 1, 1 )
 587/region = Rect2( 0, 0, 0, 0 )
@@ -1993,7 +1962,7 @@ resource_name = "MMM Ladder Tileset"
 587/shapes = [  ]
 587/z_index = 0
 588/name = "sprLadderMM10Wily3Alt_588"
-588/texture = ExtResource( 142 )
+588/texture = ExtResource( 208 )
 588/tex_offset = Vector2( 0, 0 )
 588/modulate = Color( 1, 1, 1, 1 )
 588/region = Rect2( 0, 0, 0, 0 )
@@ -2007,7 +1976,7 @@ resource_name = "MMM Ladder Tileset"
 588/shapes = [  ]
 588/z_index = 0
 589/name = "sprLadderMM10Wily5_589"
-589/texture = ExtResource( 156 )
+589/texture = ExtResource( 209 )
 589/tex_offset = Vector2( 0, 0 )
 589/modulate = Color( 1, 1, 1, 1 )
 589/region = Rect2( 0, 0, 0, 0 )
@@ -2021,7 +1990,7 @@ resource_name = "MMM Ladder Tileset"
 589/shapes = [  ]
 589/z_index = 0
 590/name = "sprLadderMM10Wily5_2_590"
-590/texture = ExtResource( 138 )
+590/texture = ExtResource( 210 )
 590/tex_offset = Vector2( 0, 0 )
 590/modulate = Color( 1, 1, 1, 1 )
 590/region = Rect2( 0, 0, 0, 0 )
@@ -2035,7 +2004,7 @@ resource_name = "MMM Ladder Tileset"
 590/shapes = [  ]
 590/z_index = 0
 591/name = "sprLadderPunk_591"
-591/texture = ExtResource( 150 )
+591/texture = ExtResource( 214 )
 591/tex_offset = Vector2( 0, 0 )
 591/modulate = Color( 1, 1, 1, 1 )
 591/region = Rect2( 0, 0, 0, 0 )
@@ -2049,7 +2018,7 @@ resource_name = "MMM Ladder Tileset"
 591/shapes = [  ]
 591/z_index = 0
 592/name = "sprLadderBallade_592"
-592/texture = ExtResource( 146 )
+592/texture = ExtResource( 215 )
 592/tex_offset = Vector2( 0, 0 )
 592/modulate = Color( 1, 1, 1, 1 )
 592/region = Rect2( 0, 0, 0, 0 )
@@ -2063,7 +2032,7 @@ resource_name = "MMM Ladder Tileset"
 592/shapes = [  ]
 592/z_index = 0
 593/name = "sprLadderEndless_593"
-593/texture = ExtResource( 151 )
+593/texture = ExtResource( 222 )
 593/tex_offset = Vector2( 0, 0 )
 593/modulate = Color( 1, 1, 1, 1 )
 593/region = Rect2( 0, 0, 0, 0 )
@@ -2077,7 +2046,7 @@ resource_name = "MMM Ladder Tileset"
 593/shapes = [  ]
 593/z_index = 0
 594/name = "sprLadderChallenge_594"
-594/texture = ExtResource( 144 )
+594/texture = ExtResource( 225 )
 594/tex_offset = Vector2( 0, 0 )
 594/modulate = Color( 1, 1, 1, 1 )
 594/region = Rect2( 0, 0, 0, 0 )
@@ -2091,7 +2060,7 @@ resource_name = "MMM Ladder Tileset"
 594/shapes = [  ]
 594/z_index = 0
 659/name = "sprLadderBlock_659"
-659/texture = ExtResource( 129 )
+659/texture = ExtResource( 216 )
 659/tex_offset = Vector2( 0, 0 )
 659/modulate = Color( 1, 1, 1, 1 )
 659/region = Rect2( 0, 0, 0, 0 )
@@ -2105,7 +2074,7 @@ resource_name = "MMM Ladder Tileset"
 659/shapes = [  ]
 659/z_index = 0
 660/name = "sprLadderAcid_660"
-660/texture = ExtResource( 145 )
+660/texture = ExtResource( 217 )
 660/tex_offset = Vector2( 0, 0 )
 660/modulate = Color( 1, 1, 1, 1 )
 660/region = Rect2( 0, 0, 0, 0 )
@@ -2119,7 +2088,7 @@ resource_name = "MMM Ladder Tileset"
 660/shapes = [  ]
 660/z_index = 0
 661/name = "sprLadderBlast_661"
-661/texture = ExtResource( 128 )
+661/texture = ExtResource( 226 )
 661/tex_offset = Vector2( 0, 0 )
 661/modulate = Color( 1, 1, 1, 1 )
 661/region = Rect2( 0, 0, 0, 0 )
@@ -2133,7 +2102,7 @@ resource_name = "MMM Ladder Tileset"
 661/shapes = [  ]
 661/z_index = 0
 662/name = "sprLadderBounce_662"
-662/texture = ExtResource( 152 )
+662/texture = ExtResource( 218 )
 662/tex_offset = Vector2( 0, 0 )
 662/modulate = Color( 1, 1, 1, 1 )
 662/region = Rect2( 0, 0, 0, 0 )
@@ -2147,7 +2116,7 @@ resource_name = "MMM Ladder Tileset"
 662/shapes = [  ]
 662/z_index = 0
 663/name = "sprLadderTundra_663"
-663/texture = ExtResource( 153 )
+663/texture = ExtResource( 223 )
 663/tex_offset = Vector2( 0, 0 )
 663/modulate = Color( 1, 1, 1, 1 )
 663/region = Rect2( 0, 0, 0, 0 )
@@ -2161,7 +2130,7 @@ resource_name = "MMM Ladder Tileset"
 663/shapes = [  ]
 663/z_index = 0
 664/name = "sprLadderImpact_664"
-664/texture = ExtResource( 143 )
+664/texture = ExtResource( 219 )
 664/tex_offset = Vector2( 0, 0 )
 664/modulate = Color( 1, 1, 1, 1 )
 664/region = Rect2( 0, 0, 0, 0 )
@@ -2175,7 +2144,7 @@ resource_name = "MMM Ladder Tileset"
 664/shapes = [  ]
 664/z_index = 0
 665/name = "sprLadderTorch_665"
-665/texture = ExtResource( 154 )
+665/texture = ExtResource( 224 )
 665/tex_offset = Vector2( 0, 0 )
 665/modulate = Color( 1, 1, 1, 1 )
 665/region = Rect2( 0, 0, 0, 0 )
@@ -2189,7 +2158,7 @@ resource_name = "MMM Ladder Tileset"
 665/shapes = [  ]
 665/z_index = 0
 666/name = "sprLadderFuse_666"
-666/texture = ExtResource( 133 )
+666/texture = ExtResource( 227 )
 666/tex_offset = Vector2( 0, 0 )
 666/modulate = Color( 1, 1, 1, 1 )
 666/region = Rect2( 0, 0, 0, 0 )
@@ -2203,7 +2172,7 @@ resource_name = "MMM Ladder Tileset"
 666/shapes = [  ]
 666/z_index = 0
 667/name = "sprLadderMM11Wily1_667"
-667/texture = ExtResource( 147 )
+667/texture = ExtResource( 220 )
 667/tex_offset = Vector2( 0, 0 )
 667/modulate = Color( 1, 1, 1, 1 )
 667/region = Rect2( 0, 0, 0, 0 )
@@ -2217,7 +2186,7 @@ resource_name = "MMM Ladder Tileset"
 667/shapes = [  ]
 667/z_index = 0
 668/name = "sprLadderMM11Wily2_668"
-668/texture = ExtResource( 155 )
+668/texture = ExtResource( 221 )
 668/tex_offset = Vector2( 0, 0 )
 668/modulate = Color( 1, 1, 1, 1 )
 668/region = Rect2( 0, 0, 0, 0 )
@@ -2231,7 +2200,7 @@ resource_name = "MMM Ladder Tileset"
 668/shapes = [  ]
 668/z_index = 0
 669/name = "sprLadderLight_669"
-669/texture = ExtResource( 148 )
+669/texture = ExtResource( 228 )
 669/tex_offset = Vector2( 0, 0 )
 669/modulate = Color( 1, 1, 1, 1 )
 669/region = Rect2( 0, 0, 0, 0 )
@@ -2245,7 +2214,7 @@ resource_name = "MMM Ladder Tileset"
 669/shapes = [  ]
 669/z_index = 0
 704/name = "sprLadderBomb1PU_704"
-704/texture = ExtResource( 131 )
+704/texture = ExtResource( 229 )
 704/tex_offset = Vector2( 0, 0 )
 704/modulate = Color( 1, 1, 1, 1 )
 704/region = Rect2( 0, 0, 0, 0 )
@@ -2259,7 +2228,7 @@ resource_name = "MMM Ladder Tileset"
 704/shapes = [  ]
 704/z_index = 0
 705/name = "sprLadderBuilder1PU_705"
-705/texture = ExtResource( 136 )
+705/texture = ExtResource( 230 )
 705/tex_offset = Vector2( 0, 0 )
 705/modulate = Color( 1, 1, 1, 1 )
 705/region = Rect2( 0, 0, 0, 0 )
@@ -2273,7 +2242,7 @@ resource_name = "MMM Ladder Tileset"
 705/shapes = [  ]
 705/z_index = 0
 706/name = "sprLadderBuilder2PU_706"
-706/texture = ExtResource( 162 )
+706/texture = ExtResource( 231 )
 706/tex_offset = Vector2( 0, 0 )
 706/modulate = Color( 1, 1, 1, 1 )
 706/region = Rect2( 0, 0, 0, 0 )
@@ -2287,7 +2256,7 @@ resource_name = "MMM Ladder Tileset"
 706/shapes = [  ]
 706/z_index = 0
 707/name = "sprLadderBuilder3PU_707"
-707/texture = ExtResource( 149 )
+707/texture = ExtResource( 235 )
 707/tex_offset = Vector2( 0, 0 )
 707/modulate = Color( 1, 1, 1, 1 )
 707/region = Rect2( 0, 0, 0, 0 )
@@ -2301,7 +2270,7 @@ resource_name = "MMM Ladder Tileset"
 707/shapes = [  ]
 707/z_index = 0
 708/name = "sprLadderBuilder4PU_708"
-708/texture = ExtResource( 130 )
+708/texture = ExtResource( 232 )
 708/tex_offset = Vector2( 0, 0 )
 708/modulate = Color( 1, 1, 1, 1 )
 708/region = Rect2( 0, 0, 0, 0 )
@@ -2315,7 +2284,7 @@ resource_name = "MMM Ladder Tileset"
 708/shapes = [  ]
 708/z_index = 0
 709/name = "sprLadderChallengePU_709"
-709/texture = ExtResource( 157 )
+709/texture = ExtResource( 233 )
 709/tex_offset = Vector2( 0, 0 )
 709/modulate = Color( 1, 1, 1, 1 )
 709/region = Rect2( 0, 0, 0, 0 )
@@ -2329,7 +2298,7 @@ resource_name = "MMM Ladder Tileset"
 709/shapes = [  ]
 709/z_index = 0
 710/name = "sprLadderCut1PU_710"
-710/texture = ExtResource( 158 )
+710/texture = ExtResource( 234 )
 710/tex_offset = Vector2( 0, 0 )
 710/modulate = Color( 1, 1, 1, 1 )
 710/region = Rect2( 0, 0, 0, 0 )
@@ -2343,7 +2312,7 @@ resource_name = "MMM Ladder Tileset"
 710/shapes = [  ]
 710/z_index = 0
 711/name = "sprLadderElec1PU_711"
-711/texture = ExtResource( 132 )
+711/texture = ExtResource( 236 )
 711/tex_offset = Vector2( 0, 0 )
 711/modulate = Color( 1, 1, 1, 1 )
 711/region = Rect2( 0, 0, 0, 0 )
@@ -2357,7 +2326,7 @@ resource_name = "MMM Ladder Tileset"
 711/shapes = [  ]
 711/z_index = 0
 712/name = "sprLadderFire1PU_712"
-712/texture = ExtResource( 134 )
+712/texture = ExtResource( 237 )
 712/tex_offset = Vector2( 0, 0 )
 712/modulate = Color( 1, 1, 1, 1 )
 712/region = Rect2( 0, 0, 0, 0 )
@@ -2371,7 +2340,7 @@ resource_name = "MMM Ladder Tileset"
 712/shapes = [  ]
 712/z_index = 0
 713/name = "sprLadderGuts1PU_713"
-713/texture = ExtResource( 135 )
+713/texture = ExtResource( 238 )
 713/tex_offset = Vector2( 0, 0 )
 713/modulate = Color( 1, 1, 1, 1 )
 713/region = Rect2( 0, 0, 0, 0 )
@@ -2385,7 +2354,7 @@ resource_name = "MMM Ladder Tileset"
 713/shapes = [  ]
 713/z_index = 0
 714/name = "sprLadderIce1PU_714"
-714/texture = ExtResource( 137 )
+714/texture = ExtResource( 239 )
 714/tex_offset = Vector2( 0, 0 )
 714/modulate = Color( 1, 1, 1, 1 )
 714/region = Rect2( 0, 0, 0, 0 )
@@ -2399,7 +2368,7 @@ resource_name = "MMM Ladder Tileset"
 714/shapes = [  ]
 714/z_index = 0
 715/name = "sprLadderIntroPU_715"
-715/texture = ExtResource( 127 )
+715/texture = ExtResource( 26 )
 715/tex_offset = Vector2( 0, 0 )
 715/modulate = Color( 1, 1, 1, 1 )
 715/region = Rect2( 0, 0, 0, 0 )
@@ -2413,7 +2382,7 @@ resource_name = "MMM Ladder Tileset"
 715/shapes = [  ]
 715/z_index = 0
 716/name = "sprLadderOilPU_716"
-716/texture = ExtResource( 159 )
+716/texture = ExtResource( 7 )
 716/tex_offset = Vector2( 0, 0 )
 716/modulate = Color( 1, 1, 1, 1 )
 716/region = Rect2( 0, 0, 0, 0 )
@@ -2427,7 +2396,7 @@ resource_name = "MMM Ladder Tileset"
 716/shapes = [  ]
 716/z_index = 0
 717/name = "sprLadderTimePU_717"
-717/texture = ExtResource( 160 )
+717/texture = ExtResource( 23 )
 717/tex_offset = Vector2( 0, 0 )
 717/modulate = Color( 1, 1, 1, 1 )
 717/region = Rect2( 0, 0, 0, 0 )
@@ -2441,7 +2410,7 @@ resource_name = "MMM Ladder Tileset"
 717/shapes = [  ]
 717/z_index = 0
 718/name = "sprLadderMM1PUWily1PU_718"
-718/texture = ExtResource( 161 )
+718/texture = ExtResource( 21 )
 718/tex_offset = Vector2( 0, 0 )
 718/modulate = Color( 1, 1, 1, 1 )
 718/region = Rect2( 0, 0, 0, 0 )
@@ -2455,7 +2424,7 @@ resource_name = "MMM Ladder Tileset"
 718/shapes = [  ]
 718/z_index = 0
 719/name = "sprLadderMM1PUWily2PU_719"
-719/texture = ExtResource( 163 )
+719/texture = ExtResource( 5 )
 719/tex_offset = Vector2( 0, 0 )
 719/modulate = Color( 1, 1, 1, 1 )
 719/region = Rect2( 0, 0, 0, 0 )
@@ -2469,7 +2438,7 @@ resource_name = "MMM Ladder Tileset"
 719/shapes = [  ]
 719/z_index = 0
 720/name = "sprLadderMM1PUWily3PU_720"
-720/texture = ExtResource( 141 )
+720/texture = ExtResource( 1 )
 720/tex_offset = Vector2( 0, 0 )
 720/modulate = Color( 1, 1, 1, 1 )
 720/region = Rect2( 0, 0, 0, 0 )
@@ -2483,7 +2452,7 @@ resource_name = "MMM Ladder Tileset"
 720/shapes = [  ]
 720/z_index = 0
 721/name = "sprLadderMM1PUWily4PU_721"
-721/texture = ExtResource( 164 )
+721/texture = ExtResource( 32 )
 721/tex_offset = Vector2( 0, 0 )
 721/modulate = Color( 1, 1, 1, 1 )
 721/region = Rect2( 0, 0, 0, 0 )
@@ -2497,7 +2466,7 @@ resource_name = "MMM Ladder Tileset"
 721/shapes = [  ]
 721/z_index = 0
 867/name = "sprLadderMmbIntro_867"
-867/texture = ExtResource( 165 )
+867/texture = ExtResource( 24 )
 867/tex_offset = Vector2( 0, 0 )
 867/modulate = Color( 1, 1, 1, 1 )
 867/region = Rect2( 0, 0, 0, 0 )
@@ -2511,7 +2480,7 @@ resource_name = "MMM Ladder Tileset"
 867/shapes = [  ]
 867/z_index = 0
 873/name = "sprLadderCold_873"
-873/texture = ExtResource( 171 )
+873/texture = ExtResource( 27 )
 873/tex_offset = Vector2( 0, 0 )
 873/modulate = Color( 1, 1, 1, 1 )
 873/region = Rect2( 0, 0, 0, 0 )
@@ -2525,7 +2494,7 @@ resource_name = "MMM Ladder Tileset"
 873/shapes = [  ]
 873/z_index = 0
 878/name = "sprLadderBurner_878"
-878/texture = ExtResource( 166 )
+878/texture = ExtResource( 33 )
 878/tex_offset = Vector2( 0, 0 )
 878/modulate = Color( 1, 1, 1, 1 )
 878/region = Rect2( 0, 0, 0, 0 )
@@ -2539,7 +2508,7 @@ resource_name = "MMM Ladder Tileset"
 878/shapes = [  ]
 878/z_index = 0
 883/name = "sprLadderPirate_883"
-883/texture = ExtResource( 167 )
+883/texture = ExtResource( 29 )
 883/tex_offset = Vector2( 0, 0 )
 883/modulate = Color( 1, 1, 1, 1 )
 883/region = Rect2( 0, 0, 0, 0 )
@@ -2553,7 +2522,7 @@ resource_name = "MMM Ladder Tileset"
 883/shapes = [  ]
 883/z_index = 0
 886/name = "sprLadderGround_886"
-886/texture = ExtResource( 168 )
+886/texture = ExtResource( 22 )
 886/tex_offset = Vector2( 0, 0 )
 886/modulate = Color( 1, 1, 1, 1 )
 886/region = Rect2( 0, 0, 0, 0 )
@@ -2567,7 +2536,7 @@ resource_name = "MMM Ladder Tileset"
 886/shapes = [  ]
 886/z_index = 0
 892/name = "sprLadderTengu_892"
-892/texture = ExtResource( 169 )
+892/texture = ExtResource( 30 )
 892/tex_offset = Vector2( 0, 0 )
 892/modulate = Color( 1, 1, 1, 1 )
 892/region = Rect2( 0, 0, 0, 0 )
@@ -2581,7 +2550,7 @@ resource_name = "MMM Ladder Tileset"
 892/shapes = [  ]
 892/z_index = 0
 897/name = "sprLadderMagic_897"
-897/texture = ExtResource( 170 )
+897/texture = ExtResource( 37 )
 897/tex_offset = Vector2( 0, 0 )
 897/modulate = Color( 1, 1, 1, 1 )
 897/region = Rect2( 0, 0, 0, 0 )
@@ -2595,7 +2564,7 @@ resource_name = "MMM Ladder Tileset"
 897/shapes = [  ]
 897/z_index = 0
 903/name = "sprLadderMmbAstro_903"
-903/texture = ExtResource( 172 )
+903/texture = ExtResource( 18 )
 903/tex_offset = Vector2( 0, 0 )
 903/modulate = Color( 1, 1, 1, 1 )
 903/region = Rect2( 0, 0, 0, 0 )
@@ -2609,7 +2578,7 @@ resource_name = "MMM Ladder Tileset"
 903/shapes = [  ]
 903/z_index = 0
 908/name = "sprLadderDynamo_908"
-908/texture = ExtResource( 173 )
+908/texture = ExtResource( 14 )
 908/tex_offset = Vector2( 0, 0 )
 908/modulate = Color( 1, 1, 1, 1 )
 908/region = Rect2( 0, 0, 0, 0 )
@@ -2623,7 +2592,7 @@ resource_name = "MMM Ladder Tileset"
 908/shapes = [  ]
 908/z_index = 0
 912/name = "sprLadderKing1_912"
-912/texture = ExtResource( 174 )
+912/texture = ExtResource( 10 )
 912/tex_offset = Vector2( 0, 0 )
 912/modulate = Color( 1, 1, 1, 1 )
 912/region = Rect2( 0, 0, 0, 0 )
@@ -2637,7 +2606,7 @@ resource_name = "MMM Ladder Tileset"
 912/shapes = [  ]
 912/z_index = 0
 915/name = "sprLadderKing2_1_915"
-915/texture = ExtResource( 139 )
+915/texture = ExtResource( 25 )
 915/tex_offset = Vector2( 0, 0 )
 915/modulate = Color( 1, 1, 1, 1 )
 915/region = Rect2( 0, 0, 0, 0 )
@@ -2651,7 +2620,7 @@ resource_name = "MMM Ladder Tileset"
 915/shapes = [  ]
 915/z_index = 0
 922/name = "sprLadderKing2_2_922"
-922/texture = ExtResource( 175 )
+922/texture = ExtResource( 12 )
 922/tex_offset = Vector2( 0, 0 )
 922/modulate = Color( 1, 1, 1, 1 )
 922/region = Rect2( 0, 0, 0, 0 )
@@ -2665,7 +2634,7 @@ resource_name = "MMM Ladder Tileset"
 922/shapes = [  ]
 922/z_index = 0
 923/name = "sprLadderKing2_3_923"
-923/texture = ExtResource( 140 )
+923/texture = ExtResource( 28 )
 923/tex_offset = Vector2( 0, 0 )
 923/modulate = Color( 1, 1, 1, 1 )
 923/region = Rect2( 0, 0, 0, 0 )
@@ -2679,7 +2648,7 @@ resource_name = "MMM Ladder Tileset"
 923/shapes = [  ]
 923/z_index = 0
 924/name = "sprLadderGBICut_924"
-924/texture = ExtResource( 178 )
+924/texture = ExtResource( 34 )
 924/tex_offset = Vector2( 0, 0 )
 924/modulate = Color( 1, 1, 1, 1 )
 924/region = Rect2( 0, 0, 0, 0 )
@@ -2693,7 +2662,7 @@ resource_name = "MMM Ladder Tileset"
 924/shapes = [  ]
 924/z_index = 0
 925/name = "sprLadderGBIElec_925"
-925/texture = ExtResource( 188 )
+925/texture = ExtResource( 15 )
 925/tex_offset = Vector2( 0, 0 )
 925/modulate = Color( 1, 1, 1, 1 )
 925/region = Rect2( 0, 0, 0, 0 )
@@ -2707,7 +2676,7 @@ resource_name = "MMM Ladder Tileset"
 925/shapes = [  ]
 925/z_index = 0
 926/name = "sprLadderGBIFire_926"
-926/texture = ExtResource( 176 )
+926/texture = ExtResource( 35 )
 926/tex_offset = Vector2( 0, 0 )
 926/modulate = Color( 1, 1, 1, 1 )
 926/region = Rect2( 0, 0, 0, 0 )
@@ -2721,7 +2690,7 @@ resource_name = "MMM Ladder Tileset"
 926/shapes = [  ]
 926/z_index = 0
 927/name = "sprLadderGBIIce_927"
-927/texture = ExtResource( 177 )
+927/texture = ExtResource( 2 )
 927/tex_offset = Vector2( 0, 0 )
 927/modulate = Color( 1, 1, 1, 1 )
 927/region = Rect2( 0, 0, 0, 0 )
@@ -2735,7 +2704,7 @@ resource_name = "MMM Ladder Tileset"
 927/shapes = [  ]
 927/z_index = 0
 928/name = "sprLadderGBIWily_928"
-928/texture = ExtResource( 179 )
+928/texture = ExtResource( 31 )
 928/tex_offset = Vector2( 0, 0 )
 928/modulate = Color( 1, 1, 1, 1 )
 928/region = Rect2( 0, 0, 0, 0 )
@@ -2749,7 +2718,7 @@ resource_name = "MMM Ladder Tileset"
 928/shapes = [  ]
 928/z_index = 0
 929/name = "sprLadderGBIIClash_929"
-929/texture = ExtResource( 180 )
+929/texture = ExtResource( 36 )
 929/tex_offset = Vector2( 0, 0 )
 929/modulate = Color( 1, 1, 1, 1 )
 929/region = Rect2( 0, 0, 0, 0 )
@@ -2763,7 +2732,7 @@ resource_name = "MMM Ladder Tileset"
 929/shapes = [  ]
 929/z_index = 0
 930/name = "sprLadderGBIIClashAlt_930"
-930/texture = ExtResource( 186 )
+930/texture = ExtResource( 38 )
 930/tex_offset = Vector2( 0, 0 )
 930/modulate = Color( 1, 1, 1, 1 )
 930/region = Rect2( 0, 0, 0, 0 )
@@ -2777,7 +2746,7 @@ resource_name = "MMM Ladder Tileset"
 930/shapes = [  ]
 930/z_index = 0
 931/name = "sprLadderGBIIIDive_931"
-931/texture = ExtResource( 181 )
+931/texture = ExtResource( 6 )
 931/tex_offset = Vector2( 0, 0 )
 931/modulate = Color( 1, 1, 1, 1 )
 931/region = Rect2( 0, 0, 0, 0 )
@@ -2791,7 +2760,7 @@ resource_name = "MMM Ladder Tileset"
 931/shapes = [  ]
 931/z_index = 0
 932/name = "sprLadderGBIIMetal_932"
-932/texture = ExtResource( 182 )
+932/texture = ExtResource( 3 )
 932/tex_offset = Vector2( 0, 0 )
 932/modulate = Color( 1, 1, 1, 1 )
 932/region = Rect2( 0, 0, 0, 0 )
@@ -2805,7 +2774,7 @@ resource_name = "MMM Ladder Tileset"
 932/shapes = [  ]
 932/z_index = 0
 933/name = "sprLadderGBIIMetalAlt_933"
-933/texture = ExtResource( 183 )
+933/texture = ExtResource( 17 )
 933/tex_offset = Vector2( 0, 0 )
 933/modulate = Color( 1, 1, 1, 1 )
 933/region = Rect2( 0, 0, 0, 0 )
@@ -2819,7 +2788,7 @@ resource_name = "MMM Ladder Tileset"
 933/shapes = [  ]
 933/z_index = 0
 934/name = "sprLadderGBIIWood_934"
-934/texture = ExtResource( 184 )
+934/texture = ExtResource( 8 )
 934/tex_offset = Vector2( 0, 0 )
 934/modulate = Color( 1, 1, 1, 1 )
 934/region = Rect2( 0, 0, 0, 0 )
@@ -2833,7 +2802,7 @@ resource_name = "MMM Ladder Tileset"
 934/shapes = [  ]
 934/z_index = 0
 935/name = "sprLadderGBIIWoodAlt_935"
-935/texture = ExtResource( 187 )
+935/texture = ExtResource( 19 )
 935/tex_offset = Vector2( 0, 0 )
 935/modulate = Color( 1, 1, 1, 1 )
 935/region = Rect2( 0, 0, 0, 0 )
@@ -2847,7 +2816,7 @@ resource_name = "MMM Ladder Tileset"
 935/shapes = [  ]
 935/z_index = 0
 936/name = "sprLadderGBIIWily_936"
-936/texture = ExtResource( 185 )
+936/texture = ExtResource( 13 )
 936/tex_offset = Vector2( 0, 0 )
 936/modulate = Color( 1, 1, 1, 1 )
 936/region = Rect2( 0, 0, 0, 0 )
@@ -2861,7 +2830,7 @@ resource_name = "MMM Ladder Tileset"
 936/shapes = [  ]
 936/z_index = 0
 937/name = "sprLadderGBIIWilyAlt_937"
-937/texture = ExtResource( 189 )
+937/texture = ExtResource( 39 )
 937/tex_offset = Vector2( 0, 0 )
 937/modulate = Color( 1, 1, 1, 1 )
 937/region = Rect2( 0, 0, 0, 0 )
@@ -2875,7 +2844,7 @@ resource_name = "MMM Ladder Tileset"
 937/shapes = [  ]
 937/z_index = 0
 938/name = "sprLadderGBIIIDust_938"
-938/texture = ExtResource( 190 )
+938/texture = ExtResource( 9 )
 938/tex_offset = Vector2( 0, 0 )
 938/modulate = Color( 1, 1, 1, 1 )
 938/region = Rect2( 0, 0, 0, 0 )
@@ -2889,7 +2858,7 @@ resource_name = "MMM Ladder Tileset"
 938/shapes = [  ]
 938/z_index = 0
 939/name = "sprLadderGBIIIGemini_939"
-939/texture = ExtResource( 226 )
+939/texture = ExtResource( 11 )
 939/tex_offset = Vector2( 0, 0 )
 939/modulate = Color( 1, 1, 1, 1 )
 939/region = Rect2( 0, 0, 0, 0 )
@@ -2903,7 +2872,7 @@ resource_name = "MMM Ladder Tileset"
 939/shapes = [  ]
 939/z_index = 0
 940/name = "sprLadderGBIIISkull_940"
-940/texture = ExtResource( 194 )
+940/texture = ExtResource( 20 )
 940/tex_offset = Vector2( 0, 0 )
 940/modulate = Color( 1, 1, 1, 1 )
 940/region = Rect2( 0, 0, 0, 0 )
@@ -2917,7 +2886,7 @@ resource_name = "MMM Ladder Tileset"
 940/shapes = [  ]
 940/z_index = 0
 941/name = "sprLadderGBIIISnake_941"
-941/texture = ExtResource( 215 )
+941/texture = ExtResource( 4 )
 941/tex_offset = Vector2( 0, 0 )
 941/modulate = Color( 1, 1, 1, 1 )
 941/region = Rect2( 0, 0, 0, 0 )
@@ -2931,7 +2900,7 @@ resource_name = "MMM Ladder Tileset"
 941/shapes = [  ]
 941/z_index = 0
 942/name = "sprLadderGBIIISpark_942"
-942/texture = ExtResource( 196 )
+942/texture = ExtResource( 40 )
 942/tex_offset = Vector2( 0, 0 )
 942/modulate = Color( 1, 1, 1, 1 )
 942/region = Rect2( 0, 0, 0, 0 )
@@ -2945,7 +2914,7 @@ resource_name = "MMM Ladder Tileset"
 942/shapes = [  ]
 942/z_index = 0
 943/name = "sprLadderGBIIIWily_943"
-943/texture = ExtResource( 195 )
+943/texture = ExtResource( 48 )
 943/tex_offset = Vector2( 0, 0 )
 943/modulate = Color( 1, 1, 1, 1 )
 943/region = Rect2( 0, 0, 0, 0 )
@@ -2959,7 +2928,7 @@ resource_name = "MMM Ladder Tileset"
 943/shapes = [  ]
 943/z_index = 0
 944/name = "sprLadderGBIVBright_944"
-944/texture = ExtResource( 221 )
+944/texture = ExtResource( 41 )
 944/tex_offset = Vector2( 0, 0 )
 944/modulate = Color( 1, 1, 1, 1 )
 944/region = Rect2( 0, 0, 0, 0 )
@@ -2973,7 +2942,7 @@ resource_name = "MMM Ladder Tileset"
 944/shapes = [  ]
 944/z_index = 0
 945/name = "sprLadderGBIVCharge_945"
-945/texture = ExtResource( 219 )
+945/texture = ExtResource( 42 )
 945/tex_offset = Vector2( 0, 0 )
 945/modulate = Color( 1, 1, 1, 1 )
 945/region = Rect2( 0, 0, 0, 0 )
@@ -2987,7 +2956,7 @@ resource_name = "MMM Ladder Tileset"
 945/shapes = [  ]
 945/z_index = 0
 946/name = "sprLadderGBIVCrystal_946"
-946/texture = ExtResource( 203 )
+946/texture = ExtResource( 43 )
 946/tex_offset = Vector2( 0, 0 )
 946/modulate = Color( 1, 1, 1, 1 )
 946/region = Rect2( 0, 0, 0, 0 )
@@ -3001,7 +2970,7 @@ resource_name = "MMM Ladder Tileset"
 946/shapes = [  ]
 946/z_index = 0
 947/name = "sprLadderGBIVNapalm_947"
-947/texture = ExtResource( 224 )
+947/texture = ExtResource( 44 )
 947/tex_offset = Vector2( 0, 0 )
 947/modulate = Color( 1, 1, 1, 1 )
 947/region = Rect2( 0, 0, 0, 0 )
@@ -3015,7 +2984,7 @@ resource_name = "MMM Ladder Tileset"
 947/shapes = [  ]
 947/z_index = 0
 948/name = "sprLadderGBIVRing_948"
-948/texture = ExtResource( 213 )
+948/texture = ExtResource( 45 )
 948/tex_offset = Vector2( 0, 0 )
 948/modulate = Color( 1, 1, 1, 1 )
 948/region = Rect2( 0, 0, 0, 0 )
@@ -3029,7 +2998,7 @@ resource_name = "MMM Ladder Tileset"
 948/shapes = [  ]
 948/z_index = 0
 949/name = "sprLadderGBIVStone_949"
-949/texture = ExtResource( 214 )
+949/texture = ExtResource( 46 )
 949/tex_offset = Vector2( 0, 0 )
 949/modulate = Color( 1, 1, 1, 1 )
 949/region = Rect2( 0, 0, 0, 0 )
@@ -3043,7 +3012,7 @@ resource_name = "MMM Ladder Tileset"
 949/shapes = [  ]
 949/z_index = 0
 950/name = "sprLadderGBIVToad_950"
-950/texture = ExtResource( 212 )
+950/texture = ExtResource( 47 )
 950/tex_offset = Vector2( 0, 0 )
 950/modulate = Color( 1, 1, 1, 1 )
 950/region = Rect2( 0, 0, 0, 0 )
@@ -3057,7 +3026,7 @@ resource_name = "MMM Ladder Tileset"
 950/shapes = [  ]
 950/z_index = 0
 951/name = "sprLadderGBIVWily_951"
-951/texture = ExtResource( 222 )
+951/texture = ExtResource( 49 )
 951/tex_offset = Vector2( 0, 0 )
 951/modulate = Color( 1, 1, 1, 1 )
 951/region = Rect2( 0, 0, 0, 0 )
@@ -3071,7 +3040,7 @@ resource_name = "MMM Ladder Tileset"
 951/shapes = [  ]
 951/z_index = 0
 952/name = "sprLadderGBVJupiter_952"
-952/texture = ExtResource( 216 )
+952/texture = ExtResource( 50 )
 952/tex_offset = Vector2( 0, 0 )
 952/modulate = Color( 1, 1, 1, 1 )
 952/region = Rect2( 0, 0, 0, 0 )
@@ -3085,7 +3054,7 @@ resource_name = "MMM Ladder Tileset"
 952/shapes = [  ]
 952/z_index = 0
 953/name = "sprLadderGBVMars_953"
-953/texture = ExtResource( 207 )
+953/texture = ExtResource( 51 )
 953/tex_offset = Vector2( 0, 0 )
 953/modulate = Color( 1, 1, 1, 1 )
 953/region = Rect2( 0, 0, 0, 0 )
@@ -3099,7 +3068,7 @@ resource_name = "MMM Ladder Tileset"
 953/shapes = [  ]
 953/z_index = 0
 954/name = "sprLadderGBVMercury_954"
-954/texture = ExtResource( 210 )
+954/texture = ExtResource( 16 )
 954/tex_offset = Vector2( 0, 0 )
 954/modulate = Color( 1, 1, 1, 1 )
 954/region = Rect2( 0, 0, 0, 0 )
@@ -3113,7 +3082,7 @@ resource_name = "MMM Ladder Tileset"
 954/shapes = [  ]
 954/z_index = 0
 1103/name = "sprLadderGBVNeptune_1103"
-1103/texture = ExtResource( 192 )
+1103/texture = ExtResource( 52 )
 1103/tex_offset = Vector2( 0, 0 )
 1103/modulate = Color( 1, 1, 1, 1 )
 1103/region = Rect2( 0, 0, 0, 0 )
@@ -3127,7 +3096,7 @@ resource_name = "MMM Ladder Tileset"
 1103/shapes = [  ]
 1103/z_index = 0
 1104/name = "sprLadderGBVNeptuneAlt_1104"
-1104/texture = ExtResource( 191 )
+1104/texture = ExtResource( 53 )
 1104/tex_offset = Vector2( 0, 0 )
 1104/modulate = Color( 1, 1, 1, 1 )
 1104/region = Rect2( 0, 0, 0, 0 )
@@ -3141,7 +3110,7 @@ resource_name = "MMM Ladder Tileset"
 1104/shapes = [  ]
 1104/z_index = 0
 1105/name = "sprLadderGBVPluto_1105"
-1105/texture = ExtResource( 217 )
+1105/texture = ExtResource( 54 )
 1105/tex_offset = Vector2( 0, 0 )
 1105/modulate = Color( 1, 1, 1, 1 )
 1105/region = Rect2( 0, 0, 0, 0 )
@@ -3155,7 +3124,7 @@ resource_name = "MMM Ladder Tileset"
 1105/shapes = [  ]
 1105/z_index = 0
 1106/name = "sprLadderGBVSaturn_1106"
-1106/texture = ExtResource( 199 )
+1106/texture = ExtResource( 55 )
 1106/tex_offset = Vector2( 0, 0 )
 1106/modulate = Color( 1, 1, 1, 1 )
 1106/region = Rect2( 0, 0, 0, 0 )
@@ -3169,7 +3138,7 @@ resource_name = "MMM Ladder Tileset"
 1106/shapes = [  ]
 1106/z_index = 0
 1107/name = "sprLadderGBVUranus_1107"
-1107/texture = ExtResource( 201 )
+1107/texture = ExtResource( 60 )
 1107/tex_offset = Vector2( 0, 0 )
 1107/modulate = Color( 1, 1, 1, 1 )
 1107/region = Rect2( 0, 0, 0, 0 )
@@ -3183,7 +3152,7 @@ resource_name = "MMM Ladder Tileset"
 1107/shapes = [  ]
 1107/z_index = 0
 1108/name = "sprLadderGBVVenus_1108"
-1108/texture = ExtResource( 200 )
+1108/texture = ExtResource( 56 )
 1108/tex_offset = Vector2( 0, 0 )
 1108/modulate = Color( 1, 1, 1, 1 )
 1108/region = Rect2( 0, 0, 0, 0 )
@@ -3197,7 +3166,7 @@ resource_name = "MMM Ladder Tileset"
 1108/shapes = [  ]
 1108/z_index = 0
 1109/name = "sprLadderGBVWily_1109"
-1109/texture = ExtResource( 202 )
+1109/texture = ExtResource( 57 )
 1109/tex_offset = Vector2( 0, 0 )
 1109/modulate = Color( 1, 1, 1, 1 )
 1109/region = Rect2( 0, 0, 0, 0 )
@@ -3211,7 +3180,7 @@ resource_name = "MMM Ladder Tileset"
 1109/shapes = [  ]
 1109/z_index = 0
 1229/name = "sprLadderGBIIIDiveAlt_1229"
-1229/texture = ExtResource( 223 )
+1229/texture = ExtResource( 58 )
 1229/tex_offset = Vector2( 0, 0 )
 1229/modulate = Color( 1, 1, 1, 1 )
 1229/region = Rect2( 0, 0, 0, 0 )
@@ -3225,7 +3194,7 @@ resource_name = "MMM Ladder Tileset"
 1229/shapes = [  ]
 1229/z_index = 0
 1230/name = "sprLadderSearch3_1230"
-1230/texture = ExtResource( 218 )
+1230/texture = ExtResource( 59 )
 1230/tex_offset = Vector2( 0, 0 )
 1230/modulate = Color( 1, 1, 1, 1 )
 1230/region = Rect2( 0, 0, 0, 0 )
@@ -3239,7 +3208,7 @@ resource_name = "MMM Ladder Tileset"
 1230/shapes = [  ]
 1230/z_index = 0
 1410/name = "sprLadderMM9Wily3Alt_1410"
-1410/texture = ExtResource( 34 )
+1410/texture = ExtResource( 64 )
 1410/tex_offset = Vector2( 0, 0 )
 1410/modulate = Color( 1, 1, 1, 1 )
 1410/region = Rect2( 0, 0, 0, 0 )
@@ -3253,7 +3222,7 @@ resource_name = "MMM Ladder Tileset"
 1410/shapes = [  ]
 1410/z_index = 0
 1411/name = "sprLadderMM9Wily2Alt2_1411"
-1411/texture = ExtResource( 19 )
+1411/texture = ExtResource( 66 )
 1411/tex_offset = Vector2( 0, 0 )
 1411/modulate = Color( 1, 1, 1, 1 )
 1411/region = Rect2( 0, 0, 0, 0 )
@@ -3267,7 +3236,7 @@ resource_name = "MMM Ladder Tileset"
 1411/shapes = [  ]
 1411/z_index = 0
 1412/name = "sprLadderMM9Wily2Alt3_1412"
-1412/texture = ExtResource( 16 )
+1412/texture = ExtResource( 65 )
 1412/tex_offset = Vector2( 0, 0 )
 1412/modulate = Color( 1, 1, 1, 1 )
 1412/region = Rect2( 0, 0, 0, 0 )
@@ -3281,7 +3250,7 @@ resource_name = "MMM Ladder Tileset"
 1412/shapes = [  ]
 1412/z_index = 0
 1413/name = "sprLadderElec1PUAlt_1413"
-1413/texture = ExtResource( 209 )
+1413/texture = ExtResource( 81 )
 1413/tex_offset = Vector2( 0, 0 )
 1413/modulate = Color( 1, 1, 1, 1 )
 1413/region = Rect2( 0, 0, 0, 0 )
@@ -3295,7 +3264,7 @@ resource_name = "MMM Ladder Tileset"
 1413/shapes = [  ]
 1413/z_index = 0
 1414/name = "sprLadderElec1PUAlt2_1414"
-1414/texture = ExtResource( 225 )
+1414/texture = ExtResource( 82 )
 1414/tex_offset = Vector2( 0, 0 )
 1414/modulate = Color( 1, 1, 1, 1 )
 1414/region = Rect2( 0, 0, 0, 0 )
@@ -3309,7 +3278,7 @@ resource_name = "MMM Ladder Tileset"
 1414/shapes = [  ]
 1414/z_index = 0
 1415/name = "sprLadderBlastAlt_1415"
-1415/texture = ExtResource( 206 )
+1415/texture = ExtResource( 69 )
 1415/tex_offset = Vector2( 0, 0 )
 1415/modulate = Color( 1, 1, 1, 1 )
 1415/region = Rect2( 0, 0, 0, 0 )
@@ -3323,7 +3292,7 @@ resource_name = "MMM Ladder Tileset"
 1415/shapes = [  ]
 1415/z_index = 0
 1416/name = "sprLadderAcidAlt_1416"
-1416/texture = ExtResource( 197 )
+1416/texture = ExtResource( 67 )
 1416/tex_offset = Vector2( 0, 0 )
 1416/modulate = Color( 1, 1, 1, 1 )
 1416/region = Rect2( 0, 0, 0, 0 )
@@ -3336,22 +3305,8 @@ resource_name = "MMM Ladder Tileset"
 1416/shape_one_way_margin = 0.0
 1416/shapes = [  ]
 1416/z_index = 0
-1417/name = "sprLadderAcidAlt2_1417"
-1417/texture = ExtResource( 208 )
-1417/tex_offset = Vector2( 0, 0 )
-1417/modulate = Color( 1, 1, 1, 1 )
-1417/region = Rect2( 0, 0, 0, 0 )
-1417/tile_mode = 0
-1417/occluder_offset = Vector2( 0, 0 )
-1417/navigation_offset = Vector2( 0, 0 )
-1417/shape_offset = Vector2( 0, 0 )
-1417/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-1417/shape_one_way = false
-1417/shape_one_way_margin = 0.0
-1417/shapes = [  ]
-1417/z_index = 0
 1418/name = "sprLadderBlockAlt_1418"
-1418/texture = ExtResource( 198 )
+1418/texture = ExtResource( 73 )
 1418/tex_offset = Vector2( 0, 0 )
 1418/modulate = Color( 1, 1, 1, 1 )
 1418/region = Rect2( 0, 0, 0, 0 )
@@ -3365,7 +3320,7 @@ resource_name = "MMM Ladder Tileset"
 1418/shapes = [  ]
 1418/z_index = 0
 1419/name = "sprLadderBlockAlt2_1419"
-1419/texture = ExtResource( 211 )
+1419/texture = ExtResource( 75 )
 1419/tex_offset = Vector2( 0, 0 )
 1419/modulate = Color( 1, 1, 1, 1 )
 1419/region = Rect2( 0, 0, 0, 0 )
@@ -3379,7 +3334,7 @@ resource_name = "MMM Ladder Tileset"
 1419/shapes = [  ]
 1419/z_index = 0
 1420/name = "sprLadderBounceAlt_1420"
-1420/texture = ExtResource( 227 )
+1420/texture = ExtResource( 71 )
 1420/tex_offset = Vector2( 0, 0 )
 1420/modulate = Color( 1, 1, 1, 1 )
 1420/region = Rect2( 0, 0, 0, 0 )
@@ -3393,7 +3348,7 @@ resource_name = "MMM Ladder Tileset"
 1420/shapes = [  ]
 1420/z_index = 0
 1421/name = "sprLadderFuseAlt_1421"
-1421/texture = ExtResource( 228 )
+1421/texture = ExtResource( 83 )
 1421/tex_offset = Vector2( 0, 0 )
 1421/modulate = Color( 1, 1, 1, 1 )
 1421/region = Rect2( 0, 0, 0, 0 )
@@ -3407,7 +3362,7 @@ resource_name = "MMM Ladder Tileset"
 1421/shapes = [  ]
 1421/z_index = 0
 1422/name = "sprLadderTorchAlt_1422"
-1422/texture = ExtResource( 193 )
+1422/texture = ExtResource( 70 )
 1422/tex_offset = Vector2( 0, 0 )
 1422/modulate = Color( 1, 1, 1, 1 )
 1422/region = Rect2( 0, 0, 0, 0 )
@@ -3421,7 +3376,7 @@ resource_name = "MMM Ladder Tileset"
 1422/shapes = [  ]
 1422/z_index = 0
 1423/name = "sprLadderMM11Wily1Alt_1423"
-1423/texture = ExtResource( 231 )
+1423/texture = ExtResource( 78 )
 1423/tex_offset = Vector2( 0, 0 )
 1423/modulate = Color( 1, 1, 1, 1 )
 1423/region = Rect2( 0, 0, 0, 0 )
@@ -3435,7 +3390,7 @@ resource_name = "MMM Ladder Tileset"
 1423/shapes = [  ]
 1423/z_index = 0
 1424/name = "sprLadderMM11Wily2Alt_1424"
-1424/texture = ExtResource( 236 )
+1424/texture = ExtResource( 77 )
 1424/tex_offset = Vector2( 0, 0 )
 1424/modulate = Color( 1, 1, 1, 1 )
 1424/region = Rect2( 0, 0, 0, 0 )
@@ -3449,7 +3404,7 @@ resource_name = "MMM Ladder Tileset"
 1424/shapes = [  ]
 1424/z_index = 0
 1425/name = "sprLadderChillAlt4_1425"
-1425/texture = ExtResource( 232 )
+1425/texture = ExtResource( 74 )
 1425/tex_offset = Vector2( 0, 0 )
 1425/modulate = Color( 1, 1, 1, 1 )
 1425/region = Rect2( 0, 0, 0, 0 )
@@ -3463,7 +3418,7 @@ resource_name = "MMM Ladder Tileset"
 1425/shapes = [  ]
 1425/z_index = 0
 1426/name = "sprLadderSolarAlt2_1426"
-1426/texture = ExtResource( 229 )
+1426/texture = ExtResource( 79 )
 1426/tex_offset = Vector2( 0, 0 )
 1426/modulate = Color( 1, 1, 1, 1 )
 1426/region = Rect2( 0, 0, 0, 0 )
@@ -3477,7 +3432,7 @@ resource_name = "MMM Ladder Tileset"
 1426/shapes = [  ]
 1426/z_index = 0
 1427/name = "sprLadderOilPUAlt_1427"
-1427/texture = ExtResource( 239 )
+1427/texture = ExtResource( 76 )
 1427/tex_offset = Vector2( 0, 0 )
 1427/modulate = Color( 1, 1, 1, 1 )
 1427/region = Rect2( 0, 0, 0, 0 )
@@ -3491,7 +3446,7 @@ resource_name = "MMM Ladder Tileset"
 1427/shapes = [  ]
 1427/z_index = 0
 1428/name = "sprLadderMM1PUWily1PUAlt_1428"
-1428/texture = ExtResource( 230 )
+1428/texture = ExtResource( 86 )
 1428/tex_offset = Vector2( 0, 0 )
 1428/modulate = Color( 1, 1, 1, 1 )
 1428/region = Rect2( 0, 0, 0, 0 )
@@ -3505,7 +3460,7 @@ resource_name = "MMM Ladder Tileset"
 1428/shapes = [  ]
 1428/z_index = 0
 1429/name = "sprLadderMM1PUWily1PUAlt2_1429"
-1429/texture = ExtResource( 238 )
+1429/texture = ExtResource( 80 )
 1429/tex_offset = Vector2( 0, 0 )
 1429/modulate = Color( 1, 1, 1, 1 )
 1429/region = Rect2( 0, 0, 0, 0 )
@@ -3519,7 +3474,7 @@ resource_name = "MMM Ladder Tileset"
 1429/shapes = [  ]
 1429/z_index = 0
 1430/name = "sprLadderMM1PUWily1PUAlt3_1430"
-1430/texture = ExtResource( 235 )
+1430/texture = ExtResource( 85 )
 1430/tex_offset = Vector2( 0, 0 )
 1430/modulate = Color( 1, 1, 1, 1 )
 1430/region = Rect2( 0, 0, 0, 0 )
@@ -3533,7 +3488,7 @@ resource_name = "MMM Ladder Tileset"
 1430/shapes = [  ]
 1430/z_index = 0
 1431/name = "sprLadderMM1PUWily1PUAlt4_1431"
-1431/texture = ExtResource( 237 )
+1431/texture = ExtResource( 68 )
 1431/tex_offset = Vector2( 0, 0 )
 1431/modulate = Color( 1, 1, 1, 1 )
 1431/region = Rect2( 0, 0, 0, 0 )
@@ -3547,7 +3502,7 @@ resource_name = "MMM Ladder Tileset"
 1431/shapes = [  ]
 1431/z_index = 0
 1432/name = "sprLadderMM1PUWily2PUAlt_1432"
-1432/texture = ExtResource( 233 )
+1432/texture = ExtResource( 87 )
 1432/tex_offset = Vector2( 0, 0 )
 1432/modulate = Color( 1, 1, 1, 1 )
 1432/region = Rect2( 0, 0, 0, 0 )
@@ -3561,7 +3516,7 @@ resource_name = "MMM Ladder Tileset"
 1432/shapes = [  ]
 1432/z_index = 0
 1433/name = "sprLadderMM1PUWily2PUAlt2_1433"
-1433/texture = ExtResource( 234 )
+1433/texture = ExtResource( 72 )
 1433/tex_offset = Vector2( 0, 0 )
 1433/modulate = Color( 1, 1, 1, 1 )
 1433/region = Rect2( 0, 0, 0, 0 )
@@ -3575,7 +3530,7 @@ resource_name = "MMM Ladder Tileset"
 1433/shapes = [  ]
 1433/z_index = 0
 1639/name = "sprLadderGrenade_Overwrite_1639"
-1639/texture = ExtResource( 205 )
+1639/texture = ExtResource( 63 )
 1639/tex_offset = Vector2( 0, 0 )
 1639/modulate = Color( 1, 1, 1, 1 )
 1639/region = Rect2( 0, 0, 0, 0 )
