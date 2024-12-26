@@ -66,6 +66,9 @@ signal changed_tile_id(tilemap_tile_id)
 
 const EYEDROP_MODIFIER_KEY = KEY_ALT
 const UNDO_PAINT_TILE_ACTION_NAME = "Paint Tilemap"
+const EYEDROP_CURSOR: Texture = preload(
+	"res://eyedrop_cursor.png"
+)
 
 #-------------------------------------------------
 #      Properties
@@ -131,8 +134,10 @@ func process_input(event : InputEvent):
 				if not middle_click_press_moved:
 					eyedrop()
 	
-	if event is InputEventMouseMotion:
+	elif event is InputEventMouseMotion:
 		middle_click_press_moved = true
+	elif event is InputEventKey and event.scancode == EYEDROP_MODIFIER_KEY:
+		_update_eyedrop_cursor_shape(event.is_pressed())
 	
 	if left_mouse_down:
 		if Input.is_key_pressed(EYEDROP_MODIFIER_KEY):
@@ -209,6 +214,13 @@ func _register_undo_end():
 		return
 	
 	LevelUndo.get_undo_redo().commit_action()
+
+func _update_eyedrop_cursor_shape(is_on: bool) -> void:
+	if is_on:
+		Input.set_custom_mouse_cursor(EYEDROP_CURSOR, Input.CURSOR_ARROW,
+			EYEDROP_CURSOR.get_size() * Vector2.DOWN)
+	else:
+		Input.set_custom_mouse_cursor(null)
 
 #-------------------------------------------------
 #      Setters & Getters

@@ -416,11 +416,17 @@ func _control_tilemap_by_gui_input(event : InputEvent):
 		tile_painter.process_input(event)
 
 func _make_tilemap_tab_current_tile(tilemap_tile_id):
-	if EditMode.mode == EditMode.Mode.TILE:
-		inspector_panel.tilemap_tab.select_tile(
-			tilemap_tile_id / GameTileSetData.SUBTILE_COUNT,
-			tilemap_tile_id % GameTileSetData.SUBTILE_COUNT
-		)
+	match EditMode.mode:
+		EditMode.Mode.TILE:
+			inspector_panel.tilemap_tab.select_tile(
+				tilemap_tile_id / GameTileSetData.SUBTILE_COUNT,
+				tilemap_tile_id % GameTileSetData.SUBTILE_COUNT
+			)
+		EditMode.Mode.SPIKE:
+			inspector_panel.spike_tab.select_spike(
+				tilemap_tile_id / GameSpikeData.SPIKE_TILE_COUNT,
+				tilemap_tile_id % GameSpikeData.SPIKE_TILE_COUNT
+			)
 
 func _update_window_title_by_level_path(path : String):
 	WindowTitleUpdater.current_level_file_path = path

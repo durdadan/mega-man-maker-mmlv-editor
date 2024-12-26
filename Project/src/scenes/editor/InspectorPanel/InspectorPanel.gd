@@ -40,6 +40,7 @@ onready var tab_container = $PanelOpen/ContentVBox/TabContainer
 
 onready var level_tab = $PanelOpen/ContentVBox/TabContainer/LevelTab
 onready var tilemap_tab = $PanelOpen/ContentVBox/TabContainer/TilemapTab
+onready var spike_tab = $PanelOpen/ContentVBox/TabContainer/SpikeTab
 
 var resize_dragging = false
 
