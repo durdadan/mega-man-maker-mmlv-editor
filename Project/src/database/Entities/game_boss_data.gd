@@ -21,103 +21,82 @@ class_name GameBossData
 #      Constants
 #-------------------------------------------------
 
-const BOSS_COUNT = 46
-
-const BOSS_DATA = {
-	0:"Legacy Boss Door (Vertical)",
-	-999:"Legacy Boss Door (Vertical)",
-	1: "legacy Boss Door (Horizontal)",
-	33: "Boss Door (Vertical)",
-	34: "Boss Door (Horizontal)",
-	15: "Energy Element",
-	16: "Party Ball",
-	36: "Boss Suppressor",
-		
-	#MM1
-	5: "Cut Man",
-	17: "Ice Man",
-	13: "Bomb Man",
-	44: "Fire Man",
-	18: "Time Man",
-	54: "Yellow Devil",
-		
-	#MM2
-	22: "Bubble Man",
-	42: "Quick Man",
-	19: "Wood Man",
-	4: "Crash Man",
-	6: "Metal Man",
-	55: "BooBeam Trap",
-	56: "BooBeam Trap (Vertical)",
-	57: "BooBeam Controller",
-		
-	#MM3
-	10: "Spark Man",
-	3: "Top Man",
-	20: "Magnet Man",
-	21: "Hard Man",
+const BOSS_DATA: Dictionary = {
+	0: "BOSS DOOR",
+	1: "BOSS DOOR",
+	33: "BOSS DOOR",
+	34: "BOSS DOOR",
+	15: "ENERGY ELEMENT",
+	16: "PARTY BALL",
+	36: "BOSS SUPPRESSOR",
+	5: "CUT MAN",
+	13: "BOMB MAN",
+	17: "ICE MAN",
+	18: "TIME MAN",
+	44: "FIRE MAN",
+	54: "YELLOW DEVIL",
+	4: "CRASH MAN",
+	6: "METAL MAN",
+	19: "WOOD MAN",
+	22: "BUBBLE MAN",
+	42: "QUICK MAN",
+	55: "Boobeam Trap",
+	56: "Boobeam Trap",
+	57: "Boobeam Trap Controller",
+	68: "Boobeam Trap Rail",
+	3: "TOP MAN",
+	10: "SPARK MAN",
+	20: "MAGNET MAN",
+	21: "HARD MAN",
 	58: "Kamegoro Maker",
-	59: "Vortex Generator",
-	60: "Vortex Generator (Vertical)",
-		
-	#MM4
-	24: "Ring Man",
-	23: "Skull Man",
-	7: "Toad Man",
-	2: "Pharaoh Man",
-	61: "Cossack Catcher",
+	59: "Kamegoro Maker Vortex#Generator",
+	60: "Kamegoro Maker Vortex#Generator",
+	7: "TOAD MAN",
+	2: "PHARAOH MAN",
+	23: "SKULL MAN",
+	24: "RING MAN",
+	61: "COSSACK CATCHER",
 	62: "Wily Machine 4",
-	
-	#MM5
-	12: "Stone Man",
-	25: "Crystal Man",
-	11: "Napalm Man",
-	26: "Charge Man",
-	63: "Dark Man 3",
-	64: "Dark Man 4",
+	12: "STONE MAN",
+	25: "CRYSTAL MAN",
+	11: "NAPALM MAN",
+	26: "CHARGE MAN",
+	63: "DARK MAN 3",
+	64: "DARK MAN 4",
 	65: "Big Pets",
 	66: "Big Pets Body Platform",
-		
-	#MM6
-	28: "Wind Man",
-	27: "Flame Man",
-	14: "Knight Man",
-	43: "Yamato Man",
-	8: "Plant Man",
+	28: "WIND MAN",
+	27: "FLAME MAN",
+	8: "PLANT MAN",
+	14: "KNIGHT MAN",
+	43: "YAMATO MAN",
 	67: "Wily Machine 6",
-		
-	#MM7
-	30: "Spring Man",
-	46: "Freeze Man",
-	29: "Shade Man",
-		
-	#MM8
-	37: "Grenade Man",
-	35: "Astro Man (MM8)",
-	
-	#MM9
-	31: "Concrete Man",
-	45: "Splash Woman",
-	32: "Tornado Man",
-		
-	#MM10
-	38: "Sheep Man",
-	39: "Pump Man",
-	47: "Strike Man",
-		
-	#MM11
-	40: "Blast Man",
-	41: "Bounce Man",
-	
-	#MM&B
-	48: "Pirate Man",
-	49: "Burner Man",
-	50: "Cold Man",
-	
-	51: "Punk",
-	52: "Enker",
-	53: "Pluto",
-	
+	29: "SHADE MAN",
+	30: "SPRING MAN",
+	46: "FREEZE MAN",
+	70: "BURST MAN",
+	75: "Burst Bubble",
+	35: "ASTRO MAN",
+	37: "GRENADE MAN",
+	71: "TENGU MAN",
+	31: "CONCRETE MAN",
+	32: "TORNADO MAN",
+	45: "SPLASH WOMAN",
+	69: "GALAXY MAN",
+	72: "JEWEL MAN",
+	38: "SHEEP MAN",
+	39: "PUMP MAN",
+	47: "STRIKE MAN",
+	73: "NITRO MAN",
+	40: "BLAST MAN",
+	41: "BOUNCE MAN",
+	74: "FUSE MAN",
+	48: "PIRATE MAN",
+	49: "BURNER MAN",
+	50: "COLD MAN",
+	52: "ENKER",
+	51: "PUNK",
+	53: "PLUTO",
 }
 
 #-------------------------------------------------

@@ -21,12 +21,6 @@ extends Node
 #      Constants
 #-------------------------------------------------
 
-const TILESET_TILE = preload("res://assets/tilesets/hidden_tiles_1_8_2.tres")
-const TILESET_BG = preload("res://assets/tilesets/all_bg_1_8_0.tres")
-const TILESET_LADDER = preload("res://assets/tilesets/all_ladders_1_8_0.tres")
-const TILESET_SPIKE = preload("res://assets/tilesets/all_spikes_1_8_0.tres")
-const TILESET_ACTIVE_SCREEN = preload("res://assets/tilesets/active_screen_tileset.tres")
-
 #-------------------------------------------------
 #      Properties
 #-------------------------------------------------
@@ -38,6 +32,7 @@ onready var object_deleter = $ObjectDeleter
 onready var object_adder = $ObjectAdder
 onready var tile_painter = $TilePainter
 
+onready var control: Control = $CanvasLayer/Control
 onready var menu_bar = $CanvasLayer/Control/MenuPanel
 onready var file_access_ctrl = $CanvasLayer/Control/FileAccessCtrl
 onready var inspector_panel = $CanvasLayer/Control/InspectorPanel
@@ -52,12 +47,14 @@ onready var editor_config_dialog = $CanvasLayer/Control/Popups/EditorConfigPopup
 onready var hint_list_popup_dialog = $CanvasLayer/Control/Popups/HelpListPopupDialog
 onready var up_to_date_popup_dialog = $CanvasLayer/Control/Popups/UpToDatePopupDialog
 onready var update_available_popup_dialog = $CanvasLayer/Control/Popups/UpdateAvailablePopupDialog
+onready var toolbar_lock_btn: BaseButton = $CanvasLayer/Control/ToolBar.lock_btn
 
 #-------------------------------------------------
 #      Notifications
 #-------------------------------------------------
 
 func _ready() -> void:
+	_observe_popup_events()
 	_connect_ExitHandler()
 	_update_window_title_by_level_path("")
 	inspector_panel.load_level_config()
@@ -74,6 +71,10 @@ func _ready() -> void:
 #-------------------------------------------------
 #      Public Methods
 #-------------------------------------------------
+
+func can_handle_scroll() -> bool:
+	return !EditorConfig.locked_keyboard and not (
+		control.get_focus_owner() is LineEdit or control.get_focus_owner() is PopupMenu)
 
 func scroll_to_player_pos():
 	var pos = level.get_player_position()
@@ -206,7 +207,7 @@ func _on_FileAccessCtrl_saved_file(dir, path) -> void:
 func _on_Level_cleared_level() -> void:
 	new_level()
 
-func _on_FileDropNotifier_files_dropped(files : PoolStringArray, screen : int) -> void:
+func _on_FileDropNotifier_files_dropped(files : PoolStringArray, _screen : int) -> void:
 	#Check if there are unsaved changes
 	if UnsaveChanges.is_activated():
 		exit_unsaved_dialog.pending_request = exit_unsaved_dialog.PendingRequest.OPEN_FROM_PATH
@@ -415,11 +416,17 @@ func _control_tilemap_by_gui_input(event : InputEvent):
 		tile_painter.process_input(event)
 
 func _make_tilemap_tab_current_tile(tilemap_tile_id):
-	if EditMode.mode == EditMode.Mode.TILE:
-		inspector_panel.tilemap_tab.select_tile(
-			tilemap_tile_id / GameTileSetData.SUBTILE_COUNT,
-			tilemap_tile_id % GameTileSetData.SUBTILE_COUNT
-		)
+	match EditMode.mode:
+		EditMode.Mode.TILE:
+			inspector_panel.tilemap_tab.select_tile(
+				tilemap_tile_id / GameTileSetData.SUBTILE_COUNT,
+				tilemap_tile_id % GameTileSetData.SUBTILE_COUNT
+			)
+		EditMode.Mode.SPIKE:
+			inspector_panel.spike_tab.select_spike(
+				tilemap_tile_id / GameSpikeData.SPIKE_TILE_COUNT,
+				tilemap_tile_id % GameSpikeData.SPIKE_TILE_COUNT
+			)
 
 func _update_window_title_by_level_path(path : String):
 	WindowTitleUpdater.current_level_file_path = path
@@ -442,8 +449,21 @@ func _check_for_update(notify : bool = true):
 		return
 	if update_checker.is_auto_check_on_cooldown():
 		return
+	if OS.is_debug_build():
+		return
 	
 	update_checker.request(notify)
+
+func _observe_popup_events() -> void:
+	var _popups: Array = popups.get_children() + \
+		[ file_access_ctrl.open_file_dialog, file_access_ctrl.save_file_dialog ]
+	for popup in _popups:
+		popup = popup as Popup
+		popup.connect("about_to_show", self, "_set_lock_view_scroll", [ true ])
+		popup.connect("popup_hide", self, "_set_lock_view_scroll", [ false ])
+
+func _set_lock_view_scroll(result: bool) -> void:
+	EditorConfig.locked_keyboard = result or toolbar_lock_btn.pressed
 
 #-------------------------------------------------
 #      Setters & Getters

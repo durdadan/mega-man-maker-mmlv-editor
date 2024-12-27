@@ -75,7 +75,6 @@ signal bg_selected(id)
 const BUTTON_PRESS_EFFECT = preload("res://src/utils/ButtonFx/PressFx/ButtonPressFx.tscn")
 const GRID_C_AUTO_RESIZER = preload("res://src/utils/GridContainerAutoResizer/GridContainerAutoResizer.tscn")
 const GRID_C_NAME_PREFIX = "GridGameID"
-const GAME_ID_LABEL_PREFIX = "Mega Man "
 const IMG_TEXTURE_BEGIN_PATH = "res://assets/images/bg/"
 const BUTTON_SIZE = Vector2(128, 112)
 const MARGIN_BOTTOM_BOX_MIN_SIZE = Vector2(0, 96)
@@ -114,7 +113,7 @@ func _ready() -> void:
 #      Connections
 #-------------------------------------------------
 
-func _on_bg_btn_pressed_id(bg_id : int, bg_texture : Texture):
+func _on_bg_btn_pressed_id(bg_id : int, _bg_texture : Texture):
 	emit_signal("bg_selected", bg_id)
 
 func _on_SearchLineEdit_text_changed(new_text: String) -> void:
@@ -138,6 +137,8 @@ func _generate_ui():
 	_add_margin_bottom_box()
 
 func _create_bg_button(file_name : String, game_id : int, bg_id : int):
+	if game_id == GameDataBuilder.UNUSED_ASSETS:
+		return
 	var grid_c = scrl_vbox.get_node(GRID_C_NAME_PREFIX + str(game_id))
 	var tex_btn := TileTextureButton.new()
 	var tex = TextureRect.new()
@@ -161,12 +162,13 @@ func _create_bg_button(file_name : String, game_id : int, bg_id : int):
 	bg_btn_map.map_button(tex_btn, game_id)
 
 func _create_grid_containters():
-	var game_ids : Dictionary
+	var game_ids : Dictionary = {}
 	var sorted_game_ids : Array
 	
 	#Get all game ids and sort them
 	for i in GameBgData.BG_GAME_IDS.values():
 		game_ids[i] = ""
+	game_ids.erase(GameDataBuilder.UNUSED_ASSETS)
 	
 	sorted_game_ids = game_ids.keys()
 	sorted_game_ids.sort()
@@ -182,32 +184,7 @@ func _create_grid_containters():
 		grid_c.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		grid_c.get_parent().add_child(label_game_id)
 		grid_c.raise()
-		label_game_id.text = GAME_ID_LABEL_PREFIX + str(id)
-		if id == 99:
-			label_game_id.text = "Mega Man & Bass"
-		if id == 100:
-			label_game_id.text = "Mega Man Soccer"
-		if id == 101:
-			label_game_id.text = "Mega Man GB I"
-		if id == 102:
-			label_game_id.text = "Mega Man GB II"		
-		if id == 103:
-			label_game_id.text = "Mega Man GB III"
-		if id == 104:
-			label_game_id.text = "Mega Man GB IV"
-		if id == 105:
-			label_game_id.text = "Mega Man GB V"
-		if id == 106:
-			label_game_id.text = "Power Fighters"
-		if id == 107:
-			label_game_id.text = "Power Fighters 2"
-		if id == 108:
-			label_game_id.text = "Battle & Chase"
-		if id == 109:
-			label_game_id.text = "Wily Wars"
-		if id == 120:
-			label_game_id.text = "Misc"
-		
+		label_game_id.text = GameDataBuilder.getGameName(id)
 		# Map the newly created title label to bg_btn_mapper
 		bg_btn_map.map_title_label(label_game_id, id)
 

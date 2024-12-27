@@ -26,6 +26,7 @@
 [ext_resource path="res://assets/images/editor_ui/ToolBar/ScreenLockPressed.png" type="Texture" id=24]
 [ext_resource path="res://src/utils/LockToggler/LockToggler.gd" type="Script" id=25]
 [ext_resource path="res://assets/images/editor_ui/ToolBar/ScreenLockHover.png" type="Texture" id=26]
+[ext_resource path="res://assets/images/editor_ui/ToolBar/Spike.png" type="Texture" id=27]
 
 [sub_resource type="InputEventKey" id=1]
 scancode = 49
@@ -62,9 +63,6 @@ scancode = 54
 
 [sub_resource type="ShortCut" id=12]
 shortcut = SubResource( 11 )
-
-[sub_resource type="StreamTexture" id=13]
-load_path = "res://.import/Spike.png-9fd4b33fc7d4eebc1e9885049ada47cf.stex"
 
 [node name="ToolBar" type="Panel"]
 self_modulate = Color( 0, 0.505882, 1, 0.752941 )
@@ -209,8 +207,8 @@ margin_right = 164.0
 margin_bottom = 32.0
 rect_min_size = Vector2( 32, 32 )
 hint_tooltip = "Active Screen Edit Tool:
-* Left Button: Place tile.
-* Right Button: Remove tile."
+* Left Button: Disable screen.
+* Right Button: Enable screen."
 focus_mode = 0
 toggle_mode = true
 action_mode = 0
@@ -264,7 +262,7 @@ toggle_mode = true
 action_mode = 0
 enabled_focus_mode = 0
 shortcut = SubResource( 12 )
-texture_normal = SubResource( 13 )
+texture_normal = ExtResource( 27 )
 texture_pressed = ExtResource( 18 )
 texture_hover = ExtResource( 19 )
 expand = true
@@ -278,7 +276,6 @@ __meta__ = {
 margin_left = 260.0
 margin_right = 264.0
 margin_bottom = 64.0
-rect_scale = Vector2( 3, 1 )
 
 [node name="EditModeVBox2" type="VBoxContainer" parent="HBoxContainer"]
 margin_left = 272.0
@@ -323,6 +320,7 @@ __meta__ = {
 "_edit_use_anchors_": false,
 "_editor_description_": ""
 }
+
 [connection signal="pressed" from="HBoxContainer/ObjVBox/AddBtn" to="." method="_on_AddBtn_pressed"]
 [connection signal="pressed" from="HBoxContainer/EditModeVBox/HBoxContainer/ButtonsToggler" to="." method="_on_ButtonsToggler_pressed"]
 [connection signal="pressed" from="HBoxContainer/EditModeVBox/HBoxContainer/ObjectBtn" to="." method="_on_ObjectBtn_pressed"]

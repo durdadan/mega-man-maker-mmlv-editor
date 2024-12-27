@@ -56,12 +56,8 @@ export (bool) var unsave_changes setget set_unsave_changes, has_unsave_changes
 #-------------------------------------------------
 
 func _update_title():
-	var title : String
-	
-	if current_level_file_path.empty():
-		title += NEW_LEVEL_TITLE_NAME
-	else:
-		title += _get_filename_from_path(current_level_file_path)
+	var title : String = NEW_LEVEL_TITLE_NAME if current_level_file_path.empty() else \
+		_get_filename_from_path(current_level_file_path)
 	
 	title += str(
 		" - ",

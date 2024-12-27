@@ -41,7 +41,7 @@ var current_zoom := Vector2(1, 1)
 #      Notifications
 #-------------------------------------------------
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	_clamp_position_within_limit()
 	_set_smoothness_from_config()
 
@@ -98,7 +98,6 @@ func reset_zoom():
 #-------------------------------------------------
 
 func _clamp_position_within_limit():
-	var window_size : Vector2 = OS.window_size
 	var window_size_half : Vector2 = OS.window_size / 2
 	
 	position.x = clamp(
@@ -118,7 +117,7 @@ func _tween_zoom():
 		"zoom",
 		self.zoom,
 		current_zoom,
-		0.25 if EditorConfig.camera_smoothness != 0 else 0,
+		0.25 if EditorConfig.camera_smoothness != 0 else 0.0,
 		Tween.TRANS_EXPO,
 		Tween.EASE_OUT
 	)

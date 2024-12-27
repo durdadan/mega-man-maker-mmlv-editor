@@ -23,27 +23,29 @@ class PoolStringReverse:
 		return reversed_poolstring
 
 class TempObjectCodeData:
-	extends Reference
+	extends BaseDataGame
 	
-	var a : float = DataGameObject.MISSING_DATA
-	var b : float = DataGameObject.MISSING_DATA
-	var c : float = DataGameObject.MISSING_DATA
-	var d : float = DataGameObject.MISSING_DATA
-	var e : float = DataGameObject.MISSING_DATA
-	var f : float = DataGameObject.MISSING_DATA
-	var g : float = DataGameObject.MISSING_DATA
-	var h : float = DataGameObject.MISSING_DATA
+	var a : float = BaseDataGame.MISSING_DATA
+	var b : float = BaseDataGame.MISSING_DATA
+	var c : float = BaseDataGame.MISSING_DATA
+	var d : float = BaseDataGame.MISSING_DATA
+	var e : float = BaseDataGame.MISSING_DATA
+	var f : float = BaseDataGame.MISSING_DATA
+	var g : float = BaseDataGame.MISSING_DATA
+	var h : float = BaseDataGame.MISSING_DATA
 	var i : float = 0
-	var j : float = DataGameObject.MISSING_DATA
-	var k : float = DataGameObject.MISSING_DATA
-	var l : float = 0
-	var m : float = DataGameObject.MISSING_DATA
-	var n : float = DataGameObject.MISSING_DATA
-	var o : float = DataGameObject.MISSING_DATA
+	var j : float = BaseDataGame.MISSING_DATA
+	var k : float = BaseDataGame.MISSING_DATA
+	var l : float = BaseDataGame.MISSING_DATA
+	var m : float = BaseDataGame.MISSING_DATA
+	var n : float = BaseDataGame.MISSING_DATA
+	var p : float = BaseDataGame.MISSING_DATA
+	var q : float = BaseDataGame.MISSING_DATA
+	var r : float = BaseDataGame.MISSING_DATA
 	var pos : Vector2
 
 class TempBossCodeData:
-	extends Reference
+	extends BaseDataGame
 	
 	var _1xc = 0
 	var _1yc = 0
@@ -66,6 +68,7 @@ class TempBossCodeData:
 	var _1z
 	var _1za
 	var _1zb
+	var boss_index: int
 
 #-------------------------------------------------
 #      Signals
@@ -74,6 +77,9 @@ class TempBossCodeData:
 #-------------------------------------------------
 #      Constants
 #-------------------------------------------------
+
+const GAME_ID_LABEL_PREFIX = "Mega Man %d"
+const UNUSED_ASSETS: int = 199
 
 enum BlockType {
 	OBJECT = 0,
@@ -86,6 +92,7 @@ enum BlockType {
 #      Properties
 #-------------------------------------------------
 
+var _z_index_regex: RegEx = RegEx.new()
 var _data_game_level : DataGameLevel setget , get_data_game_level
 var _data_bosses : Array setget , get_data_bosses
 var _data_game_objects : Array setget , get_data_game_objects
@@ -113,6 +120,9 @@ var _data_disconnected_vscreen_positions : PoolVector2Array setget , get_data_di
 #      Public Methods
 #-------------------------------------------------
 
+func _init() -> void:
+	_z_index_regex.compile("^z(\\d+):?(\\d?[a-z]\\d+,\\d+.*)")
+
 func build(file_data : String):
 	clear_all_data()
 	
@@ -123,7 +133,13 @@ func build(file_data : String):
 	for i in _reversed_pool_file_data:
 		i = i as String
 		
+		# Calculate z-layer of the item
+		var z: int = 0
 		var _dataset : PoolStringArray
+		var _matcher: RegExMatch = _z_index_regex.search(i)
+		if _matcher:
+			z = int(_matcher.strings[1])
+			i = _matcher.strings[2]
 		
 		#Level settings
 		match i.left(2):
@@ -165,7 +181,7 @@ func build(file_data : String):
 				_data_game_level.boss_portrait = float(_dataset[1])
 			"1k": #Weapon slots
 				_dataset = _get_dataset_from_line_data(i, "1k")
-				_data_game_level.weapons[int(_dataset[0])] = float(_dataset[1])
+				_data_game_level.weapons[int(_dataset[0])] = int(_dataset[1])
 			"1l": #Level track ID
 				_dataset = _get_dataset_from_line_data(i, "1l")
 				_data_game_level.music_track_id = float(_dataset[1])
@@ -257,8 +273,10 @@ func build(file_data : String):
 			"1o":
 				_dataset = _get_dataset_from_line_data(i, "1o")
 				temp_boss_code_data._1o = float(_dataset[1])
+				temp_boss_code_data.boss_index = int(_dataset[0])
 				_build_from_code_data(temp_boss_code_data)
-				temp_boss_code_data = TempBossCodeData.new() #Create a new one if there are one more bosses.
+				#Create a new one if there are one more bosses.
+				temp_boss_code_data = TempBossCodeData.new().onLayer(z)
 			"1u":
 				_dataset = _get_dataset_from_line_data(i, "1u")
 				if not (_dataset[0].left(1) == "a" or _dataset[0].left(1) == "o"):
@@ -302,7 +320,7 @@ func build(file_data : String):
 			"2d":
 				_dataset = _get_dataset_from_line_data(i, "2d")
 				
-				var bg = DataGameBg.new()
+				var bg = DataGameBg.new().onLayer(z)
 				bg.pos = Vector2(float(_dataset[0]), float(_dataset[1]))
 				bg.bg_id = float(_dataset[2])
 				
@@ -314,7 +332,7 @@ func build(file_data : String):
 				if temp_obj_code_data != null: #Given that this is not the first time it reads this data
 					_build_from_code_data(temp_obj_code_data)
 				
-				temp_obj_code_data = TempObjectCodeData.new()
+				temp_obj_code_data = TempObjectCodeData.new().onLayer(z)
 				_dataset = _get_dataset_from_line_data(i, "a")
 				temp_obj_code_data.pos = Vector2(float(_dataset[0]), float(_dataset[1]))
 				temp_obj_code_data.a = float(_dataset[2])
@@ -360,9 +378,15 @@ func build(file_data : String):
 			"o":
 				_dataset = _get_dataset_from_line_data(i, "o")
 				temp_obj_code_data.o = float(_dataset[2])
-			# p - New Speed
-			# q - New Timer/option
-			# r - Who knows
+			"p": # New Speed
+				_dataset = _get_dataset_from_line_data(i, "p")
+				temp_obj_code_data.p = float(_dataset[2])
+			"q": # New Timer/option
+				_dataset = _get_dataset_from_line_data(i, "q")
+				temp_obj_code_data.q = float(_dataset[2])
+			"r": # Who Knows
+				_dataset = _get_dataset_from_line_data(i, "r")
+				temp_obj_code_data.r = float(_dataset[2])
 				
 		if i == "[Level]":
 			if temp_obj_code_data != null:
@@ -382,53 +406,65 @@ func clear_all_data():
 func _build_from_code_data(code_data):
 	if code_data is TempObjectCodeData:
 		if code_data.i == BlockType.OBJECT:
-			var data_game_obj = DataGameObject.new()
+			var data_game_obj = DataGameObject.new().onLayer(code_data.z)
 			data_game_obj.pos = code_data.pos
-			if code_data.b != DataGameObject.MISSING_DATA:
+			if code_data.b != BaseDataGame.MISSING_DATA:
 				data_game_obj.obj_vector_x = code_data.b
-			if code_data.c != DataGameObject.MISSING_DATA:
+			if code_data.c != BaseDataGame.MISSING_DATA:
 				data_game_obj.obj_vector_y = code_data.c
-			if code_data.d != DataGameObject.MISSING_DATA:
+			if code_data.d != BaseDataGame.MISSING_DATA:
 				data_game_obj.obj_type = code_data.d
-			if code_data.e != DataGameObject.MISSING_DATA:
+			if code_data.e != BaseDataGame.MISSING_DATA:
 				data_game_obj.obj_id = code_data.e
-			if code_data.f != DataGameObject.MISSING_DATA:
+			if code_data.f != BaseDataGame.MISSING_DATA:
 				data_game_obj.obj_appearance = code_data.f
-			if code_data.g != DataGameObject.MISSING_DATA:
+			if code_data.g != BaseDataGame.MISSING_DATA:
 				data_game_obj.obj_direction = code_data.g
-			if code_data.h != DataGameObject.MISSING_DATA:
+			if code_data.h != BaseDataGame.MISSING_DATA:
 				data_game_obj.obj_timer = code_data.h
-			if code_data.j != DataGameObject.MISSING_DATA:
+			if code_data.j != BaseDataGame.MISSING_DATA:
 				data_game_obj.obj_tex_h_offset = code_data.j
-			if code_data.k != DataGameObject.MISSING_DATA:
+			if code_data.k != BaseDataGame.MISSING_DATA:
 				data_game_obj.obj_tex_v_offset = code_data.k
-			if code_data.m != DataGameObject.MISSING_DATA:
+			if code_data.l != BaseDataGame.MISSING_DATA:
+				data_game_obj.obj_unknown_parameter = code_data.l
+			if code_data.m != BaseDataGame.MISSING_DATA:
 				data_game_obj.obj_destination_x = code_data.m
-			if code_data.n != DataGameObject.MISSING_DATA:
+			if code_data.n != BaseDataGame.MISSING_DATA:
 				data_game_obj.obj_destination_y = code_data.n
-			if code_data.o != DataGameObject.MISSING_DATA:
+			if code_data.o != BaseDataGame.MISSING_DATA:
 				data_game_obj.obj_option = code_data.o
+			if code_data.p != BaseDataGame.MISSING_DATA:
+				data_game_obj.obj_new_speed = code_data.p
+			if code_data.q != BaseDataGame.MISSING_DATA:
+				data_game_obj.obj_new_timer_option = code_data.q
+			if code_data.r != BaseDataGame.MISSING_DATA:
+				data_game_obj.obj_who_knows = code_data.r
 			_data_game_objects.append(data_game_obj)
 		elif code_data.i == BlockType.TILE:
-			var data_tile = DataGameTile.new()
+			var data_tile = DataGameTile.new().onLayer(code_data.z)
+			data_tile.o = code_data.o
 			data_tile.pos = code_data.pos
 			data_tile.block_id = code_data.e
 			data_tile.tileset_offset = Vector2(code_data.j, code_data.k)
 			_data_tiles.append(data_tile)
 		elif code_data.i == BlockType.SPIKE:
-			var data_spike = DataGameSpike.new()
+			var data_spike = DataGameSpike.new().onLayer(code_data.z)
+			data_spike.o = code_data.o
 			data_spike.pos = code_data.pos
 			data_spike.spike_id = code_data.e
-			data_spike.direction = code_data.l
+			data_spike.direction = code_data.l if code_data.l != BaseDataGame.MISSING_DATA else 0
 			_data_spikes.append(data_spike)
 		elif code_data.i == BlockType.LADDER:
-			var data_ladder = DataGameLadder.new()
+			var data_ladder = DataGameLadder.new().onLayer(code_data.z)
+			data_ladder.o = code_data.o
 			data_ladder.pos = code_data.pos
 			data_ladder.ladder_id = code_data.e
 			_data_ladders.append(data_ladder)
 		
 	if code_data is TempBossCodeData:
-		var data_boss = DataGameBoss.new()
+		var data_boss = DataGameBoss.new().onLayer(code_data.z)
+		data_boss.index = code_data.boss_index
 		data_boss.pos = Vector2(code_data._1xc, code_data._1yc)
 		data_boss.primary_weak_enabled = code_data._1ga
 		data_boss.primary_weak_wp_slot_id = code_data._1g
@@ -452,6 +488,36 @@ func _build_from_code_data(code_data):
 		
 		_data_bosses.append(data_boss)
 
+static func getGameName(id: int) -> String:
+	match id:
+		99:
+			return "Mega Man & Bass"
+		100:
+			return "Mega Man Soccer"
+		101:
+			return "Mega Man GB I"
+		102:
+			return "Mega Man GB II"
+		103:
+			return "Mega Man GB III"
+		104:
+			return "Mega Man GB IV"
+		105:
+			return "Mega Man GB V"
+		106:
+			return "Power Fighters"
+		107:
+			return "Power Fighters 2"
+		108:
+			return "Battle & Chase"
+		109:
+			return "Wily Wars"
+		120:
+			return "Misc"
+		UNUSED_ASSETS:
+			return "Unused Assets"
+		_:
+			return GAME_ID_LABEL_PREFIX % id
 
 #-------------------------------------------------
 #      Connections

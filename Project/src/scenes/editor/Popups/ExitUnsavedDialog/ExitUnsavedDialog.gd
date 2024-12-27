@@ -75,7 +75,7 @@ func _ready() -> void:
 #-------------------------------------------------
 
 #Connect from _ready()
-func _on_custom_action(action : String):
+func _on_custom_action(_action : String):
 	hide()
 
 #-------------------------------------------------

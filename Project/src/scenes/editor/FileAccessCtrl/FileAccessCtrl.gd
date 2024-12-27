@@ -157,8 +157,6 @@ func _get_dir_from_path(file_path : String) -> String:
 	result = dirs.join("/")
 	result = result.strip_edges(true, false)
 	
-	result
-	
 	return result
 
 func _validate_file_path(file_path : String) -> String:

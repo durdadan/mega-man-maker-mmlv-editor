@@ -15,7 +15,7 @@ extends Node2D
 
 class Node2DInRectPicker:
 	static func pick_node2d_within_rect(nodes_2d : Array, rect : Rect2, single = false) -> Array:
-		var picked_nodes_2d : Array
+		var picked_nodes_2d : Array = []
 		
 		# Iterate through nodes_2d
 		for i in nodes_2d:
@@ -194,7 +194,7 @@ func _mouse_motion_event(event : InputEvent):
 	if select_mode == SelectMode.SELECTING:
 		# Update highlighter size.
 		
-		var rect : Rect2
+		var rect : Rect2 = Rect2()
 		
 		# Set rect position
 		rect.position = select_begin_pos
@@ -229,7 +229,7 @@ func _moving_objects_start():
 			moving_prev_position.append(i.position)
 
 func _moving_objects_end():
-	var idx : int
+	var idx : int = 0
 	
 	for i in SelectedObjects.selected_objects:
 		if i is Node2D: #Safe call

@@ -21,10 +21,7 @@ class_name GamePlayerData
 #      Constants
 #-------------------------------------------------
 
-const PLAYABLE_CHARACTER_COUNT = 4
-
-const PLAYER_DATA = {
-	-999: "Mega Man",
+const PLAYER_DATA: Dictionary = {
 	0: "Mega Man",
 	1: "Proto Man",
 	2: "Bass",

@@ -1,7 +1,7 @@
 # Script_Name_Here
 # Written by: 
 
-extends Reference
+extends BaseDataGame
 
 class_name DataGameObject
 
@@ -20,8 +20,6 @@ class_name DataGameObject
 #-------------------------------------------------
 #      Constants
 #-------------------------------------------------
-
-const MISSING_DATA : float = -999.0
 
 #-------------------------------------------------
 #      Properties
@@ -57,6 +55,9 @@ export (float) var obj_tex_h_offset = MISSING_DATA
 #k
 export (float) var obj_tex_v_offset = MISSING_DATA
 
+#l
+export (float) var obj_unknown_parameter = MISSING_DATA
+
 #m
 export (float) var obj_destination_x = MISSING_DATA
 
@@ -64,7 +65,16 @@ export (float) var obj_destination_x = MISSING_DATA
 export (float) var obj_destination_y = MISSING_DATA
 
 #o
-export (float) var obj_option = MISSING_DATA
+export (float) var obj_option = MISSING_DATA setget set_obj_option,get_obj_option
+
+#p
+export (float) var obj_new_speed = MISSING_DATA
+
+#p
+export (float) var obj_new_timer_option = MISSING_DATA
+
+#p
+export (float) var obj_who_knows = MISSING_DATA
 
 #-------------------------------------------------
 #      Notifications
@@ -93,3 +103,9 @@ export (float) var obj_option = MISSING_DATA
 #-------------------------------------------------
 #      Setters & Getters
 #-------------------------------------------------
+
+func set_obj_option(val: float) -> void:
+	o = val
+
+func get_obj_option() -> float:
+	return o

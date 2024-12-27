@@ -102,9 +102,15 @@ margin_bottom = 238.0
 property_name = "Texture V Offset"
 code = "k"
 
-[node name="AtbHboxObjDestX" parent="VBox/ScrollContainer/Vbox" index="10" instance=ExtResource( 2 )]
+[node name="AtbHboxObjUnknownParameter" parent="VBox/ScrollContainer/Vbox" index="10" instance=ExtResource( 2 )]
 margin_top = 221.0
 margin_bottom = 245.0
+property_name = "Unknown Parameter"
+code = "l"
+
+[node name="AtbHboxObjDestX" parent="VBox/ScrollContainer/Vbox" index="11" instance=ExtResource( 2 )]
+margin_top = 249.0
+margin_bottom = 273.0
 hint_tooltip = "The object's destination in x-axis. Used in some
 objects that require placing both the initial and the
 destination position (teleporter, rotating platform, for
@@ -112,9 +118,9 @@ instance)."
 property_name = "Destination X"
 code = "m"
 
-[node name="AtbHboxObjDestY" parent="VBox/ScrollContainer/Vbox" index="11" instance=ExtResource( 2 )]
-margin_top = 249.0
-margin_bottom = 273.0
+[node name="AtbHboxObjDestY" parent="VBox/ScrollContainer/Vbox" index="12" instance=ExtResource( 2 )]
+margin_top = 277.0
+margin_bottom = 301.0
 hint_tooltip = "The object's destination in y-axis. Used in some
 objects that require placing both the initial and the
 destination position (teleporter, rotating platform, for
@@ -122,29 +128,50 @@ instance)."
 property_name = "Destination Y"
 code = "n"
 
-[node name="AtbHboxObjOption" parent="VBox/ScrollContainer/Vbox" index="12" instance=ExtResource( 2 )]
-margin_top = 277.0
-margin_bottom = 301.0
+[node name="AtbHboxObjOption" parent="VBox/ScrollContainer/Vbox" index="13" instance=ExtResource( 2 )]
+margin_top = 305.0
+margin_bottom = 329.0
 hint_tooltip = "Weapon ID, ..."
 property_name = "Option"
 code = "o"
 
-[node name="HSeparator" type="HSeparator" parent="VBox/ScrollContainer/Vbox" index="13"]
-margin_top = 305.0
-margin_right = 792.0
-margin_bottom = 309.0
+[node name="AtbHboxObjNewSpeed" parent="VBox/ScrollContainer/Vbox" index="14" instance=ExtResource( 2 )]
+margin_top = 333.0
+margin_bottom = 357.0
+hint_tooltip = "Weapon ID, ..."
+property_name = "New Speed"
+code = "p"
 
-[node name="AtbLabelLevelObject" type="Label" parent="VBox/ScrollContainer/Vbox" index="14"]
-margin_top = 312.0
+[node name="AtbHboxObjNewTimerOption" parent="VBox/ScrollContainer/Vbox" index="15" instance=ExtResource( 2 )]
+margin_top = 361.0
+margin_bottom = 385.0
+hint_tooltip = "Weapon ID, ..."
+property_name = "New Timer/Option"
+code = "q"
+
+[node name="AtbHboxObjWhoKnows" parent="VBox/ScrollContainer/Vbox" index="16" instance=ExtResource( 2 )]
+margin_top = 389.0
+margin_bottom = 413.0
+hint_tooltip = "Weapon ID, ..."
+property_name = "Who Knows"
+code = "r"
+
+[node name="HSeparator" type="HSeparator" parent="VBox/ScrollContainer/Vbox" index="17"]
+margin_top = 417.0
 margin_right = 792.0
-margin_bottom = 335.4
+margin_bottom = 421.0
+
+[node name="AtbLabelLevelObject" type="Label" parent="VBox/ScrollContainer/Vbox" index="18"]
+margin_top = 424.0
+margin_right = 792.0
+margin_bottom = 447.4
 theme = ExtResource( 6 )
 custom_colors/font_color = Color( 1, 0, 0, 1 )
 custom_fonts/font = SubResource( 1 )
 text = "Level Object"
 uppercase = true
 
-[node name="AtbLockBossDoors" type="Label" parent="VBox/ScrollContainer/Vbox" index="15"]
+[node name="AtbLockBossDoors" type="Label" parent="VBox/ScrollContainer/Vbox" index="19"]
 visible = false
 margin_top = 336.0
 margin_right = 792.0
@@ -152,7 +179,7 @@ margin_bottom = 350.0
 text = "This Asset will Lock boss doors until it is no longer on screen"
 autowrap = true
 
-[node name="AtbFoundTheBone" type="Label" parent="VBox/ScrollContainer/Vbox" index="16"]
+[node name="AtbFoundTheBone" type="Label" parent="VBox/ScrollContainer/Vbox" index="20"]
 visible = false
 margin_top = 336.0
 margin_right = 792.0
@@ -160,7 +187,7 @@ margin_bottom = 350.0
 text = "Found the Bone"
 autowrap = true
 
-[node name="AtbBossWarning" type="Label" parent="VBox/ScrollContainer/Vbox" index="17"]
+[node name="AtbBossWarning" type="Label" parent="VBox/ScrollContainer/Vbox" index="21"]
 visible = false
 margin_top = 340.0
 margin_right = 792.0
@@ -192,6 +219,10 @@ __meta__ = {
 [connection signal="value_entered" from="VBox/ScrollContainer/Vbox/AtbHboxObjTimer" to="." method="_on_AtbHboxObjTimer_value_entered"]
 [connection signal="value_entered" from="VBox/ScrollContainer/Vbox/AtbHboxObjTexH" to="." method="_on_AtbHboxObjTexH_value_entered"]
 [connection signal="value_entered" from="VBox/ScrollContainer/Vbox/AtbHboxObjTexV" to="." method="_on_AtbHboxObjTexV_value_entered"]
+[connection signal="value_entered" from="VBox/ScrollContainer/Vbox/AtbHboxObjUnknownParameter" to="." method="_on_AtbHboxObjUnknownParameter_value_entered"]
 [connection signal="value_entered" from="VBox/ScrollContainer/Vbox/AtbHboxObjDestX" to="." method="_on_AtbHboxObjDestX_value_entered"]
 [connection signal="value_entered" from="VBox/ScrollContainer/Vbox/AtbHboxObjDestY" to="." method="_on_AtbHboxObjDestY_value_entered"]
 [connection signal="value_entered" from="VBox/ScrollContainer/Vbox/AtbHboxObjOption" to="." method="_on_AtbHboxObjOption_value_entered"]
+[connection signal="value_entered" from="VBox/ScrollContainer/Vbox/AtbHboxObjNewSpeed" to="." method="_on_AtbHboxObjNewSpeed_value_entered"]
+[connection signal="value_entered" from="VBox/ScrollContainer/Vbox/AtbHboxObjNewTimerOption" to="." method="_on_AtbHboxObjNewTimerOption_value_entered"]
+[connection signal="value_entered" from="VBox/ScrollContainer/Vbox/AtbHboxObjWhoKnows" to="." method="_on_AtbHboxObjWhoKnows_value_entered"]

@@ -66,6 +66,9 @@ signal changed_tile_id(tilemap_tile_id)
 
 const EYEDROP_MODIFIER_KEY = KEY_ALT
 const UNDO_PAINT_TILE_ACTION_NAME = "Paint Tilemap"
+const EYEDROP_CURSOR: Texture = preload(
+	"res://eyedrop_cursor.png"
+)
 
 #-------------------------------------------------
 #      Properties
@@ -86,7 +89,7 @@ var tilemaps_current_tile_id : TilemapsCurrentTileID = TilemapsCurrentTileID.new
 #      Notifications
 #-------------------------------------------------
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if follow_mouse_pointer:
 		global_position = get_global_mouse_position()
 		
@@ -131,8 +134,10 @@ func process_input(event : InputEvent):
 				if not middle_click_press_moved:
 					eyedrop()
 	
-	if event is InputEventMouseMotion:
+	elif event is InputEventMouseMotion:
 		middle_click_press_moved = true
+	elif event is InputEventKey and event.scancode == EYEDROP_MODIFIER_KEY:
+		_update_eyedrop_cursor_shape(event.is_pressed())
 	
 	if left_mouse_down:
 		if Input.is_key_pressed(EYEDROP_MODIFIER_KEY):
@@ -165,9 +170,14 @@ func set_tile(tile_id : int):
 
 #Pick and update current tile from current mouse position.
 func eyedrop():
-	tilemaps_current_tile_id.current = tilemap.get_cellv(tilemap.world_to_map(self.get_global_position()))
-	_update_tilemap_preview()
-	emit_signal("changed_tile_id", tilemaps_current_tile_id.current)
+	var tile_id: int = tilemap.get_cellv(tilemap.world_to_map(self.get_global_position()))
+	if tile_id != TileMap.INVALID_CELL:
+		if tilemap.tile_set.tile_get_occluder_offset(tile_id) == Vector2.ZERO:
+			tilemaps_current_tile_id.current = tile_id
+			_update_tilemap_preview()
+			emit_signal("changed_tile_id", tilemaps_current_tile_id.current)
+		else:
+			EditorLogBox.add_message("Can not eyedrop outdated element")
 
 func get_current_tile_id():
 	return tilemaps_current_tile_id.current
@@ -204,6 +214,13 @@ func _register_undo_end():
 		return
 	
 	LevelUndo.get_undo_redo().commit_action()
+
+func _update_eyedrop_cursor_shape(is_on: bool) -> void:
+	if is_on:
+		Input.set_custom_mouse_cursor(EYEDROP_CURSOR, Input.CURSOR_ARROW,
+			EYEDROP_CURSOR.get_size() * Vector2.DOWN)
+	else:
+		Input.set_custom_mouse_cursor(null)
 
 #-------------------------------------------------
 #      Setters & Getters

@@ -1,7 +1,7 @@
 # DataGameLevel
 # Written by: First
 
-extends Reference
+extends BaseDataGame
 
 class_name DataGameLevel
 
@@ -21,6 +21,23 @@ class_name DataGameLevel
 #      Constants
 #-------------------------------------------------
 
+const DEFAULT_LEVEL_VERSION: String = "1.0"
+const EMPTY_WEAPON_SLOT: int = -1
+const DEFAULT_WEAPONS: Array = [
+	0,
+	EMPTY_WEAPON_SLOT,
+	EMPTY_WEAPON_SLOT,
+	EMPTY_WEAPON_SLOT,
+	EMPTY_WEAPON_SLOT,
+	EMPTY_WEAPON_SLOT,
+	EMPTY_WEAPON_SLOT,
+	EMPTY_WEAPON_SLOT,
+	EMPTY_WEAPON_SLOT,
+	EMPTY_WEAPON_SLOT,
+	EMPTY_WEAPON_SLOT,
+	EMPTY_WEAPON_SLOT
+]
+
 #-------------------------------------------------
 #      Properties
 #-------------------------------------------------
@@ -29,7 +46,7 @@ class_name DataGameLevel
 var user_id = 1.000000 
 
 #0v
-var level_version = "1.0" 
+var level_version = DEFAULT_LEVEL_VERSION
 
 #1a
 var level_name = "edited level" 
@@ -77,7 +94,7 @@ var bosses_count = 0.000000
 var bosses : Array
 
 #1k*
-var weapons : PoolIntArray = [0, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+var weapons : PoolIntArray = DEFAULT_WEAPONS
 
 #1l
 var music_track_id = 1.000000

@@ -1,7 +1,7 @@
 # DataGameBoss
 # Written by: First
 
-extends Resource
+extends BaseDataGame
 
 class_name DataGameBoss
 
@@ -48,6 +48,7 @@ export (float) var death_change_music_enabled
 export (float) var death_change_music_category
 export (float) var death_change_music_id
 
+var index: int = -1
 
 #-------------------------------------------------
 #      Notifications

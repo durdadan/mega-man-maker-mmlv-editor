@@ -78,7 +78,6 @@ signal tile_selected(tile_id)
 const BUTTON_PRESS_EFFECT = preload("res://src/utils/ButtonFx/PressFx/ButtonPressFx.tscn")
 const GRID_C_AUTO_RESIZER = preload("res://src/utils/GridContainerAutoResizer/GridContainerAutoResizer.tscn")
 const GRID_C_NAME_PREFIX = "GridGameID"
-const GAME_ID_LABEL_PREFIX = "Mega Man "
 const IMG_TEXTURE_BEGIN_PATH = "res://assets/images/tilesets/"
 const BUTTON_SIZE = Vector2(32, 32)
 const SUBTILE_REGION_POS = Vector2(141, 71)
@@ -149,7 +148,7 @@ func get_texture(tile_id : int) -> StreamTexture:
 #      Connections
 #-------------------------------------------------
 
-func _on_tile_btn_pressed_id(tile_id : int, tile_texture : Texture):
+func _on_tile_btn_pressed_id(tile_id : int, _tile_texture : Texture):
 	select_tile(tile_id) 
 
 func _on_tile_btn_mouse_entered_btn(texture : Texture, tileset_name : String, tile_id : int):
@@ -160,7 +159,7 @@ func _on_tile_btn_mouse_entered_btn(texture : Texture, tileset_name : String, ti
 	if texture is AtlasTexture:
 		preview_texture_rect.texture = texture.atlas
 
-func _on_tile_btn_mouse_exited_btn(texture):
+func _on_tile_btn_mouse_exited_btn(_texture):
 	preview_tex_anim.play("Hide")
 	preview_tex_name_panel.hide() # this needs to be here or there is a phantom area you cannot click. 
 
@@ -198,6 +197,8 @@ func _generate_ui():
 	_add_margin_bottom_box()
 
 func _create_tile_button(file_name : String, game_id : int, tile_id : int):
+	if game_id == GameDataBuilder.UNUSED_ASSETS:
+		return
 	var grid_c = scrl_vbox.get_node(GRID_C_NAME_PREFIX + str(game_id))
 	var tex_btn := TileTextureButton.new()
 	var atlas_tex = get_atlas_from_tileset_texture(
@@ -224,12 +225,13 @@ func _create_tile_button(file_name : String, game_id : int, tile_id : int):
 	tileset_btn_map.map_button(tex_btn, game_id)
 
 func _create_grid_containters():
-	var game_ids : Dictionary
+	var game_ids : Dictionary = {}
 	var sorted_game_ids : Array
 	
 	#Get all game ids and sort them
 	for i in GameTileSetData.TILE_GAME_IDS.values():
 		game_ids[i] = ""
+	game_ids.erase(GameDataBuilder.UNUSED_ASSETS)
 	
 	sorted_game_ids = game_ids.keys()
 	sorted_game_ids.sort()
@@ -246,31 +248,7 @@ func _create_grid_containters():
 		grid_c.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		grid_c.get_parent().add_child(label_game_id)
 		grid_c.raise()
-		label_game_id.text = GAME_ID_LABEL_PREFIX + str(id)
-		if id == 99:
-			label_game_id.text = "Mega Man & Bass"
-		if id == 100:
-			label_game_id.text = "Mega Man Soccer"
-		if id == 101:
-			label_game_id.text = "Mega Man GB I"
-		if id == 102:
-			label_game_id.text = "Mega Man GB II"		
-		if id == 103:
-			label_game_id.text = "Mega Man GB III"
-		if id == 104:
-			label_game_id.text = "Mega Man GB IV"
-		if id == 105:
-			label_game_id.text = "Mega Man GB V"
-		if id == 106:
-			label_game_id.text = "Power Fighters"
-		if id == 107:
-			label_game_id.text = "Power Fighters 2"
-		if id == 108:
-			label_game_id.text = "Battle & Chase"
-		if id == 109:
-			label_game_id.text = "Wily Wars"
-		if id == 120:
-			label_game_id.text = "Misc"
+		label_game_id.text = GameDataBuilder.getGameName(id)
 		# Map the newly created title label to tileset_btn_mapper
 		tileset_btn_map.map_title_label(label_game_id, id)
 

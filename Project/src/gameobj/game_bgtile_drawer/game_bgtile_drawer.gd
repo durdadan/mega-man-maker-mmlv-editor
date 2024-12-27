@@ -26,6 +26,8 @@ extends TileMap
 #      Properties
 #-------------------------------------------------
 
+var layers: Array
+
 #-------------------------------------------------
 #      Notifications
 #-------------------------------------------------
@@ -42,11 +44,12 @@ extends TileMap
 #      Public Methods
 #-------------------------------------------------
 
-func draw_from_game_bg_data(_bg_tile_data : Array = []):
+func draw_from_game_bg_data(_bg_tile_data : Array = [],
+		_level_version: String = DataGameLevel.DEFAULT_LEVEL_VERSION):
 	for i in _bg_tile_data:
 		i = i as DataGameBg
-		
-		set_cellv(world_to_map(i.pos), (i.bg_id))
+		var target: TileMap = self if !i.z else _provide_z_layer(i.z)
+		target.set_cellv(target.world_to_map(i.pos), i.bg_id)
 
 #-------------------------------------------------
 #      Connections
@@ -55,6 +58,26 @@ func draw_from_game_bg_data(_bg_tile_data : Array = []):
 #-------------------------------------------------
 #      Private Methods
 #-------------------------------------------------
+
+func _provide_z_layer(z: int) -> TileMap:
+	var layer_name: String = str(z)
+	var target: TileMap = get_node_or_null(layer_name)
+	if !target:
+		target = TileMap.new()
+		target.set_meta("z_index", z)
+		target.tile_set = tile_set
+		target.cell_size = cell_size
+		target.name = layer_name
+		layers.push_back(target)
+		if layers.size() > 1:
+			layers.sort_custom(self, "_layers_sorter")
+			add_child_below_node(layers[ layers.find(target) - 1 ], target)
+		else:
+			add_child(target)
+	return target
+
+static func _layers_sorter(a: TileMap, b: TileMap) -> bool:
+	return str2var(a.name) < str2var(b.name)
 
 #-------------------------------------------------
 #      Setters & Getters

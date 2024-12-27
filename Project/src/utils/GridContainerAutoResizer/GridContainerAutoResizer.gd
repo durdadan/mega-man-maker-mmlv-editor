@@ -27,9 +27,9 @@ extends Node
 #      Properties
 #-------------------------------------------------
 
-export (NodePath) var root_node = "./.."
-export (NodePath) var resize_notify_node = "./.."
-export (float) var content_fixed_width = 38
+export (NodePath) var root_node: NodePath = "./.."
+export (NodePath) var resize_notify_node: NodePath = "./.."
+export (float) var content_fixed_width = 38.0
 
 #-------------------------------------------------
 #      Notifications
