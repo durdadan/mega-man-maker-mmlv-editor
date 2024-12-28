@@ -251,8 +251,8 @@ boot_splash/bg_color=Color( 0.145098, 0.145098, 0.164706, 1 )
 config/icon="res://icon.png"
 config/windows_native_icon="res://icon.ico"
 config/auto_accept_quit=false
-config/version="0.10.5.1"
-config/year="2020-2023"
+config/version="0.11.1"
+config/year="2020-2024"
 config/project_creator="Firstject Snowflakes - JDE - Dmitry97"
 config/test_version=false
 
