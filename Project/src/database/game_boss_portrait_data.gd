@@ -304,7 +304,7 @@ static func get_data(id) -> Dictionary:
 	
 	return DATA[id]
 
-static func get_portrait_texture(id) -> StreamTexture:
+static func get_portrait_texture(id) -> Texture:
 	var _data = get_data(id)
 	
 	return _data["texture"]

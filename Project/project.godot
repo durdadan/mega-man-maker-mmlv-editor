@@ -164,6 +164,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/scenes/editor/MenuBar/MenuBar.gd"
 }, {
+"base": "AnimatedTexture",
+"class": "MmlvTileAnimatedTexture",
+"language": "GDScript",
+"path": "res://src/utils/mmlv_tile_animated_texture.gd"
+}, {
 "base": "PreviewObject",
 "class": "PreviewGameObject",
 "language": "GDScript",
@@ -188,6 +193,11 @@ _global_script_classes=[ {
 "class": "TextureButtonCallback",
 "language": "GDScript",
 "path": "res://src/utils/BaseButtonCallback/TextureButtonCallback.gd"
+}, {
+"base": "Reference",
+"class": "TextureRegion",
+"language": "GDScript",
+"path": "res://src/scenes/editor/InspectorPanel/Tab/TilemapTab/TextureRegion.gd"
 }, {
 "base": "TextureButton",
 "class": "TileTextureButton",
@@ -231,11 +241,13 @@ _global_script_class_icons={
 "Level": "",
 "MainInspectorTab": "",
 "MenuBar": "",
+"MmlvTileAnimatedTexture": "",
 "PreviewGameObject": "",
 "PreviewObject": "",
 "RecentFileManager": "",
 "SpikesAssembler": "",
 "TextureButtonCallback": "",
+"TextureRegion": "",
 "TileTextureButton": "",
 "VersionComparator": ""
 }

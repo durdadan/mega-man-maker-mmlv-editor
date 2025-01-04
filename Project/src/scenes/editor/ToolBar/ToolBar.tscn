@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=47 format=2]
 
 [ext_resource path="res://assets/images/editor_ui/ToolBar/AddPressed.png" type="Texture" id=1]
 [ext_resource path="res://assets/images/editor_ui/ToolBar/AddHover.png" type="Texture" id=2]
@@ -27,6 +27,9 @@
 [ext_resource path="res://src/utils/LockToggler/LockToggler.gd" type="Script" id=25]
 [ext_resource path="res://assets/images/editor_ui/ToolBar/ScreenLockHover.png" type="Texture" id=26]
 [ext_resource path="res://assets/images/editor_ui/ToolBar/Spike.png" type="Texture" id=27]
+[ext_resource path="res://assets/images/editor_ui/ToolBar/ToogleTileAnimationsHover.png" type="Texture" id=28]
+[ext_resource path="res://assets/images/editor_ui/ToolBar/ToogleTileAnimationsPressed.png" type="Texture" id=29]
+[ext_resource path="res://assets/images/editor_ui/ToolBar/ToogleTileAnimations.png" type="Texture" id=30]
 
 [sub_resource type="InputEventKey" id=1]
 scancode = 49
@@ -64,15 +67,24 @@ scancode = 54
 [sub_resource type="ShortCut" id=12]
 shortcut = SubResource( 11 )
 
+[sub_resource type="InputEventKey" id=13]
+scancode = 55
+
+[sub_resource type="ShortCut" id=14]
+shortcut = SubResource( 13 )
+
+[sub_resource type="InputEventKey" id=15]
+scancode = 56
+
+[sub_resource type="ShortCut" id=16]
+shortcut = SubResource( 15 )
+
 [node name="ToolBar" type="Panel"]
 self_modulate = Color( 0, 0.505882, 1, 0.752941 )
 anchor_right = 1.0
 margin_bottom = 56.0
 rect_min_size = Vector2( 0, 64 )
 script = ExtResource( 23 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 anchor_right = 1.0
@@ -279,19 +291,19 @@ margin_bottom = 64.0
 
 [node name="EditModeVBox2" type="VBoxContainer" parent="HBoxContainer"]
 margin_left = 272.0
-margin_right = 348.0
+margin_right = 357.0
 margin_bottom = 50.0
 size_flags_vertical = 0
 
 [node name="CategoryLabel" type="Label" parent="HBoxContainer/EditModeVBox2"]
-margin_right = 76.0
+margin_right = 85.0
 margin_bottom = 14.0
 custom_colors/font_color = Color( 1, 1, 1, 1 )
-text = "Lock Screen"
+text = "View Options"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/EditModeVBox2"]
 margin_top = 18.0
-margin_right = 76.0
+margin_right = 85.0
 margin_bottom = 50.0
 custom_constants/separation = 12
 
@@ -302,23 +314,43 @@ script = ExtResource( 25 )
 margin_right = 32.0
 margin_bottom = 32.0
 rect_min_size = Vector2( 32, 32 )
-hint_tooltip = "Spike Edit Tool:
-* Left Button: Place tile.
-* Right Button: Remove tile.
-* Alt + Left Button: Pick a tile from the position of the cursor."
+hint_tooltip = "Lock editor screen to prevent it from scrolling and accidental changes:
+* Toggle on to lock the screen.
+* Toggle off to unlock the screen."
 focus_mode = 0
 toggle_mode = true
 action_mode = 0
 enabled_focus_mode = 0
-shortcut = SubResource( 12 )
+shortcut = SubResource( 14 )
 texture_normal = ExtResource( 17 )
 texture_pressed = ExtResource( 24 )
 texture_hover = ExtResource( 26 )
 expand = true
 stretch_mode = 3
 __meta__ = {
-"_edit_use_anchors_": false,
-"_editor_description_": ""
+"editor_config_property": "locked_keyboard"
+}
+
+[node name="ToggleTileAnimationsBtn" type="TextureButton" parent="HBoxContainer/EditModeVBox2/HBoxContainer"]
+margin_left = 44.0
+margin_right = 76.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 32, 32 )
+hint_tooltip = "Toggle tile animations in the editor window and in previews:
+* Toggle on to play animations.
+* Toggle off to stop animations."
+focus_mode = 0
+toggle_mode = true
+action_mode = 0
+enabled_focus_mode = 0
+shortcut = SubResource( 16 )
+texture_normal = ExtResource( 30 )
+texture_pressed = ExtResource( 29 )
+texture_hover = ExtResource( 28 )
+expand = true
+stretch_mode = 3
+__meta__ = {
+"editor_config_property": "animate_tiles"
 }
 
 [connection signal="pressed" from="HBoxContainer/ObjVBox/AddBtn" to="." method="_on_AddBtn_pressed"]
@@ -329,5 +361,5 @@ __meta__ = {
 [connection signal="pressed" from="HBoxContainer/EditModeVBox/HBoxContainer/ActiveScreenBtn" to="." method="_on_ActiveScreenBtn_pressed"]
 [connection signal="pressed" from="HBoxContainer/EditModeVBox/HBoxContainer/LadderBtn" to="." method="_on_LadderBtn_pressed"]
 [connection signal="pressed" from="HBoxContainer/EditModeVBox/HBoxContainer/SpikeBtn" to="." method="_on_SpikeBtn_pressed"]
-[connection signal="pressed" from="HBoxContainer/EditModeVBox2/HBoxContainer/LockToggler" to="." method="_on_ButtonsToggler_pressed"]
 [connection signal="pressed" from="HBoxContainer/EditModeVBox2/HBoxContainer/LockBtn" to="." method="_on_LockBtn_pressed"]
+[connection signal="pressed" from="HBoxContainer/EditModeVBox2/HBoxContainer/ToggleTileAnimationsBtn" to="." method="_on_ToggleTileAnimations_pressed"]

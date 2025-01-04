@@ -16,8 +16,6 @@ script = ExtResource( 5 )
 [node name="MarginContainer" type="MarginContainer" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_right = -4.0
-margin_bottom = -8.0
 mouse_filter = 2
 custom_constants/margin_right = 8
 custom_constants/margin_top = 8
@@ -27,15 +25,16 @@ custom_constants/margin_bottom = 8
 [node name="Control" type="Control" parent="MarginContainer"]
 margin_left = 8.0
 margin_top = 8.0
-margin_right = 200.0
-margin_bottom = 212.0
+margin_right = 204.0
+margin_bottom = 220.0
 mouse_filter = 2
 
 [node name="PreviewTextureRect" type="TextureRect" parent="MarginContainer/Control"]
-margin_left = 43.0
-margin_top = 27.0
-margin_right = 153.0
-margin_bottom = 140.0
+margin_left = 51.0
+margin_top = 40.0
+margin_right = 147.0
+margin_bottom = 136.0
+rect_min_size = Vector2( 96, 96 )
 mouse_filter = 2
 expand = true
 
@@ -43,6 +42,7 @@ expand = true
 modulate = Color( 1, 1, 1, 0.521569 )
 margin_right = 32.0
 margin_bottom = 32.0
+rect_min_size = Vector2( 32, 32 )
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource( 4 )
 texture_hover = ExtResource( 3 )
@@ -52,9 +52,10 @@ tile_id = 4
 
 [node name="TileTextureButton0" type="TextureButton" parent="MarginContainer/Control/PreviewTextureRect"]
 modulate = Color( 1, 1, 1, 0.521569 )
-margin_left = 34.0
-margin_right = 66.0
+margin_left = 32.0
+margin_right = 64.0
 margin_bottom = 32.0
+rect_min_size = Vector2( 32, 32 )
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource( 4 )
 texture_hover = ExtResource( 3 )
@@ -66,10 +67,10 @@ __meta__ = {
 
 [node name="TileTextureButton2" type="TextureButton" parent="MarginContainer/Control/PreviewTextureRect"]
 modulate = Color( 1, 1, 1, 0.521569 )
-margin_left = 1.0
-margin_top = 34.0
-margin_right = 33.0
-margin_bottom = 66.0
+margin_top = 32.0
+margin_right = 32.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 32, 32 )
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource( 4 )
 texture_hover = ExtResource( 3 )
@@ -82,10 +83,11 @@ tile_id = 2
 
 [node name="TileTextureButton3" type="TextureButton" parent="MarginContainer/Control/PreviewTextureRect"]
 modulate = Color( 1, 1, 1, 0.521569 )
-margin_left = 72.0
-margin_top = 34.0
-margin_right = 104.0
-margin_bottom = 66.0
+margin_left = 64.0
+margin_top = 32.0
+margin_right = 96.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 32, 32 )
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource( 4 )
 texture_hover = ExtResource( 3 )
@@ -95,10 +97,11 @@ tile_id = 3
 
 [node name="TileTextureButton1" type="TextureButton" parent="MarginContainer/Control/PreviewTextureRect"]
 modulate = Color( 1, 1, 1, 0.521569 )
-margin_left = 35.0
-margin_top = 71.0
-margin_right = 67.0
-margin_bottom = 103.0
+margin_left = 32.0
+margin_top = 64.0
+margin_right = 64.0
+margin_bottom = 96.0
+rect_min_size = Vector2( 32, 32 )
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource( 4 )
 texture_hover = ExtResource( 3 )

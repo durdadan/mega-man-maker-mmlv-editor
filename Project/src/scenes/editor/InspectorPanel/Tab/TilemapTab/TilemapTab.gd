@@ -80,7 +80,7 @@ const GRID_C_AUTO_RESIZER = preload("res://src/utils/GridContainerAutoResizer/Gr
 const GRID_C_NAME_PREFIX = "GridGameID"
 const IMG_TEXTURE_BEGIN_PATH = "res://assets/images/tilesets/"
 const BUTTON_SIZE = Vector2(32, 32)
-const SUBTILE_REGION_POS = Vector2(141, 71)
+const SUBTILE_REGION: Rect2 = Rect2(Vector2(141, 71), 16.0 * Vector2.ONE)
 const MARGIN_BOTTOM_BOX_MIN_SIZE = Vector2(0, 96)
 
 #-------------------------------------------------
@@ -126,23 +126,14 @@ func select_tile(tile_id : int, subtile_id = 0):
 	current_subtile_id = subtile_id
 	emit_signal("tile_selected", current_selected_tile_id + current_subtile_id)
 	
+	var tiles_texture: Texture = load(IMG_TEXTURE_BEGIN_PATH.plus_file(
+		GameTileSetData.TILESET_DATA[tile_id]))
 	#Set subtile button texture
-	subtile_button.icon = get_atlas_from_tileset_texture(get_texture(tile_id))
-	
+	subtile_button.texture_region = TextureRegion.new(tiles_texture, SUBTILE_REGION)
 	#Set subtile preview
-	subtile_select_popup.set_preview_texture(get_texture(tile_id))
-	subtile_select_popup.set_tileset_name(GameTileSetData.TILESET_DATA[tile_id])
+	subtile_select_popup.set_preview_texture(tiles_texture)
+	subtile_select_popup.set_tileset_name(tiles_texture.resource_path.get_file().get_basename())
 	subtile_select_popup.set_tileset_id(tile_id)
-
-func get_atlas_from_tileset_texture(texture : StreamTexture) -> AtlasTexture:
-	var atlas_tex = AtlasTexture.new()
-	atlas_tex.atlas = texture
-	atlas_tex.region = Rect2(SUBTILE_REGION_POS, Vector2(16, 16))
-	
-	return atlas_tex
-
-func get_texture(tile_id : int) -> StreamTexture:
-	return load(IMG_TEXTURE_BEGIN_PATH.plus_file(GameTileSetData.TILESET_DATA[tile_id]) + ".png") as StreamTexture
 
 #-------------------------------------------------
 #      Connections
@@ -156,8 +147,7 @@ func _on_tile_btn_mouse_entered_btn(texture : Texture, tileset_name : String, ti
 	preview_tex_name_panel.show()
 	preview_tex_name_label.text = tileset_name
 	preview_tex_id_label.text = str("ID: ", tile_id)
-	if texture is AtlasTexture:
-		preview_texture_rect.texture = texture.atlas
+	preview_texture_rect.texture = texture
 
 func _on_tile_btn_mouse_exited_btn(_texture):
 	preview_tex_anim.play("Hide")
@@ -199,24 +189,21 @@ func _generate_ui():
 func _create_tile_button(file_name : String, game_id : int, tile_id : int):
 	if game_id == GameDataBuilder.UNUSED_ASSETS:
 		return
+	
 	var grid_c = scrl_vbox.get_node(GRID_C_NAME_PREFIX + str(game_id))
 	var tex_btn := TileTextureButton.new()
-	var atlas_tex = get_atlas_from_tileset_texture(
-		load(IMG_TEXTURE_BEGIN_PATH + file_name + ".png")
-	)
-	
-	grid_c.add_child(tex_btn)
-	tex_btn.expand = true
-	tex_btn.texture_normal = atlas_tex
+	tex_btn.tileset_name = file_name.get_basename()
+	tex_btn.texture_region = TextureRegion.new(
+		load(IMG_TEXTURE_BEGIN_PATH + file_name), SUBTILE_REGION)
 	tex_btn.rect_min_size = BUTTON_SIZE
-	tex_btn.hint_tooltip = str(file_name, "\nID: ", tile_id)
+	tex_btn.hint_tooltip = str(tex_btn.tileset_name, "\nID: ", tile_id)
 	tex_btn.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 	tex_btn.connect("pressed_id", self, "_on_tile_btn_pressed_id")
 	tex_btn.connect("mouse_entered_btn", self, "_on_tile_btn_mouse_entered_btn")
 	tex_btn.connect("mouse_exited_btn", self, "_on_tile_btn_mouse_exited_btn")
 	tex_btn.connect("gui_input", self, "_on_tile_btn_gui_input") # Use for double click event
 	tex_btn.tile_id = tile_id
-	tex_btn.tileset_name = file_name
+	grid_c.add_child(tex_btn)
 	# Add button click effect.
 	var button_eff = BUTTON_PRESS_EFFECT.instance()
 	tex_btn.add_child(button_eff)
