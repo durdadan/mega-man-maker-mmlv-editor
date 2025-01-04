@@ -139,20 +139,18 @@ func _generate_ui():
 func _create_bg_button(file_name : String, game_id : int, bg_id : int):
 	if game_id == GameDataBuilder.UNUSED_ASSETS:
 		return
+	
 	var grid_c = scrl_vbox.get_node(GRID_C_NAME_PREFIX + str(game_id))
 	var tex_btn := TileTextureButton.new()
-	var tex = TextureRect.new()
-	
-	tex = load(IMG_TEXTURE_BEGIN_PATH + file_name + ".png")
-	grid_c.add_child(tex_btn)
-	tex_btn.expand = true
-	tex_btn.texture_normal = tex
+	tex_btn.tileset_name = file_name.get_basename()
+	tex_btn.texture_region = TextureRegion.new(
+		load(IMG_TEXTURE_BEGIN_PATH + file_name))
 	tex_btn.rect_min_size = BUTTON_SIZE
-	tex_btn.hint_tooltip = str(file_name, "\n", "ID: ", bg_id)
+	tex_btn.hint_tooltip = str(tex_btn.tileset_name, "\n", "ID: ", bg_id)
 	tex_btn.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 	tex_btn.connect("pressed_id", self, "_on_bg_btn_pressed_id")
 	tex_btn.tile_id = bg_id
-	tex_btn.tileset_name = file_name
+	grid_c.add_child(tex_btn)
 	
 	# Add button click effect.
 	var button_eff = BUTTON_PRESS_EFFECT.instance()

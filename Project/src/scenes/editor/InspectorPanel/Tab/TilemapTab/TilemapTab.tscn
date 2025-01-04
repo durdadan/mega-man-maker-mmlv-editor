@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://src/scenes/editor/InspectorPanel/Tab/Tab.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/images/editor_ui/ToolBar/TileMapPressed.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://src/utils/ControlAutoUnfocus.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/theme/DarkTheme/Dark.theme" type="Theme" id=7]
 [ext_resource path="res://assets/theme/DefaultGodotTheme/GodotTheme.tres" type="Theme" id=8]
+[ext_resource path="res://src/scenes/editor/InspectorPanel/Tab/TilemapTab/SubtileFloatingButton.gd" type="Script" id=9]
 
 [sub_resource type="InputEventKey" id=1]
 scancode = 84
@@ -140,6 +141,7 @@ size_flags_vertical = 0
 shortcut = SubResource( 2 )
 icon = ExtResource( 2 )
 expand_icon = true
+script = ExtResource( 9 )
 
 [node name="PreviewTextureRect" type="TextureRect" parent="." index="3"]
 visible = false

@@ -85,7 +85,7 @@ func generate_tileset() -> void:
 			var tile_id: int = i * GameTileSetData.SUBTILE_COUNT + idx_j
 			tileset_output.create_tile(tile_id)
 			tileset_output.tile_set_texture(tile_id,
-				load("res://assets/images/tilesets/" + subtile_name + ".png"))
+				load("res://assets/images/tilesets/" + subtile_name))
 			tileset_output.tile_set_region(tile_id,
 				Rect2(j - GameTileSetData.SUBTILE_TEXTURE_OFFSETS.get(i, Vector2.ONE), TILE_SIZE))
 			tileset_output.tile_set_name(tile_id, subtile_name + "_" + str(idx_j))
@@ -103,7 +103,7 @@ func generate_spike_tileset():
 		for j in GameSpikeData.SUBTILE_ID_POSITIONS.keys():
 			var tile_id: int = i * GameSpikeData.SPIKE_TILE_COUNT + idx_j
 			tileset_output.create_tile(tile_id)
-			tileset_output.tile_set_texture(tile_id, load("res://assets/images/spikes/" + GameSpikeData.SPIKE_DATA.get(i) + ".png"))
+			tileset_output.tile_set_texture(tile_id, load("res://assets/images/spikes/" + GameSpikeData.SPIKE_DATA.get(i)))
 			tileset_output.tile_set_region(tile_id, Rect2(GameSpikeData.SUBTILE_ID_POSITIONS.get(j) , Vector2(16, 16)))
 			tileset_output.tile_set_name(tile_id, GameSpikeData.SPIKE_DATA.get(i) + "_" + str(idx_j))
 			tileset_output.tile_set_occluder_offset(tile_id,
@@ -120,7 +120,7 @@ func generate_ladder_tileset():
 	
 	for i in GameLadderData.LADDER_DATA.keys():
 		tileset_output.create_tile(i)
-		tileset_output.tile_set_texture(i, load("res://assets/images/ladders/" + GameLadderData.LADDER_DATA.get(i) + ".png"))
+		tileset_output.tile_set_texture(i, load("res://assets/images/ladders/" + GameLadderData.LADDER_DATA.get(i)))
 		tileset_output.tile_set_name(i, GameLadderData.LADDER_DATA.get(i) + "_" + str(i))
 		tileset_output.tile_set_occluder_offset(i,
 			float(GameLadderData.LADDER_GAME_IDS[i] == GameDataBuilder.UNUSED_ASSETS) * Vector2.ONE)
@@ -134,7 +134,7 @@ func generate_bg_tileset():
 	
 	for i in GameBgData.BG_DATA.keys():
 		tileset_output.create_tile(i)
-		tileset_output.tile_set_texture(i, load("res://assets/images/bg/" + GameBgData.BG_DATA.get(i) + ".png"))
+		tileset_output.tile_set_texture(i, load("res://assets/images/bg/" + GameBgData.BG_DATA.get(i)))
 		tileset_output.tile_set_name(i, GameBgData.BG_DATA.get(i) + "_" + str(i))
 		tileset_output.tile_set_occluder_offset(i,
 			float(GameBgData.BG_GAME_IDS[i] == GameDataBuilder.UNUSED_ASSETS) * Vector2.ONE)

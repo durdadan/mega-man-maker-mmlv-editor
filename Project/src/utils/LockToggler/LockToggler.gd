@@ -17,8 +17,6 @@ extends Node
 #      Signals
 #-------------------------------------------------
 
-signal pressed
-
 #-------------------------------------------------
 #      Constants
 #-------------------------------------------------
@@ -27,20 +25,12 @@ signal pressed
 #      Properties
 #-------------------------------------------------
 
-var parent : Node
-var current_pressed_button : BaseButton
-
 #-------------------------------------------------
 #      Notifications
 #-------------------------------------------------
 
 func _ready() -> void:
-	#Init parent
-	parent = get_parent()
-	
-	#Connect all buttons emitting signal 'pressed'
-	for i in parent.get_children():
-		if i is BaseButton:
-			i.pressed = EditorConfig.locked_keyboard
-	
-
+	var children: Array = get_parent().get_children()
+	for child in children:
+		if child is BaseButton:
+			child.pressed = EditorConfig.get(child.get_meta("editor_config_property", "locked_keyboard"))

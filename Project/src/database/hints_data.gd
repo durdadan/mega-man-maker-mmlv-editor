@@ -20,7 +20,6 @@ const LIST = [
 	"The program checks for an update on a regular basis. You can turn it on or off in the setting." ,
 	"Try pressing number 1-6 on the keyboard to quickly change the current edit mode." ,
 	"The icon at the top-right corner indicates whether an update is available." ,
-	"A black tile named 'Endless11' can be useful in many situations for decorating levels." ,
 	"Objects cannot be overlapped with the tiles, spikes, and ladders." ,
 	"Objects that are larger than 1x1 in size can be placed close to each other." ,
 	"If you saved a level in Mega Man Maker while the editor is still opening that level, the program automatically reloads it for you." ,

@@ -239,7 +239,7 @@
 [ext_resource path="res://assets/images/tilesets/tstPump2Alt.png" type="Texture" id=237]
 [ext_resource path="res://assets/images/tilesets/tstPump2.png" type="Texture" id=238]
 [ext_resource path="res://assets/images/tilesets/tstMM8Wily2.png" type="Texture" id=239]
-[ext_resource path="res://assets/images/tilesets/tstElec2.png" type="Texture" id=240]
+[ext_resource path="res://assets/images/tilesets/tstElec2.tres" type="Texture" id=240]
 [ext_resource path="res://assets/images/tilesets/tstAqua.png" type="Texture" id=241]
 [ext_resource path="res://assets/images/tilesets/tstGeminiS2.png" type="Texture" id=242]
 [ext_resource path="res://assets/images/tilesets/tstSpring2.png" type="Texture" id=243]
@@ -345,7 +345,6 @@
 [ext_resource path="res://assets/images/tilesets/tstSpark.png" type="Texture" id=343]
 [ext_resource path="res://assets/images/tilesets/tstGuts.png" type="Texture" id=344]
 [ext_resource path="res://src/scenes/debug/DebugSceneTilePreviewer/DebugSceneTilePreviewer.gd" type="Script" id=345]
-
 
 [sub_resource type="InputEventKey" id=1]
 scancode = 65
@@ -2622,6 +2621,7 @@ margin_left = 417.0
 margin_right = 491.0
 margin_bottom = 40.0
 max_value = 9999.0
+
 [connection signal="button_down" from="HBoxContainer/PrevButton" to="." method="_on_PrevButton_button_down"]
 [connection signal="button_down" from="HBoxContainer/NextButton" to="." method="_on_NextButton_button_down"]
 [connection signal="value_changed" from="HBoxContainer/TileNumSpinBox" to="." method="_on_SpinBox_value_changed"]

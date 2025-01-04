@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/eyedrop_cursor.png-b42459a00d8792d7d124f4c452e45a16.stex"
+path="res://.import/tstChallengePU_3.png-2561ea7b82749e22e19dfaf76d3a3318.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://eyedrop_cursor.png"
-dest_files=[ "res://.import/eyedrop_cursor.png-b42459a00d8792d7d124f4c452e45a16.stex" ]
+source_file="res://assets/images/tilesets/tstChallengePU/tstChallengePU_3.png"
+dest_files=[ "res://.import/tstChallengePU_3.png-2561ea7b82749e22e19dfaf76d3a3318.stex" ]
 
 [params]
 
