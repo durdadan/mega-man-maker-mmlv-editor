@@ -1,7 +1,7 @@
 [gd_scene load_steps=350 format=2]
 
 [ext_resource path="res://assets/images/tilesets/tstMM9Endless5.png" type="Texture" id=1]
-[ext_resource path="res://assets/images/tilesets/tstCrystal.png" type="Texture" id=2]
+[ext_resource path="res://assets/images/tilesets/tstCrystalAlt.tres" type="Texture" id=2]
 [ext_resource path="res://assets/images/tilesets/tstPharaoh2.png" type="Texture" id=3]
 [ext_resource path="res://assets/images/tilesets/tstMM9Endless6.png" type="Texture" id=4]
 [ext_resource path="res://assets/images/tilesets/tstJewel.png" type="Texture" id=5]
@@ -16,16 +16,16 @@
 [ext_resource path="res://assets/images/tilesets/tstTornado2.png" type="Texture" id=14]
 [ext_resource path="res://assets/images/tilesets/tstCentaur2Alt.png" type="Texture" id=15]
 [ext_resource path="res://assets/images/tilesets/tstMM9Endless1.png" type="Texture" id=16]
-[ext_resource path="res://assets/images/tilesets/tstMM10Wily5_4.png" type="Texture" id=17]
+[ext_resource path="res://assets/images/tilesets/tstMM10Wily5.tres" type="Texture" id=17]
 [ext_resource path="res://assets/images/tilesets/tstWind3.png" type="Texture" id=18]
-[ext_resource path="res://assets/images/tilesets/tstMM9Wily3.png" type="Texture" id=19]
+[ext_resource path="res://assets/images/tilesets/tstMM9Wily2.tres" type="Texture" id=19]
 [ext_resource path="res://assets/images/tilesets/tstMM9Endless2.png" type="Texture" id=20]
 [ext_resource path="res://assets/images/tilesets/tstMM9Endless2Alt2.png" type="Texture" id=21]
 [ext_resource path="res://assets/images/tilesets/tstMM9Wily1.png" type="Texture" id=22]
-[ext_resource path="res://assets/images/tilesets/tstFake.png" type="Texture" id=23]
+[ext_resource path="res://assets/images/tilesets/tstFake.tres" type="Texture" id=23]
 [ext_resource path="res://assets/images/tilesets/tstMM9Endless4.png" type="Texture" id=24]
-[ext_resource path="res://assets/images/tilesets/tstMM9Wily2.png" type="Texture" id=25]
-[ext_resource path="res://assets/images/tilesets/tstChallenge2Alt.png" type="Texture" id=26]
+[ext_resource path="res://assets/images/tilesets/tstMM9Wily3.tres" type="Texture" id=25]
+[ext_resource path="res://assets/images/tilesets/tstChallengeAlt.tres" type="Texture" id=26]
 [ext_resource path="res://assets/images/tilesets/tstTomahawk4.png" type="Texture" id=27]
 [ext_resource path="res://assets/images/tilesets/tstBlock.png" type="Texture" id=28]
 [ext_resource path="res://assets/images/tilesets/tstMM10Endless29.png" type="Texture" id=29]
@@ -34,13 +34,13 @@
 [ext_resource path="res://assets/images/tilesets/tstMM9Endless2Alt.png" type="Texture" id=32]
 [ext_resource path="res://assets/images/tilesets/tstPharaoh3.png" type="Texture" id=33]
 [ext_resource path="res://assets/images/tilesets/tstKnight2Alt.png" type="Texture" id=34]
-[ext_resource path="res://assets/images/tilesets/tstMM9Wily4.png" type="Texture" id=35]
+[ext_resource path="res://assets/images/tilesets/tstMM9Wily4.tres" type="Texture" id=35]
 [ext_resource path="res://assets/images/tilesets/tstCossack4_2.png" type="Texture" id=36]
 [ext_resource path="res://assets/images/tilesets/tstCossack3_2.png" type="Texture" id=37]
 [ext_resource path="res://assets/images/tilesets/tstStar3.png" type="Texture" id=38]
-[ext_resource path="res://assets/images/tilesets/tstChallengeAlt.png" type="Texture" id=39]
+[ext_resource path="res://assets/images/tilesets/tstChallengeAlt2.tres" type="Texture" id=39]
 [ext_resource path="res://assets/images/tilesets/tstTomahawk4Alt.png" type="Texture" id=40]
-[ext_resource path="res://assets/images/tilesets/tstMM9Wily2Alt.png" type="Texture" id=41]
+[ext_resource path="res://assets/images/tilesets/tstMM9Wily2Alt.tres" type="Texture" id=41]
 [ext_resource path="res://assets/images/tilesets/tstBurst3.png" type="Texture" id=42]
 [ext_resource path="res://assets/images/tilesets/tstTurbo4.png" type="Texture" id=43]
 [ext_resource path="res://assets/images/tilesets/tstKnight2.png" type="Texture" id=44]
@@ -50,7 +50,7 @@
 [ext_resource path="res://assets/images/tilesets/tstMM9Endless8Alt.png" type="Texture" id=48]
 [ext_resource path="res://assets/images/tilesets/tstShade2.png" type="Texture" id=49]
 [ext_resource path="res://assets/images/tilesets/tstSpring.png" type="Texture" id=50]
-[ext_resource path="res://assets/images/tilesets/tstMM9Wily4Alt.png" type="Texture" id=51]
+[ext_resource path="res://assets/images/tilesets/tstMM9Wily4Alt.tres" type="Texture" id=51]
 [ext_resource path="res://assets/images/tilesets/tstMM6Wily2.png" type="Texture" id=52]
 [ext_resource path="res://assets/images/tilesets/tstMM9Endless7.png" type="Texture" id=53]
 [ext_resource path="res://assets/images/tilesets/tstTurbo.png" type="Texture" id=54]
@@ -69,15 +69,15 @@
 [ext_resource path="res://assets/images/tilesets/tstStar2.png" type="Texture" id=67]
 [ext_resource path="res://assets/images/tilesets/tstGeminiS1.png" type="Texture" id=68]
 [ext_resource path="res://assets/images/tilesets/tstCentaur2.png" type="Texture" id=69]
-[ext_resource path="res://assets/images/tilesets/tstFlashA2.png" type="Texture" id=70]
+[ext_resource path="res://assets/images/tilesets/tstFlashA2.tres" type="Texture" id=70]
 [ext_resource path="res://assets/images/tilesets/tstSlash.png" type="Texture" id=71]
 [ext_resource path="res://assets/images/tilesets/tstMM4Wily2.png" type="Texture" id=72]
 [ext_resource path="res://assets/images/tilesets/tstMM1Wily4.png" type="Texture" id=73]
 [ext_resource path="res://assets/images/tilesets/tstShade.png" type="Texture" id=74]
 [ext_resource path="res://assets/images/tilesets/tstCloud.png" type="Texture" id=75]
 [ext_resource path="res://assets/images/tilesets/tstConcrete2.png" type="Texture" id=76]
-[ext_resource path="res://assets/images/tilesets/tstFlashA3.png" type="Texture" id=77]
-[ext_resource path="res://assets/images/tilesets/tstFlashA1.png" type="Texture" id=78]
+[ext_resource path="res://assets/images/tilesets/tstFlashA1.tres" type="Texture" id=77]
+[ext_resource path="res://assets/images/tilesets/tstFlashA3.tres" type="Texture" id=78]
 [ext_resource path="res://assets/images/tilesets/tstDark3_2.png" type="Texture" id=79]
 [ext_resource path="res://assets/images/tilesets/tstMM5Wily4.png" type="Texture" id=80]
 [ext_resource path="res://assets/images/tilesets/tstFlame2.png" type="Texture" id=81]
@@ -105,7 +105,7 @@
 [ext_resource path="res://assets/images/tilesets/tstMM1Wily3.png" type="Texture" id=103]
 [ext_resource path="res://assets/images/tilesets/tstMM1Wily2.png" type="Texture" id=104]
 [ext_resource path="res://assets/images/tilesets/tstDiveAlt.png" type="Texture" id=105]
-[ext_resource path="res://assets/images/tilesets/tstShadow.png" type="Texture" id=106]
+[ext_resource path="res://assets/images/tilesets/tstShadow.tres" type="Texture" id=106]
 [ext_resource path="res://assets/images/tilesets/tstFlame.png" type="Texture" id=107]
 [ext_resource path="res://assets/images/tilesets/tstMM7Wily1.png" type="Texture" id=108]
 [ext_resource path="res://assets/images/tilesets/tstMM6Wily3.png" type="Texture" id=109]
@@ -138,10 +138,10 @@
 [ext_resource path="res://assets/images/tilesets/tstMM3Wily1_3Alt.png" type="Texture" id=136]
 [ext_resource path="res://assets/images/tilesets/tstTomahawk2Alt.png" type="Texture" id=137]
 [ext_resource path="res://assets/images/tilesets/tstMM4Wily3.png" type="Texture" id=138]
-[ext_resource path="res://assets/images/tilesets/tstWave.png" type="Texture" id=139]
+[ext_resource path="res://assets/images/tilesets/tstWave.tres" type="Texture" id=139]
 [ext_resource path="res://assets/images/tilesets/tstYamato3Alt.png" type="Texture" id=140]
 [ext_resource path="res://assets/images/tilesets/tstCossack1.png" type="Texture" id=141]
-[ext_resource path="res://assets/images/tilesets/tstSplash.png" type="Texture" id=142]
+[ext_resource path="res://assets/images/tilesets/tstSplash.tres" type="Texture" id=142]
 [ext_resource path="res://assets/images/tilesets/tstGalaxy.png" type="Texture" id=143]
 [ext_resource path="res://assets/images/tilesets/tstYamato2.png" type="Texture" id=144]
 [ext_resource path="res://assets/images/tilesets/tstTomahawk2.png" type="Texture" id=145]
@@ -202,32 +202,32 @@
 [ext_resource path="res://assets/images/tilesets/tstBlast.png" type="Texture" id=200]
 [ext_resource path="res://assets/images/tilesets/tstTurbo3.png" type="Texture" id=201]
 [ext_resource path="res://assets/images/tilesets/tstBurst2.png" type="Texture" id=202]
-[ext_resource path="res://assets/images/tilesets/tstChallenge.png" type="Texture" id=203]
+[ext_resource path="res://assets/images/tilesets/tstChallenge.tres" type="Texture" id=203]
 [ext_resource path="res://assets/images/tilesets/tstChallenge3.png" type="Texture" id=204]
 [ext_resource path="res://assets/images/tilesets/tstTundra.png" type="Texture" id=205]
 [ext_resource path="res://assets/images/tilesets/tstSword.png" type="Texture" id=206]
 [ext_resource path="res://assets/images/tilesets/tstMM10Endless28.png" type="Texture" id=207]
-[ext_resource path="res://assets/images/tilesets/tstCrystalAlt.png" type="Texture" id=208]
+[ext_resource path="res://assets/images/tilesets/tstCrystal.tres" type="Texture" id=208]
 [ext_resource path="res://assets/images/tilesets/tstDifficulty.png" type="Texture" id=209]
-[ext_resource path="res://assets/images/tilesets/tstGeminiA3.png" type="Texture" id=210]
-[ext_resource path="res://assets/images/tilesets/tstChallenge2.png" type="Texture" id=211]
+[ext_resource path="res://assets/images/tilesets/tstGeminiA2.tres" type="Texture" id=210]
+[ext_resource path="res://assets/images/tilesets/tstChallenge2Alt.tres" type="Texture" id=211]
 [ext_resource path="res://assets/images/tilesets/tstMM7Wily4.png" type="Texture" id=212]
-[ext_resource path="res://assets/images/tilesets/tstChallengeAlt2.png" type="Texture" id=213]
+[ext_resource path="res://assets/images/tilesets/tstChallenge2.tres" type="Texture" id=213]
 [ext_resource path="res://assets/images/tilesets/tstMM9Wily1_2Alt.png" type="Texture" id=214]
-[ext_resource path="res://assets/images/tilesets/tstMM10Wily5_2.png" type="Texture" id=215]
+[ext_resource path="res://assets/images/tilesets/tstMM10Wily5_3.tres" type="Texture" id=215]
 [ext_resource path="res://assets/images/tilesets/tstMM7Wily3.png" type="Texture" id=216]
 [ext_resource path="res://assets/images/tilesets/tstGrenade.png" type="Texture" id=217]
 [ext_resource path="res://assets/images/tilesets/tstSearch.png" type="Texture" id=218]
 [ext_resource path="res://assets/images/tilesets/tstFrost.png" type="Texture" id=219]
-[ext_resource path="res://assets/images/tilesets/tstGeminiA1.png" type="Texture" id=220]
+[ext_resource path="res://assets/images/tilesets/tstGeminiA1.tres" type="Texture" id=220]
 [ext_resource path="res://assets/images/tilesets/tstTengu.png" type="Texture" id=221]
-[ext_resource path="res://assets/images/tilesets/tstFake2.png" type="Texture" id=222]
+[ext_resource path="res://assets/images/tilesets/tstFake2.tres" type="Texture" id=222]
 [ext_resource path="res://assets/images/tilesets/tstMM8Wily2Alt.png" type="Texture" id=223]
 [ext_resource path="res://assets/images/tilesets/tstShadeAlt2.png" type="Texture" id=224]
 [ext_resource path="res://assets/images/tilesets/tstMM8Wily1.png" type="Texture" id=225]
 [ext_resource path="res://assets/images/tilesets/tstMM7Wily2.png" type="Texture" id=226]
 [ext_resource path="res://assets/images/tilesets/tstAstro2.png" type="Texture" id=227]
-[ext_resource path="res://assets/images/tilesets/tstSheep.png" type="Texture" id=228]
+[ext_resource path="res://assets/images/tilesets/tstSheep.tres" type="Texture" id=228]
 [ext_resource path="res://assets/images/tilesets/tstChill2.png" type="Texture" id=229]
 [ext_resource path="res://assets/images/tilesets/tstMM10Wily3.png" type="Texture" id=230]
 [ext_resource path="res://assets/images/tilesets/tstBlade2.png" type="Texture" id=231]
@@ -250,12 +250,12 @@
 [ext_resource path="res://assets/images/tilesets/tstMM10Wily2_3.png" type="Texture" id=248]
 [ext_resource path="res://assets/images/tilesets/tstMM10Wily3_2.png" type="Texture" id=249]
 [ext_resource path="res://assets/images/tilesets/tstMM2Wily1_2Alt.png" type="Texture" id=250]
-[ext_resource path="res://assets/images/tilesets/tstSolar.png" type="Texture" id=251]
-[ext_resource path="res://assets/images/tilesets/tstGeminiA2.png" type="Texture" id=252]
+[ext_resource path="res://assets/images/tilesets/tstSolar2.tres" type="Texture" id=251]
+[ext_resource path="res://assets/images/tilesets/tstGeminiA3.tres" type="Texture" id=252]
 [ext_resource path="res://assets/images/tilesets/tstMM9Wily1_2.png" type="Texture" id=253]
 [ext_resource path="res://assets/images/tilesets/tstMM10Endless16.png" type="Texture" id=254]
 [ext_resource path="res://assets/images/tilesets/tstEnker3.png" type="Texture" id=255]
-[ext_resource path="res://assets/images/tilesets/tstMM10Wily5_3.png" type="Texture" id=256]
+[ext_resource path="res://assets/images/tilesets/tstMM10Wily5_2.tres" type="Texture" id=256]
 [ext_resource path="res://assets/images/tilesets/tstMM10Endless13.png" type="Texture" id=257]
 [ext_resource path="res://assets/images/tilesets/tstMM10Wily1.png" type="Texture" id=258]
 [ext_resource path="res://assets/images/tilesets/tstMM10Wily1_3.png" type="Texture" id=259]
@@ -263,20 +263,20 @@
 [ext_resource path="res://assets/images/tilesets/tstMM10Endless15.png" type="Texture" id=261]
 [ext_resource path="res://assets/images/tilesets/tstEnker4.png" type="Texture" id=262]
 [ext_resource path="res://assets/images/tilesets/tstPump.png" type="Texture" id=263]
-[ext_resource path="res://assets/images/tilesets/tstMM10Wily5.png" type="Texture" id=264]
+[ext_resource path="res://assets/images/tilesets/tstMM10Wily5_4.tres" type="Texture" id=264]
 [ext_resource path="res://assets/images/tilesets/tstMM10Wily4.png" type="Texture" id=265]
 [ext_resource path="res://assets/images/tilesets/tstStrike2.png" type="Texture" id=266]
 [ext_resource path="res://assets/images/tilesets/tstEnker2.png" type="Texture" id=267]
 [ext_resource path="res://assets/images/tilesets/tstBallade2.png" type="Texture" id=268]
 [ext_resource path="res://assets/images/tilesets/tstMM10Endless12.png" type="Texture" id=269]
 [ext_resource path="res://assets/images/tilesets/tstMM10Endless10.png" type="Texture" id=270]
-[ext_resource path="res://assets/images/tilesets/tstPunk4.png" type="Texture" id=271]
+[ext_resource path="res://assets/images/tilesets/tstPunk4.tres" type="Texture" id=271]
 [ext_resource path="res://assets/images/tilesets/tstMM10Endless8.png" type="Texture" id=272]
-[ext_resource path="res://assets/images/tilesets/tstSolar2.png" type="Texture" id=273]
+[ext_resource path="res://assets/images/tilesets/tstSolar.tres" type="Texture" id=273]
 [ext_resource path="res://assets/images/tilesets/tstEnker5.png" type="Texture" id=274]
-[ext_resource path="res://assets/images/tilesets/tstSolar3.png" type="Texture" id=275]
+[ext_resource path="res://assets/images/tilesets/tstSolar3.tres" type="Texture" id=275]
 [ext_resource path="res://assets/images/tilesets/tstNitro2.png" type="Texture" id=276]
-[ext_resource path="res://assets/images/tilesets/tstChill.png" type="Texture" id=277]
+[ext_resource path="res://assets/images/tilesets/tstChill.tres" type="Texture" id=277]
 [ext_resource path="res://assets/images/tilesets/tstMM10Wily2.png" type="Texture" id=278]
 [ext_resource path="res://assets/images/tilesets/tstPumpAlt.png" type="Texture" id=279]
 [ext_resource path="res://assets/images/tilesets/tstMM10Endless9.png" type="Texture" id=280]
@@ -284,7 +284,7 @@
 [ext_resource path="res://assets/images/tilesets/tstConcrete3.png" type="Texture" id=282]
 [ext_resource path="res://assets/images/tilesets/tstMM10Wily4Alt.png" type="Texture" id=283]
 [ext_resource path="res://assets/images/tilesets/tstMM10Wily2_2.png" type="Texture" id=284]
-[ext_resource path="res://assets/images/tilesets/tstMM10Endless11.png" type="Texture" id=285]
+[ext_resource path="res://assets/images/tilesets/tstMM10Endless11.tres" type="Texture" id=285]
 [ext_resource path="res://assets/images/tilesets/tstEnker.png" type="Texture" id=286]
 [ext_resource path="res://assets/images/tilesets/tstEnker6.png" type="Texture" id=287]
 [ext_resource path="res://assets/images/tilesets/tstPunk2.png" type="Texture" id=288]
@@ -309,7 +309,7 @@
 [ext_resource path="res://assets/images/tilesets/tstYamato.png" type="Texture" id=307]
 [ext_resource path="res://assets/images/tilesets/tstPharaoh.png" type="Texture" id=308]
 [ext_resource path="res://assets/images/tilesets/tstMM2Wily1_3.png" type="Texture" id=309]
-[ext_resource path="res://assets/images/tilesets/tstBright.png" type="Texture" id=310]
+[ext_resource path="res://assets/images/tilesets/tstBright.tres" type="Texture" id=310]
 [ext_resource path="res://assets/images/tilesets/tstCharge.png" type="Texture" id=311]
 [ext_resource path="res://assets/images/tilesets/tstGemini.png" type="Texture" id=312]
 [ext_resource path="res://assets/images/tilesets/tstKnight.png" type="Texture" id=313]
@@ -342,7 +342,7 @@
 [ext_resource path="res://assets/images/tilesets/tstWood.png" type="Texture" id=340]
 [ext_resource path="res://assets/images/tilesets/tstElec.png" type="Texture" id=341]
 [ext_resource path="res://assets/images/tilesets/tstSnake.png" type="Texture" id=342]
-[ext_resource path="res://assets/images/tilesets/tstSpark.png" type="Texture" id=343]
+[ext_resource path="res://assets/images/tilesets/tstSpark.tres" type="Texture" id=343]
 [ext_resource path="res://assets/images/tilesets/tstGuts.png" type="Texture" id=344]
 [ext_resource path="res://src/scenes/debug/DebugSceneTilePreviewer/DebugSceneTilePreviewer.gd" type="Script" id=345]
 
@@ -508,7 +508,7 @@ texture = ExtResource( 70 )
 visible = false
 margin_right = 175.0
 margin_bottom = 175.0
-texture = ExtResource( 77 )
+texture = ExtResource( 78 )
 
 [node name="TstMM2Flash" type="TextureRect" parent="Tiles"]
 visible = false
@@ -520,7 +520,7 @@ texture = ExtResource( 11 )
 visible = false
 margin_right = 175.0
 margin_bottom = 175.0
-texture = ExtResource( 78 )
+texture = ExtResource( 77 )
 
 [node name="TstMM2Heat" type="TextureRect" parent="Tiles"]
 visible = false
@@ -628,7 +628,7 @@ texture = ExtResource( 242 )
 visible = false
 margin_right = 175.0
 margin_bottom = 175.0
-texture = ExtResource( 252 )
+texture = ExtResource( 210 )
 
 [node name="TstMM3Gemini4" type="TextureRect" parent="Tiles"]
 visible = false
@@ -640,7 +640,7 @@ texture = ExtResource( 232 )
 visible = false
 margin_right = 175.0
 margin_bottom = 175.0
-texture = ExtResource( 210 )
+texture = ExtResource( 252 )
 
 [node name="TstMM3Gemini" type="TextureRect" parent="Tiles"]
 visible = false
@@ -946,13 +946,13 @@ texture = ExtResource( 311 )
 visible = false
 margin_right = 173.0
 margin_bottom = 173.0
-texture = ExtResource( 2 )
+texture = ExtResource( 208 )
 
 [node name="TstMM5CrystalAlt1" type="TextureRect" parent="Tiles"]
 visible = false
 margin_right = 175.0
 margin_bottom = 175.0
-texture = ExtResource( 208 )
+texture = ExtResource( 2 )
 
 [node name="TstMM5Dark1" type="TextureRect" parent="Tiles"]
 visible = false
@@ -1798,13 +1798,13 @@ texture = ExtResource( 41 )
 visible = false
 margin_right = 175.0
 margin_bottom = 175.0
-texture = ExtResource( 25 )
+texture = ExtResource( 19 )
 
 [node name="TstMM9Wily3Animated1" type="TextureRect" parent="Tiles"]
 visible = false
 margin_right = 175.0
 margin_bottom = 175.0
-texture = ExtResource( 19 )
+texture = ExtResource( 25 )
 
 [node name="TstMM9Wily4Alt1" type="TextureRect" parent="Tiles"]
 visible = false
@@ -1846,13 +1846,13 @@ texture = ExtResource( 281 )
 visible = false
 margin_right = 175.0
 margin_bottom = 175.0
-texture = ExtResource( 213 )
+texture = ExtResource( 39 )
 
 [node name="TstMM10Challenge1AltAnimated1" type="TextureRect" parent="Tiles"]
 visible = false
 margin_right = 175.0
 margin_bottom = 175.0
-texture = ExtResource( 39 )
+texture = ExtResource( 26 )
 
 [node name="TstMM10Challenge1Animated1" type="TextureRect" parent="Tiles"]
 visible = false
@@ -1864,13 +1864,13 @@ texture = ExtResource( 203 )
 visible = false
 margin_right = 175.0
 margin_bottom = 175.0
-texture = ExtResource( 26 )
+texture = ExtResource( 211 )
 
 [node name="TstMM10Challenge2Animated1" type="TextureRect" parent="Tiles"]
 visible = false
 margin_right = 175.0
 margin_bottom = 175.0
-texture = ExtResource( 211 )
+texture = ExtResource( 213 )
 
 [node name="TstMM10Challenge3" type="TextureRect" parent="Tiles"]
 visible = false
@@ -2224,7 +2224,7 @@ texture = ExtResource( 228 )
 visible = false
 margin_right = 175.0
 margin_bottom = 175.0
-texture = ExtResource( 273 )
+texture = ExtResource( 251 )
 
 [node name="TstMM10Solar3Animated1" type="TextureRect" parent="Tiles"]
 visible = false
@@ -2236,7 +2236,7 @@ texture = ExtResource( 275 )
 visible = false
 margin_right = 175.0
 margin_bottom = 175.0
-texture = ExtResource( 251 )
+texture = ExtResource( 273 )
 
 [node name="TstMM10Strike2" type="TextureRect" parent="Tiles"]
 visible = false
@@ -2332,25 +2332,25 @@ texture = ExtResource( 283 )
 visible = false
 margin_right = 175.0
 margin_bottom = 175.0
-texture = ExtResource( 215 )
+texture = ExtResource( 256 )
 
 [node name="TstMM10Wily5-3Animated1" type="TextureRect" parent="Tiles"]
 visible = false
 margin_right = 175.0
 margin_bottom = 175.0
-texture = ExtResource( 256 )
+texture = ExtResource( 215 )
 
 [node name="TstMM10Wily5-4Animated1" type="TextureRect" parent="Tiles"]
 visible = false
 margin_right = 175.0
 margin_bottom = 175.0
-texture = ExtResource( 17 )
+texture = ExtResource( 264 )
 
 [node name="TstMM10Wily5Animated1" type="TextureRect" parent="Tiles"]
 visible = false
 margin_right = 175.0
 margin_bottom = 175.0
-texture = ExtResource( 264 )
+texture = ExtResource( 17 )
 
 [node name="TstMM11Acid" type="TextureRect" parent="Tiles"]
 visible = false
