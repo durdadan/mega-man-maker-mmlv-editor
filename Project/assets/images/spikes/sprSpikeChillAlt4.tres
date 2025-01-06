@@ -1,0 +1,115 @@
+[gd_resource type="AnimatedTexture" load_steps=38 format=2]
+
+[ext_resource path="res://src/utils/mmlv_tile_animated_texture.gd" type="Script" id=1]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_4.png" type="Texture" id=2]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_7.png" type="Texture" id=3]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_14.png" type="Texture" id=4]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_8.png" type="Texture" id=5]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_11.png" type="Texture" id=6]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_5.png" type="Texture" id=7]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_12.png" type="Texture" id=8]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_9.png" type="Texture" id=9]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_10.png" type="Texture" id=10]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_13.png" type="Texture" id=11]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_6.png" type="Texture" id=12]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_0.png" type="Texture" id=13]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_1.png" type="Texture" id=14]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_2.png" type="Texture" id=15]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_3.png" type="Texture" id=16]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_16.png" type="Texture" id=17]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_24.png" type="Texture" id=18]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_17.png" type="Texture" id=19]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_30.png" type="Texture" id=20]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_33.png" type="Texture" id=21]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_18.png" type="Texture" id=22]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_27.png" type="Texture" id=23]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_15.png" type="Texture" id=24]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_19.png" type="Texture" id=25]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_20.png" type="Texture" id=26]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_22.png" type="Texture" id=27]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_23.png" type="Texture" id=28]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_25.png" type="Texture" id=29]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_21.png" type="Texture" id=30]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_28.png" type="Texture" id=31]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_26.png" type="Texture" id=32]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_29.png" type="Texture" id=33]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_31.png" type="Texture" id=34]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_34.png" type="Texture" id=35]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_32.png" type="Texture" id=36]
+[ext_resource path="res://assets/images/spikes/sprSpikeChillAlt4/sprSpikeChillAlt4_35.png" type="Texture" id=37]
+
+[resource]
+frames = 36
+fps = 12.0
+frame_0/texture = ExtResource( 13 )
+frame_1/texture = ExtResource( 14 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 15 )
+frame_2/delay_sec = 0.0
+frame_3/texture = ExtResource( 16 )
+frame_3/delay_sec = 0.0
+frame_4/texture = ExtResource( 2 )
+frame_4/delay_sec = 0.0
+frame_5/texture = ExtResource( 7 )
+frame_5/delay_sec = 0.0
+frame_6/texture = ExtResource( 12 )
+frame_6/delay_sec = 0.0
+frame_7/texture = ExtResource( 3 )
+frame_7/delay_sec = 0.0
+frame_8/texture = ExtResource( 5 )
+frame_8/delay_sec = 0.0
+frame_9/texture = ExtResource( 9 )
+frame_9/delay_sec = 0.0
+frame_10/texture = ExtResource( 10 )
+frame_10/delay_sec = 0.0
+frame_11/texture = ExtResource( 6 )
+frame_11/delay_sec = 0.0
+frame_12/texture = ExtResource( 8 )
+frame_12/delay_sec = 0.0
+frame_13/texture = ExtResource( 11 )
+frame_13/delay_sec = 0.0
+frame_14/texture = ExtResource( 4 )
+frame_14/delay_sec = 0.0
+frame_15/texture = ExtResource( 24 )
+frame_15/delay_sec = 0.0
+frame_16/texture = ExtResource( 17 )
+frame_16/delay_sec = 0.0
+frame_17/texture = ExtResource( 19 )
+frame_17/delay_sec = 0.0
+frame_18/texture = ExtResource( 22 )
+frame_18/delay_sec = 0.0
+frame_19/texture = ExtResource( 25 )
+frame_19/delay_sec = 0.0
+frame_20/texture = ExtResource( 26 )
+frame_20/delay_sec = 0.0
+frame_21/texture = ExtResource( 30 )
+frame_21/delay_sec = 0.0
+frame_22/texture = ExtResource( 27 )
+frame_22/delay_sec = 0.0
+frame_23/texture = ExtResource( 28 )
+frame_23/delay_sec = 0.0
+frame_24/texture = ExtResource( 18 )
+frame_24/delay_sec = 0.0
+frame_25/texture = ExtResource( 29 )
+frame_25/delay_sec = 0.0
+frame_26/texture = ExtResource( 32 )
+frame_26/delay_sec = 0.0
+frame_27/texture = ExtResource( 23 )
+frame_27/delay_sec = 0.0
+frame_28/texture = ExtResource( 31 )
+frame_28/delay_sec = 0.0
+frame_29/texture = ExtResource( 33 )
+frame_29/delay_sec = 0.0
+frame_30/texture = ExtResource( 20 )
+frame_30/delay_sec = 0.0
+frame_31/texture = ExtResource( 34 )
+frame_31/delay_sec = 0.0
+frame_32/texture = ExtResource( 36 )
+frame_32/delay_sec = 0.0
+frame_33/texture = ExtResource( 21 )
+frame_33/delay_sec = 0.0
+frame_34/texture = ExtResource( 35 )
+frame_34/delay_sec = 0.0
+frame_35/texture = ExtResource( 37 )
+frame_35/delay_sec = 0.0
+script = ExtResource( 1 )

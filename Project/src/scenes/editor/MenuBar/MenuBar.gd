@@ -30,9 +30,9 @@ signal exiting
 
 signal undo
 signal redo
-signal cut
-signal copy
-signal paste
+#signal cut #TODO:ImplementThis
+#signal copy #TODO:ImplementThis
+#signal paste #TODO:ImplementThis
 signal duplicate
 signal delete
 
@@ -51,8 +51,6 @@ signal normal_zoom
 signal view_help_list
 signal check_for_updates
 signal readme
-signal release_notes
-signal send_feedback
 signal about
 
 #Generic signals
