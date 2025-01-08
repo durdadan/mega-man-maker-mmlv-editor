@@ -36,6 +36,9 @@ var layers: Array
 #      Virtual Methods
 #-------------------------------------------------
 
+func _init() -> void:
+	EditorConfig.connect("animate_tiles_changed", self, "_check_should_pause_materials")
+
 #-------------------------------------------------
 #      Override Methods
 #-------------------------------------------------
@@ -75,6 +78,10 @@ func _provide_z_layer(z: int) -> TileMap:
 		else:
 			add_child(target)
 	return target
+
+func _check_should_pause_materials(is_animating: bool) -> void:
+	for material in GameBgData.BG_MATERIALS.values():
+		material.set_shader_param("paused", !is_animating)
 
 static func _layers_sorter(a: TileMap, b: TileMap) -> bool:
 	return str2var(a.name) < str2var(b.name)

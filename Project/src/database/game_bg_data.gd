@@ -1747,6 +1747,12 @@ const BG_GAME_IDS: Dictionary = {
 	864: 5,
 }
 
+const BG_MATERIALS: Dictionary = {
+	559: preload("res://assets/materials/sprBGMmbAstro3_side_material.tres"),
+	560: preload("res://assets/materials/sprBGMmbAstro3_middle_material.tres"),
+	561: preload("res://assets/materials/sprBGMmbAstro3_side_material.tres"),
+}
+
 #-------------------------------------------------
 #      Properties
 #-------------------------------------------------

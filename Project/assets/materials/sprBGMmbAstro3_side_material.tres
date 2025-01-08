@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=2]
+
+[ext_resource path="res://assets/images/previews/sprBGMmbAstro3_5BG.png" type="Texture" id=1]
+[ext_resource path="res://assets/shaders/sprBGMmbAstro3_screen_content_shader.tres" type="Shader" id=2]
+
+[resource]
+shader = ExtResource( 2 )
+shader_param/paused = true
+shader_param/is_middle_section = null
+shader_param/content_speed = 60.0
+shader_param/content_texture = ExtResource( 1 )

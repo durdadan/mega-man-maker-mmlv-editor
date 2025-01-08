@@ -138,6 +138,7 @@ func generate_bg_tileset():
 		tileset_output.tile_set_name(i, GameBgData.BG_DATA.get(i) + "_" + str(i))
 		tileset_output.tile_set_occluder_offset(i,
 			float(GameBgData.BG_GAME_IDS[i] == GameDataBuilder.UNUSED_ASSETS) * Vector2.ONE)
+		tileset_output.tile_set_material(i, GameBgData.BG_MATERIALS.get(i))
 	
 	tileset_output.resource_name = OUTPUT_BG_TILESET_RES_NAME
 	
