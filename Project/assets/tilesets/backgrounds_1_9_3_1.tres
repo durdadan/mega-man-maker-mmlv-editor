@@ -494,8 +494,8 @@
 [ext_resource path="res://assets/images/bg/sprBGMM10Endless12.png" type="Texture" id=492]
 [ext_resource path="res://assets/images/bg/sprBGMM10Endless10.png" type="Texture" id=493]
 [ext_resource path="res://assets/images/bg/sprBGTundra.png" type="Texture" id=494]
-[ext_resource path="res://assets/images/bg/sprBGBlock2.png" type="Texture" id=495]
-[ext_resource path="res://assets/images/bg/sprBGTorch4.png" type="Texture" id=496]
+[ext_resource path="res://assets/images/bg/sprBGAcidAlt2.tres" type="Texture" id=495]
+[ext_resource path="res://assets/images/bg/sprBGAcid.tres" type="Texture" id=496]
 [ext_resource path="res://assets/images/bg/sprBGBuilder4PU.png" type="Texture" id=497]
 [ext_resource path="res://assets/images/bg/sprBGMM10Endless15.png" type="Texture" id=498]
 [ext_resource path="res://assets/images/bg/sprBGMM10Endless16.png" type="Texture" id=499]
@@ -507,25 +507,25 @@
 [ext_resource path="res://assets/images/bg/sprBGImpact.png" type="Texture" id=505]
 [ext_resource path="res://assets/images/bg/sprBGTorch2.png" type="Texture" id=506]
 [ext_resource path="res://assets/images/bg/sprBGMM11Wily1.png" type="Texture" id=507]
-[ext_resource path="res://assets/images/bg/sprBGAcid.png" type="Texture" id=508]
+[ext_resource path="res://assets/images/bg/sprBGAcidAlt.tres" type="Texture" id=508]
 [ext_resource path="res://assets/images/bg/sprBGFuse.png" type="Texture" id=509]
-[ext_resource path="res://assets/images/bg/sprBGTorch3.png" type="Texture" id=510]
+[ext_resource path="res://assets/images/bg/sprBGAcid2Alt3.tres" type="Texture" id=510]
 [ext_resource path="res://assets/images/bg/sprBGEnker5.png" type="Texture" id=511]
 [ext_resource path="res://assets/images/bg/sprBGElec2PU.png" type="Texture" id=512]
-[ext_resource path="res://assets/images/bg/sprBGBlock.png" type="Texture" id=513]
-[ext_resource path="res://assets/images/bg/sprBGMM11Wily2.png" type="Texture" id=514]
-[ext_resource path="res://assets/images/bg/sprBGAcidAlt.png" type="Texture" id=515]
+[ext_resource path="res://assets/images/bg/sprBGAcid2Alt2.tres" type="Texture" id=513]
+[ext_resource path="res://assets/images/bg/sprBGBlast3Alt.tres" type="Texture" id=514]
+[ext_resource path="res://assets/images/bg/sprBGAcid2.tres" type="Texture" id=515]
 [ext_resource path="res://assets/images/bg/sprBGTorch.png" type="Texture" id=516]
 [ext_resource path="res://assets/images/bg/sprBGFire1PU.png" type="Texture" id=517]
-[ext_resource path="res://assets/images/bg/sprBGAcidAlt2.png" type="Texture" id=518]
+[ext_resource path="res://assets/images/bg/sprBGAcid2Alt.tres" type="Texture" id=518]
 [ext_resource path="res://assets/images/bg/sprBGBlock3.png" type="Texture" id=519]
 [ext_resource path="res://assets/images/bg/sprBGBomb1PU.png" type="Texture" id=520]
 [ext_resource path="res://assets/images/bg/sprBGMM10Endless11.png" type="Texture" id=521]
-[ext_resource path="res://assets/images/bg/sprBGMM11Wily2_2.png" type="Texture" id=522]
+[ext_resource path="res://assets/images/bg/sprBGBlast3.tres" type="Texture" id=522]
 [ext_resource path="res://assets/images/bg/sprBGChallenge.png" type="Texture" id=523]
 [ext_resource path="res://assets/images/bg/sprBGBlast.png" type="Texture" id=524]
-[ext_resource path="res://assets/images/bg/sprBGMM11Wily1_2.png" type="Texture" id=525]
-[ext_resource path="res://assets/images/bg/sprBGBlock4.png" type="Texture" id=526]
+[ext_resource path="res://assets/images/bg/sprBGBlock.tres" type="Texture" id=525]
+[ext_resource path="res://assets/images/bg/sprBGImpact4.tres" type="Texture" id=526]
 [ext_resource path="res://assets/images/bg/sprBGEnker6.png" type="Texture" id=527]
 [ext_resource path="res://assets/images/bg/sprBGGuts3PU.png" type="Texture" id=528]
 [ext_resource path="res://assets/images/bg/sprBGCredits1.png" type="Texture" id=529]
@@ -687,7 +687,7 @@
 [ext_resource path="res://assets/images/bg/sprBGMMIIISkull2.png" type="Texture" id=685]
 [ext_resource path="res://assets/images/bg/sprBGMMIIISkull2Alt1.png" type="Texture" id=686]
 [ext_resource path="res://assets/images/bg/sprBGPirate2Alt.png" type="Texture" id=687]
-[ext_resource path="res://assets/images/bg/sprBGMM11Wily2_4.png" type="Texture" id=688]
+[ext_resource path="res://assets/images/bg/sprBGBlock2.tres" type="Texture" id=688]
 [ext_resource path="res://assets/images/bg/sprBGMMIIISpark1.png" type="Texture" id=689]
 [ext_resource path="res://assets/images/bg/sprBGKing3_2Alt.png" type="Texture" id=690]
 [ext_resource path="res://assets/images/bg/sprBGKing3BossTengu2Alt.png" type="Texture" id=691]
@@ -699,10 +699,10 @@
 [ext_resource path="res://assets/images/bg/sprBGWoodAlt.png" type="Texture" id=697]
 [ext_resource path="res://assets/images/bg/sprBGKing1_3.png" type="Texture" id=698]
 [ext_resource path="res://assets/images/bg/sprBGMMIIWily2.png" type="Texture" id=699]
-[ext_resource path="res://assets/images/bg/sprBGImpact5.png" type="Texture" id=700]
+[ext_resource path="res://assets/images/bg/sprBGBlock4.tres" type="Texture" id=700]
 [ext_resource path="res://assets/images/bg/sprBGMMIIWily2Alt.png" type="Texture" id=701]
 [ext_resource path="res://assets/images/bg/sprBGBurner1Alt2.png" type="Texture" id=702]
-[ext_resource path="res://assets/images/bg/sprBGMM11Wily2_3.png" type="Texture" id=703]
+[ext_resource path="res://assets/images/bg/sprBGBlock5.tres" type="Texture" id=703]
 [ext_resource path="res://assets/images/bg/sprBGImpact2.png" type="Texture" id=704]
 [ext_resource path="res://assets/images/bg/sprBGTime2PU.png" type="Texture" id=705]
 [ext_resource path="res://assets/images/bg/sprBGImpact3.png" type="Texture" id=706]
@@ -711,9 +711,9 @@
 [ext_resource path="res://assets/images/bg/sprBGGround4.png" type="Texture" id=709]
 [ext_resource path="res://assets/images/bg/sprBGDynamoBossAlt.png" type="Texture" id=710]
 [ext_resource path="res://assets/images/bg/sprBGMmbIntro6.png" type="Texture" id=711]
-[ext_resource path="res://assets/images/bg/sprBGMM11Wily2_5.png" type="Texture" id=712]
+[ext_resource path="res://assets/images/bg/sprBGFuse3.tres" type="Texture" id=712]
 [ext_resource path="res://assets/images/bg/sprBGMagic9.png" type="Texture" id=713]
-[ext_resource path="res://assets/images/bg/sprBGImpact4.png" type="Texture" id=714]
+[ext_resource path="res://assets/images/bg/sprBGFuse3Alt.tres" type="Texture" id=714]
 [ext_resource path="res://assets/images/bg/sprBGMM7Museum1.png" type="Texture" id=715]
 [ext_resource path="res://assets/images/bg/sprBGMMVNeptune1.png" type="Texture" id=716]
 [ext_resource path="res://assets/images/bg/sprBGCut1PUAlt.png" type="Texture" id=717]
@@ -730,16 +730,16 @@
 [ext_resource path="res://assets/images/bg/sprBGSlash2.png" type="Texture" id=728]
 [ext_resource path="res://assets/images/bg/sprBGSword3.png" type="Texture" id=729]
 [ext_resource path="res://assets/images/bg/sprBGOpening.png" type="Texture" id=730]
-[ext_resource path="res://assets/images/bg/sprBGTorch3Alt2.png" type="Texture" id=731]
+[ext_resource path="res://assets/images/bg/sprBGTorch3.tres" type="Texture" id=731]
 [ext_resource path="res://assets/images/bg/sprBGFuse2BasePreview.png" type="Texture" id=732]
 [ext_resource path="res://assets/images/bg/sprBGMM2Opening.png" type="Texture" id=733]
-[ext_resource path="res://assets/images/bg/sprBGTorch3Alt.png" type="Texture" id=734]
+[ext_resource path="res://assets/images/bg/sprBGImpact5.tres" type="Texture" id=734]
 [ext_resource path="res://assets/images/bg/sprBGSlash2Alt.png" type="Texture" id=735]
 [ext_resource path="res://assets/images/bg/sprBGBlast2.png" type="Texture" id=736]
-[ext_resource path="res://assets/images/bg/sprBGBlast3.png" type="Texture" id=737]
+[ext_resource path="res://assets/images/bg/sprBGTorch5.tres" type="Texture" id=737]
 [ext_resource path="res://assets/images/bg/sprBGIntroAlt.png" type="Texture" id=738]
 [ext_resource path="res://assets/images/bg/sprBGFuse2Alt.png" type="Texture" id=739]
-[ext_resource path="res://assets/images/bg/sprBGBlast3Alt.png" type="Texture" id=740]
+[ext_resource path="res://assets/images/bg/sprBGTorch4.tres" type="Texture" id=740]
 [ext_resource path="res://assets/images/bg/sprBGFreeze3.png" type="Texture" id=741]
 [ext_resource path="res://assets/images/bg/sprBGFlame7.png" type="Texture" id=742]
 [ext_resource path="res://assets/images/bg/sprBGKnight4Alt2.png" type="Texture" id=743]
@@ -772,35 +772,35 @@
 [ext_resource path="res://assets/images/bg/sprBGFreeze8.png" type="Texture" id=770]
 [ext_resource path="res://assets/images/bg/sprBGMM7IntroAlt.png" type="Texture" id=771]
 [ext_resource path="res://assets/images/bg/sprBGBurner3_Origin.png" type="Texture" id=772]
-[ext_resource path="res://assets/images/bg/sprBGTundra2Alt.png" type="Texture" id=773]
+[ext_resource path="res://assets/images/bg/sprBGTorch3Alt2.tres" type="Texture" id=773]
 [ext_resource path="res://assets/images/bg/sprBGCentaurAlt.png" type="Texture" id=774]
 [ext_resource path="res://assets/images/bg/sprBGFlame_Overwrite.png" type="Texture" id=775]
 [ext_resource path="res://assets/images/bg/sprBGTengu_Overwrite.png" type="Texture" id=776]
 [ext_resource path="res://assets/images/bg/sprBGBurner3_Overwrite.png" type="Texture" id=777]
 [ext_resource path="res://assets/images/bg/sprBGStone2Alt.png" type="Texture" id=778]
 [ext_resource path="res://assets/images/bg/sprBGShade8.png" type="Texture" id=779]
-[ext_resource path="res://assets/images/bg/sprBGTundra4.png" type="Texture" id=780]
+[ext_resource path="res://assets/images/bg/sprBGMM11Wily1_2.tres" type="Texture" id=780]
 [ext_resource path="res://assets/images/bg/sprBGTundra2.png" type="Texture" id=781]
 [ext_resource path="res://assets/images/bg/sprBGBlade3Alt.png" type="Texture" id=782]
 [ext_resource path="res://assets/images/bg/sprBGTundra3.png" type="Texture" id=783]
 [ext_resource path="res://assets/images/bg/sprBGFrost3.png" type="Texture" id=784]
 [ext_resource path="res://assets/images/bg/sprBGGrenade2.png" type="Texture" id=785]
 [ext_resource path="res://assets/images/bg/sprBGMM10Opening2.png" type="Texture" id=786]
-[ext_resource path="res://assets/images/bg/sprBGAcid2Alt2.png" type="Texture" id=787]
+[ext_resource path="res://assets/images/bg/sprBGTorch3Alt.tres" type="Texture" id=787]
 [ext_resource path="res://assets/images/bg/sprBGBlock6.png" type="Texture" id=788]
-[ext_resource path="res://assets/images/bg/sprBGFuse3Alt.png" type="Texture" id=789]
-[ext_resource path="res://assets/images/bg/sprBGAcid2Alt3.png" type="Texture" id=790]
-[ext_resource path="res://assets/images/bg/sprBGBlock5.png" type="Texture" id=791]
-[ext_resource path="res://assets/images/bg/sprBGFuse3.png" type="Texture" id=792]
-[ext_resource path="res://assets/images/bg/sprBGMM11Wily3.png" type="Texture" id=793]
+[ext_resource path="res://assets/images/bg/sprBGTundra4.tres" type="Texture" id=789]
+[ext_resource path="res://assets/images/bg/sprBGTundra2Alt.tres" type="Texture" id=790]
+[ext_resource path="res://assets/images/bg/sprBGMM11Wily2_5.tres" type="Texture" id=791]
+[ext_resource path="res://assets/images/bg/sprBGMM11Wily2.tres" type="Texture" id=792]
+[ext_resource path="res://assets/images/bg/sprBGMM11Wily3.tres" type="Texture" id=793]
 [ext_resource path="res://assets/images/bg/sprBGBlock7.png" type="Texture" id=794]
 [ext_resource path="res://assets/images/bg/sprBGTorch6.png" type="Texture" id=795]
-[ext_resource path="res://assets/images/bg/sprBGTorch5.png" type="Texture" id=796]
+[ext_resource path="res://assets/images/bg/sprBGMM11Wily2_2.tres" type="Texture" id=796]
 [ext_resource path="res://assets/images/bg/sprBGBladeAlt.png" type="Texture" id=797]
-[ext_resource path="res://assets/images/bg/sprBGAcid2Alt.png" type="Texture" id=798]
+[ext_resource path="res://assets/images/bg/sprBGMM11Wily2_3.tres" type="Texture" id=798]
 [ext_resource path="res://assets/images/bg/sprBGmm10Wily1Alt.png" type="Texture" id=799]
 [ext_resource path="res://assets/images/bg/sprBGmm10Wily1Alt2.png" type="Texture" id=800]
-[ext_resource path="res://assets/images/bg/sprBGAcid2.png" type="Texture" id=801]
+[ext_resource path="res://assets/images/bg/sprBGMM11Wily2_4.tres" type="Texture" id=801]
 [ext_resource path="res://assets/images/bg/sprBGEndless17.png" type="Texture" id=802]
 [ext_resource path="res://assets/images/bg/sprBGElec.png" type="Texture" id=803]
 [ext_resource path="res://assets/images/bg/sprBGGuts.png" type="Texture" id=804]
@@ -6644,8 +6644,8 @@ resource_name = "MMM Bg Tileset"
 415/shape_one_way_margin = 0.0
 415/shapes = [  ]
 415/z_index = 0
-416/name = "sprBGBlock.png_416"
-416/texture = ExtResource( 513 )
+416/name = "sprBGBlock.tres_416"
+416/texture = ExtResource( 525 )
 416/tex_offset = Vector2( 0, 0 )
 416/modulate = Color( 1, 1, 1, 1 )
 416/region = Rect2( 0, 0, 0, 0 )
@@ -6658,8 +6658,8 @@ resource_name = "MMM Bg Tileset"
 416/shape_one_way_margin = 0.0
 416/shapes = [  ]
 416/z_index = 0
-417/name = "sprBGAcid.png_417"
-417/texture = ExtResource( 508 )
+417/name = "sprBGAcid.tres_417"
+417/texture = ExtResource( 496 )
 417/tex_offset = Vector2( 0, 0 )
 417/modulate = Color( 1, 1, 1, 1 )
 417/region = Rect2( 0, 0, 0, 0 )
@@ -6672,8 +6672,8 @@ resource_name = "MMM Bg Tileset"
 417/shape_one_way_margin = 0.0
 417/shapes = [  ]
 417/z_index = 0
-418/name = "sprBGAcidAlt.png_418"
-418/texture = ExtResource( 515 )
+418/name = "sprBGAcidAlt.tres_418"
+418/texture = ExtResource( 508 )
 418/tex_offset = Vector2( 0, 0 )
 418/modulate = Color( 1, 1, 1, 1 )
 418/region = Rect2( 0, 0, 0, 0 )
@@ -6686,8 +6686,8 @@ resource_name = "MMM Bg Tileset"
 418/shape_one_way_margin = 0.0
 418/shapes = [  ]
 418/z_index = 0
-419/name = "sprBGAcidAlt2.png_419"
-419/texture = ExtResource( 518 )
+419/name = "sprBGAcidAlt2.tres_419"
+419/texture = ExtResource( 495 )
 419/tex_offset = Vector2( 0, 0 )
 419/modulate = Color( 1, 1, 1, 1 )
 419/region = Rect2( 0, 0, 0, 0 )
@@ -6812,8 +6812,8 @@ resource_name = "MMM Bg Tileset"
 427/shape_one_way_margin = 0.0
 427/shapes = [  ]
 427/z_index = 0
-428/name = "sprBGMM11Wily1_2.png_428"
-428/texture = ExtResource( 525 )
+428/name = "sprBGMM11Wily1_2.tres_428"
+428/texture = ExtResource( 780 )
 428/tex_offset = Vector2( 0, 0 )
 428/modulate = Color( 1, 1, 1, 1 )
 428/region = Rect2( 0, 0, 0, 0 )
@@ -6826,8 +6826,8 @@ resource_name = "MMM Bg Tileset"
 428/shape_one_way_margin = 0.0
 428/shapes = [  ]
 428/z_index = 0
-429/name = "sprBGMM11Wily2.png_429"
-429/texture = ExtResource( 514 )
+429/name = "sprBGMM11Wily2.tres_429"
+429/texture = ExtResource( 792 )
 429/tex_offset = Vector2( 0, 0 )
 429/modulate = Color( 1, 1, 1, 1 )
 429/region = Rect2( 0, 0, 0, 0 )
@@ -6840,8 +6840,8 @@ resource_name = "MMM Bg Tileset"
 429/shape_one_way_margin = 0.0
 429/shapes = [  ]
 429/z_index = 0
-430/name = "sprBGMM11Wily2_2.png_430"
-430/texture = ExtResource( 522 )
+430/name = "sprBGMM11Wily2_2.tres_430"
+430/texture = ExtResource( 796 )
 430/tex_offset = Vector2( 0, 0 )
 430/modulate = Color( 1, 1, 1, 1 )
 430/region = Rect2( 0, 0, 0, 0 )
@@ -6854,8 +6854,8 @@ resource_name = "MMM Bg Tileset"
 430/shape_one_way_margin = 0.0
 430/shapes = [  ]
 430/z_index = 0
-431/name = "sprBGBlock2.png_431"
-431/texture = ExtResource( 495 )
+431/name = "sprBGBlock2.tres_431"
+431/texture = ExtResource( 688 )
 431/tex_offset = Vector2( 0, 0 )
 431/modulate = Color( 1, 1, 1, 1 )
 431/region = Rect2( 0, 0, 0, 0 )
@@ -6882,8 +6882,8 @@ resource_name = "MMM Bg Tileset"
 432/shape_one_way_margin = 0.0
 432/shapes = [  ]
 432/z_index = 0
-433/name = "sprBGBlock4.png_433"
-433/texture = ExtResource( 526 )
+433/name = "sprBGBlock4.tres_433"
+433/texture = ExtResource( 700 )
 433/tex_offset = Vector2( 0, 0 )
 433/modulate = Color( 1, 1, 1, 1 )
 433/region = Rect2( 0, 0, 0, 0 )
@@ -6896,8 +6896,8 @@ resource_name = "MMM Bg Tileset"
 433/shape_one_way_margin = 0.0
 433/shapes = [  ]
 433/z_index = 0
-434/name = "sprBGTorch3.png_434"
-434/texture = ExtResource( 510 )
+434/name = "sprBGTorch3.tres_434"
+434/texture = ExtResource( 731 )
 434/tex_offset = Vector2( 0, 0 )
 434/modulate = Color( 1, 1, 1, 1 )
 434/region = Rect2( 0, 0, 0, 0 )
@@ -6910,8 +6910,8 @@ resource_name = "MMM Bg Tileset"
 434/shape_one_way_margin = 0.0
 434/shapes = [  ]
 434/z_index = 0
-435/name = "sprBGTorch4.png_435"
-435/texture = ExtResource( 496 )
+435/name = "sprBGTorch4.tres_435"
+435/texture = ExtResource( 740 )
 435/tex_offset = Vector2( 0, 0 )
 435/modulate = Color( 1, 1, 1, 1 )
 435/region = Rect2( 0, 0, 0, 0 )
@@ -10844,8 +10844,8 @@ resource_name = "MMM Bg Tileset"
 718/shape_one_way_margin = 0.0
 718/shapes = [  ]
 718/z_index = 0
-719/name = "sprBGMM11Wily2_3.png_719"
-719/texture = ExtResource( 703 )
+719/name = "sprBGMM11Wily2_3.tres_719"
+719/texture = ExtResource( 798 )
 719/tex_offset = Vector2( 0, 0 )
 719/modulate = Color( 1, 1, 1, 1 )
 719/region = Rect2( 0, 0, 0, 0 )
@@ -10858,8 +10858,8 @@ resource_name = "MMM Bg Tileset"
 719/shape_one_way_margin = 0.0
 719/shapes = [  ]
 719/z_index = 0
-720/name = "sprBGMM11Wily2_4.png_720"
-720/texture = ExtResource( 688 )
+720/name = "sprBGMM11Wily2_4.tres_720"
+720/texture = ExtResource( 801 )
 720/tex_offset = Vector2( 0, 0 )
 720/modulate = Color( 1, 1, 1, 1 )
 720/region = Rect2( 0, 0, 0, 0 )
@@ -10872,8 +10872,8 @@ resource_name = "MMM Bg Tileset"
 720/shape_one_way_margin = 0.0
 720/shapes = [  ]
 720/z_index = 0
-721/name = "sprBGMM11Wily2_5.png_721"
-721/texture = ExtResource( 712 )
+721/name = "sprBGMM11Wily2_5.tres_721"
+721/texture = ExtResource( 791 )
 721/tex_offset = Vector2( 0, 0 )
 721/modulate = Color( 1, 1, 1, 1 )
 721/region = Rect2( 0, 0, 0, 0 )
@@ -11096,8 +11096,8 @@ resource_name = "MMM Bg Tileset"
 736/shape_one_way_margin = 0.0
 736/shapes = [  ]
 736/z_index = 0
-737/name = "sprBGImpact4.png_737"
-737/texture = ExtResource( 714 )
+737/name = "sprBGImpact4.tres_737"
+737/texture = ExtResource( 526 )
 737/tex_offset = Vector2( 0, 0 )
 737/modulate = Color( 1, 1, 1, 1 )
 737/region = Rect2( 0, 0, 0, 0 )
@@ -11110,8 +11110,8 @@ resource_name = "MMM Bg Tileset"
 737/shape_one_way_margin = 0.0
 737/shapes = [  ]
 737/z_index = 0
-738/name = "sprBGImpact5.png_738"
-738/texture = ExtResource( 700 )
+738/name = "sprBGImpact5.tres_738"
+738/texture = ExtResource( 734 )
 738/tex_offset = Vector2( 0, 0 )
 738/modulate = Color( 1, 1, 1, 1 )
 738/region = Rect2( 0, 0, 0, 0 )
@@ -11320,8 +11320,8 @@ resource_name = "MMM Bg Tileset"
 752/shape_one_way_margin = 0.0
 752/shapes = [  ]
 752/z_index = 0
-753/name = "sprBGBlast3.png_753"
-753/texture = ExtResource( 737 )
+753/name = "sprBGBlast3.tres_753"
+753/texture = ExtResource( 522 )
 753/tex_offset = Vector2( 0, 0 )
 753/modulate = Color( 1, 1, 1, 1 )
 753/region = Rect2( 0, 0, 0, 0 )
@@ -11334,8 +11334,8 @@ resource_name = "MMM Bg Tileset"
 753/shape_one_way_margin = 0.0
 753/shapes = [  ]
 753/z_index = 0
-754/name = "sprBGBlast3Alt.png_754"
-754/texture = ExtResource( 740 )
+754/name = "sprBGBlast3Alt.tres_754"
+754/texture = ExtResource( 514 )
 754/tex_offset = Vector2( 0, 0 )
 754/modulate = Color( 1, 1, 1, 1 )
 754/region = Rect2( 0, 0, 0, 0 )
@@ -11348,8 +11348,8 @@ resource_name = "MMM Bg Tileset"
 754/shape_one_way_margin = 0.0
 754/shapes = [  ]
 754/z_index = 0
-755/name = "sprBGTorch3Alt.png_755"
-755/texture = ExtResource( 734 )
+755/name = "sprBGTorch3Alt.tres_755"
+755/texture = ExtResource( 787 )
 755/tex_offset = Vector2( 0, 0 )
 755/modulate = Color( 1, 1, 1, 1 )
 755/region = Rect2( 0, 0, 0, 0 )
@@ -11362,8 +11362,8 @@ resource_name = "MMM Bg Tileset"
 755/shape_one_way_margin = 0.0
 755/shapes = [  ]
 755/z_index = 0
-756/name = "sprBGTorch3Alt2.png_756"
-756/texture = ExtResource( 731 )
+756/name = "sprBGTorch3Alt2.tres_756"
+756/texture = ExtResource( 773 )
 756/tex_offset = Vector2( 0, 0 )
 756/modulate = Color( 1, 1, 1, 1 )
 756/region = Rect2( 0, 0, 0, 0 )
@@ -12538,8 +12538,8 @@ resource_name = "MMM Bg Tileset"
 839/shape_one_way_margin = 0.0
 839/shapes = [  ]
 839/z_index = 0
-840/name = "sprBGAcid2.png_840"
-840/texture = ExtResource( 801 )
+840/name = "sprBGAcid2.tres_840"
+840/texture = ExtResource( 515 )
 840/tex_offset = Vector2( 0, 0 )
 840/modulate = Color( 1, 1, 1, 1 )
 840/region = Rect2( 0, 0, 0, 0 )
@@ -12552,8 +12552,8 @@ resource_name = "MMM Bg Tileset"
 840/shape_one_way_margin = 0.0
 840/shapes = [  ]
 840/z_index = 0
-841/name = "sprBGAcid2Alt.png_841"
-841/texture = ExtResource( 798 )
+841/name = "sprBGAcid2Alt.tres_841"
+841/texture = ExtResource( 518 )
 841/tex_offset = Vector2( 0, 0 )
 841/modulate = Color( 1, 1, 1, 1 )
 841/region = Rect2( 0, 0, 0, 0 )
@@ -12566,8 +12566,8 @@ resource_name = "MMM Bg Tileset"
 841/shape_one_way_margin = 0.0
 841/shapes = [  ]
 841/z_index = 0
-842/name = "sprBGAcid2Alt2.png_842"
-842/texture = ExtResource( 787 )
+842/name = "sprBGAcid2Alt2.tres_842"
+842/texture = ExtResource( 513 )
 842/tex_offset = Vector2( 0, 0 )
 842/modulate = Color( 1, 1, 1, 1 )
 842/region = Rect2( 0, 0, 0, 0 )
@@ -12580,8 +12580,8 @@ resource_name = "MMM Bg Tileset"
 842/shape_one_way_margin = 0.0
 842/shapes = [  ]
 842/z_index = 0
-843/name = "sprBGAcid2Alt3.png_843"
-843/texture = ExtResource( 790 )
+843/name = "sprBGAcid2Alt3.tres_843"
+843/texture = ExtResource( 510 )
 843/tex_offset = Vector2( 0, 0 )
 843/modulate = Color( 1, 1, 1, 1 )
 843/region = Rect2( 0, 0, 0, 0 )
@@ -12594,8 +12594,8 @@ resource_name = "MMM Bg Tileset"
 843/shape_one_way_margin = 0.0
 843/shapes = [  ]
 843/z_index = 0
-844/name = "sprBGBlock5.png_844"
-844/texture = ExtResource( 791 )
+844/name = "sprBGBlock5.tres_844"
+844/texture = ExtResource( 703 )
 844/tex_offset = Vector2( 0, 0 )
 844/modulate = Color( 1, 1, 1, 1 )
 844/region = Rect2( 0, 0, 0, 0 )
@@ -12636,8 +12636,8 @@ resource_name = "MMM Bg Tileset"
 846/shape_one_way_margin = 0.0
 846/shapes = [  ]
 846/z_index = 0
-847/name = "sprBGFuse3.png_847"
-847/texture = ExtResource( 792 )
+847/name = "sprBGFuse3.tres_847"
+847/texture = ExtResource( 712 )
 847/tex_offset = Vector2( 0, 0 )
 847/modulate = Color( 1, 1, 1, 1 )
 847/region = Rect2( 0, 0, 0, 0 )
@@ -12650,8 +12650,8 @@ resource_name = "MMM Bg Tileset"
 847/shape_one_way_margin = 0.0
 847/shapes = [  ]
 847/z_index = 0
-848/name = "sprBGFuse3Alt.png_848"
-848/texture = ExtResource( 789 )
+848/name = "sprBGFuse3Alt.tres_848"
+848/texture = ExtResource( 714 )
 848/tex_offset = Vector2( 0, 0 )
 848/modulate = Color( 1, 1, 1, 1 )
 848/region = Rect2( 0, 0, 0, 0 )
@@ -12664,7 +12664,7 @@ resource_name = "MMM Bg Tileset"
 848/shape_one_way_margin = 0.0
 848/shapes = [  ]
 848/z_index = 0
-849/name = "sprBGMM11Wily3.png_849"
+849/name = "sprBGMM11Wily3.tres_849"
 849/texture = ExtResource( 793 )
 849/tex_offset = Vector2( 0, 0 )
 849/modulate = Color( 1, 1, 1, 1 )
@@ -12678,8 +12678,8 @@ resource_name = "MMM Bg Tileset"
 849/shape_one_way_margin = 0.0
 849/shapes = [  ]
 849/z_index = 0
-850/name = "sprBGTorch5.png_850"
-850/texture = ExtResource( 796 )
+850/name = "sprBGTorch5.tres_850"
+850/texture = ExtResource( 737 )
 850/tex_offset = Vector2( 0, 0 )
 850/modulate = Color( 1, 1, 1, 1 )
 850/region = Rect2( 0, 0, 0, 0 )
@@ -12720,8 +12720,8 @@ resource_name = "MMM Bg Tileset"
 852/shape_one_way_margin = 0.0
 852/shapes = [  ]
 852/z_index = 0
-853/name = "sprBGTundra2Alt.png_853"
-853/texture = ExtResource( 773 )
+853/name = "sprBGTundra2Alt.tres_853"
+853/texture = ExtResource( 790 )
 853/tex_offset = Vector2( 0, 0 )
 853/modulate = Color( 1, 1, 1, 1 )
 853/region = Rect2( 0, 0, 0, 0 )
@@ -12748,8 +12748,8 @@ resource_name = "MMM Bg Tileset"
 854/shape_one_way_margin = 0.0
 854/shapes = [  ]
 854/z_index = 0
-855/name = "sprBGTundra4.png_855"
-855/texture = ExtResource( 780 )
+855/name = "sprBGTundra4.tres_855"
+855/texture = ExtResource( 789 )
 855/tex_offset = Vector2( 0, 0 )
 855/modulate = Color( 1, 1, 1, 1 )
 855/region = Rect2( 0, 0, 0, 0 )
