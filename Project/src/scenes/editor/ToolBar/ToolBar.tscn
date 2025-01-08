@@ -314,9 +314,9 @@ script = ExtResource( 25 )
 margin_right = 32.0
 margin_bottom = 32.0
 rect_min_size = Vector2( 32, 32 )
-hint_tooltip = "Lock editor screen to prevent it from scrolling and accidental changes:
-* Toggle on to lock the screen.
-* Toggle off to unlock the screen."
+hint_tooltip = "Toggle Lock Editor Screen:
+* Toggle On to lock the screen.
+* Toggle Off to unlock the screen."
 focus_mode = 0
 toggle_mode = true
 action_mode = 0
@@ -336,9 +336,9 @@ margin_left = 44.0
 margin_right = 76.0
 margin_bottom = 32.0
 rect_min_size = Vector2( 32, 32 )
-hint_tooltip = "Toggle tile animations in the editor window and in previews:
-* Toggle on to play animations.
-* Toggle off to stop animations."
+hint_tooltip = "Toggle Tile Animations:
+* Toggle On to start playing tile animations.
+* Toggle Off to stop playing tile animations."
 focus_mode = 0
 toggle_mode = true
 action_mode = 0

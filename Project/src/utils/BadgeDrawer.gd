@@ -1,9 +1,9 @@
-# TileTextureButton
-# Written by: First
+# Script_Name_Here
+# Written by: 
 
-extends Button
+extends Reference
 
-#class_name optional
+class_name BadgeDrawer
 
 """
 	Enter desc here.
@@ -21,17 +21,14 @@ extends Button
 #      Constants
 #-------------------------------------------------
 
-const CONTENT_PADDING: float = 6.0
-const OVERBRIGHT_AMOUNT: float = 0.4
-const MODULATE_COLOR_NORMAL: Color = Color.white
-const MODULATE_COLOR_HOVER: Color = MODULATE_COLOR_NORMAL * (1.0 + OVERBRIGHT_AMOUNT)
+const BADGE_ALPHA: float = 1.0
+const BADGE_ANIMATED_TEXTURE: Texture = preload(
+	"res://assets/images/editor_ui/badge_animated.png"
+)
 
 #-------------------------------------------------
 #      Properties
 #-------------------------------------------------
-
-var texture_region: TextureRegion setget set_texture_region
-var _modulate_color: Color = Color.white
 
 #-------------------------------------------------
 #      Notifications
@@ -41,17 +38,6 @@ var _modulate_color: Color = Color.white
 #      Virtual Methods
 #-------------------------------------------------
 
-func _init() -> void:
-	connect("mouse_entered", self, "set", [ "_modulate_color", MODULATE_COLOR_HOVER ])
-	connect("mouse_exited", self, "set", [ "_modulate_color", MODULATE_COLOR_NORMAL ])
-
-func _draw() -> void:
-	if texture_region and !icon:
-		VisualServer.canvas_item_add_texture_rect_region(
-			get_canvas_item(), Rect2(Vector2.ZERO, rect_size).grow(-CONTENT_PADDING),
-				texture_region.texture.get_rid(), texture_region.region, _modulate_color)
-		BadgeDrawer.check_should_display_anim_badge(self, texture_region.texture)
-
 #-------------------------------------------------
 #      Override Methods
 #-------------------------------------------------
@@ -59,6 +45,13 @@ func _draw() -> void:
 #-------------------------------------------------
 #      Public Methods
 #-------------------------------------------------
+
+static func check_should_display_anim_badge(button: BaseButton, content_texture: Texture) -> void:
+	if content_texture is AnimatedTexture and !button.is_hovered():
+		VisualServer.canvas_item_add_texture_rect(button.get_canvas_item(),
+			 Rect2(button.rect_size - BADGE_ANIMATED_TEXTURE.get_size(),
+				BADGE_ANIMATED_TEXTURE.get_size()), BADGE_ANIMATED_TEXTURE.get_rid(),
+					false, Color(1.0, 1.0, 1.0, clamp(BADGE_ALPHA, 0.0, 1.0)))
 
 #-------------------------------------------------
 #      Connections
@@ -71,8 +64,3 @@ func _draw() -> void:
 #-------------------------------------------------
 #      Setters & Getters
 #-------------------------------------------------
-
-func set_texture_region(val: TextureRegion) -> void:
-	texture_region = val
-	icon = null
-	update()

@@ -20,6 +20,11 @@ _global_script_classes=[ {
 "path": "res://src/scenes/editor/InspectorPanel/AtbHBox/AtbHbox.gd"
 }, {
 "base": "Reference",
+"class": "BadgeDrawer",
+"language": "GDScript",
+"path": "res://src/utils/BadgeDrawer.gd"
+}, {
+"base": "Reference",
 "class": "BaseDataGame",
 "language": "GDScript",
 "path": "res://src/global_gameclass/base_data_game.gd"
@@ -212,6 +217,7 @@ _global_script_classes=[ {
 _global_script_class_icons={
 "AtbDropdownButton": "",
 "AtbHBox": "",
+"BadgeDrawer": "",
 "BaseDataGame": "",
 "ButtonPressFx": "",
 "DataGameBg": "",
