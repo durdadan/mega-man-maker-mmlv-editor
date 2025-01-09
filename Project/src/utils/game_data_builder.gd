@@ -79,7 +79,7 @@ class TempBossCodeData:
 #-------------------------------------------------
 
 const GAME_ID_LABEL_PREFIX = "Mega Man %d"
-const UNUSED_ASSETS: int = 199
+const UNUSED_ASSETS: int = 999
 
 enum BlockType {
 	OBJECT = 0,
@@ -514,6 +514,8 @@ static func getGameName(id: int) -> String:
 			return "Wily Wars"
 		120:
 			return "Misc"
+		199:
+			return "Legacy Assets"
 		UNUSED_ASSETS:
 			return "Unused Assets"
 		_:

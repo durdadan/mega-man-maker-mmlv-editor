@@ -53,6 +53,8 @@ func _draw() -> void:
 		VisualServer.canvas_item_add_texture_rect_region(get_canvas_item(), Rect2(Vector2.ZERO, rect_size),
 			texture_region.texture.get_rid(), texture_region.region)
 		BadgeDrawer.check_should_display_anim_badge(self, texture_region.texture)
+		material = texture_region.texture.get_meta("material") if \
+			texture_region.texture.has_meta("material") else null
 
 #-------------------------------------------------
 #      Override Methods

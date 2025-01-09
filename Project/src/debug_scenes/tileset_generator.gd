@@ -133,12 +133,14 @@ func generate_bg_tileset():
 	tileset_output = TileSet.new()
 	
 	for i in GameBgData.BG_DATA.keys():
+		var bg_texture: Texture = load("res://assets/images/bg/" + GameBgData.BG_DATA.get(i))
 		tileset_output.create_tile(i)
-		tileset_output.tile_set_texture(i, load("res://assets/images/bg/" + GameBgData.BG_DATA.get(i)))
+		tileset_output.tile_set_texture(i, bg_texture)
 		tileset_output.tile_set_name(i, GameBgData.BG_DATA.get(i) + "_" + str(i))
 		tileset_output.tile_set_occluder_offset(i,
 			float(GameBgData.BG_GAME_IDS[i] == GameDataBuilder.UNUSED_ASSETS) * Vector2.ONE)
-		tileset_output.tile_set_material(i, GameBgData.BG_MATERIALS.get(i))
+		if bg_texture.has_meta("material"):
+			tileset_output.tile_set_material(i, bg_texture.get_meta("material"))
 	
 	tileset_output.resource_name = OUTPUT_BG_TILESET_RES_NAME
 	

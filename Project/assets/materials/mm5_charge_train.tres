@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=2]
+
+[ext_resource path="res://assets/shaders/infinite_scroll_texture_shader.tres" type="Shader" id=1]
+[ext_resource path="res://src/utils/mmlv_tile_animated_material.gd" type="Script" id=2]
+
+[resource]
+shader = ExtResource( 1 )
+shader_param/paused = false
+shader_param/content_speed = Vector2( 240, 0 )
+script = ExtResource( 2 )
