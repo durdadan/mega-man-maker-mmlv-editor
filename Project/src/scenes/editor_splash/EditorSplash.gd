@@ -49,6 +49,7 @@ onready var hint_label = $Panel/HintLabel
 #-------------------------------------------------
 
 func _ready() -> void:
+	VisualServer.set_block_signals(true)
 	thread = Thread.new()
 	
 	_update_watermark()
@@ -93,6 +94,7 @@ func _poll_finished():
 		return
 	
 	if err == ERR_FILE_EOF: # Finished loading.
+		VisualServer.set_block_signals(false)
 		var resource = res_iloader.get_resource()
 		_set_new_scene(resource)
 		call_deferred("queue_free")

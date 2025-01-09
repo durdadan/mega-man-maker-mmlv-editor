@@ -1,0 +1,12 @@
+[gd_resource type="Shader" format=2]
+
+[resource]
+code = "shader_type canvas_item;
+
+uniform bool paused = true;
+uniform vec2 content_speed;
+
+void fragment() {
+	COLOR = texture(TEXTURE, UV + float(!paused) * content_speed * TEXTURE_PIXEL_SIZE * TIME);
+}
+"

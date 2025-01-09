@@ -84,6 +84,11 @@ const MARGIN_BOTTOM_BOX_MIN_SIZE = Vector2(0, 96)
 #      Properties
 #-------------------------------------------------
 
+onready var preview_texture_rect = $PreviewTextureRect
+onready var preview_tex_anim = $PreviewTextureRect/ShowHideAnim
+onready var preview_tex_name_panel = $PreviewTextureRect/NameVBox
+onready var preview_tex_name_label = $PreviewTextureRect/NameVBox/TilesetNameLabel
+onready var preview_tex_id_label = $PreviewTextureRect/NameVBox/TilesetIDLabel
 onready var search_lineedit = $VBox/SearchLineEdit
 onready var search_lineedit_icon = $VBox/SearchLineEdit/Icon
 onready var subtile_button = $SubtileSpikeButton
@@ -120,6 +125,31 @@ func _ready() -> void:
 func _on_spike_btn_pressed_id(tile_id : int, _tile_texture : Texture):
 	select_spike(tile_id) 
 
+func _on_spike_btn_mouse_entered_btn(texture : Texture, tileset_name : String, tile_id : int):
+	preview_tex_anim.play("Show")
+	preview_tex_name_panel.show()
+	preview_tex_name_label.text = tileset_name
+	preview_tex_id_label.text = str("ID: ", tile_id)
+	preview_texture_rect.texture = texture
+
+func _on_spike_btn_mouse_exited_btn(_texture):
+	preview_tex_anim.play("Hide")
+	preview_tex_name_panel.hide() # this needs to be here or there is a phantom area you cannot click. 
+
+func _on_spike_btn_gui_input(event : InputEvent):
+	# Check for double click event
+	if event is InputEventMouseButton:
+		if event.doubleclick:
+			subtile_select_popup.popup()
+
+func _on_SubtileSpikeButton_pressed() -> void:
+	subtile_select_popup.popup()
+
+func _on_SubtileSpikeSelectPopup_subtile_spike_selected(tile_id) -> void:
+	current_subtile_spike_id = tile_id
+	emit_signal("spike_selected", current_selected_spike_id + current_subtile_spike_id)
+	print_debug("spike_selected_debug: " + str(current_selected_spike_id) + " " + str(current_subtile_spike_id))
+
 func _on_SearchLineEdit_text_changed(new_text: String) -> void:
 	spike_btn_map.filter(new_text)
 	search_lineedit_icon.visible = new_text.empty()
@@ -141,6 +171,9 @@ func _generate_ui():
 	_add_margin_bottom_box()
 
 func _create_spike_button(file_name : String, game_id : int, spike_id : int):
+	if game_id == GameDataBuilder.UNUSED_ASSETS:
+		return
+	
 	var grid_c = scrl_vbox.get_node(GRID_C_NAME_PREFIX + str(game_id))
 	var tex_btn := TileTextureButton.new()
 	tex_btn.tileset_name = file_name.get_basename()
@@ -150,6 +183,9 @@ func _create_spike_button(file_name : String, game_id : int, spike_id : int):
 	tex_btn.hint_tooltip = str(tex_btn.tileset_name, "\n", "ID: ", spike_id)
 	tex_btn.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 	tex_btn.connect("pressed_id", self, "_on_spike_btn_pressed_id")
+	tex_btn.connect("mouse_entered_btn", self, "_on_spike_btn_mouse_entered_btn")
+	tex_btn.connect("mouse_exited_btn", self, "_on_spike_btn_mouse_exited_btn")
+	tex_btn.connect("gui_input", self, "_on_spike_btn_gui_input") # Use for double click event
 	tex_btn.tile_id = spike_id
 	grid_c.add_child(tex_btn)
 	
@@ -167,6 +203,7 @@ func _create_grid_containters():
 	#Get all game ids and sort them
 	for i in GameSpikeData.SPIKE_GAME_IDS.values():
 		game_ids[i] = ""
+	game_ids.erase(GameDataBuilder.UNUSED_ASSETS)
 	
 	sorted_game_ids = game_ids.keys()
 	sorted_game_ids.sort()
@@ -205,14 +242,6 @@ func _add_margin_bottom_box():
 	scrl_vbox.add_child(ref_rect)
 	ref_rect.rect_min_size = MARGIN_BOTTOM_BOX_MIN_SIZE
 
-func _on_SubtileSpikeButton_pressed() -> void:
-	subtile_select_popup.popup()
-
-func _on_SubtileSpikeSelectPopup_subtile_spike_selected(tile_id) -> void:
-	current_subtile_spike_id = tile_id
-	emit_signal("spike_selected", current_selected_spike_id + current_subtile_spike_id)
-	print_debug("spike_selected_debug: " + str(current_selected_spike_id) + " " + str(current_subtile_spike_id))
-	
 #-------------------------------------------------
 #      Setters & Getters
 #-------------------------------------------------
