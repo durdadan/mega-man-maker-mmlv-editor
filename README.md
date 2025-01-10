@@ -2,7 +2,7 @@
 # Mega Man Maker Level Editor
 # Forked By JDE173901
 
-![version badge](https://img.shields.io/github/v/release/godot-mega-man/mega-man-maker-mmlv-editor)
+![version badge](https://img.shields.io/github/v/release/durdadan/mega-man-maker-mmlv-editor)
 
 MMLV Editor is a program, level editor tool for Mega Man Maker to change any object's properties in a level file (.MMLV file format)
 
