@@ -1,0 +1,58 @@
+[gd_resource type="Shader" format=2]
+
+[resource]
+code = "shader_type canvas_item;
+
+const vec2 TOP_CLOUDS_SCALE = vec2(1.0f);
+const vec2 BOTTOM_CLOUDS_SCALE = -TOP_CLOUDS_SCALE;
+
+uniform bool paused = true;
+uniform vec3 clouds_close_params;
+uniform vec3 clouds_mid_params;
+uniform vec3 clouds_far_params;
+uniform sampler2D clouds_close_texture;
+uniform sampler2D clouds_mid_texture;
+uniform sampler2D clouds_far_texture;
+
+float inverse_lerp_f(float from, float to, float value) {
+	return clamp((value - from) / (to - from), 0.0f, 1.0f);
+}
+
+vec2 scale(vec2 uv, vec2 scale) {
+	mat2 scale_matrix = mat2(vec2(scale.x, 0.0f), vec2(0.0f, scale.y));
+	uv -= 0.5f;
+	uv = uv * scale_matrix;
+	uv += 0.5f;
+	return uv;
+}
+
+bool is_in_range(float value, vec2 range) {
+	value = abs(value);
+	return step(value, range.y) - step(value, range.x) != 0.0f;
+}
+
+vec4 cloud_color(sampler2D clouds, vec3 cloud_params, vec2 uv, vec2 pixel_size, vec2 limits, float v_mid_offset) {
+	float sgn = sign(v_mid_offset);
+	float u = uv.x / (cloud_params.x * pixel_size.x) -  float(!paused) * sgn * cloud_params.z * pixel_size.x * TIME;
+	float v = sgn * inverse_lerp_f(limits.x, limits.y, abs(v_mid_offset));
+	return texture(clouds, scale(vec2(u, v), vec2(sgn)));
+}
+
+void fragment() {
+	vec2 uv = UV;
+	vec2 ps = TEXTURE_PIXEL_SIZE;
+	vec2 limits_close = vec2(0.5f, 0.5f - clouds_close_params.y * ps.y);
+	vec2 limits_mid = vec2(limits_close.y, limits_close.y - clouds_mid_params.y * ps.y);
+	vec2 limits_far = vec2(limits_mid.y, limits_mid.y - clouds_far_params.y * ps.y);
+	float v_mid_offset = 0.5f - uv.y;
+	if (is_in_range(v_mid_offset, limits_close)) {
+		COLOR = cloud_color(clouds_close_texture, clouds_close_params, uv, ps, limits_close, v_mid_offset);
+	} else if (is_in_range(v_mid_offset, limits_mid)) {
+		COLOR = cloud_color(clouds_mid_texture, clouds_mid_params, uv, ps, limits_mid, v_mid_offset);
+	} else if (is_in_range(v_mid_offset, limits_far)) {
+		COLOR = cloud_color(clouds_far_texture, clouds_far_params, uv, ps, limits_far, v_mid_offset);
+	} else {
+		COLOR = texture(TEXTURE, uv)
+	}
+}
+"

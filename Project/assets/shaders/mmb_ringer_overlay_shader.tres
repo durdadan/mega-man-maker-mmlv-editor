@@ -1,0 +1,52 @@
+[gd_resource type="Shader" format=2]
+
+[resource]
+code = "shader_type canvas_item;
+
+uniform vec2 ringer_texture_size;
+uniform vec2 ringer_1_position;
+uniform vec2 ringer_1_scale;
+uniform vec2 ringer_2_position;
+uniform vec2 ringer_2_scale;
+uniform sampler2D ringer_texture;
+
+vec2 scale(vec2 uv, vec2 scale) {
+	mat2 scale_matrix = mat2(vec2(scale.x, 0.0f), vec2(0.0f, scale.y));
+	uv -= 0.5f;
+	uv = uv * scale_matrix;
+	uv += 0.5f;
+	return uv;
+}
+
+float inverse_lerp_f(float from, float to, float value) {
+	return clamp((value - from) / (to - from), 0.0f, 1.0f);
+}
+
+vec2 inverse_lerp_vec2(vec2 from, vec2 to, vec2 value) {
+	return vec2(inverse_lerp_f(from.x, to.x, value.x), inverse_lerp_f(from.y, to.y, value.y));
+}
+
+bool is_inside_box(vec2 start, vec2 end, vec2 value) {
+    vec2 s = step(start, value) - step(end, value);
+    return s.x * s.y > 0.0f;   
+}
+
+void fragment() {
+	vec2 uv = UV;
+	vec2 ps = TEXTURE_PIXEL_SIZE;
+	vec4 result_col = texture(TEXTURE, uv);
+	vec2 ringer_1_start_uv = ringer_1_position * ps;
+	vec2 ringer_2_start_uv = ringer_2_position * ps;
+	vec2 ringer_1_end_uv = (ringer_1_position + ringer_texture_size) * ps;
+	vec2 ringer_2_end_uv = (ringer_2_position + ringer_texture_size) * ps;
+	vec2 ringer_1_uv = inverse_lerp_vec2(ringer_1_start_uv, ringer_1_end_uv, uv);
+	vec2 ringer_2_uv = inverse_lerp_vec2(ringer_2_start_uv, ringer_2_end_uv, uv);
+	vec4 ringer_1_col = texture(ringer_texture, scale(ringer_1_uv, ringer_1_scale));
+	vec4 ringer_2_col = texture(ringer_texture, scale(ringer_2_uv, ringer_2_scale));
+	result_col = mix(result_col, ringer_1_col, float(length(ringer_1_scale) > 0.0f &&
+		ringer_1_col.a > 0.0f && is_inside_box(ringer_1_start_uv, ringer_1_end_uv, uv)));
+	result_col = mix(result_col, ringer_2_col, float(length(ringer_2_scale) > 0.0f &&
+		ringer_2_col.a > 0.0f && is_inside_box(ringer_2_start_uv, ringer_2_end_uv, uv)));
+	COLOR = result_col;
+}
+"

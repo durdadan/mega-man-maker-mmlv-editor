@@ -1,0 +1,15 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=2]
+
+[ext_resource path="res://src/utils/mmlv_tile_animated_material.gd" type="Script" id=1]
+[ext_resource path="res://assets/shaders/mmb_ringer_overlay_shader.tres" type="Shader" id=2]
+[ext_resource path="res://assets/images/bg/sprBellRingerBG.tres" type="Texture" id=3]
+
+[resource]
+shader = ExtResource( 2 )
+shader_param/ringer_texture_size = Vector2( 52, 32 )
+shader_param/ringer_1_position = Vector2( 195, 112 )
+shader_param/ringer_1_scale = Vector2( -1, 1 )
+shader_param/ringer_2_position = Vector2( 9, 160 )
+shader_param/ringer_2_scale = Vector2( 1, 1 )
+shader_param/ringer_texture = ExtResource( 3 )
+script = ExtResource( 1 )
