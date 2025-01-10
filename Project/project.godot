@@ -20,6 +20,11 @@ _global_script_classes=[ {
 "path": "res://src/scenes/editor/InspectorPanel/AtbHBox/AtbHbox.gd"
 }, {
 "base": "Reference",
+"class": "BadgeDrawer",
+"language": "GDScript",
+"path": "res://src/utils/BadgeDrawer.gd"
+}, {
+"base": "Reference",
 "class": "BaseDataGame",
 "language": "GDScript",
 "path": "res://src/global_gameclass/base_data_game.gd"
@@ -164,6 +169,16 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/scenes/editor/MenuBar/MenuBar.gd"
 }, {
+"base": "ShaderMaterial",
+"class": "MmlvTileAnimatedMaterial",
+"language": "GDScript",
+"path": "res://src/utils/mmlv_tile_animated_material.gd"
+}, {
+"base": "AnimatedTexture",
+"class": "MmlvTileAnimatedTexture",
+"language": "GDScript",
+"path": "res://src/utils/mmlv_tile_animated_texture.gd"
+}, {
 "base": "PreviewObject",
 "class": "PreviewGameObject",
 "language": "GDScript",
@@ -189,6 +204,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/utils/BaseButtonCallback/TextureButtonCallback.gd"
 }, {
+"base": "Reference",
+"class": "TextureRegion",
+"language": "GDScript",
+"path": "res://src/scenes/editor/InspectorPanel/Tab/TilemapTab/TextureRegion.gd"
+}, {
 "base": "TextureButton",
 "class": "TileTextureButton",
 "language": "GDScript",
@@ -202,6 +222,7 @@ _global_script_classes=[ {
 _global_script_class_icons={
 "AtbDropdownButton": "",
 "AtbHBox": "",
+"BadgeDrawer": "",
 "BaseDataGame": "",
 "ButtonPressFx": "",
 "DataGameBg": "",
@@ -231,11 +252,14 @@ _global_script_class_icons={
 "Level": "",
 "MainInspectorTab": "",
 "MenuBar": "",
+"MmlvTileAnimatedMaterial": "",
+"MmlvTileAnimatedTexture": "",
 "PreviewGameObject": "",
 "PreviewObject": "",
 "RecentFileManager": "",
 "SpikesAssembler": "",
 "TextureButtonCallback": "",
+"TextureRegion": "",
 "TileTextureButton": "",
 "VersionComparator": ""
 }
@@ -252,7 +276,7 @@ config/icon="res://icon.png"
 config/windows_native_icon="res://icon.ico"
 config/auto_accept_quit=false
 config/version="0.11.1"
-config/year="2020-2024"
+config/year="2020-2025"
 config/project_creator="Firstject Snowflakes - JDE - Dmitry97"
 config/test_version=false
 

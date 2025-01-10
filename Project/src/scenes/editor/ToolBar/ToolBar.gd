@@ -22,6 +22,7 @@ signal add_object_pressed
 signal pressed
 
 onready var lock_btn = $HBoxContainer/EditModeVBox2/HBoxContainer/LockBtn
+onready var toggle_tile_anim_btn = $HBoxContainer/EditModeVBox2/HBoxContainer/ToggleTileAnimationsBtn
 
 #-------------------------------------------------
 #      Constants
@@ -78,9 +79,12 @@ func _on_LadderBtn_pressed() -> void:
 func _on_SpikeBtn_pressed() -> void:
 	EditMode.set_mode(EditMode.Mode.SPIKE)
 	emit_signal("pressed")
-	
+
 func _on_LockBtn_pressed() -> void:
 	EditorConfig.locked_keyboard = lock_btn.pressed
+
+func _on_ToggleTileAnimations_pressed() -> void:
+	EditorConfig.animate_tiles = toggle_tile_anim_btn.pressed
 
 func _on_ButtonsToggler_pressed() -> void:
 	SelectedObjects.remove_all()

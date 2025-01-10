@@ -31,6 +31,7 @@ signal mouse_exited_btn(texture)
 
 export var tile_id : int
 var tileset_name : String
+var texture_region: TextureRegion
 
 #-------------------------------------------------
 #      Notifications
@@ -41,11 +42,19 @@ func _ready() -> void:
 	connect("mouse_exited", self, "_on_mouse_exited")
 
 func _pressed() -> void:
-	emit_signal("pressed_id", tile_id, texture_normal)
+	emit_signal("pressed_id", tile_id, get_normal_texture())
 
 #-------------------------------------------------
 #      Virtual Methods
 #-------------------------------------------------
+
+func _draw() -> void:
+	if texture_region:
+		VisualServer.canvas_item_add_texture_rect_region(get_canvas_item(), Rect2(Vector2.ZERO, rect_size),
+			texture_region.texture.get_rid(), texture_region.region)
+		BadgeDrawer.check_should_display_anim_badge(self, texture_region.texture)
+		material = texture_region.texture.get_meta("material") if \
+			texture_region.texture.has_meta("material") else null
 
 #-------------------------------------------------
 #      Override Methods
@@ -60,10 +69,10 @@ func _pressed() -> void:
 #-------------------------------------------------
 
 func _on_mouse_entered():
-	emit_signal("mouse_entered_btn", texture_normal, tileset_name, tile_id)
+	emit_signal("mouse_entered_btn", get_normal_texture(), tileset_name, tile_id)
 
 func _on_mouse_exited():
-	emit_signal("mouse_exited_btn", texture_normal)
+	emit_signal("mouse_exited_btn", get_normal_texture())
 
 #-------------------------------------------------
 #      Private Methods
@@ -72,3 +81,6 @@ func _on_mouse_exited():
 #-------------------------------------------------
 #      Setters & Getters
 #-------------------------------------------------
+
+func get_normal_texture() -> Texture:
+	return texture_region.texture if texture_region else .get_normal_texture()

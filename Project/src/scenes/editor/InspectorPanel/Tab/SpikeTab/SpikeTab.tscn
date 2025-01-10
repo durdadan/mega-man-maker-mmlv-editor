@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://src/scenes/editor/InspectorPanel/Tab/Tab.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/utils/ControlAutoUnfocus.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://src/scenes/editor/InspectorPanel/Tab/SpikeTab/SpikeTab.gd" type="Script" id=5]
 [ext_resource path="res://src/scenes/editor/InspectorPanel/Tab/SpikeTab/SubtileSpikeSelectPopup/SubtileSpikeSelectPopup.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/images/editor_ui/ToolBar/SpikePressed.png" type="Texture" id=7]
+[ext_resource path="res://src/scenes/editor/InspectorPanel/Tab/TilemapTab/SubtileFloatingButton.gd" type="Script" id=8]
 
 [sub_resource type="InputEventKey" id=1]
 scancode = 84
@@ -105,12 +106,19 @@ text = "Spikes"
 margin_left = 0.793701
 margin_right = 0.793701
 
+[node name="DescriptionLabel" type="Label" parent="VBox/ScrollContainer/Vbox" index="1"]
+margin_top = 25.0
+margin_right = 792.0
+margin_bottom = 39.0
+text = "Double click on a tile to select sub-tile (shortcut: T)"
+align = 1
+autowrap = true
+
 [node name="SubtileSpikeSelectPopup" parent="." index="1" instance=ExtResource( 6 )]
-visible = false
 margin_left = 308.0
-margin_top = 83.5
+margin_top = 84.0
 margin_right = 520.0
-margin_bottom = 311.5
+margin_bottom = 312.0
 
 [node name="SubtileSpikeButton" type="Button" parent="." index="2"]
 anchor_left = 1.0
@@ -125,13 +133,15 @@ size_flags_vertical = 0
 shortcut = SubResource( 2 )
 icon = ExtResource( 7 )
 expand_icon = true
+script = ExtResource( 8 )
 
 [node name="PreviewTextureRect" type="TextureRect" parent="." index="3"]
 visible = false
-margin_left = -364.0
-margin_top = 8.0
-margin_right = -12.0
-margin_bottom = 416.0
+anchor_bottom = 0.009
+margin_left = -134.0
+margin_top = 12.0
+margin_right = -38.0
+margin_bottom = 102.708
 mouse_filter = 2
 expand = true
 stretch_mode = 5
@@ -141,30 +151,26 @@ self_modulate = Color( 1, 1, 1, 0.807843 )
 show_behind_parent = true
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -8.0
-margin_top = -8.0
-margin_right = 8.0
-margin_bottom = 8.0
+margin_left = -32.0
+margin_top = -12.0
+margin_right = 32.0
+margin_bottom = 62.0
 mouse_filter = 2
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="NameVBox" type="VBoxContainer" parent="PreviewTextureRect" index="1"]
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = -40.0
-margin_bottom = -12.0
+margin_left = -25.0
+margin_top = 15.0
+margin_right = 25.0
+margin_bottom = 43.0
 grow_horizontal = 0
 custom_constants/separation = 0
 alignment = 2
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="TilesetNameLabel" type="Label" parent="PreviewTextureRect/NameVBox" index="0"]
-margin_right = 352.0
+margin_right = 146.0
 margin_bottom = 14.0
 grow_vertical = 0
 text = "TilesetName"
@@ -176,7 +182,7 @@ __meta__ = {
 
 [node name="TilesetIDLabel" type="Label" parent="PreviewTextureRect/NameVBox" index="1"]
 margin_top = 14.0
-margin_right = 352.0
+margin_right = 146.0
 margin_bottom = 28.0
 grow_vertical = 0
 text = "TilesetID"

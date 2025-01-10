@@ -1,0 +1,19 @@
+[gd_resource type="Shader" format=2]
+
+[resource]
+code = "shader_type canvas_item;
+
+uniform bool paused = true;
+uniform bool is_middle_section;
+uniform float content_speed;
+uniform sampler2D content_texture;
+
+void fragment() {
+	vec2 uv = UV;
+	vec4 screen_color = texture(TEXTURE, uv);
+	float content_speed_uv = content_speed * TEXTURE_PIXEL_SIZE.x;
+	float content_offset_x = float(is_middle_section) + float(!paused) * content_speed_uv * TIME;
+	vec4 content_color = texture(content_texture, (uv + vec2(content_offset_x, 0.0f)) * vec2(1.0f, 1.0f));
+	COLOR = mix(screen_color, content_color, float(screen_color.a < 1.0f));
+}
+"

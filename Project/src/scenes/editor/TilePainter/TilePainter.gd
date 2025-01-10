@@ -67,7 +67,7 @@ signal changed_tile_id(tilemap_tile_id)
 const EYEDROP_MODIFIER_KEY = KEY_ALT
 const UNDO_PAINT_TILE_ACTION_NAME = "Paint Tilemap"
 const EYEDROP_CURSOR: Texture = preload(
-	"res://eyedrop_cursor.png"
+	"res://assets/images/editor_ui/eyedrop_cursor.png"
 )
 
 #-------------------------------------------------

@@ -68,7 +68,7 @@ func _on_NextButton_button_down() -> void:
 	update_preview()
 
 func _on_SpinBox_value_changed(value: float) -> void:
-	current_page = value
+	current_page = int(value)
 	update_preview()
 
 #-------------------------------------------------
