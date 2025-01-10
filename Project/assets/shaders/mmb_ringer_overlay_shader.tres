@@ -13,7 +13,7 @@ uniform sampler2D ringer_texture;
 vec2 scale(vec2 uv, vec2 scale) {
 	mat2 scale_matrix = mat2(vec2(scale.x, 0.0f), vec2(0.0f, scale.y));
 	uv -= 0.5f;
-	uv = uv * scale_matrix;
+	uv *= scale_matrix;
 	uv += 0.5f;
 	return uv;
 }

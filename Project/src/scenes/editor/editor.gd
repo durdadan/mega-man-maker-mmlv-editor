@@ -389,9 +389,9 @@ func _control_viewport_by_gui_input(event : InputEvent):
 		
 		#Zoom in/out by mouse wheel
 		if event.button_index == BUTTON_WHEEL_UP:
-			main_camera.zoom_in_mini()
+			main_camera.zoom_in_mini(event.global_position)
 		if event.button_index == BUTTON_WHEEL_DOWN:
-			main_camera.zoom_out_mini()
+			main_camera.zoom_out_mini(event.global_position)
 	if event is InputEventKey:
 		if event.scancode == KEY_SPACE:
 			is_scroll_mode = event.is_pressed()

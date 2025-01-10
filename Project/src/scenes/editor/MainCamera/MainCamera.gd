@@ -71,19 +71,19 @@ func zoom_out():
 	current_zoom *= 1.5
 	_tween_zoom()
 
-func zoom_in_mini():
+func zoom_in_mini(mouse_position: Vector2):
 	if current_zoom.x <= MIN_ZOOM:
 		return
 	
 	current_zoom /= 1.1
-	_tween_zoom()
+	_tween_position_and_zoom(mouse_position)
 
-func zoom_out_mini():
+func zoom_out_mini(mouse_position: Vector2):
 	if current_zoom.x >= MAX_ZOOM:
 		return
 	
 	current_zoom *= 1.1
-	_tween_zoom()
+	_tween_position_and_zoom(mouse_position)
 
 func reset_zoom():
 	current_zoom = Vector2.ONE
@@ -110,6 +110,10 @@ func _clamp_position_within_limit():
 		limit_top + (window_size_half.y * zoom.y),
 		limit_bottom - (window_size_half.y * zoom.y)
 	)
+
+func _tween_position_and_zoom(mouse_position: Vector2) -> void:
+	global_position += (-0.5 * get_viewport().size + mouse_position) * (zoom - current_zoom)
+	_tween_zoom()
 
 func _tween_zoom():
 	tween.interpolate_property(

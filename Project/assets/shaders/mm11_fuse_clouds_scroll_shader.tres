@@ -3,9 +3,6 @@
 [resource]
 code = "shader_type canvas_item;
 
-const vec2 TOP_CLOUDS_SCALE = vec2(1.0f);
-const vec2 BOTTOM_CLOUDS_SCALE = -TOP_CLOUDS_SCALE;
-
 uniform bool paused = true;
 uniform vec3 clouds_close_params;
 uniform vec3 clouds_mid_params;
@@ -21,7 +18,7 @@ float inverse_lerp_f(float from, float to, float value) {
 vec2 scale(vec2 uv, vec2 scale) {
 	mat2 scale_matrix = mat2(vec2(scale.x, 0.0f), vec2(0.0f, scale.y));
 	uv -= 0.5f;
-	uv = uv * scale_matrix;
+	uv *= scale_matrix;
 	uv += 0.5f;
 	return uv;
 }
@@ -33,7 +30,7 @@ bool is_in_range(float value, vec2 range) {
 
 vec4 cloud_color(sampler2D clouds, vec3 cloud_params, vec2 uv, vec2 pixel_size, vec2 limits, float v_mid_offset) {
 	float sgn = sign(v_mid_offset);
-	float u = uv.x / (cloud_params.x * pixel_size.x) -  float(!paused) * sgn * cloud_params.z * pixel_size.x * TIME;
+	float u = uv.x / (cloud_params.x * pixel_size.x) - float(!paused) * sgn * cloud_params.z * pixel_size.x * TIME;
 	float v = sgn * inverse_lerp_f(limits.x, limits.y, abs(v_mid_offset));
 	return texture(clouds, scale(vec2(u, v), vec2(sgn)));
 }

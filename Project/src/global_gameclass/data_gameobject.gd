@@ -70,10 +70,10 @@ export (float) var obj_option = MISSING_DATA setget set_obj_option,get_obj_optio
 #p
 export (float) var obj_new_speed = MISSING_DATA
 
-#p
+#q
 export (float) var obj_new_timer_option = MISSING_DATA
 
-#p
+#r
 export (float) var obj_who_knows = MISSING_DATA
 
 #-------------------------------------------------
