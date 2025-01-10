@@ -1,0 +1,18 @@
+[gd_resource type="ShaderMaterial" load_steps=6 format=2]
+
+[ext_resource path="res://src/utils/mmlv_tile_animated_material.gd" type="Script" id=1]
+[ext_resource path="res://assets/shaders/mm11_fuse_clouds_scroll_shader.tres" type="Shader" id=2]
+[ext_resource path="res://assets/images/bg/sprBGFuse2/sprBGFuse2CloudTop2.png" type="Texture" id=3]
+[ext_resource path="res://assets/images/bg/sprBGFuse2/sprBGFuse2CloudTop3.png" type="Texture" id=4]
+[ext_resource path="res://assets/images/bg/sprBGFuse2/sprBGFuse2CloudTop1.png" type="Texture" id=5]
+
+[resource]
+shader = ExtResource( 2 )
+shader_param/paused = false
+shader_param/clouds_close_params = Vector3( 128, 24, 50 )
+shader_param/clouds_mid_params = Vector3( 128, 16, -45 )
+shader_param/clouds_far_params = Vector3( 128, 16, 25 )
+shader_param/clouds_close_texture = ExtResource( 5 )
+shader_param/clouds_mid_texture = ExtResource( 3 )
+shader_param/clouds_far_texture = ExtResource( 4 )
+script = ExtResource( 1 )

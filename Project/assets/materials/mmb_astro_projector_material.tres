@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=4 format=2]
 
-[ext_resource path="res://assets/shaders/sprBGMmbAstro3_screen_content_shader.tres" type="Shader" id=1]
+[ext_resource path="res://assets/shaders/mmb_astro_projector_shader.tres" type="Shader" id=1]
 [ext_resource path="res://assets/images/previews/sprBGMmbAstro3_5BG.png" type="Texture" id=2]
 [ext_resource path="res://src/utils/mmlv_tile_animated_material.gd" type="Script" id=3]
 
